@@ -1,0 +1,259 @@
+input.checkout-price-input[readonly] {
+  cursor: default;
+}
+body.full-white h3 {
+  margin-top: 0px !important;
+
+  &.spaced {
+    margin-bottom: 45px;
+  }
+}
+.checkout-modal {
+  .modal-footer {
+    background: $off-white;
+    height: 58px;
+    padding: 5px 10px;
+  }
+
+  .secondary-title {
+    color: $light-gray;
+    font-size: 12px;
+    font-style: oblique;
+  }
+
+  .cards-accepted {
+    background-color: $off-white;
+    background-image: url('/images/cc-accepted.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-size: 12px;
+    font-style: oblique;
+    height: 50px;
+    padding: 18px 15px;
+    border-right: solid 15px $off-white;
+    margin-bottom: 20px;
+  }
+
+  button.btn.btn-primary {
+    background-color: $green-button;
+    border-color: $green-button;
+    height: 48px;
+    width: 144px;
+  }
+
+  label {
+    font-size: 13px;
+  }
+
+  .footer-text {
+    padding: 15px;
+  }
+
+  input.checkout-promocode-input {
+    background: $full-white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    box-shadow: none;
+    height: 20px;
+    -webkit-box-shadow: none;
+  }
+
+  input.checkout-price-input {
+    background: $full-white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    color: $green-button;
+    font-size: 30px;
+    margin-bottom: 3px;
+  }
+
+
+}
+
+button.btn.btn-dark {
+  border-color: $mid-blue;
+  background-color: $mid-blue;
+  color: $full-white;
+  &:focus, &:hover {
+    border-color: $mid-blue-2;
+    background-color: $mid-blue-2;}}
+
+button.btn {
+  &:hover, &:active{
+    background-color: $lighter-gray;
+    border-color: $lighter-gray;}}
+
+.card-info {
+  border-bottom: 1px solid $medium-gray;
+  margin-bottom: 10px;}
+
+.cc-creditcard {
+  padding-left: 80px;
+  padding-top: 17px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: 6px center;
+  background-size: 40px 40px;
+
+  &.cc-blank {
+    background-image: url('/images/cc-reverse.svg');
+  }
+  &.cc-american.express {
+    background-image: url('/images/cc-amex.svg');
+  }
+  &.cc-mastercard {
+    background-image: url('/images/cc-mc.svg');
+  }
+  &.cc-discover {
+    background-image: url('/images/cc-discover.svg');
+  }
+  &.cc-visa {
+    background-image: url('/images/cc-visa.svg');
+  }
+}
+
+p.instructions {
+  text-align: center;
+}
+
+.checkout-price-total {
+  text-transform: uppercase;
+}
+
+@include respond-to('small'){
+  p.instructions {
+    margin-top: 20px;
+  }
+  button.btn.btn-dark , .cc-creditcard {
+    margin-top: 50px;
+  }
+
+}
+
+body.full-white input.checkout-price-input {
+  background: $full-white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  color: $green-button;
+  font-size: 30px;
+  margin-bottom: 3px;
+}
+
+.checkout-price-info {
+  margin-top: 5px;
+}
+
+body.full-white input.checkout-promocode-input {
+  background: $full-white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  box-shadow: none;
+  height: 20px;
+  -webkit-box-shadow: none;
+}
+
+.checkout-price-info-mobile-view {
+  border-color: $medium-gray;
+  background-color: $medium-gray;
+  color: $full-white;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 50px;
+}
+
+.social-share-buttons.share-with-text{
+  text-align:center;
+  margin: 20px auto;
+  .event-detail-social-share-button{
+    height: 30px;
+    color: $full-white;
+    border-radius: 4px;
+    padding-left: 40px;
+    background-position: 10px center;
+    width: auto;
+    padding-top: 5px;
+    text-transform: uppercase;
+    padding-right: 15px;
+    margin: 5px;
+    width: 130px;
+    background-size: 20px 20px;
+    cursor: pointer;
+    &.social-share-button-fb{
+      margin-left: 10px;
+      background-color: $facebook-blue;
+      background-image: url('/images/fb_icon.svg');
+        &:hover{
+          background-color: $facebook-blue-2;}}
+    &.social-share-button-twitter{
+      background-image: url('/images/twitter-bird-white.svg');
+      background-color: $twitter-blue;
+        &:hover{
+          background-color: $twitter-blue-2;}}
+    &.social-share-button-email{
+      background-image: url('/images/mail_simple_white.svg');
+      background-color: $mid-gray;
+        &:hover{
+          opacity: 0.9;}}
+    &.social-share-button-calendar {
+      margin-right: 0px;
+      background-size: 40px 40px;
+      background-position: 0 center;
+      background-image: url('/images/calendar_white.svg');
+      background-color: $mid-blue;
+        &:hover{
+          background-color: $mid-blue-2;}}
+  }
+}
+body.full-white .social-share-buttons.share-with-text{
+  text-align:center;
+  margin-top: 20px;
+  .event-detail-social-share-button{
+    background-position: 20px center;
+    width: 45%;
+    height: 45px;
+    padding-top: 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-right: 15px;
+    margin: 20px auto;
+    float: none;
+    display: block;
+    background-size: 25px 25px;
+    padding-left: 50px;
+    &.social-share-button-fb{
+      background-color: $facebook-blue;
+      background-image: url('/images/fb_icon.svg');
+        &:hover{
+          background-color: $facebook-blue-2;}}
+    &.social-share-button-twitter{
+      background-image: url('/images/twitter-bird-white.svg');
+      background-color: $twitter-blue;
+        &:hover{
+          background-color: $twitter-blue-2;}}
+    &.social-share-button-email{
+      background-image: url('/images/mail_simple_white.svg');
+      background-color: $mid-gray;
+        &:hover{
+          opacity: 0.9;}}
+    &.social-share-button-calendar {
+      background-size: 50px 50px;
+      background-position: 5px center;
+      background-image: url('/images/calendar_white.svg');
+      background-color: $mid-blue;
+        &:hover{
+          background-color: $mid-blue-2;}}
+  }
+}

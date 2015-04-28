@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="236px" height="496px" viewBox="0 0 236 496" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Image</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="19.3034301" y="73.4353827" width="199.261214" height="353.485571" rx="4"></rect>
+        <rect id="path-3" x="0.205164183" y="0.33345431" width="200" height="355" rx="1"></rect>
+    </defs>
+    <g id="How-it-Works" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="HowitWorks_Desktop" sketch:type="MSArtboardGroup" transform="translate(-321.000000, -4405.000000)">
+            <g id="V_Collaborate" sketch:type="MSLayerGroup" transform="translate(-1.000000, 4303.000000)">
+                <g id="Image" transform="translate(322.000000, 102.000000)">
+                    <g id="iPhone_Flat-2">
+                        <g id="Casing">
+                            <rect id="Volume-Down" fill="#9EA7B3" sketch:type="MSShapeGroup" x="0.311345646" y="158.38394" width="5.60422164" height="17.1141782" rx="4"></rect>
+                            <rect id="Volume-Up" fill="#9EA7B3" sketch:type="MSShapeGroup" x="0.311345646" y="117.309912" width="5.60422164" height="17.1141782" rx="4"></rect>
+                            <rect id="Silent" fill="#9EA7B3" sketch:type="MSShapeGroup" x="0" y="70.6348808" width="6.53825858" height="21.7816813" rx="4"></rect>
+                            <rect id="On/Off" fill="#9EA7B3" sketch:type="MSShapeGroup" x="159.097625" y="0" width="38.6068602" height="4.66750314" rx="3"></rect>
+                            <rect id="Frame" fill="#323A45" sketch:type="MSShapeGroup" x="2.80211082" y="2.48933501" width="233.197889" height="493.510665" rx="40"></rect>
+                            <ellipse id="Home-Button" fill="#F4F5F7" sketch:type="MSShapeGroup" cx="119.556728" cy="460.526976" rx="21.171504" ry="21.1593476"></ellipse>
+                            <rect id="Inner-Button" stroke="#9EA7B3" stroke-width="2" sketch:type="MSShapeGroup" x="111.150396" y="452.808666" width="16.5013193" height="16.4918444" rx="4"></rect>
+                            <rect id="Speaker" fill="#F4F5F7" sketch:type="MSShapeGroup" x="98.0738786" y="40.140527" width="42.9656992" height="9.95734003" rx="16"></rect>
+                            <ellipse id="Front-Camer" fill="#F4F5F7" sketch:type="MSShapeGroup" cx="119.245383" cy="26.4491844" rx="4.6701847" ry="4.66750314"></ellipse>
+                            <mask id="mask-2" sketch:name="Mask 2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Mask-2">
+                                <use stroke="#323A45" stroke-width="5" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                                <use stroke="none" xlink:href="#path-1"></use>
+                                <use stroke="none" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                        <g id="i" transform="translate(19.098266, 73.101928)">
+                            <mask id="mask-4" sketch:name="Mask" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="Mask">
+                                <use fill="none" sketch:type="MSShapeGroup" xlink:href="#path-3"></use>
+                                <use fill="none" xlink:href="#path-3"></use>
+                                <use fill="#F4F5F7" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            </g>
+                        </g>
+                        <path d="M102.744063,9.95734003 L228.527704,373.400251 L228.527704,49.9570796 C228.527704,27.8658334 210.62288,9.95734003 188.534531,9.95734003 L102.744063,9.95734003 Z" id="Gloss" fill-opacity="0.05" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                    </g>
+                    <g id="Entry" transform="translate(19.000000, 392.815365)">
+                        <rect id="Rectangle-64" stroke="#9EA7B3" fill="#F4F5F7" sketch:type="MSShapeGroup" x="0" y="0" width="201" height="37.1788714"></rect>
+                        <image id="paper_airplane" sketch:type="MSBitmapLayer" x="166.755556" y="9.66650656" width="26.0555556" height="19.3330131" xlink:href="data:image/png;base64,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"></image>
+                    </g>
+                    <g id="I" transform="translate(30.911111, 117.691717)" sketch:type="MSShapeGroup">
+                        <ellipse id="Oval-14" fill="#9EA7B3" cx="14.1444444" cy="28.9995197" rx="14.1444444" ry="14.1279711"></ellipse>
+                        <rect id="Rectangle-61" fill="#D8DEE6" x="43.1777778" y="0" width="135.488889" height="43.1274908" rx="12"></rect>
+                    </g>
+                    <g id="II" transform="translate(120.244444, 245.958823) scale(-1, 1) translate(-120.244444, -245.958823) translate(30.911111, 217.331092)" sketch:type="MSShapeGroup">
+                        <ellipse id="Oval-14" fill="#9EA7B3" cx="14.1444444" cy="43.1274908" rx="14.1444444" ry="14.1279711"></ellipse>
+                        <rect id="Rectangle-61" fill="#FF6B42" x="43.1777778" y="0" width="135.488889" height="57.255462" rx="12"></rect>
+                    </g>
+                    <g id="III" transform="translate(30.911111, 347.457142)" sketch:type="MSShapeGroup">
+                        <ellipse id="Oval-15" fill="#9EA7B3" cx="14.1444444" cy="14.1279711" rx="14.1444444" ry="14.1279711"></ellipse>
+                        <rect id="Rectangle-64" fill="#D8DEE6" x="43.1777778" y="0" width="135.488889" height="28.2559423" rx="12"></rect>
+                    </g>
+                    <path d="M31.5,413.5 L172.5,413.5" id="Line" stroke="#323A45" stroke-width="5" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                    <text id="Chat" sketch:type="MSTextLayer" font-family="Avenir" font-size="17.4545455" font-weight="420" fill="#323A45">
+                        <tspan x="100.888889" y="99">Chat</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

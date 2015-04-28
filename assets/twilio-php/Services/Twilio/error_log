@@ -1,0 +1,2 @@
+[22-Oct-2014 00:51:19 America/Chicago] PHP Fatal error:  Class 'Services_Twilio_Resource' not found in /home3/lmetzger/public_html/thisspot.rocks/assets/twilio-php/Services/Twilio/ListResource.php on line 18
+[07-Nov-2014 08:44:14 America/Chicago] PHP Fatal error:  Class 'Services_Twilio_Resource' not found in /home3/lmetzger/public_html/thisspot.rocks/assets/twilio-php/Services/Twilio/ListResource.php on line 18
