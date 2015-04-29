@@ -11,3 +11,9 @@
     @media only screen and (min-width: $large) { @content; }
   }
 }
+
+
+// -------------- Transition/Ease -------------- //
+@mixin ease($time:333ms, $el: all, $anim: ease-in-out) {
+    transition: $el $time $anim;
+}

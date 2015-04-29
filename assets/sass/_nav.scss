@@ -1,3 +1,64 @@
+// Main Navbar 
+
+.nav>li>a:focus, .nav>li>a:hover {
+	@include ease;
+	background: darken($dark-blue, 20%);
+}
+
+#login-button {
+	@media screen and (max-width: $small) {
+		display: none;
+		
+	}
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+	background-color: darken($dark-blue, 20%);
+}
+
+#signup-button {
+
+	background: $off-white;
+	border-color: none;
+	width: 100px;
+	
+	@media screen and (max-width: $small) {
+		display: none;
+		
+	}
+	
+	&:hover {
+		@include ease;
+		color: $dark-blue;
+		background: $off-white;
+		
+	}
+}
+
+#dropdown-button {
+	@media screen and (max-width: $small) {
+		display: none;
+	}
+}
+.dropdown-icon {
+	 background-image: url("/assets/images/more.png");
+	 padding: 0 40px;
+	 background-repeat: no-repeat;
+    background-position: center; 
+
+}
+.navbar-nav>li>.dropdown-menu {
+	margin-top: 12px;
+	background: $off-white;
+	a {
+		font-size: 14px;
+		font-family: $light-fonts;
+	 &:hover {
+		 	@include ease;
+			 background: $light-gray;
+		 }
+	}
+}
 
 // Pushy Mobile Navigation
 
@@ -124,13 +185,13 @@
 .landingPage .pushy,
 body > .pushy{
     width: 400px;
-    background: #f4f5f7;
+    background: $medium-gray;
     font-size: 1em;
     font-weight: normal;
 }
 .landingPage .pushy a,
 body > .pushy a{
-    color: #323a45;
+    color: $white;
 }
 .landingPage .pushy a:hover,
 body > .pushy a:hover {
@@ -164,7 +225,7 @@ body .container-push {
 .landingPage .pushy ul ,
 body > .pushy ul {
     min-height: 87%;
-    margin-bottom: -40px;
+    margin-bottom: -86px;
 }
 .ln-cr {
     height: 40px;
@@ -244,4 +305,6 @@ body > .pushy ul {
         transform: translate3d(250px,0,0);
     }
 }
-
+#apple-icon {
+	padding-right: 20px;
+}

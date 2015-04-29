@@ -45,3 +45,7 @@
       $('.venobox').venobox();
 
     });
+    
+    
+    // Desktop Menu Dropdown
+    $('.dropdown-toggle').dropdown();
