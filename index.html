@@ -12,6 +12,7 @@
     <!-- Core Framework CSS before SASS -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/genericons.css" rel="stylesheet">
     <link rel="stylesheet" href="http://i.icomoon.io/public/32e046885a/myhub/style.css">
     
     <!--add more stylesheet before this line-->
@@ -38,8 +39,8 @@
     </ul>
     <div class="ln-cr">
         <ul>
-        	<li><a href="#">Login</a></li>
-        	<li><a href="#">Sign Up</a></li>
+        	<li class="col-xs-6 logins"><a href="#">Login</a></li>
+        	<li class="col-xs-6 logins"><a href="#">Sign Up</a></li>
 	         <li><a href="https://itunes.apple.com/us/app/myhub/id598502707?mt=8"><span><i id="apple-icon" class="fa fa-apple fa-lg"></i> Download the App </a></li>
         </ul>
     </div>
@@ -183,7 +184,7 @@
                     <div class="col-sm-5 col-sm-push-1">
                         <div class="slide-3-img">
                             <embed name="E" class="E hidden-xs" id="E1" src="assets/images/slide-2-icons.svg" width="479" height="316"></embed>
-                            <img class="img-responsive visible-xs" src="assets/images/after-group.png" alt="Slide 3"/>
+                            <img id="after-group" class="img-responsive visible-xs" src="assets/images/after-group.png" alt="Slide 3"/>
                         </div>
                     </div>
                 </div>
@@ -416,6 +417,11 @@ occur when you collect money. </p>
 	                            </div>
 	                        </div><!--end footer nav-->
 	                    </div>
+	                    
+	                    <div id="mobile-footer-nav" class="col-xs-12 hidden-sm text-center">
+		                        <a href="terms-of-service.html">About</a> • <a href="privacy-policy.html">How it Works</a> • <a href="terms-of-service.html">Jobs</a> • <a href="terms-of-service.html">Blog</a> • <a href="terms-of-service.html">FAQ</a> • <a href="terms-of-service.html">Contact</a>
+	                        </div>
+	                    
 	                    <div id="fwLpr1" class="row">
 	                        <div class="col-sm-4">
 	                           <div class="footer_socials">
@@ -428,11 +434,15 @@ occur when you collect money. </p>
 	                                </ul>
 	                            </div>
 	                        </div>
+	                        
+	                        
+	                        
+	                        
 	                        <div id="co-image" class="col-sm-4 text-center">
 	                            <embed name="footer_logo_svg" class="footer_logo_svg" id="footer_logo_svg" src="assets/images/CO_Company_Color.svg" width="67" height="67">
 	                        </div>
-	                       
-	                    </div>
+	                         
+	                   
 	                    <div id="fwLpr2" class="row">
 	                        <div class="col-xs-12 copy_text text-center">2014 Myhub • <a href="privacy-policy.html">Privacy</a> • <a href="terms-of-service.html">Terms</a></div>
 	                    </div>
@@ -469,6 +479,8 @@ occur when you collect money. </p>
         </div>
     </div>
 </div>
+
+
 
 
 <!--modals ends-->

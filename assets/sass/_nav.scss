@@ -13,7 +13,7 @@
 }
 
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
-	background-color: darken($dark-blue, 20%);
+	background-color: none;
 }
 
 #signup-button {
@@ -21,6 +21,8 @@
 	background: $off-white;
 	border-color: none;
 	width: 100px;
+	  padding: 10px;
+  margin-top: 5px;
 	
 	@media screen and (max-width: $small) {
 		display: none;
@@ -41,7 +43,7 @@
 	}
 }
 .dropdown-icon {
-	 background-image: url("../images/more.png");
+	 background: url(../images/more.png);
 	 padding: 0 40px;
 	 background-repeat: no-repeat;
     background-position: center; 
@@ -60,8 +62,14 @@
 	}
 }
 #header-logo {
-	padding-top: 8px;
+	  margin: 0 auto;
+	  padding: 8px 0;
+	  width: 150px;
+
 }
+
+
+
 
 // Pushy Mobile Navigation
 
@@ -183,6 +191,8 @@
 }
 
 
+
+
 /*pushy overwride*/
 
 .landingPage .pushy,
@@ -227,12 +237,18 @@ body .container-push {
 
 .landingPage .pushy ul ,
 body > .pushy ul {
-    min-height: 87%;
-    margin-bottom: -86px;
+      padding: 0;
 }
 .ln-cr {
     height: 40px;
     line-height: 40px;
+    padding: 175px 0;
+}
+
+.logins {
+	a {
+		padding: 15px 10px;
+	}
 }
 
 
