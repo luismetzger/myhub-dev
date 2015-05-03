@@ -1,4 +1,4 @@
-$(document).ready(function(){
+;$(document).ready(function(){
 
 
 
@@ -145,7 +145,12 @@ $(document).ready(function(){
         $('#hwi_tab').find('li:eq(' + liIndex +') a').tab('show')
     });
 
-
+    /**
+     * dropdown on mouse enter
+     */
+    $("#dropdown-button").on('mouseenter', function(e){
+        $(this).addClass('open');
+    })
 
 
 

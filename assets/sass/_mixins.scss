@@ -1,19 +1,21 @@
-
 // Breakpoint Queries
 @mixin respond-to($media) {
   @if $media == handhelds {
-    @media only screen and (max-width: $iphone) { @content; }
-  }
-  @else if $media == medium-screens {
-    @media only screen and (min-width: $medium + 1) and (max-width: $large - 1) { @content; }
-  }
-  @else if $media == wide-screens {
-    @media only screen and (min-width: $large) { @content; }
+    @media only screen and (max-width: $iphone) {
+      @content;
+    }
+  } @else if $media == medium-screens {
+    @media only screen and (min-width: $medium + 1) and (max-width: $large - 1) {
+      @content;
+    }
+  } @else if $media == wide-screens {
+    @media only screen and (min-width: $large) {
+      @content;
+    }
   }
 }
 
-
 // -------------- Transition/Ease -------------- //
-@mixin ease($time:333ms, $el: all, $anim: ease-in-out) {
-    transition: $el $time $anim;
+@mixin ease($time: 333ms, $el: all, $anim: ease-in-out) {
+  transition: $el $time $anim;
 }

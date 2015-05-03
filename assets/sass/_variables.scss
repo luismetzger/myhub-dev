@@ -1,30 +1,37 @@
 $dark-blue: #1D2735;
-$medium-gray: #323A45; // refactor
+$medium-gray: #323A45;
+// refactor
 $reg-blue: $medium-gray;
 $reg-blue-2: #2D343E;
-$tag-gray: #5E6D81; // refactor
+$tag-gray: #5E6D81;
+// refactor
 $mid-blue: $tag-gray;
 $mid-blue-2: #546274;
-$light-gray: #9EA7B3; // refactor
-$mid-gray: $light-gray;
-$lighter-gray: #D8DEE6; // refactor
+$light-gray: #9EA7B3;
+// refactor
+$mid-gray: #9EA7B3;
+$lighter-gray: #D8DEE6;
+// refactor
 // $light-gray: #D8DEE6;
-$off-white: #F4F5F7; // refactor
+$off-white: #F4F5F7;
+// refactor
 $soft-gray: $off-white;
 $orange: #FF6B42;
 $orange-2: #E5603B;
-$facebook-blue: #3B599A;
+$facebook-blue: #3B5998;
 $facebook-blue-2: #355089;
 $twitter-blue: #2E97E9;
-$twitter-blue-2: #2988D1;
+$twitter-blue-2: #2988D2;
 $link-blue: #399AE7;
 $google-red: #DD4B39;
-$google-red: #C64333;
-$green-button: #00BA84; // refactor
+$google-red-2: #11A47E;
+$green-button: #00BA84;
+// refactor
 $green: $green-button;
 $green-2: #11A47E;
 $error-red-text: #FA2924;
-$full-white: #FFFFFF; // refactor
+$full-white: #FFFFFF;
+// refactor
 $white: $full-white;
 
 // refactor marked colors above so names match the myhub swatch selection names
@@ -32,14 +39,22 @@ $white: $full-white;
 $med-gray-90-pct: rgba(29, 39, 53, 0.9);
 $med-gray-hover: #444C56;
 
+$button-gray: #6B727A;
 
-
-
-$light-fonts: "Gill Sans W01 Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+$light-fonts: "Gill Sans W01", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+$main-fonts: $light-fonts;
+$light-weight:100;
+$regular-weight:200;
+$medium-weight:300;
+$bold-weight:400;
+$vbold-weight:700;
 $regular-fonts: "Gill Sans W01 Medium", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-$headline: "Avenir", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+$headline: "Avenir W01", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+$helvatica-fonts:"Helvetica Neue", "Helvetica", Arial, sans-serif;
+$pump-fonts:"Pump W01", sans-serif;
+$fontAwsome: "FontAwesome", sans-serif;
 
-$nav-bar-height: 65px;
+$nav-bar-height: 54px;
 $event-detail-desktop-hero-height: 500px;
 $event-detail-mobile-hero-height: 300px;
 
@@ -51,7 +66,6 @@ $modal-bg: $off-white;
 $default-text: $medium-gray;
 $primary-call-to-action: $orange;
 
-
 // Breakpoints
 $iphone5: 320px;
 $iphone: 480px;
@@ -60,7 +74,6 @@ $kinda-small: 991px;
 $medium: 992px;
 $large: 1200px;
 $larger: 1600px;
-
 
 //URL Image Path
 $image-path: "/assets/images";

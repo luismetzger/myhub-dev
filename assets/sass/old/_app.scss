@@ -3,22 +3,21 @@
 @import 'fonts';
 @import 'breakpoints';
 @import 'utility';
-
-
 // Web App Login/Logout User
 @import 'pages/event-detail';
 @import 'pages/password-reset';
 @import 'pages/add-card';
 
-
-
 * {
   -webkit-font-smoothing: antialiased;
 }
+
 input, textarea, button, select {
   &:focus {
     outline-color: transparent;
-    outline-style: none;}}
+    outline-style: none;
+  }
+}
 
 #site-content-wrapper {
   overflow-x: hidden;
@@ -29,46 +28,54 @@ input, textarea, button, select {
 }
 
 div.logo-wrapper {
-  margin-top: 15px;}
+  margin-top: 15px;
+}
 
-@include respond-to('small'){
+@include respond-to('small') {
 
- .full-white #site-content-wrapper {
+  .full-white #site-content-wrapper {
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 
-   h3 {
-     padding-left: 30px;}
+    h3 {
+      padding-left: 30px;
+    }
   }
 
   div.logo-wrapper {
     float: none;
     margin: 15px auto;
     width: 233px;
-    text-align: center;}
+    text-align: center;
+  }
 }
 
-@include respond-to('iphone5'){
+@include respond-to('iphone5') {
   div.logo-wrapper {
     width: 200px;
     float: none;
     margin: 15px auto;
-    text-align: center;}
+    text-align: center;
+  }
   button#nav-button-burger-menu {
     margin-right: 0px;
   }
 }
 
 button.btn {
-  background-color: $off-white;}
+  background-color: $off-white;
+}
+
 body {
-  margin-top : 65px;}
+  margin-top: 65px;
+}
+
 body#app {
   font-family: $regular-fonts;
   background: $page-bg;
-  margin-top : 65px;
+  margin-top: 65px;
   color: $default-text;
 
   img.user-avatar-std-rounded {
@@ -77,28 +84,34 @@ body#app {
     border-radius: 50%;
   }
 
-  textarea, input[type="text"], input[type="password"], input[type="email"]{
+  textarea, input[type="text"], input[type="password"], input[type="email"] {
     -webkit-appearance: none;
   }
 
   &.full-white {
-    .mobile-login-frm{
+    .mobile-login-frm {
       .password-input {
-        margin-bottom: 30px;}}
+        margin-bottom: 30px;
+      }
+    }
     button.btn.btn-facebook {
       background-size: 25px 25px;
       background-position-x: 20px;
       background-position-y: center;
-      background-image: url('/assets/images/facebook-square.svg');}
+      background-image: url('/assets/images/facebook-square.svg');
+    }
     div.forgot-password-link {
-      margin-top: 40px;}
+      margin-top: 40px;
+    }
     button.btn {
       font-weight: bold;
       font-size: 18px;
-      text-transform: uppercase;}
+      text-transform: uppercase;
+    }
     background: #FFF;
     .login-instructions {
-      margin-bottom: 80px;}
+      margin-bottom: 80px;
+    }
     h3 {
       background: $soft-gray;
       width: 100%;
@@ -107,7 +120,8 @@ body#app {
       padding: 15px;
       padding-left: 30px;
       padding-right: 55px;
-      box-sizing: content-box;}
+      box-sizing: content-box;
+    }
     input.form-control {
       background-color: $off-white;
       border-color: $off-white;
@@ -120,15 +134,19 @@ body#app {
         background-repeat: no-repeat;
         background-position: 5px 10px;
         padding-left: 45px;
-        background-image: url('/assets/images/mail_circle_gray.svg');}
+        background-image: url('/assets/images/mail_circle_gray.svg');
+      }
 
       &.password-input {
         background-size: 30px 30px;
         background-repeat: no-repeat;
         background-position: 5px 10px;
         padding-left: 45px;
-        background-image: url('/assets/images/key_gray.svg');}
-    }}}
+        background-image: url('/assets/images/key_gray.svg');
+      }
+    }
+  }
+}
 
 .login-input {
   background-image: url('/assets/images/mail_circle_gray.svg');
@@ -153,9 +171,12 @@ body#app {
   background-position: 5px 10px;
   padding-left: 45px;
 }
+
 .user-form {
   .username-input {
-  margin-bottom: 30px;}}
+    margin-bottom: 30px;
+  }
+}
 
 .fb-disclaimer {
   &.mobile-signup {
@@ -166,14 +187,17 @@ body#app {
     font-style: oblique;
     a {
       font-weight: bold;
-      color: $link-blue;}}}
+      color: $link-blue;
+    }
+  }
+}
 
 #myNavmenu {
   background: #303946;
   color: $off-white;
-  -webkit-box-shadow: inset -7px 0px 6px -2px rgba(0,0,0,0.28);
-  -moz-box-shadow: inset -7px 0px 6px -2px rgba(0,0,0,0.28);
-  box-shadow: inset -7px 0px 6px -2px rgba(0,0,0,0.28);
+  -webkit-box-shadow: inset -7px 0px 6px -2px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: inset -7px 0px 6px -2px rgba(0, 0, 0, 0.28);
+  box-shadow: inset -7px 0px 6px -2px rgba(0, 0, 0, 0.28);
 
   .logged-in-mobile-nav-header {
     border-bottom: 1px solid #1E2937;
@@ -184,7 +208,9 @@ body#app {
       margin: 10px auto;
       height: 60px;
       width: 60px;
-      border-radius: 50%;}}
+      border-radius: 50%;
+    }
+  }
   .download-app-button {
     background: url('/assets/images/apple.svg');
     background-size: 30px 30px;
@@ -192,15 +218,15 @@ body#app {
     background-position: 30px 10px;
   }
 
-  #mobile-nav-button-box
-  {
+  #mobile-nav-button-box {
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
 
-    a.col-xs-6:first-child{
-      border-right: 1px solid #1E2937;}
+    a.col-xs-6:first-child {
+      border-right: 1px solid #1E2937;
+    }
     a.col-xs-6, a.col-xs-12, div.col-xs-12 {
       height: 55px;
       padding: 20px;
@@ -211,14 +237,18 @@ body#app {
       text-align: center;
       color: $off-white;
       &:hover {
-        background-color: $orange;}
+        background-color: $orange;
+      }
       &.mobile-logout-button {
         text-align: left;
         background: url('/assets/images/power-icon-light.svg');
         background-size: 18px 18px;
         background-repeat: no-repeat;
         background-position: 10px 17px;
-        padding-left: 40px;}}}
+        padding-left: 40px;
+      }
+    }
+  }
 
   div.col-xs-12 a {
     font-size: 14px;
@@ -227,7 +257,9 @@ body#app {
     padding: 0 0 0 50px;
     color: $off-white;
     &:hover, &:focus, &:active {
-      background: transparent;}}
+      background: transparent;
+    }
+  }
 
   &.navmenu-default .navmenu-nav {
 
@@ -245,24 +277,33 @@ body#app {
         background-position: 10px 10px;
         padding-left: 40px;
         &.mobile-settings-button {
-          background-image: url('/assets/images/settings.svg');}}
+          background-image: url('/assets/images/settings.svg');
+        }
+      }
 
       > a.active {
         font-weight: bold;
         color: $orange;
-        background-color: #303946;}}}}
-
+        background-color: #303946;
+      }
+    }
+  }
+}
 
 .form-control {
   margin-bottom: 15px;
-  height: 50px;}
+  height: 50px;
+}
+
 button.btn.btn-primary {
   border-color: $primary-call-to-action;
   background: $primary-call-to-action;
   color: $menu-text;
   &:active, &:hover {
     background-color: $orange-2;
-    border-color: $orange-2;}}
+    border-color: $orange-2;
+  }
+}
 
 .email-login-fullscreen {
   text-transform: uppercase;
@@ -272,13 +313,16 @@ button.btn.btn-primary {
 .fb-login-fullscreen {
   margin-bottom: 100px;
 }
+
 button.btn.btn-primary-green {
   border-color: $green;
   background-color: $green;
   color: $menu-text;
-  &:hover, &:active{
+  &:hover, &:active {
     border-color: $green-2;
-    background-color: $green-2;}}
+    background-color: $green-2;
+  }
+}
 
 .verifiable {
   position: relative;
@@ -296,6 +340,7 @@ button.btn.btn-primary-green {
     width: 25px;
   }
 }
+
 .submitted {
   .verifiable {
     .mark {
@@ -308,6 +353,7 @@ button.btn.btn-primary-green {
     }
   }
 }
+
 button.btn.btn-facebook {
   border-color: $facebook-blue;
   background-color: $facebook-blue;
@@ -318,9 +364,11 @@ button.btn.btn-facebook {
   background-position: 10px 8px;
   padding-left: 10px;
   color: $menu-text;
-  &:hover, &:active{
+  &:hover, &:active {
     border-color: $facebook-blue-2;
-    background-color: $facebook-blue-2;}}
+    background-color: $facebook-blue-2;
+  }
+}
 
 button.btn.btn-login-email {
   text-transform: uppercase;
@@ -328,9 +376,10 @@ button.btn.btn-login-email {
   background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position: 10px 8px;
-  padding-left: 10px;}
+  padding-left: 10px;
+}
 
-@include respond-to('small'){
+@include respond-to('small') {
   .navbar-inverse {
     .container {
       padding-left: 0px;
@@ -344,6 +393,7 @@ button.btn.btn-login-email {
     }
   }
 }
+
 .navbar-inverse {
 
   background-color: $menu-bg;
@@ -351,24 +401,30 @@ button.btn.btn-login-email {
   border-width: 0px;
 
   a {
-    cursor: pointer;}
+    cursor: pointer;
+  }
   .btn {
     margin-top: 8px;
     margin-right: 6px;
     border-color: $menu-text;
     background: $menu-bg;
-    color: $menu-text;}
+    color: $menu-text;
+  }
 
   .navbar-brand, .navbar-brand:hover {
     font-family: "PumpStd-Light";
     color: $menu-text;
     .inline-logo-svg svg {
       height: 30px;
-      margin-top: -5px;}}
+      margin-top: -5px;
+    }
+  }
 
   .navbar-nav > li {
     a, a:hover, a:active, a:link, a:visited, a:focus {
-      color: $menu-text;}}
+      color: $menu-text;
+    }
+  }
 }
 
 .login-prompt {
@@ -380,7 +436,10 @@ button.btn.btn-login-email {
       padding: 5px 30px;
       a {
         font-weight: bold;
-        color: $link-blue;}}}
+        color: $link-blue;
+      }
+    }
+  }
   button.btn {
     font-size: 18px;
     font-weight: bold;
@@ -392,33 +451,45 @@ button.btn.btn-login-email {
       padding-left: 55px;
       &.btn-primary-green {
         &.create-acct {
-          background-image: url('/assets/images/user.svg');}}
+          background-image: url('/assets/images/user.svg');
+        }
+      }
       &.btn-primary-white {
         background-color: $full-white;
         border: 1px solid $light-gray;
         color: $light-gray;
         &.btn-login-email {
-          background-image: url('/assets/images/mail_circle_gray.svg');}}}}}
+          background-image: url('/assets/images/mail_circle_gray.svg');
+        }
+      }
+    }
+  }
+}
 
 .login-modal {
   .modal-dialog {
     max-width: 95%;
-    width: 458px;}
+    width: 458px;
+  }
   label {
-    display: none;}
+    display: none;
+  }
   .btn {
     text-transform: uppercase;
-    background-color: $off-white;}
+    background-color: $off-white;
+  }
   .modal-footer {
     padding: 3px;
-    border-top: none;}
+    border-top: none;
+  }
   .user-modal-or {
     margin-bottom: 15px;
     text-transform: uppercase;
     font-size: 16px;
     text-align: center;
     span {
-      display: inline-block;}
+      display: inline-block;
+    }
     &:before, &:after {
       width: 100px;
       margin: 0 10px 0 10px;
@@ -426,31 +497,42 @@ button.btn.btn-login-email {
       height: 6px;
       content: '';
       border: none;
-      border-top: 2px solid $default-text;  }}
+      border-top: 2px solid $default-text;
+    }
+  }
   .fb-disclaimer {
     font-size: 12px;
     text-align: center;
-    font-style: oblique;}}
+    font-style: oblique;
+  }
+}
+
 .modal-backdrop.in {
   background: $medium-gray;
-  opacity: 0.65;}
+  opacity: 0.65;
+}
+
 div.message-error {
   font-size: 14px;
   text-align: left;
   color: $error-red-text;
-  font-style: oblique;}
+  font-style: oblique;
+}
 
 .modal-dialog {
-  .modal-header{
+  .modal-header {
     height: 48px;
     border-radius: 6px 6px 0px 0px;
     border-width: 0px;
     background: $off-white;
     h4 {
-      line-height: 1.2;}
+      line-height: 1.2;
+    }
     .close {
       margin-top: -30px;
-      margin-right: -25px;}}
+      margin-right: -25px;
+    }
+  }
   button.close {
     padding: 0;
     background: $medium-gray;
@@ -463,17 +545,21 @@ div.message-error {
     width: 26px;
     padding-bottom: 1px;
     line-height: 0;
-    border-radius: 50%;}
+    border-radius: 50%;
+  }
   .modal-body {
     background: #FFF;
     .ember-notify-cn {
       position: static;
       .ember-notify {
         margin-left: 0;
-        width: 100%;}}}
+        width: 100%;
+      }
+    }
+  }
 }
 
-.oops-404{
+.oops-404 {
   text-align: center;
   margin-top: 50px;
 }
@@ -493,13 +579,17 @@ div.message-error {
     margin: -12px auto 0 auto;
 
     &.informational-hr {
-      background-image: url("/assets/images/info-tag-gray.svg");}
+      background-image: url("/assets/images/info-tag-gray.svg");
+    }
     &.location-hr {
-      background-image: url("/assets/images/location-tag-gray.svg");}
+      background-image: url("/assets/images/location-tag-gray.svg");
+    }
     &.money-hr {
-      background-image: url("/assets/images/money-tag-gray.svg");}
+      background-image: url("/assets/images/money-tag-gray.svg");
+    }
   }
 }
+
 .loading-indicator {
   background-image: url('data:image/svg+xml;utf8,  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve"><rect x="0" y="13" width="4" height="5" fill="#323A45"><animate attributeName="height" attributeType="XML" values="5;21;5" begin="0s" dur="0.6s" repeatCount="indefinite" /><animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0s" dur="0.6s" repeatCount="indefinite" /></rect><rect x="10" y="13" width="4" height="5" fill="#323A45"><animate attributeName="height" attributeType="XML" values="5;21;5" begin="0.15s" dur="0.6s" repeatCount="indefinite" /><animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0.15s" dur="0.6s" repeatCount="indefinite" /></rect><rect x="20" y="13" width="4" height="5" fill="#323A45"><animate attributeName="height" attributeType="XML" values="5;21;5" begin="0.3s" dur="0.6s" repeatCount="indefinite" /><animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0.3s" dur="0.6s" repeatCount="indefinite" /></rect></svg>');
   background-repeat: no-repeat;
@@ -512,34 +602,38 @@ div.message-error {
   right: 0;
   background-size: 70px 70px;
   background-color: rgba(255, 255, 255, 1);
-  bottom: 0;}
+  bottom: 0;
+}
 
 body.loading-indicator-active {
   .overlay-blur {
-    background: #FFF;}
+    background: #FFF;
+  }
   .loading-indicator {
-    display: block;}
-}
-.pushy{
-    width: 300px; /* Changed the width to 400px */
+    display: block;
+  }
 }
 
-.pushy-left{
-  -webkit-transform: translate3d(-300px,0,0);
-  -moz-transform: translate3d(-300px,0,0);
-  -ms-transform: translate3d(-300px,0,0);
-  -o-transform: translate3d(-300px,0,0);
-  transform: translate3d(-300px,0,0); /* Updated the values */
-    /* Don't forget the vendor prefixes */
+.pushy {
+  width: 300px; /* Changed the width to 400px */
 }
 
-.container-push, .push-push{
-  -webkit-transform: translate3d(300px,0,0);
-  -moz-transform: translate3d(300px,0,0);
-  -ms-transform: translate3d(300px,0,0);
-  -o-transform: translate3d(300px,0,0);
-    transform: translate3d(300px,0,0); /* Updated the values */
-    /* Don't forget the vendor prefixes */
+.pushy-left {
+  -webkit-transform: translate3d(-300px, 0, 0);
+  -moz-transform: translate3d(-300px, 0, 0);
+  -ms-transform: translate3d(-300px, 0, 0);
+  -o-transform: translate3d(-300px, 0, 0);
+  transform: translate3d(-300px, 0, 0); /* Updated the values */
+  /* Don't forget the vendor prefixes */
+}
+
+.container-push, .push-push {
+  -webkit-transform: translate3d(300px, 0, 0);
+  -moz-transform: translate3d(300px, 0, 0);
+  -ms-transform: translate3d(300px, 0, 0);
+  -o-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0); /* Updated the values */
+  /* Don't forget the vendor prefixes */
 }
 
 .nav > li > a:focus, .nav > li > a:hover {
@@ -548,5 +642,5 @@ body.loading-indicator-active {
 }
 
 .site-page a {
-	color: #ffffff;
+  color: #ffffff;
 }

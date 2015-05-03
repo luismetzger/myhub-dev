@@ -21,7 +21,10 @@
                 if(index === 6){
                     /*set footer to bottom always*/
                     var hgt = $(window).height();
-                    s6fc.css('top', hgt + 'px');
+                    s6fc.css({
+                        'top': hgt + 'px',
+                        'marginTop': '-' + s6fc.outerHeight() + 'px'
+                    });
                     loadedSection.addClass('active-trans');
                 } else {
                     loadedSection.removeClass('active-trans');
