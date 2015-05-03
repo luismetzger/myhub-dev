@@ -317,6 +317,10 @@
 @media screen and (max-width: 767px) {
   #dropdown-button {
     display: none; } }
+#dropdown-button a {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 100;
+  font-size: 14px; }
 
 .dropdown-icon {
   background: url(../images/more.png);
@@ -351,8 +355,9 @@
   height: 55px; }
 
 .navbar-nav > li > a {
-  font-size: inherit;
-  font-weight: 200;
+  font-family: "Avenir W01", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
   color: #FFFFFF; }
 
 #btn_plus {
@@ -382,8 +387,11 @@
   /* enables momentum scrolling in iOS overflow elements */ }
 
 .pushy a {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
   display: block;
-  color: #b3b3b1;
+  color: #FFFFFF;
   padding: 15px 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -462,9 +470,9 @@ body > .pushy {
 
 .landingPage .pushy a,
 body > .pushy a {
-  color: #FFFFFF;
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: 14px;
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
   -webkit-transition: all 333ms ease-in-out;
           transition: all 333ms ease-in-out; }
 
@@ -708,8 +716,9 @@ body > .pushy ul {
   position: absolute;
   top: -2px;
   color: #FF6B42;
-  font-size: 16px;
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 18px;
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 100;
   white-space: nowrap;
   max-width: 220px;
   overflow: hidden;
@@ -3747,7 +3756,7 @@ header h1 {
     font-size: 20px;
     text-align: left; }
   .comment-text-elements .comment-body {
-    font-family: "Gill Sans W01 Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-family: "Gill Sans W01", sans-serif;
     font-size: 20px; }
 
 .comment-datetime {
@@ -4109,7 +4118,7 @@ div.joined a.join_action, div.joined a.maybe_action, div.joined a.decline_action
     background-color: #FF6B42; }
 
 .mobile-rsvp-bar {
-  font-family: "Gill Sans W01 Medium", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Gill Sans W01", sans-serif;
   position: fixed;
   bottom: 0;
   left: 0px;
@@ -4135,7 +4144,7 @@ div.joined a.join_action, div.joined a.maybe_action, div.joined a.decline_action
     background-repeat: no-repeat;
     background-image: url("/assets/images/users_white.svg"); }
   .mobile-rsvp-bar div.mobile-rsvp-bar-comments-button {
-    font-family: "Gill Sans W01 Medium", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-family: "Gill Sans W01", sans-serif;
     font-size: 12pt;
     margin-left: 3px;
     margin-right: -3px;
@@ -4158,7 +4167,7 @@ div.joined a.join_action, div.joined a.maybe_action, div.joined a.decline_action
   opacity: 0; }
 
 .mobile-rsvp-actions {
-  font-family: "Gill Sans W01 Medium", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Gill Sans W01", sans-serif;
   font-size: 16pt;
   position: fixed;
   bottom: 0px;
@@ -4172,7 +4181,7 @@ div.joined a.join_action, div.joined a.maybe_action, div.joined a.decline_action
   .mobile-rsvp-actions .price-text {
     color: #00BA84; }
   .mobile-rsvp-actions .event-detail-desktop-rsvp-button {
-    font-family: "Gill Sans W01 Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-family: "Gill Sans W01", sans-serif;
     font-size: 16px;
     background-color: transparent;
     height: 70px;
@@ -4488,7 +4497,7 @@ body.full-white .social-share-buttons.share-with-text {
 body {
   background-color: #fff;
   color: #555;
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Gill Sans W01", sans-serif;
   font-size: 18px !important;
   font-weight: 200; }
 
@@ -4509,8 +4518,12 @@ a, a:focus, a:hover {
   text-decoration: none;
   outline: none; }
 
+p {
+  font-weight: 100; }
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Avenir W01", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 300; }
 
 @media screen and (max-width: 480px) {
   h2 {
@@ -4561,7 +4574,8 @@ background-size: cover; */ }
 
 @media screen and (max-width: 480px) {
   .section2 .hwt_lm {
-    padding-top: 0; } }
+    padding-top: 0;
+    display: none; } }
 
 @media screen and (max-width: 767px) {
   .section3 {
@@ -4665,7 +4679,7 @@ a#ln-logo {
 
 .banner-tilte {
   color: #FFF;
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Gill Sans W01", sans-serif;
   position: absolute;
   top: 31%;
   left: 0;
@@ -4678,7 +4692,7 @@ a#ln-logo {
 
 .banner-tilte span {
   color: #FFF;
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Gill Sans W01", sans-serif;
   text-align: center;
   top: 50%;
   left: 43%;
@@ -4693,7 +4707,7 @@ a#ln-logo {
   float: left;
   margin-right: 40px;
   margin-top: 10px;
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Gill Sans W01", sans-serif;
   font-size: 18px; }
 
 .bottom-header li.current {
@@ -4746,15 +4760,15 @@ a#ln-logo {
       margin-bottom: 5px; } }
 
 .ln-cont-text h1 {
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   font-size: 38px; }
 
 .ln-vid-link {
   padding: 10px 0 120px; }
 
 .ln-vid-link a {
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-weight: bold;
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 500;
   color: #ff6b42;
   line-height: 30px;
   display: inline-block;
@@ -4774,9 +4788,9 @@ a#ln-logo {
   position: relative; }
 
 .twilow_sms label {
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
+  font-family: "Gill Sans W01", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
   color: inherit;
   text-transform: uppercase;
   margin-bottom: 8px; }
@@ -4843,7 +4857,7 @@ a#ln-logo {
   color: #ffffff; }
 
 .middlemodal .modal-body {
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   font-size: 20px;
   padding: 2em; }
 
@@ -4910,7 +4924,8 @@ a#ln-logo {
       margin: 8px auto 0;
       width: 300px;
       height: 232px;
-      background-size: 100% auto; } }
+      background-size: 100% auto;
+      margin-bottom: 50px; } }
   @media screen and (max-width: 320px) {
     .thumb-img {
       width: 290px;
@@ -4942,30 +4957,43 @@ a#ln-logo {
   margin-top: 25%; }
   @media screen and (max-width: 767px) {
     .hw_txt {
-      margin-top: 10px;
-      text-align: center; } }
+      text-align: center;
+      margin: 50px 12px; } }
+  .hw_txt h2 {
+    font-weight: 900; }
+    @media screen and (max-width: 767px) {
+      .hw_txt h2 {
+        font-size: 20px;
+        padding-bottom: 10px; } }
+  .hw_txt p {
+    font-size: "Avenir W01", sans-serif;
+    font-weight: 100;
+    font-size: 20px; }
+    @media screen and (max-width: 767px) {
+      .hw_txt p {
+        font-size: 16px; } }
 
 .hwt_lm {
   padding-top: 50px; }
   @media screen and (max-width: 767px) {
     .hwt_lm {
-      padding-top: 15px; } }
+      padding-top: 50px; } }
   @media screen and (min-width: 1200px) {
     .hwt_lm {
       padding-top: 20px; } }
   @media screen and (max-width: 480px) {
     .hwt_lm {
-      padding-top: 10px; } }
+      padding-top: 50px; } }
 
 .btn-learnMore {
   background-color: #d8dee6;
   border-color: #d8dee6;
   color: #323a45;
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-weight: 300;
-  text-transform: capitalize;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
+  font-size: 16px;
+  -webkit-transition: all 333ms ease-in-out;
+          transition: all 333ms ease-in-out; }
 
 .btn-learnMore.btn-lg {
   padding: 12px 25px; }
@@ -5000,15 +5028,19 @@ a#ln-logo {
   line-height: 30px;
   color: #323a45;
   background: #f4f5f7;
-  text-align: center; }
+  text-align: center;
+  box-shawdow: 0px 3px 10px #7A8182; }
 
 .htab-links > li a {
   display: block;
   width: 100%;
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 100;
+  font-size: 18px; }
 
 .htab-links > li.active {
-  background: #323a45; }
+  background: #323a45;
+  box-shawdow: 0px 3px 10px #7A8182; }
 
 .htab-links > li.active a {
   color: #FFFFFF; }
@@ -5030,13 +5062,30 @@ a#ln-logo {
   max-width: 100%; }
   @media screen and (max-width: 767px) {
     .slide-3-img {
-      padding-top: 20px;
+      padding-top: 0px;
       margin-top: 0px;
       text-align: center;
-      padding-bottom: 20px; } }
+      padding-bottom: 50px; } }
 
 .section4 .hw_txt {
   margin-top: 5%; }
+  @media screen and (max-width: 767px) {
+    .section4 .hw_txt {
+      margin: 50px 12px; } }
+  .section4 .hw_txt h2 {
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 900;
+    font-size: 36px; }
+    @media screen and (max-width: 767px) {
+      .section4 .hw_txt h2 {
+        font-size: 20px; } }
+  .section4 .hw_txt p {
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 100;
+    font-size: 20px; }
+    @media screen and (max-width: 767px) {
+      .section4 .hw_txt p {
+        font-size: 16px; } }
 
 .section5 h2 {
   margin-top: 0; }
@@ -5050,14 +5099,32 @@ a#ln-logo {
       padding-top: 20px; } }
   @media screen and (max-width: 767px) {
     .section5 .hw_txt {
-      padding-top: 30px; } }
+      margin: 50px 12px; } }
+  .section5 .hw_txt h2 {
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 900;
+    font-size: 36px; }
+    @media screen and (max-width: 767px) {
+      .section5 .hw_txt h2 {
+        font-size: 20px; } }
+  .section5 .hw_txt p {
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 100;
+    font-size: 20px; }
+    @media screen and (max-width: 767px) {
+      .section5 .hw_txt p {
+        font-size: 16px; } }
 
 @media screen and (max-width: 767px) {
   .design-icons-cont {
-    padding-top: 10px; } }
+    padding-top: 10px;
+    padding-bottom: 50px; } }
 .design-icons-cont p {
   text-align: center;
-  margin-top: 50px; }
+  margin-top: 5px; }
+  @media screen and (max-width: 767px) {
+    .design-icons-cont p {
+      margin-top: 50px; } }
 
 .design-icon {
   width: 127px;
@@ -5076,8 +5143,9 @@ a#ln-logo {
   display: inline-block;
   width: 200px;
   text-align: center;
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Gill Sans W01", sans-serif;
   font-weight: 300;
+  font-size: 20px;
   padding: 12px 25px;
   line-height: 26px; }
 
@@ -5123,10 +5191,16 @@ a#ln-logo {
 .copy_text {
   padding-top: 10px;
   text-transform: uppercase;
-  font-size: 12px; }
+  font-size: 12px;
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 100; }
   @media screen and (max-width: 767px) {
     .copy_text {
       font-size: 12px; } }
+  .copy_text a:hover {
+    color: #D8DEE6;
+    -webkit-transition: all 333ms ease-in-out;
+            transition: all 333ms ease-in-out; }
 
 #footer_container,
 #footer_container_page {
@@ -5185,7 +5259,9 @@ a#ln-logo {
   opacity: 0.8; }
 
 .footer_socials li a:hover {
-  opacity: 1; }
+  opacity: 1;
+  -webkit-transition: all 333ms ease-in-out;
+          transition: all 333ms ease-in-out; }
 
 .f-tumblr a {
   background-image: url("../images/icons/fallback/tumblr.png");
@@ -5259,7 +5335,7 @@ a#ln-logo {
 
 /*page content default*/
 .page_content {
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Gill Sans W01", sans-serif;
   font-size: 18px;
   color: #323a45; }
 
@@ -5304,7 +5380,7 @@ a#ln-logo {
   padding-bottom: 0; }
 
 .headerwrap h2 {
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Gill Sans W01", sans-serif;
   font-weight: 100; }
 
 #about_service,
@@ -5358,7 +5434,7 @@ a#ln-logo {
   text-decoration: underline; }
 
 .abstc_txt h3 {
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   font-weight: 400;
   padding-top: 10px;
   font-size: 30px; }
@@ -5413,6 +5489,18 @@ a#ln-logo {
   width: 450px;
   position: relative;
   z-index: 100; }
+  .fNav.col-md-7 h5 {
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 400;
+    font-size: 16px; }
+  .fNav.col-md-7 a {
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 100;
+    font-size: 14px; }
+    .fNav.col-md-7 a:hover {
+      color: #D8DEE6;
+      -webkit-transition: all 333ms ease-in-out;
+              transition: all 333ms ease-in-out; }
 
 .fNav h5 {
   color: inherit;
@@ -5423,7 +5511,7 @@ a#ln-logo {
 .fNav li {
   margin: 5px 0 0;
   min-width: 115px;
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Gill Sans W01", sans-serif;
   font-size: 14px;
   text-transform: uppercase; }
 
@@ -5475,7 +5563,7 @@ a#ln-logo {
 
 .hwi_tablinks li a {
   display: block;
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Gill Sans W01", sans-serif;
   font-weight: 400;
   font-size: 26px;
   padding: 7px 15px;
@@ -5586,7 +5674,7 @@ a#ln-logo {
 
 .hwip_txt h4 {
   color: #00bd96;
-  font-family: "Avenir W01", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-size: 35px;
   line-height: 30px;
   margin: 0 0 -5px; }
@@ -5644,7 +5732,7 @@ table {
 
 .hwi_lctbl td:nth-child(2) {
   font-size: 1.8em;
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Gill Sans W01", sans-serif;
   font-weight: 300; }
 
 .hwi_lctbl h4,
@@ -5653,7 +5741,7 @@ table {
   font-size: 40px;
   line-height: 1;
   margin: 0;
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Gill Sans W01", sans-serif;
   font-weight: 100; }
 
 .hwi_lctbl h5 {
@@ -5750,12 +5838,15 @@ table {
 
 @media screen and (max-width: 480px) {
   .section6 h2 {
-    font-family: "Avenir W01", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-family: "Avenir W01", sans-serif;
     margin-top: 15px; } }
 
 @media screen and (max-width: 480px) {
   .app-store-img {
-    padding: 2% 0; } }
+    padding: 2% 0;
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto; } }
 
 @media screen and (max-width: 480px) {
   #fp-nav.right {
@@ -5775,7 +5866,10 @@ table {
     margin-top: -71px; } }
 
 .flogoCont p {
-  max-width: 350px; }
+  max-width: 350px;
+  font-family: "Gill Sans W01", sans-serif;
+  font-weight: 100;
+  font-size: 18px; }
 
 #pre-footer p {
   color: #1D2735; }
@@ -5807,12 +5901,27 @@ table {
 
 @media screen and (max-width: 767px) {
   .ln-mblImg {
-    padding-right: 100px; } }
+    padding-right: 75px; } }
 
 @media screen and (max-width: 767px) {
   .hwhy-txt {
     text-align: center;
-    padding-bottom: 30px; } }
+    padding-bottom: 30px;
+    margin: 50px 12px; } }
+.hwhy-txt h2 {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 900;
+  font-size: 36px; }
+  @media screen and (max-width: 767px) {
+    .hwhy-txt h2 {
+      font-size: 20px; } }
+.hwhy-txt p {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 100;
+  font-size: 20px; }
+  @media screen and (max-width: 767px) {
+    .hwhy-txt p {
+      font-size: 16px; } }
 
 @media screen and (max-width: 767px) {
   #phone-mobile {
@@ -5842,15 +5951,15 @@ table {
   margin-right: auto; }
 
 #hiw_head h1 {
-  font-family: "Avenir W01", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+  font-family: "Avenir W01", sans-serif; }
 #hiw_head h2 {
-  font-family: "Avenir W01", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-size: 20px; }
 
 #about_head h1 {
-  font-family: "Avenir W01", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+  font-family: "Avenir W01", sans-serif; }
 #about_head h2 {
-  font-family: "Avenir W01", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-size: 20px; }
 
 /*Contact us*/
@@ -5949,7 +6058,7 @@ table {
     font-size: 16px; }
 
   #mobile-footer-nav {
-    padding-top: 50px; }
+    padding-top: 70px; }
 
   #co-image {
     top: 30px; }
@@ -5968,6 +6077,8 @@ table {
     padding: 25px 0 20px; }
 
   #mobile-footer-nav {
-    font-size: 15px; } }
+    font-size: 14px;
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 100; } }
 
 /*# sourceMappingURL=app.css.map */

@@ -42,8 +42,13 @@ a, a:focus, a:hover {
   outline: none;
 }
 
+p {
+	font-weight: 100;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $headline;
+  font-weight: 300;
 }
 
 h2 {
@@ -108,6 +113,7 @@ h2 {
 .section2 .hwt_lm {
   @media screen and (max-width: $iphone) {
     padding-top: 0;
+    display: none;
   }
 }
 
@@ -332,8 +338,8 @@ a#ln-logo {
 }
 
 .ln-vid-link a {
-  font-family: $helvatica-fonts;
-  font-weight: bold;
+  font-family: $headline;
+  font-weight: 500;
   color: #ff6b42;
   line-height: 30px;
   display: inline-block;
@@ -357,9 +363,9 @@ a#ln-logo {
 }
 
 .twilow_sms label {
-  font-family: $main-fonts;
-  font-size: 20px;
-  font-weight: $bold-weight;
+  font-family: $regular-fonts;
+  font-size: 18px;
+  font-weight: $medium-weight;
   color: inherit;
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -516,6 +522,7 @@ a#ln-logo {
     width: 300px;
     height: 232px;
     background-size: 100% auto;
+    margin-bottom: 50px;
   }
   @media screen and (max-width: $iphone5) {
     width: 290px;
@@ -552,8 +559,24 @@ a#ln-logo {
 .hw_txt {
   margin-top: 25%;
   @media screen and (max-width: $small) {
-    margin-top: 10px;
+  
     text-align: center;
+    margin: 50px 12px;
+  }
+  h2 {
+	  font-weight: $heavy-weight;
+	  @media screen and (max-width: $small) {   
+	    font-size: 20px;
+	    padding-bottom: 10px;
+	  }
+  }
+  p {
+	  font-size: $headline;
+	  font-weight: $light-weight;
+	  font-size: 20px;
+	  @media screen and (max-width: $small) {   
+	    font-size: 16px;
+	  }
   }
 
 }
@@ -561,13 +584,13 @@ a#ln-logo {
 .hwt_lm {
   padding-top: 50px;
   @media screen and (max-width: $small) {
-    padding-top: 15px;
+    padding-top: 50px;
   }
   @media screen and (min-width: $large) {
     padding-top: 20px;
   }
   @media screen and (max-width: $iphone) {
-    padding-top: 10px;
+    padding-top: 50px;
   }
 }
 
@@ -575,13 +598,10 @@ a#ln-logo {
   background-color: #d8dee6;
   border-color: #d8dee6;
   color: #323a45;
-  font-family: $main-fonts;
+  font-family: $headline;
   font-weight: $medium-weight;
-  text-transform: capitalize;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+  font-size: 16px;
+  @include ease;
 }
 
 .btn-learnMore.btn-lg {
@@ -623,16 +643,20 @@ a#ln-logo {
   color: #323a45;
   background: #f4f5f7;
   text-align: center;
+  box-shawdow: 0px 3px 10px #7A8182;
 }
 
 .htab-links > li a {
   display: block;
   width: 100%;
-  font-family: $helvatica-fonts;
+  font-family: $headline;
+  font-weight: $light-weight;
+  font-size: 18px;
 }
 
 .htab-links > li.active {
   background: #323a45;
+  box-shawdow: 0px 3px 10px #7A8182;
 }
 
 .htab-links > li.active a {
@@ -659,19 +683,40 @@ a#ln-logo {
   max-width: 100%;
   @media screen and (max-width: $small) {
 
-    padding-top: 20px;
+    padding-top: 0px;
     margin-top: 0px;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
   }
 }
 
 .section4 .hw_txt {
   margin-top: 5%;
+  @media screen and (max-width: $small) {
+	  margin: 50px 12px;
+  }
+  
+  h2 {
+	  font-family: $headline;
+	  font-weight: $heavy-weight;
+	  font-size: 36px;
+	  @media screen and (max-width: $small) {
+		  font-size: 20px;
+	  }
+  }
+  p {
+	  font-family: $headline;
+	  font-weight: $light-weight;
+	  font-size: 20px;
+	  @media screen and (max-width: $small) {
+		  font-size: 16px;
+	  }
+  }
 }
 
 .section5 h2 {
   margin-top: 0;
+  
 }
 
 .section5 .hw_txt {
@@ -682,7 +727,23 @@ a#ln-logo {
     padding-top: 20px;
   }
   @media screen and (max-width: $small) {
-    padding-top: 30px;
+    margin: 50px 12px;
+  }
+  h2 {
+	  font-family: $headline;
+	  font-weight: $heavy-weight;
+	  font-size: 36px;
+	  @media screen and (max-width: $small) {
+	    font-size: 20px;
+	  }
+  }
+  p {
+	  font-family: $headline;
+	  font-weight: $light-weight;
+	  font-size: 20px;
+	   @media screen and (max-width: $small) {
+	    font-size: 16px;
+	  }
   }
 }
 
@@ -690,11 +751,15 @@ a#ln-logo {
 
   @media screen and (max-width: $small) {
     padding-top: 10px;
+    padding-bottom: 50px;
   }
 
   p {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 5px;
+    @media screen and (max-width: $small) {
+	    margin-top: 50px;
+	  }
   }
 }
 
@@ -718,8 +783,9 @@ a#ln-logo {
   display: inline-block;
   width: 200px;
   text-align: center;
-  font-family: $main-fonts;
+  font-family: $regular-fonts;
   font-weight: $medium-weight;
+  font-size: 20px;
   padding: 12px 25px;
   line-height: 26px;
 }
@@ -775,8 +841,16 @@ a#ln-logo {
   padding-top: 10px;
   text-transform: uppercase;
   font-size: 12px;
+  font-family: $headline;
+  font-weight: $light-weight;
   @media screen and (max-width: $small) {
     font-size: 12px;
+  }
+  a {
+	  &:hover {
+		  color: $lighter-gray;
+		  @include ease;
+	  }
   }
 }
 
@@ -847,6 +921,7 @@ a#ln-logo {
 
 .footer_socials li a:hover {
   opacity: 1;
+  @include ease;
 }
 
 .f-tumblr a {
@@ -1127,6 +1202,20 @@ a#ln-logo {
   width: 450px;
   position: relative;
   z-index: 100;
+  h5 {
+	  font-family: $headline;
+	  font-weight: $bold-weight;
+	  font-size: 16px;
+  }
+  a {
+	  font-family: $headline;
+	  font-weight: $light-weight;
+	  font-size: 14px;
+	&:hover {
+		color: $lighter-gray;
+		@include ease;
+	}
+  }
 }
 
 .fNav h5 {
@@ -1554,6 +1643,9 @@ h2 > embed[class*="title-icon-"] {
 .app-store-img {
   @media screen and (max-width: $iphone) {
     padding: 2% 0;
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1584,6 +1676,10 @@ embed.E {
 
   p {
     max-width: 350px;
+    font-family: $regular-fonts;
+    font-weight: $light-weight;
+    font-size: 18px;
+    
   }
 }
 
@@ -1640,14 +1736,34 @@ embed.E {
 
 .ln-mblImg {
   @media screen and (max-width: $small) {
-    padding-right: 100px;
+    padding-right: 75px;
   }
 }
 
 .hwhy-txt {
+	
+	
   @media screen and (max-width: $small) {
     text-align: center;
     padding-bottom: 30px;
+      margin: 50px 12px;
+  }
+  
+  h2 {
+	  font-family: $headline;
+	font-weight: $heavy-weight;
+	font-size: 36px;
+	@media screen and (max-width: $small) {
+    font-size: 20px;
+  }
+  }
+  p {
+	  font-family: $headline;
+	font-weight: $light-weight;
+	font-size: 20px;
+	@media screen and (max-width: $small) {
+    font-size: 16px;
+  }
   }
 }
 
@@ -1826,7 +1942,7 @@ embed.E {
     font-size: 16px;
   }
   #mobile-footer-nav {
-    padding-top: 50px;
+    padding-top: 70px;
   }
   #co-image {
     top: 30px;
@@ -1847,6 +1963,8 @@ embed.E {
     padding: 25px 0 20px;
   }
   #mobile-footer-nav {
-    font-size: 15px;
+    font-size: 14px;
+    font-family: $headline;
+    font-weight: $light-weight;
   }
 }

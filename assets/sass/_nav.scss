@@ -50,6 +50,12 @@
   @media screen and (max-width: $small) {
     display: none;
   }
+  a {
+	  font-family: $headline;
+	  font-weight: $light-weight;
+	  font-size: 14px;
+	
+  }
 }
 
 .dropdown-icon {
@@ -91,8 +97,9 @@
   height: 55px;
 }
 .navbar-nav > li > a {
-  font-size: inherit;
-  font-weight: $regular-weight;
+  font-family: $headline;
+  font-size: 16px;
+  font-weight: $light-weight;
   color: $full-white;
 }
 #btn_plus {
@@ -129,8 +136,11 @@
 }
 
 .pushy a {
+  font-family: $headline;
+  font-weight: $medium-weight;
+  font-size: 24px;
   display: block;
-  color: #b3b3b1;
+  color: $white;
   padding: 15px 30px;
   border-bottom: 1px solid rgba(0, 0, 0, .1);
   border-top: 1px solid rgba(255, 255, 255, .1);
@@ -263,9 +273,9 @@ body > .pushy {
 
 .landingPage .pushy a,
 body > .pushy a {
-  color: $white;
-  font-family: $light-fonts;
-  font-size: 14px;
+  font-family: $headline;
+  font-weight: $medium-weight;
+  font-size: 16px;
   @include ease;
 }
 
@@ -316,6 +326,7 @@ body > .pushy ul {
     padding: 15px 10px;
   }
 }
+
 
 /*media query*/
 
