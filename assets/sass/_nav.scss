@@ -8,6 +8,14 @@
   background: darken($dark-blue, 20%);
 }
 
+.navbar-nav > li > .dropdown-menu a:hover {
+	background: $lighter-gray;
+}
+
+.dropdown-menu>li>a {
+	color: $medium-gray;
+}
+
 #login-button {
   @media screen and (max-width: $small) {
     display: none;
@@ -131,7 +139,7 @@
 }
 
 .pushy a:hover {
-  background: #FF6633;
+  background: $orange;
   color: #FFF;
 }
 .ln-cr li.col-xs-6 {
@@ -256,12 +264,15 @@ body > .pushy {
 .landingPage .pushy a,
 body > .pushy a {
   color: $white;
+  font-family: $light-fonts;
+  font-size: 14px;
+  @include ease;
 }
 
 .landingPage .pushy a:hover,
 body > .pushy a:hover {
-  background: #e5e9ee;
-  color: red;
+  background: $orange;
+  color: $white;
 }
 
 .landingPage .pushy-left,
