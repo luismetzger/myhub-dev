@@ -392,9 +392,13 @@ header h1 {
 }
 
 .cd-item-info p {
-  line-height: 1.6;
+  
   margin: 1em 0;
-  color: #67919c;
+ margin: 5px 0;
+    font-family: $regular-fonts;
+    font-family: $light-weight;
+    font-size: 18px;
+    color: $dark-blue;
 }
 
 .cd-item-info .cd-item-action li {
@@ -492,11 +496,11 @@ header h1 {
   top: -15px;
   right: -15px;
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   /* image replacement */
   line-height: 1;
-  font-size: 32px;
+  font-size: 34px;
   font-weight: bold;
   text-align: center;
   overflow: hidden;
@@ -591,6 +595,7 @@ header h1 {
 .footer_socials.cd-item-social {
   position: relative;
   text-align: left;
+  padding-top: 70px;
 }
 
 .cd-slider-navigation {
@@ -618,9 +623,11 @@ header h1 {
     font-family: 'HelveticaNeueRegular', sans-serif;
   }
   .cd-item-info h3 {
-    font-family: 'Gill Sans W01 Bold', sans-serif;
-    font-size: 16px;
+    font-family: $regular-fonts;
+    font-weight: 600;
+    font-size: 20px;
     text-transform: uppercase;
+    padding-bottom: 20px;
   }
 }
 
@@ -663,6 +670,10 @@ header h1 {
   }
   .cd-item-info p {
     margin: 5px 0;
+    font-family: $regular-fonts;
+    font-family: $light-weight;
+    font-size: 18px;
+    color: $dark-blue;
   }
   .cd-item-info p + p {
     display: none;

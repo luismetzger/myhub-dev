@@ -1025,6 +1025,16 @@ a#ln-logo {
 #about_head {
   background: url("../images/Friends_Beach.png") no-repeat 0 0 transparent;
   background-size: cover;
+  h1 {
+	  font-family: $headline;
+	  font-weight: $light-weight;
+	  font-size: 50px;
+  }
+  h2 {
+	  font-family: $headline;
+	  font-weight: $light-weight;
+	  font-size: 36px;
+  }
 }
 
 .headerwrap {
@@ -1070,6 +1080,7 @@ a#ln-logo {
 
   h2 {
     color: $dark-blue;
+    font-size: 36px;
   }
 
   p {
@@ -1081,9 +1092,15 @@ a#ln-logo {
   padding-top: 9.5%;
 
   h2 {
+	  font-family: $headline;
+	  font-weight: $light-weight;
+	  font-size: 36px;
     color: $dark-blue;
   }
   p {
+	 font-family: $regular-fonts;
+	 font-family: $light-weight;
+	 font-size: 20px;
     color: $dark-blue;
   }
 }
@@ -1099,7 +1116,9 @@ a#ln-logo {
     text-align: center;
   }
   .abt_txt {
-    font-size: 16px;
+	  font-family: $regular-fonts;
+	  font-weight: $light-weight;
+    font-size: 18px;
 
   }
 }
@@ -1117,10 +1136,14 @@ a#ln-logo {
 }
 
 .abt_txt {
+  font-family: $headline;
+  font-weight: $light-weight;
+  font-size: 20px;
   max-width: 200px;
   margin: 0 auto;
   padding-top: 25px;
   color: $dark-blue;
+  
 }
 
 .under-line {
@@ -1155,9 +1178,15 @@ a#ln-logo {
   padding: 3% 0 6%;
 
   h2 {
+	  font-family: $headline;
+	  font-weight: $light-weight;
+	  font-size: 36px;
     color: $dark-blue;
   }
   p {
+	  font-family: $regular-fonts;
+	  font-weight: $light-weight;
+	  font-family: 20px;
     color: $dark-blue;
   }
 }
@@ -1172,6 +1201,12 @@ a#ln-logo {
   p {
     color: $dark-blue;
   }
+}
+
+#about-prefooter {
+	font-family: $headline;
+	font-weight: $light-weight;
+	font-size: 36px;
 }
 
 #page_footer_cont .hw_txt {

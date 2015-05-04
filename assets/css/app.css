@@ -3467,9 +3467,12 @@ header h1 {
   transition: opacity .3s, visibility 0s; }
 
 .cd-item-info p {
-  line-height: 1.6;
   margin: 1em 0;
-  color: #67919c; }
+  margin: 5px 0;
+  font-family: "Gill Sans W01", sans-serif;
+  font-family: 100;
+  font-size: 18px;
+  color: #1D2735; }
 
 .cd-item-info .cd-item-action li {
   display: inline-block;
@@ -3535,11 +3538,11 @@ header h1 {
   top: -15px;
   right: -15px;
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   /* image replacement */
   line-height: 1;
-  font-size: 32px;
+  font-size: 34px;
   font-weight: bold;
   text-align: center;
   overflow: hidden;
@@ -3609,7 +3612,8 @@ header h1 {
 
 .footer_socials.cd-item-social {
   position: relative;
-  text-align: left; }
+  text-align: left;
+  padding-top: 70px; }
 
 .cd-slider-navigation {
   display: none; }
@@ -3635,9 +3639,11 @@ header h1 {
     font-family: 'HelveticaNeueRegular', sans-serif; }
 
   .cd-item-info h3 {
-    font-family: 'Gill Sans W01 Bold', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase; } }
+    font-family: "Gill Sans W01", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 20px; } }
 @media only screen and (min-width: 992px) {
   .cd-slider img {
     min-width: 400px; } }
@@ -3673,7 +3679,11 @@ header h1 {
     margin: 5px 0 0; }
 
   .cd-item-info p {
-    margin: 5px 0; }
+    margin: 5px 0;
+    font-family: "Gill Sans W01", sans-serif;
+    font-family: 100;
+    font-size: 18px;
+    color: #1D2735; }
 
   .cd-item-info p + p {
     display: none; }
@@ -5357,6 +5367,14 @@ a#ln-logo {
 #about_head {
   background: url("../images/Friends_Beach.png") no-repeat 0 0 transparent;
   background-size: cover; }
+  #about_head h1 {
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 100;
+    font-size: 50px; }
+  #about_head h2 {
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 100;
+    font-size: 36px; }
 
 .headerwrap {
   position: relative;
@@ -5392,15 +5410,22 @@ a#ln-logo {
   padding-top: 20px;
   padding-bottom: 100px; }
   #about_belief_cont h2 {
-    color: #1D2735; }
+    color: #1D2735;
+    font-size: 36px; }
   #about_belief_cont p {
     color: #1D2735; }
 
 .absr_txt {
   padding-top: 9.5%; }
   .absr_txt h2 {
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 100;
+    font-size: 36px;
     color: #1D2735; }
   .absr_txt p {
+    font-family: "Gill Sans W01", sans-serif;
+    font-family: 100;
+    font-size: 20px;
     color: #1D2735; }
 
 @media (max-width: 768px) {
@@ -5414,7 +5439,9 @@ a#ln-logo {
     text-align: center; }
 
   .abt_txt {
-    font-size: 16px; } }
+    font-family: "Gill Sans W01", sans-serif;
+    font-weight: 100;
+    font-size: 18px; } }
 .ab_service_video img {
   /*border: 5px solid #FFFFFF;*/ }
 
@@ -5425,6 +5452,9 @@ a#ln-logo {
   height: 70px; }
 
 .abt_txt {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
   max-width: 200px;
   margin: 0 auto;
   padding-top: 25px;
@@ -5455,8 +5485,14 @@ a#ln-logo {
 #about_team_cont {
   padding: 3% 0 6%; }
   #about_team_cont h2 {
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 100;
+    font-size: 36px;
     color: #1D2735; }
   #about_team_cont p {
+    font-family: "Gill Sans W01", sans-serif;
+    font-weight: 100;
+    font-family: 20px;
     color: #1D2735; }
 
 #page_footer_cont {
@@ -5466,6 +5502,11 @@ a#ln-logo {
     color: #1D2735; }
   #page_footer_cont p {
     color: #1D2735; }
+
+#about-prefooter {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 100;
+  font-size: 36px; }
 
 #page_footer_cont .hw_txt {
   margin: 0 auto;
