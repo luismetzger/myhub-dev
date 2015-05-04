@@ -59,11 +59,16 @@
 }
 
 .dropdown-icon {
-  background: url(../images/more.png);
+ /* background: url(../images/more.png); */
   padding: 0 40px;
   background-repeat: no-repeat;
   background-position: center;
 
+}
+.icon-ellipses {
+	color: $full-white;
+	font-size: 3.4em;
+	line-height: .6em;
 }
 
 .navbar-nav > li > .dropdown-menu {

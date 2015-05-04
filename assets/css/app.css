@@ -323,10 +323,15 @@
   font-size: 14px; }
 
 .dropdown-icon {
-  background: url(../images/more.png);
+  /* background: url(../images/more.png); */
   padding: 0 40px;
   background-repeat: no-repeat;
   background-position: center; }
+
+.icon-ellipses {
+  color: #FFFFFF;
+  font-size: 3.4em;
+  line-height: .6em; }
 
 .navbar-nav > li > .dropdown-menu {
   margin-top: 2px;
@@ -6037,8 +6042,18 @@ table {
 #hiw_head h1 {
   font-family: "Avenir W01", sans-serif;
   font-weight: 100;
-  font-size: 42px;
+  font-size: 40px;
   text-transform: none; }
+  @media screen and (max-width: 480px) {
+    #hiw_head h1 {
+      font-size: 30px; } }
+#hiw_head h2 {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 100;
+  font-size: 24px; }
+  @media screen and (max-width: 480px) {
+    #hiw_head h2 {
+      font-size: 18px; } }
 #hiw_head h3 {
   font-family: "Avenir W01", sans-serif;
   font-weight: 100;
@@ -6056,6 +6071,16 @@ table {
   margin: 10px 0;
   min-height: 132px;
   width: 100%; }
+  .container .support-us h2 {
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: #1D2735; }
+  .container .support-us p {
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    color: #1D2735; }
   .container .support-us a {
     color: #2e97e9; }
 
@@ -6063,6 +6088,8 @@ table {
   background: #f4f5f7 none;
   border: medium none;
   border-radius: 2px;
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 100;
   color: #9ea7b3;
   display: block;
   font-size: 24px;
@@ -6073,9 +6100,28 @@ table {
   width: 100%; }
 
 .cus-part2 .pull-left h3 {
-  margin-top: 0; }
+  margin-top: 0;
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 900;
+  font-size: 24px; }
+  @media screen and (max-width: 480px) {
+    .cus-part2 .pull-left h3 {
+      padding-top: 150px; } }
 .cus-part2 .col-md-8 {
-  padding-top: 8px; }
+  padding-top: 0px;
+  margin-top: -26px; }
+
+.require-text {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: italic;
+  color: #D8DEE6; }
+  @media screen and (max-width: 480px) {
+    .require-text {
+      font-size: 12px;
+      color: #5E6D81;
+      padding-top: 158px; } }
 
 /*jobs*/
 .jobs_part-header {
@@ -6223,5 +6269,62 @@ table {
     background: #008760;
     -webkit-transition: all 333ms ease-in-out;
             transition: all 333ms ease-in-out; }
+
+.support_part-header {
+  background-image: url("../images/support-map.png");
+  min-height: 335px; }
+
+/* layout.css Style */
+.upload-drop-zone {
+  height: 50px;
+  border-width: 2px;
+  margin-bottom: 20px; }
+
+/* skin.css Style*/
+.upload-drop-zone {
+  color: #5E6D81;
+  border-style: solid;
+  border-color: #5E6D81;
+  line-height: 50px;
+  text-align: center; }
+  .upload-drop-zone:hover {
+    -webkit-transition: all 333ms ease-in-out;
+            transition: all 333ms ease-in-out;
+    color: #D8DEE6;
+    border-color: #D8DEE6;
+    cursor: pointer;
+    background: #5E6D81; }
+
+.upload-drop-zone.drop {
+  color: #222;
+  border-color: #222; }
+
+#dropzone-cont {
+  width: 100%;
+  padding: 0; }
+
+.panel-default {
+  border-color: transparent; }
+
+.panel {
+  box-shadow: none;
+  -webkit-box-shadow: transparent;
+  margin-bottom: 0; }
+
+.btn-green {
+  background: #00BA84;
+  width: 200px;
+  height: 70px;
+  cursor: pointer; }
+  @media screen and (max-width: 480px) {
+    .btn-green {
+      margin-left: 70px; } }
+  .btn-green i {
+    color: #FFFFFF;
+    font-size: 2.5em; }
+  .btn-green:hover {
+    -webkit-transition: all 333ms ease-in-out;
+            transition: all 333ms ease-in-out;
+    background: #008760; }
 
 /*# sourceMappingURL=app.css.map */

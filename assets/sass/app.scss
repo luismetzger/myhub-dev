@@ -1893,13 +1893,25 @@ embed.E {
   h1 {
     font-family: $headline;
     font-weight: $light-weight;
-    font-size: 42px;
+    font-size: 40px;
     text-transform: none;
+    @media screen and (max-width: $iphone) {
+	    font-size: 30px;
+    }
+  }
+  h2 {
+	  font-family: $headline;
+    font-weight: $light-weight;
+    font-size: 24px;
+    @media screen and (max-width: $iphone) {
+	    font-size: 18px;
+    }
   }
   h3 {
     font-family: $headline;
     font-weight: $light-weight;
     font-size: 20px;
+     
   }
 }
 
@@ -1919,6 +1931,19 @@ embed.E {
   margin: 10px 0;
   min-height: 132px;
   width: 100%;
+  
+  h2 {
+	  font-family: $headline;
+	  font-weight: $light-weight;
+	  font-size: 20px;
+	  color: $dark-blue;
+  }
+  p {
+	  font-family: $headline;
+	  font-weight: $light-weight;
+	  font-size: 16px;
+	  color: $dark-blue;
+  }
   a {
     color: #2e97e9;
   }
@@ -1927,6 +1952,8 @@ embed.E {
   background: #f4f5f7 none;
   border: medium none;
   border-radius: 2px;
+  font-family: $headline;
+  font-weight: $light-weight;
   color: #9ea7b3;
   display: block;
   font-size: 24px;
@@ -1939,10 +1966,29 @@ embed.E {
 .cus-part2 {
   .pull-left h3 {
     margin-top: 0;
+    font-family: $headline;
+    font-weight: $heavy-weight;
+    font-size: 24px;
+    @media screen and (max-width: $iphone) {
+	    padding-top: 150px;
+    } 
   }
   .col-md-8 {
-    padding-top: 8px;
+    padding-top: 0px;
+    margin-top: -26px;
   }
+}
+.require-text {
+	font-family: $headline;
+	font-weight: $medium-weight;
+	font-size: 16px;
+	font-style: italic;
+	color: $lighter-gray;
+	@media screen and (max-width: $iphone) {
+	    font-size: 12px;
+	    color: $tag-gray;
+	    padding-top: 158px;
+    } 
 }
 
 /*jobs*/
@@ -2114,4 +2160,69 @@ embed.E {
 		background: darken($green-button, 10%);
 		@include ease;
 	}
+}
+
+.support_part-header {
+	  background-image: url("../images/support-map.png");
+	  min-height: 335px;
+}
+
+/* layout.css Style */
+.upload-drop-zone {
+  height: 50px;
+  border-width: 2px;
+  margin-bottom: 20px;
+}
+
+/* skin.css Style*/
+.upload-drop-zone {
+  color: $tag-gray;
+  border-style: solid;
+  border-color: $tag-gray;
+  line-height: 50px;
+  text-align: center;
+  
+  &:hover {
+	  @include ease;
+	  color: $lighter-gray;
+	  border-color: $lighter-gray;
+	  cursor: pointer;
+	  background: $tag-gray;
+  }
+}
+.upload-drop-zone.drop {
+  color: #222;
+  border-color: #222;
+}
+#dropzone-cont {
+	width: 100%;
+	padding: 0;
+}
+.panel-default {
+	border-color: transparent;
+}
+.panel {
+	box-shadow: none;
+	-webkit-box-shadow: transparent;
+	margin-bottom: 0;
+}
+.btn-green {
+	background: $green-button;
+	width: 200px;
+	height: 70px;
+	cursor: pointer;
+	@media screen and (max-width: $iphone) {
+		  margin-left: 70px;
+	}
+	
+	i {
+		color: $full-white;
+		font-size: 2.5em;
+	}
+	
+	&:hover {
+		@include ease;
+		background: darken($green-button, 10%);
+	}
+	
 }
