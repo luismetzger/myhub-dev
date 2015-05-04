@@ -6037,11 +6037,12 @@ table {
 #hiw_head h1 {
   font-family: "Avenir W01", sans-serif;
   font-weight: 100;
-  font-size: 50px; }
-#hiw_head h2 {
-  font-family: "Gill Sans W01", sans-serif;
+  font-size: 42px;
+  text-transform: none; }
+#hiw_head h3 {
+  font-family: "Avenir W01", sans-serif;
   font-weight: 100;
-  font-size: 32px; }
+  font-size: 20px; }
 
 #about_head h1 {
   font-family: "Avenir W01", sans-serif; }
@@ -6078,7 +6079,7 @@ table {
 
 /*jobs*/
 .jobs_part-header {
-  background-image: url("../images/banner_jobs.jpg");
+  background-image: url("../images/jobs-bg.png");
   min-height: 335px; }
 
 .jobs_about_team {
@@ -6089,21 +6090,36 @@ table {
   margin-top: 40px; }
 
 .job_links {
-  background: none repeat scroll 0 0 #f4f5f7;
+  background: none repeat scroll 0 0 transparent;
   cursor: pointer;
   padding: 15px;
   margin-top: 20px; }
   .job_links h2 {
-    margin: 0; }
+    margin: 0;
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #1D2735;
+    text-transform: uppercase; }
 
 .email-us {
-  background: none repeat scroll 0 0 #f4f5f7;
+  /* background: none repeat scroll 0 0 #f4f5f7; */
   margin-top: 20px;
-  padding: 14px; }
+  padding: 14px;
+  border-style: solid;
+  border-color: #5E6D81;
+  border-width: 1px; }
+  .email-us p {
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 100;
+    font-size: 14px; }
 
 .send_us_btn .btn {
   background: #FF6B42;
-  border: none; }
+  border: none;
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 100;
+  font-size: 18px; }
   .send_us_btn .btn:hover {
     background: #E5603B; }
 
@@ -6114,7 +6130,10 @@ table {
     height: 60px;
     font-size: 20px;
     background: #FF6B42;
-    border: none; }
+    border: none;
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 100;
+    font-size: 20px; }
     .apply_btn .btn:hover {
       background: #E5603B; }
 
@@ -6167,5 +6186,42 @@ table {
     font-size: 14px;
     font-family: "Avenir W01", sans-serif;
     font-weight: 100; } }
+.jobsCont {
+  padding: 80px 0; }
+
+.jobs_txt h3 {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 100;
+  font-size: 32px; }
+.jobs_txt p {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 100;
+  font-size: 14px; }
+.jobs_txt h4 {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  text-transform: uppercase; }
+
+.job-date {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #D8DEE6;
+  font-style: italic; }
+
+.apply_btn .btn {
+  background: #00BA84; }
+  .apply_btn .btn:hover {
+    background: #008760;
+    -webkit-transition: all 333ms ease-in-out;
+            transition: all 333ms ease-in-out; }
+
+.send_us_btn .btn {
+  background: #00BA84; }
+  .send_us_btn .btn:hover {
+    background: #008760;
+    -webkit-transition: all 333ms ease-in-out;
+            transition: all 333ms ease-in-out; }
 
 /*# sourceMappingURL=app.css.map */

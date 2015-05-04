@@ -1893,12 +1893,13 @@ embed.E {
   h1 {
     font-family: $headline;
     font-weight: $light-weight;
-    font-size: 50px;
+    font-size: 42px;
+    text-transform: none;
   }
-  h2 {
-    font-family: $regular-fonts;
+  h3 {
+    font-family: $headline;
     font-weight: $light-weight;
-    font-size: 32px;
+    font-size: 20px;
   }
 }
 
@@ -1946,7 +1947,7 @@ embed.E {
 
 /*jobs*/
 .jobs_part-header {
-  background-image: url("../images/banner_jobs.jpg");
+  background-image: url("../images/jobs-bg.png");
   min-height: 335px;
 }
 .jobs_about_team {
@@ -1957,22 +1958,39 @@ embed.E {
   margin-top: 40px;
 }
 .job_links {
-  background: none repeat scroll 0 0 #f4f5f7;
+  background: none repeat scroll 0 0 transparent;
   cursor: pointer;
   padding: 15px;
   margin-top: 20px;
   h2 {
     margin: 0;
+    font-family: $headline;
+    font-weight: 500;
+    font-size: 18px;
+    color: $dark-blue;
+    text-transform: uppercase;
   }
 }
 .email-us {
-  background: none repeat scroll 0 0 #f4f5f7;
+ /* background: none repeat scroll 0 0 #f4f5f7; */
   margin-top: 20px;
   padding: 14px;
+  border-style: solid;
+    border-color: $tag-gray;
+    border-width: 1px;
+	p {
+		font-family: $headline;
+		font-weight: $light-weight;
+		font-size: 14px;
+	}
 }
 .send_us_btn .btn {
   background: $orange;
   border: none;
+  font-family: $headline;
+  font-weight: $light-weight;
+  font-size: 18px;
+  
   &:hover {
     background: $orange-2;
   }
@@ -1985,6 +2003,10 @@ embed.E {
     font-size: 20px;
     background: $orange;
     border: none;
+    font-family: $headline;
+    font-weight: $light-weight;
+    font-size: 20px;
+    
     &:hover {
       background: $orange-2;
     }
@@ -2049,4 +2071,47 @@ embed.E {
     font-family: $headline;
     font-weight: $light-weight;
   }
+}
+.jobsCont {
+	padding: 80px 0;
+}
+.jobs_txt {
+	h3 {
+		font-family: $headline;
+		font-weight: $light-weight;
+		font-size: 32px;
+	}
+	p {
+		font-family: $headline;
+		font-weight: $light-weight;
+		font-size: 14px;
+	}
+	h4 {
+		font-family: $headline;
+		font-weight: $light-weight;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+}
+.job-date {
+	font-family: $headline;
+	font-weight: $medium-weight;
+	font-size: 16px;
+	color: $lighter-gray;
+	font-style: italic
+}
+.apply_btn .btn {
+	background: $green-button;
+	&:hover {
+		background: darken($green-button, 10%);
+		@include ease;
+	}
+}
+
+.send_us_btn .btn {
+	background: $green-button;
+	&:hover {
+		background: darken($green-button, 10%);
+		@include ease;
+	}
 }
