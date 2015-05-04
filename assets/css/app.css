@@ -5517,11 +5517,13 @@ a#ln-logo {
 
 .flogo {
   margin-bottom: 15px;
-  width: 180px; }
+  width: 206px; }
   .flogo a {
     display: block; }
   .flogo p {
     color: #FFFFFF; }
+  .flogo img {
+    width: 206px; }
 
 .fNav.col-md-7 {
   float: right;
@@ -5584,8 +5586,14 @@ a#ln-logo {
       padding-top: 0;
       text-align: center; } }
   .hiwp_txt2 h2 {
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 100;
+    font-size: 32px;
     color: #1D2735; }
   .hiwp_txt2 p {
+    font-family: "Gill Sans W01", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
     color: #1D2735; }
 
 .title-icon-left {
@@ -5606,7 +5614,7 @@ a#ln-logo {
   display: block;
   font-family: "Gill Sans W01", sans-serif;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 28px;
   padding: 7px 15px;
   color: #1D2735; }
   @media screen and (max-width: 767px) {
@@ -5630,6 +5638,9 @@ a#ln-logo {
   padding-top: 4%; }
 
 .hwi_price_thumbs_wrap h3 {
+  font-family: "Gill Sans W01", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
   text-transform: uppercase;
   color: #5F6E82;
   margin-bottom: 25px; }
@@ -5715,8 +5726,9 @@ a#ln-logo {
 
 .hwip_txt h4 {
   color: #00bd96;
-  font-family: "Avenir W01", sans-serif;
-  font-size: 35px;
+  font-family: "Gill Sans W01", sans-serif;
+  font-weight: 100;
+  font-size: 25px;
   line-height: 30px;
   margin: 0 0 -5px; }
 
@@ -5916,28 +5928,59 @@ table {
   color: #1D2735; }
 
 #hwi_pool_price h2 {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 100;
+  font-size: 32px;
   color: #1D2735; }
 #hwi_pool_price p {
+  font-family: "Gill Sans W01", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
   color: #1D2735; }
 
 #hiw_lcost h2 {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 100;
+  font-size: 32px;
   color: #1D2735; }
 #hiw_lcost p {
+  font-family: "Gill Sans W01", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
   color: #1D2735; }
 
 #hiw_sinvitation h2 {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 100;
+  font-size: 32px;
   color: #1D2735; }
 #hiw_sinvitation p {
+  font-family: "Gill Sans W01", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
   color: #1D2735; }
 
 #hiw_collaborate h2 {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 100;
+  font-size: 32px;
   color: #1D2735; }
 #hiw_collaborate p {
+  font-family: "Gill Sans W01", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
   color: #1D2735; }
 
 #hiw_mcalender h2 {
-  color: #1D2735; }
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 100;
+  font-size: 28px;
+  color: #1D2735;
+  padding-bottom: 25px; }
 #hiw_mcalender p {
+  font-family: "Gill Sans W01", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
   color: #1D2735; }
 
 @media screen and (max-width: 767px) {
@@ -5992,10 +6035,13 @@ table {
   margin-right: auto; }
 
 #hiw_head h1 {
-  font-family: "Avenir W01", sans-serif; }
-#hiw_head h2 {
   font-family: "Avenir W01", sans-serif;
-  font-size: 20px; }
+  font-weight: 100;
+  font-size: 50px; }
+#hiw_head h2 {
+  font-family: "Gill Sans W01", sans-serif;
+  font-weight: 100;
+  font-size: 32px; }
 
 #about_head h1 {
   font-family: "Avenir W01", sans-serif; }

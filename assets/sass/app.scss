@@ -1220,13 +1220,16 @@ a#ln-logo {
 
 .flogo {
   margin-bottom: 15px;
-  width: 180px;
+  width: 206px;
   a {
     display: block;
   }
 
   p {
     color: $white;
+  }
+  img {
+	  width: 206px;
   }
 }
 
@@ -1304,9 +1307,15 @@ a#ln-logo {
     text-align: center;
   }
   h2 {
+	font-family: $headline;
+	font-weight: $light-weight;
+	font-size: 32px;
     color: $dark-blue;
   }
   p {
+	  font-family: $regular-fonts;
+	  font-weight: $light-weight;
+	  font-size: 20px;
     color: $dark-blue;
   }
 }
@@ -1331,9 +1340,9 @@ a#ln-logo {
 
 .hwi_tablinks li a {
   display: block;
-  font-family: $main-fonts;
+  font-family: $regular-fonts;
   font-weight: $bold-weight;
-  font-size: 26px;
+  font-size: 28px;
   padding: 7px 15px;
   color: $dark-blue;
   @media screen and (max-width: $small) {
@@ -1360,6 +1369,9 @@ a#ln-logo {
 }
 
 .hwi_price_thumbs_wrap h3 {
+	font-family: $regular-fonts;
+	font-weight: $regular-weight;
+	font-size: 20px;
   text-transform: uppercase;
   color: #5F6E82;
   margin-bottom: 25px;
@@ -1459,8 +1471,9 @@ a#ln-logo {
 
 .hwip_txt h4 {
   color: #00bd96;
-  font-family: $headline;
-  font-size: 35px;
+  font-family: $regular-fonts;
+  font-weight: $light-weight;
+  font-size: 25px;
   line-height: 30px;
   margin: 0 0 -5px;
 }
@@ -1726,45 +1739,76 @@ embed.E {
 
 #hwi_pool_price {
   h2 {
+	  font-family: $headline;
+	  font-weight: $light-weight;
+	  font-size: 32px;
     color: $dark-blue;
   }
   p {
+	  font-family: $regular-fonts;
+	  font-weight: $light-weight;
+	  font-size: 20px;
     color: $dark-blue;
   }
 }
 
 #hiw_lcost {
   h2 {
+	  font-family: $headline;
+	  font-weight: $light-weight;
+	  font-size: 32px;
     color: $dark-blue;
   }
   p {
+	  font-family: $regular-fonts;
+	  font-weight: $light-weight;
+	  font-size: 20px;
     color: $dark-blue;
   }
 }
 
 #hiw_sinvitation {
   h2 {
+	  font-family: $headline;
+	  font-weight: $light-weight;
+	  font-size: 32px;
     color: $dark-blue;
   }
   p {
+	  font-family: $regular-fonts;
+	  font-weight: $light-weight;
+	  font-size: 20px;
     color: $dark-blue;
   }
 }
 
 #hiw_collaborate {
   h2 {
+	  font-family: $headline;
+	  font-weight: $light-weight;
+	  font-size: 32px;
     color: $dark-blue;
   }
   p {
+	  font-family: $regular-fonts;
+	  font-weight: $light-weight;
+	  font-size: 20px;
     color: $dark-blue;
   }
 }
 
 #hiw_mcalender {
   h2 {
+	  font-family: $headline;
+	  font-weight: $light-weight;
+	  font-size: 28px;
     color: $dark-blue;
+      padding-bottom: 25px;
   }
   p {
+	  font-family: $regular-fonts;
+	  font-weight: $light-weight;
+	  font-size: 20px;
     color: $dark-blue;
   }
 }
@@ -1848,10 +1892,13 @@ embed.E {
 #hiw_head {
   h1 {
     font-family: $headline;
+    font-weight: $light-weight;
+    font-size: 50px;
   }
   h2 {
-    font-family: $headline;
-    font-size: 20px;
+    font-family: $regular-fonts;
+    font-weight: $light-weight;
+    font-size: 32px;
   }
 }
 
