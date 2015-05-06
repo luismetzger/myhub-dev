@@ -8,10 +8,18 @@
 @import 'animate';
 @import 'venobox';
 @import 'teamview';
+
+
+
 // Web App Login/Logout User
 @import 'pages/event-detail';
 @import 'pages/password-reset';
 @import 'pages/add-card';
+
+
+
+// Pages
+@import 'pages/privacy-policy';
 
 body {
   background-color: #fff;

@@ -4509,6 +4509,9 @@ body.full-white .social-share-buttons.share-with-text {
       body.full-white .social-share-buttons.share-with-text .event-detail-social-share-button.social-share-button-calendar:hover {
         background-color: #546274; }
 
+.legal-text {
+  color: #1D2735; }
+
 body {
   background-color: #fff;
   color: #555;
