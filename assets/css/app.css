@@ -323,15 +323,13 @@
   font-size: 14px; }
 
 .dropdown-icon {
-  /* background: url(../images/more.png); */
-  padding: 0 30px;
+  /*background: url(../images/more.png); */
+  padding: 0 40px;
   background-repeat: no-repeat;
   background-position: center; }
 
-.icon-ellipses {
-  color: #FFFFFF;
-  font-size: 3.4em;
-  line-height: .6em; }
+.icon-ellipses:before {
+  font-size: 28px; }
 
 .navbar-nav > li > .dropdown-menu {
   margin-top: 2px;
@@ -514,6 +512,58 @@ body > .pushy ul {
 .logins a {
   padding: 15px 10px; }
 
+/**Logged in Nav*/
+.logged-in-nav > li > a {
+  min-width: 55px;
+  text-align: center;
+  vertical-align: middle; }
+  .logged-in-nav > li > a#loggedinNav {
+    padding-top: 8px;
+    white-space: nowrap; }
+    .logged-in-nav > li > a#loggedinNav span {
+      margin: 0 12px;
+      font-size: 1.2em; }
+  .logged-in-nav > li > a > i {
+    font-size: 20px; }
+  .logged-in-nav > li > a#btn_plus > i {
+    font-size: 25px; }
+
+.logged-in-nav > li > .dropdown-menu:before {
+  right: 18px; }
+
+.rounded {
+  -webkit-border-image: none;
+       -o-border-image: none;
+          border-image: none;
+  border-radius: 15px;
+  border: 1px solid #FFFFFF;
+  font-size: 20px;
+  height: 25px;
+  padding: 2px;
+  text-align: center;
+  width: 25px; }
+
+.logged-in-pushy {
+  min-height: 540px; }
+  .logged-in-pushy .ln-cr {
+    height: auto;
+    padding: 130px 0 0; }
+  .logged-in-pushy li a i {
+    font-size: 1.1em;
+    margin-right: 10px; }
+    .logged-in-pushy li a i.fa-plus {
+      color: #FF6B42; }
+  .logged-in-pushy li.p-nav-profile a {
+    text-align: center; }
+    .logged-in-pushy li.p-nav-profile a:hover {
+      background: none; }
+  .logged-in-pushy li.p-nav-profile img {
+    width: 100px; }
+  .logged-in-pushy li.p-nav-profile strong {
+    display: block;
+    font-size: 1.25em;
+    margin: 5px 0; }
+
 /*media query*/
 @media only screen and (min-width: 992px) {
   .ln-cont-text {
@@ -543,6 +593,9 @@ body > .pushy ul {
     padding-bottom: 10px; }
 
   .login-links {
+    display: none; } }
+@media only screen and (max-width: 767px) {
+  .logged-in-nav {
     display: none; } }
 @media only screen and (max-width: 480px) {
   .landingPage .pushy,
@@ -4510,7 +4563,12 @@ body.full-white .social-share-buttons.share-with-text {
         background-color: #546274; }
 
 .legal-text {
-  color: #1D2735; }
+  color: #1D2735;
+  padding: 0 30px; }
+
+.legal-text {
+  color: #1D2735;
+  padding: 0 30px; }
 
 body {
   background-color: #fff;

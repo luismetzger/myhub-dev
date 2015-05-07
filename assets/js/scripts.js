@@ -148,7 +148,9 @@
     /**
      * dropdown on mouse enter
      */
-    $("#dropdown-button").on('mouseenter', function(e){
+    var dContainer = $(".dropdown");
+    dContainer.on('mouseenter', function(e){
+        dContainer.removeClass('open');
         $(this).addClass('open');
     })
 
