@@ -19,3 +19,12 @@
 @mixin ease($time: 333ms, $el: all, $anim: ease-in-out) {
   transition: $el $time $anim;
 }
+
+//transition with browsr prefix
+
+@mixin transition($time: 333ms, $el: all, $anim: ease) {
+  -webkit-transition: $el $time $anim;
+  -moz-transition: $el $time $anim;
+  -o-transition: $el $time $anim;
+  transition: $el $time $anim;
+}

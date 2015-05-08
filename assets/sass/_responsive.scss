@@ -1,0 +1,25 @@
+@media all and (min-width: $larger) {
+
+}
+
+@media all and (min-width: $large) {
+
+}
+
+@media all and (min-width: $small) and (max-width: $medium) {
+
+}
+
+@media all and (min-width: $small) and (max-width: $kinda-small) {
+
+}
+
+@media all and (max-width: $small) {
+  .page_wrap {
+    padding-top: 0;
+  }
+}
+
+@media all and (max-width: $iphone) {
+
+}

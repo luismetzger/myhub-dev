@@ -3,7 +3,6 @@
       var isPhoneDevice = "ontouchstart" in document.documentElement;
       isPhoneDevice = $(window).width() < 768;
       if(!isPhoneDevice){
-
         $('#fullpage').fullpage({
             anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
             navigation: true,

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Myhub | Social Planning</title>
+
+    <!-- Core Framework CSS before SASS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/myhub-icons.css" rel="stylesheet">
+    
+    <!-- Fonts -->
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/c2c138df-bec8-4ae7-abb7-59de83a2ce0b.css"/>
+    
+    <!--add more stylesheet before this line-->
+    <link href="assets/css/app.css" rel="stylesheet">
+    
+	<!-- Script for SVG -->
+    <script type="text/javascript" src="assets/js/modernizr.custom.70954.js"></script>
+
+</head>
+<body>
+
+
+<!-- Pushy Menu -->
+<nav class="pushy pushy-left logged-in-pushy">
+    <ul>
+        <li class="p-nav-profile">
+            <a href="#">
+            <img class="img-circle" src="assets/images/eric-hubbell.png" alt=""/>
+            <strong>Eric Hubble</strong>
+            view profile</a>
+        </li>
+        <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fa fa-plus"></i> Create</a></li>
+        <li><a href="#"><i class="fa fa-search"></i> Explore</a></li>
+        <li><a href="#"><i class="fa fa-flash"></i> Notification</a></li>
+        <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+    </ul>
+    <div class="ln-cr">
+        <ul>
+	         <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<div class="site-overlay"></div>
+
+<!-- class="container-push"-->
+
+<div id="pushy_wrapper" class="page_wrap">
+    <div class="top-header">
+        <!--add this class nav menu-->
+
+        <div class="top-sub-head clearfix">
+            <div class="nav-pullleft pull-left">
+                <a href="#" class="menu-btn"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="sub-logo">
+                <a id="ln-logo" href="index.html"><img id="header-logo" class="img-responsive" src="assets/images/myhub-logo.png">
+                </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right logged-in-nav">
+                <li><a href="#"><i class="fa fa-flash rounded"></i></a></li>
+                <li><a href="#"><img src="assets/images/flash_dot.png" alt=""/></a></li>
+                <li>                       <a id="btn_plus" class="btn btn-default hidden-xs" href="#" role="button"><i class="fa fa-plus"></i></a></li>
+                <li class="dropdown">
+                    <a id="loggedinNav" href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        <img src="assets/images/Jeff.png" alt=""/>
+                        <span>You</span>
+                        <i class="fa-caret-down fa"></i>
+                    </a>
+
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                <li id="dropdown-button" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-cog"></i></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a></li>
+                        <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
+                        <li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="i"></i> Make admin</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--end header nav-->
+
+    <div id="profile_info_header">
+        <div class="container">
+            <div class="profile_head">
+
+                <div class="profile-image">
+                    <img src="assets/images/eric-hubbell.png" alt=""/>
+                </div>
+
+                <div class="profile-bio">
+                    <h2>Erick Hubbell</h2>
+                    <div class="clearfix"></div>
+                    <a href="https://twitter.com/erichubbell" class="eric_twt">@erichubbell</a>
+                    <p>Born in Iowa, Raised in the NL, UVM Grad, NE Sports Fan, CO Living. CEO / Founder @ Myhub.</p>
+                    <div class="ph_info">
+                        Denver, CO |
+                        <a href="www.myhubapp.com">www.myhubapp.com</a>
+                    </div>
+                </div>
+                <div class="profile-button">
+                    <a role="button" href="#" class="btn btn-default">This is you</a>
+                </div>
+
+            </div>
+            <div class="profile_nav">
+                <ul class="clearfix">
+                    <li role="presentation" class="active"><a href="#"> 0 Upcoming</a></li>
+                    <li role="presentation"><a href="#"> 25 Past </a></li>
+                    <li role="presentation"><a href="#"> 25 Hosting </a></li>
+                    <li role="presentation"><a href="#"> 25 Following </a></li>
+                    <li role="presentation"><a href="#"> 25 Followers </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--end profile header-->
+
+    <div id="profile_inner">
+        <div class="container">
+            <div class="profile-list">
+                <ul class="clearfix">
+                    <li>
+                        <img src="assets/images/pimg_icons/Jill.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Boating.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Image4.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Image5.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Follow@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Image6.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Follow_2@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/IMG_0092.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <!--end block-->
+
+                    <li>
+                        <img src="assets/images/pimg_icons/Mask 2.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Mask 2.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Mask 2.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Mask 2.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Mask 2.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Mask 2.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <!--end block-->
+
+                    <li>
+                        <img src="assets/images/pimg_icons/Mask 2.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Mask 2.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Mask 2.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Mask 2.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Mask 2.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Mask 2.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <!--end block-->
+
+                    <li>
+                        <img src="assets/images/pimg_icons/Mask 2.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Mask 2.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Mask 2.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Mask 2.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Mask 2.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/pimg_icons/Mask 2.png" alt="Jill"/>
+                        <div class="pl-name">Jill Schneider</div>
+                        <div class="pl-hover">
+                            <a href="#"><img src="assets/images/pimg_icons/User_Pending@3x.png" alt=""/></a>
+                        </div>
+                    </li>
+                    <!--end block-->
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="page_footer_cont" class="inner_footer waypoint active-trans">
+
+        <div id="footer_container">
+
+            <div class="container">
+
+                <div id="fwUpper" class="row hidden-xs">
+                    <div class="col-sm-4 flogoCont">
+                        <div class="flogo">
+                            <a href="#"><img alt="My Hubb" src="assets/images/icons/footer_logo.png"></a>
+                        </div>
+                        <p>The fastest, easiest way to plan group activivites and pool cash with friends.</p>
+                        <div class="footer_socials">
+                            <ul>
+                                <li><a href="http://myhubapp.tumblr.com/"><i class="fa fa-fw fa-lg fa-tumblr"></i></a></li>
+                                <li><a href="https://www.facebook.com/Myhubapp"><i class="fa fa-fw fa-lg fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/myhubapp"><i class="fa fa-fw fa-lg fa-twitter"></i></a></li>
+                                <li><a href="https://www.youtube.com/user/MyHubApp"><i class="fa fa-fw fa-lg fa-youtube"></i></a></li>
+                                <li><a href="http://instagram.com/myhubapp"><i class="fa fa-fw fa-lg fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-7  fNav">
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-6">
+                                <h5>COMPANY</h5>
+                                <ul>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="how-it-works.html">How it Works</a></li>
+                                    <li><a href="jobs.html">Jobs</a></li>
+                                    <li><a target="_blank" href="https://brandfolder.com/myhub">Press</a></li>
+                                    <li><a href="http://myhubapp.tumblr.com/">Blog</a></li>
+                                </ul>
+                            </div>
+                            <div class="clearfix visible-xs"></div>
+                            <div class="col-sm-4 col-xs-6">
+                                <h5>Bowtie Blog</h5>
+                                <ul style="font-family:'Gill Sans W10 Medium';">
+                                    <li><a href="#">#NEWS</a></li>
+                                    <li><a href="#">#RELEASES</a></li>
+                                    <li><a href="#">#HOWTO</a></li>
+                                    <li><a href="#">#FUN</a></li>
+                                </ul>
+                            </div><!--end f nav parts-->
+                            <div class="col-sm-4 col-xs-6">
+                                <h5>Help</h5>
+                                <ul style="font-family:'Gill Sans W10 Medium';">
+                                    <li><a href="privacy-policy.html">FAQ</a></li>
+                                    <li><a href="terms-of-service.html">CONTACT</a></li>
+                                </ul>
+                            </div><!--end f nav parts-->
+                        </div>
+                    </div><!--end footer nav-->
+                </div>
+
+                <div id="mobile-footer-nav" class="row visible-xs text-center">
+                    <div class="col-xs-12">
+                        <a href="terms-of-service.html">About</a> • <a href="privacy-policy.html">How it Works</a> • <a href="terms-of-service.html">Jobs</a> • <a href="terms-of-service.html">Blog</a> • <a href="terms-of-service.html">FAQ</a> • <a href="terms-of-service.html">Contact</a>
+                    </div>
+                    <div class="footer_socials col-xs-12">
+                        <ul>
+                            <li><a href="http://myhubapp.tumblr.com/"><i class="fa fa-fw fa-lg fa-tumblr"></i></a></li>
+                            <li><a href="https://www.facebook.com/Myhubapp"><i class="fa fa-fw fa-lg fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/myhubapp"><i class="fa fa-fw fa-lg fa-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/user/MyHubApp"><i class="fa fa-fw fa-lg fa-youtube"></i></a></li>
+                            <li><a href="http://instagram.com/myhubapp"><i class="fa fa-fw fa-lg fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="co-image" class="text-center">
+                    <embed name="footer_logo_svg" class="footer_logo_svg" id="footer_logo_svg" src="assets/images/CO_Company_Color.svg" width="67" height="67">
+                </div>
+                <div id="fwLpr2" class="row">
+                    <div class="col-xs-12 copy_text text-center">2014 Myhub • <a href="privacy-policy.html">Privacy</a> • <a href="terms-of-service.html">Terms</a></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--end footer-->
+
+</div>
+<!--end section 1-->
+
+<!--end pushy wrapper-->
+<!--modals-->
+
+
+<div class="modal middlemodal fade in" id="downloadAppModal" tabindex="-1" role="dialog" arial-labelledby="downloadAppModalTitle" aria-hidden="false" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="btn close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            <div class="modal-body">
+                <p class="modal-message" style="margin:0 0 1em 0;">Enter your phone number, area code and all.<br>
+                    We’ll text you a download link!</p>
+                <form class="download-app-form" role="form">
+                    <div class="row">
+                        <div class="col-xs-12 twilow_sms">
+                            <label class="sr-only" for="modalSmsInput">Phone number</label>
+                            <input type="tel" id="modalSmsInput" placeholder="xxxxxxxxx" class="form-control">
+                            <button id="twillow_submit">Send SMS</button>
+                        </div>
+                        <div class="hide col-xs-12" id="pp_status"></div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--modals ends-->
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.easings.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="assets/js/pushy.min.js"></script>
+<script type="text/javascript" src="assets/js/venobox.min.js"></script>
+<script type="text/javascript" src="assets/js/velocity.min.js"></script>
+<script type="text/javascript" src="assets/js/team_view.js"></script>
+
+
+<!--add scripts before this line-->
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+
+
+
+
+</body>
+</html>

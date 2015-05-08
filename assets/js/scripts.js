@@ -125,6 +125,7 @@
             pgfooter.addClass('active-trans');
         }
         if(pgfooter.hasClass('inner_footer')){
+            console.log('ok');
             var getfooterHgt = pgfooter.find("#footer_container").outerHeight();
             pgfooter.css('padding-top', getfooterHgt + 'px')
         }
