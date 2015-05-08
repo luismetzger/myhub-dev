@@ -5829,7 +5829,7 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
   background: url("../images/pimg_icons/profile_name_check.png") no-repeat right center transparent;
 }
 .profile-bio p {
-  margin: 10px 0;
+  margin: 10px auto;
   max-width: 500px;
 }
 
@@ -5903,6 +5903,7 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
 .profile-list li > img {
   width: 100%;
   height: 100%;
+  display: block;
 }
 .profile-list li:hover .pl-name {
   -ms-transform: translate(0px, 0px);
@@ -5954,6 +5955,7 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
   display: table;
   top: 0;
   left: 0;
+  cursor: pointer;
 }
 .pl-hover a {
   display: table-cell;
@@ -6000,6 +6002,7 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
 .pmulc_img > img {
   width: 100%;
   border-radius: 5px;
+  display: block;
 }
 .pmulc_img .pmulc_price {
   position: absolute;
@@ -6009,6 +6012,9 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
   background: #323A45;
   padding: 5px 20px;
   font-size: 1.3em;
+}
+.pmulc_img .pmulc_price:after, .pmulc_img .pmulc_price:before {
+  display: block;
 }
 .pmulc_img .pmu_pimg {
   position: absolute;
@@ -6021,6 +6027,7 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
 .pmulc_img .pmu_pimg img {
   border-radius: 50px;
   border: 2px solid #F4F5F7;
+  display: block;
 }
 
 .pmulc_txt {
@@ -6036,6 +6043,7 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
   font-size: 20px;
   padding-top: 2px;
   font-weight: 400;
+  text-align: center;
 }
 .pmu_event_date h3 span {
   color: #FF6B42;
@@ -6043,9 +6051,6 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
   padding-top: 5px;
 }
 
-.pmu_event_title {
-  float: left;
-}
 .pmu_event_title h3 {
   margin: 0 0 2px;
 }
@@ -6055,6 +6060,77 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
 .pmu_event_title p {
   margin: 0;
   text-shadow: 0 0 0 #323A45;
+}
+
+.pmul_cont_inner {
+  border: 1px solid #9EA7B3;
+  border-radius: 5px;
+}
+
+/*mobile design without media query*/
+#profile_info_header_mobile {
+  background: #f4f5f7;
+}
+#profile_info_header_mobile .profile-bio, #profile_info_header_mobile .profile-image {
+  display: block;
+  padding: 5px;
+  text-align: center;
+}
+#profile_info_header_mobile .profile-bio {
+  padding: 0 10px;
+}
+#profile_info_header_mobile .profile-bio p {
+  margin-top: 0;
+}
+#profile_info_header_mobile .profile-bio h2 {
+  float: none;
+  width: 228px;
+  margin: 0 auto;
+  background-size: 26px 26px;
+  font-weight: 700;
+  text-align: left;
+  padding: 0;
+  font-size: 30px;
+}
+#profile_info_header_mobile .pb-flow {
+  font-size: 1.2em;
+  padding: 6px 0 8px;
+}
+#profile_info_header_mobile .pb-flow span {
+  margin: 0 5px;
+}
+#profile_info_header_mobile .pb-add_icon img {
+  width: 120px;
+}
+#profile_info_header_mobile .profile_head .item {
+  height: 290px;
+}
+#profile_info_header_mobile .profile-bio-txt-item2 {
+  font-size: 1.2em;
+  padding-top: 25px;
+}
+#profile_info_header_mobile .ph_info h3 {
+  font-weight: 700;
+  margin-top: 25px;
+}
+#profile_info_header_mobile .ph_info a {
+  color: #399AE7;
+}
+#profile_info_header_mobile .profile_nav li:nth-child(2) {
+  width: 160px;
+}
+@media all and (max-width: 480px) {
+  #profile_info_header_mobile .profile_nav li:first-child {
+    width: 160px;
+  }
+  #profile_info_header_mobile .profile_nav li:nth-child(2) {
+    width: auto;
+  }
+}
+#profile_info_header_mobile .profile_nav li a {
+  font-family: "Avenir W01", sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
 }
 
 body {

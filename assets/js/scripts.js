@@ -153,7 +153,38 @@
     dContainer.on('mouseenter', function(e){
         dContainer.removeClass('open');
         $(this).addClass('open');
-    })
+    });
+
+
+  var $profile_list_wrap = $(".profile-list"),
+      $following_btns = $profile_list_wrap.find('.pl-hover a:not(.not-following)'),
+      $not_following_btns = $profile_list_wrap.find('.pl-hover a.not-following');
+
+    $('body').on('click', '.pl-hover a.not-following', function(e){
+
+        e.preventDefault();
+
+        var $this = $(this);
+
+
+        $this.hide( "normal", function() {
+            $this.find('img').attr('src', 'assets/images/pimg_icons/User_Follow@3x.png');
+            $this.show('slow',function(){
+                $this.hide('normal', function(){
+                    $this.find('img').attr('src', 'assets/images/pimg_icons/User_Pending@3x.png');
+                    $this.show('slow', function(){
+                        $this.removeClass('not-following');
+                    });
+                });
+            });
+        });
+        $(this).animate({
+        }, 5000, function() {
+            // Animation complete.
+        });
+    }).on('click', '.pl-hover a', function(e){
+        e.preventDefault();
+    });
 
 
 
