@@ -21,7 +21,7 @@
     background: url("#{$image-path}/pimg_icons/profile_name_check.png") no-repeat right center transparent;
   }
   p {
-    margin: 10px auto;
+    margin: 10px 0;
     max-width: 500px;
   }
 }
@@ -247,8 +247,9 @@
   }
 }
 .pmul_cont_inner {
- /* border: 1px solid $light-gray; */
-  border-radius: 5px; 
+  border-radius: 5px;
+  background: $off-white;
+  box-shadow: 0 2px 2px $light-gray;
 }
 
 /*mobile design without media query*/
@@ -262,7 +263,7 @@
   .profile-bio {
     padding: 0 10px;
     p {
-      margin-top: 0;
+      margin: 0 auto 10px;
     }
     h2 {
       float: none;
@@ -324,5 +325,137 @@
         font-weight: $bold-weight;
       }
     }
+  }
+}
+
+#follow_number {
+  background: $off-white;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: $light-weight;
+}
+.profile_list_table table {
+  width: 100%;
+  border: none;
+}
+.profile_list_table td {
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle !important;
+  color: $medium-gray;
+  border-bottom: 1px solid $light-gray;
+  &>img.rounded {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    max-width: none;
+    display: block;
+  }
+  h2 {
+    display: inline-block;
+    margin: 0;
+    font-weight: $vbold-weight;
+  }
+}
+.profile_list_table td:last-child {
+  text-align: right;
+}
+.pro_con {
+  display: inline-block;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border: 2px solid $tag-gray;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 2em;
+  color: $tag-gray;
+  &:after, &:before {
+    display: none;
+  }
+}
+.pro_con span:last-child {
+  font-size: 0.5em;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  display: block;
+}
+.pro_con.pc_added_user {
+  color: $orange;
+  &:hover {
+    color: $orange-2;
+  }
+}
+
+.pmu_mobile_wrap {
+  font-size: 15px;
+  .pmul_cont_inner {
+    min-height: 248px;
+  }
+  .pmulc_img {
+    min-height: 168px;
+    &>img {
+      border-radius: 5px 5px 0 0;
+    }
+    &:hover .pmulci_hover {
+      display: block;
+    }
+  }
+  .pmulci_hover {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+    border-radius: 5px 5px 0 0;
+    color: #00ba84;
+    font-size: 1.5em;
+    height: 100%;
+    left: 0;
+    padding-top: 28%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    display: none;
+  }
+  .pmu_event_title {
+    h3 {
+      text-align: center;
+      font-weight: $vbold-weight;
+      margin-bottom: 4px;
+      font-size: 1.4em;
+    }
+  }
+  .pmu_event_date {
+    padding: 0;
+    float: none;
+    h3 {
+      text-align: center;
+      font-size: 1.2em;
+      span {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media all and (max-width: $small) {
+  .pmc_inner > p {
+    font-size: 1.35em;
+    max-width: 390px;
+  }
+  .cal-img .icon-calendar {
+    font-size: 44px;
+  }
+}
+@media all and (max-width: $iphone) {
+  .pmu_mobile_wrap {
+    font-size: 18px;
+  }
+  .pmul_cont {
+    float: none;
+    width: 295px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

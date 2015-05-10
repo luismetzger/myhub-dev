@@ -1,13 +1,13 @@
 @font-face {
-	font-family: 'myhub-icomoon';
-	src:url('fonts/myhub-icomoon.eot?kog07t');
-	src:url('fonts/myhub-icomoon.eot?#iefixkog07t') format('embedded-opentype'),
-		url('fonts/myhub-icomoon.woff2?kog07t') format('woff2'),
-		url('fonts/myhub-icomoon.woff?kog07t') format('woff'),
-		url('fonts/myhub-icomoon.ttf?kog07t') format('truetype'),
-		url('fonts/myhub-icomoon.svg?kog07t#myhub-icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'myhub-icomoon';
+    src:url('fonts/myhub-icomoon.eot?vlcfem');
+    src:url('fonts/myhub-icomoon.eot?#iefixvlcfem') format('embedded-opentype'),
+    url('fonts/myhub-icomoon.woff2?vlcfem') format('woff2'),
+    url('fonts/myhub-icomoon.woff?vlcfem') format('woff'),
+    url('fonts/myhub-icomoon.ttf?vlcfem') format('truetype'),
+    url('fonts/myhub-icomoon.svg?vlcfem#myhub-icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {

@@ -15,11 +15,6 @@ body {
 [class^="icon-"], [class*=" icon-"] {
   font-size: 32px;
   display: inline-block;
-  &:before, &:after {
-    display: table;
-    content: ' ';
-    clear: both;
-  }
   span {
     float: left;
   }
