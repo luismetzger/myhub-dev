@@ -18,7 +18,9 @@
     float: left;
     margin: 0;
     padding-right: 40px;
-    background: url("#{$image-path}/pimg_icons/profile_name_check.png") no-repeat right center transparent;
+    &.verified {
+      background: url("#{$image-path}/pimg_icons/profile_name_check.png") no-repeat right center transparent;
+    }
   }
   p {
     margin: 10px 0;
