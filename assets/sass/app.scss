@@ -2,6 +2,7 @@
 @import 'mixins';
 @import 'fonts';
 @import 'icons';
+@import 'myhub-icons';
 @import 'utility';
 @import 'nav';
 @import 'fullpage';
@@ -20,10 +21,14 @@
 
 // Pages
 @import 'pages/privacy-policy';
-@import 'pages/terms-of-use';
+@import 'pages/terms-of-service';
 @import 'pages/pflow';
 
 
 //Main css and responsive css
 @import 'main';
 @import 'responsive';
+
+[data-ember-action] {
+  cursor: pointer;
+}
