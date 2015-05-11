@@ -245,10 +245,14 @@ a.mb_btn {
       background: $off-white;
       border-radius: 20px;
       opacity: 1;
-      right: -10px;
-      top: -13px;
+      right: 15px;
+	  top: 5px;
       color: $medium-gray;
       position: absolute;
+      
+      .icon-decline_Outline{
+	      margin-top: -20px;
+      }
     }
   }
 }
