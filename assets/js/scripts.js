@@ -1,6 +1,10 @@
 ;$(document).ready(function(){
 
-
+    /*CHeck email*/
+    function IsEmail(email) {
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return regex.test(email);
+    }
 
     $(window).scroll(function() {
         addClassforFooter($(this));
@@ -8,11 +12,13 @@
 
 
     var $wrap = $("#pushy_wrapper.section"),
-        $fullHeightBox = $('.full-height');
+        $fullHeightBox = $('.full-height'),
+        $wrap2 = $('.full-page-wrap');
 
     function setHeight(){
         var getWindowHeight = $(window).height();
         $wrap.css('min-height', getWindowHeight + 'px');
+        $wrap2.css('height', getWindowHeight-240 + 'px');
         $fullHeightBox.css('min-height', getWindowHeight + 'px');
         if ( $(window).width() > 768 ) {
           $wrap.css('max-height', '700px');
@@ -125,7 +131,6 @@
             pgfooter.addClass('active-trans');
         }
         if(pgfooter.hasClass('inner_footer')){
-            console.log('ok');
             var getfooterHgt = pgfooter.find("#footer_container").outerHeight();
             pgfooter.css('padding-top', getfooterHgt + 'px')
         }
@@ -186,7 +191,62 @@
         e.preventDefault();
     });
 
+    
+    function checkInputs($tInput, $return){
+        if(($tInput.attr('type') == 'email') && IsEmail($tInput.val())){
+            $tInput.siblings('.icon-x').hide().end().
+                siblings('.icon-checkmark').show();
+        } else if($tInput.hasClass('pass_confirm') && $tInput.val().length > 2 && $tInput.val() == $mi_pass){
+            $tInput.siblings('.icon-x').hide().end().
+                siblings('.icon-checkmark').show();
+        } else if($tInput.val().length > 2 && !($tInput.attr('type') == 'email') && (!$tInput.hasClass('pass_confirm'))){
+            $tInput.siblings('.icon-x').hide().end()
+                .siblings('.icon-checkmark').show();
+        } else {
+            $tInput.siblings('.icon-checkmark').hide().end()
+                .siblings('.icon-x').show();
+            $can_mform_submit = false;
+            if($return){
+                return $can_mform_submit;
+            }
+        }
+    }
+    
+var $modal_wrap = $(".fmodal_wrap"),
+    $modal_form = $modal_wrap.find('form'),
+    $inputs = $modal_wrap.find('.modal_input').children('input'),
+    $can_mform_submit = true,
+    $mi_pass = false;
+    $inputs.on('blur keyup', function(){
+        var $this = $(this);
+        if($this.hasClass('pass_input')){
+            $mi_pass = $(this).val();
+        }
+        $this.parent().removeClass('mon-focus');
+        checkInputs($this, false);
+    });
 
+    $inputs.on('focus', function(){
+        $(this).parent().addClass('mon-focus');
+    });
+
+    $('form').on('submit', function(e){
+        if(!$can_mform_submit){
+            e.preventDefault();
+            console.log($(this));
+            return false;
+        }
+        e.preventDefault();
+    });
+
+    $modal_form[0].reset();
+
+    var $mmodal_wrap = $('.mmodal_container');
+    $mmodal_wrap.modal('toggle');
+    $mmodal_wrap.on('click', '.close', function(e){
+        e.preventDefault();
+        $mmodal_wrap.modal('hide');
+    });
 
 
 });

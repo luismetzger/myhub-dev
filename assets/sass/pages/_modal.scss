@@ -1,0 +1,276 @@
+.fmodal_container {
+  padding: 55px 0 0;
+}
+.modal_top_head {
+  padding: 15px;
+  text-align: center;
+  background: $off-white;
+  h3 {
+    color: $light-gray;
+    font-size: 0.9em;
+    margin: 0 auto;
+    line-height: $icon-font-size;
+    width: 460px;
+    max-width: 100%;
+    .icon-Exclamation {
+      float: left;
+      margin-left: -10px;
+    }
+  }
+  .icon-Exclamation {
+    margin-right: 15px;
+  }
+}
+.fmodal_full_page_cont {
+  padding: 25px 0;
+}
+.fmodal_wrap {
+  border: 1px solid $mid-gray;
+  border-radius: 8px;
+  color: $full-white;
+  width: 460px;
+  margin: 0 auto;
+  max-width: 100%;
+  form {
+    margin: 0;
+    padding: 0;
+  }
+}
+.fmodal_head {
+  background: $off-white;
+  padding: 25px;
+  border-radius: 8px 8px 0 0;
+  h2 {
+    margin: 0;
+    font-size: 1.45em;
+    line-height: 1;
+    color: $medium-gray;
+  }
+}
+.fmodal_body {
+  padding: 25px;
+  background: $full-white;
+  border-radius: 0 0 8px 8px;
+  h4 {
+    margin: 0 0 20px;
+    font-size: 1em;
+    color: $medium-gray;
+  }
+}
+.modal_input {
+  position: relative;
+  margin-bottom: 15px;
+  input {
+    width: 100%;
+    padding: 15px 15px 15px 65px;
+    font-size: 1.2em;
+    color: $medium-gray;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: $off-white;
+  }
+  span[class^="icon"]{
+    position: absolute;
+    display: block;
+    top: 50%;
+    margin-top: -.45em;
+    left: 10px;
+    color: $mid-gray;
+    font-size: $icon-font-size;
+  }
+  span.icon-x, span.icon-checkmark {
+    color: $orange;
+    font-size: 22px;
+    right: 10px;
+    left: auto;
+    display: none;
+  }
+  span.icon-checkmark {
+    font-size: 24px;
+    color: $green;
+  }
+  &:before, &:after {
+    display: none;
+  }
+}
+.mon-focus {
+  span[class^="icon"]{
+    color: $medium-gray;
+  }
+  span.icon-x {
+    color: $orange;
+  }
+  span.icon-checkmark {
+    color: $green;
+  }
+}
+.mb_btns {
+  position: relative;
+  margin-bottom: 15px;
+  span[class^="icon"] {
+    position: absolute;
+    color: $full-white;
+    top: 50%;
+    margin-top: -.5em;
+    font-size: 30px;
+    left: 30px;
+  }
+  &:before, &:after {
+    display: none;
+  }
+}
+.mb_btn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background: $green;
+  text-align: center;
+  text-shadow: 0 0 0 $full-white;
+  &:hover {
+    color: $full-white;
+    background: $green-2;
+  }
+}
+.mb_btn_blue {
+  background: $facebook-blue;
+  &:hover {
+    background: $facebook-blue-2;
+  }
+}
+.mb_btm_txt {
+  padding: 10px 0 0;
+  font-style: italic;
+  font-size: 0.8em;
+  color: $light-gray;
+  text-align: center;
+  a {
+    color: $orange;
+  }
+}
+
+.mw_btm {
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  h3 {
+    color: $medium-gray;
+    a {
+      color: $orange;
+      &:hover {
+        color: $orange-2;
+      }
+    }
+  }
+}
+.full-page-wrap {
+  min-height: 500px;
+}
+.forgot_pass_pcont {
+  padding-top: 13%;
+}
+.fmodal_wrap_medium {
+  width: 600px;
+  background: none;
+  border: none;
+  border-radius: 0;
+  .fmodal_body {
+    border-radius: 0;
+    padding: 10px;
+    &>h2 {
+      color: $medium-gray;
+      margin: 0;
+      padding-bottom: 15px;
+      font-size: 1.4em;
+      font-weight: $vbold-weight;
+    }
+  }
+}
+.modal_icon {
+  padding-bottom: 15px;
+  span[class^="icon"] {
+    font-size: $icon-font-size + 70;
+    color: $link-blue;
+  }
+  span[class^="icon-close"] {
+    color: $green;
+    background: $green;
+    border: 1px solid $green;
+    border-radius: 100px;
+    position: relative;
+    span[class^="icon-checkmark"] {
+      color: $full-white;
+      font-size: $icon-font-size + 13;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-top: -.45em;
+      margin-left: -.45em;
+    }
+  }
+}
+a.mb_btn {
+  display: inline-block;
+}
+.mb_btn_gray {
+  background: $mid-blue;
+  &:hover {
+    background: $mid-blue-2;
+  }
+}
+.mb_btn_bhome {
+  width: 380px;
+}
+.orange_link {
+  color: $orange;
+  &:hover {
+    color: $orange-2;
+  }
+}
+.mb_btn_orange {
+  background: $orange;
+  &:hover {
+    background: $orange-2;
+  }
+}
+.modal-dialog {
+  .fmodal_wrap {
+    position: relative;
+    &:before, &:after {
+      display: none;
+    }
+    .modal-close {
+      background: $off-white;
+      border-radius: 20px;
+      opacity: 1;
+      right: -10px;
+      top: -13px;
+      color: $medium-gray;
+      position: absolute;
+    }
+  }
+}
+
+.mb_btn_white {
+  background: $full-white;
+  border: 1px solid $medium-gray;
+  color: $medium-gray;
+  &:hover {
+    color: $medium-gray;
+    background: $off-white;
+  }
+}
+
+
+/*.modal.in .modal-dialog {
+  -webkit-transform: translate(0px, 50%);;
+  transform: translate(0px, 50%);;
+}*/
+@media all and (max-width: $small) {
+
+}
+@media all and (max-width: $iphone) {
+
+}
