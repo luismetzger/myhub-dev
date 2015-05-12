@@ -112,8 +112,13 @@
     color: $full-white;
     top: 50%;
     margin-top: -.5em;
-    font-size: 30px;
+    font-size: $icon-font-size - 2;
     left: 30px;
+  }
+  span[class^="icon-checkmark"] {
+    left: auto;
+    right: 25px;
+    font-size: $icon-font-size - 8;
   }
   &:before, &:after {
     display: none;
@@ -128,6 +133,7 @@
   background: $green;
   text-align: center;
   text-shadow: 0 0 0 $full-white;
+  font-size: 1.15em;
   &:hover {
     color: $full-white;
     background: $green-2;
@@ -147,6 +153,7 @@
   text-align: center;
   a {
     color: $orange;
+    white-space: nowrap;
   }
 }
 
@@ -245,13 +252,13 @@ a.mb_btn {
       background: $off-white;
       border-radius: 20px;
       opacity: 1;
-      right: 15px;
-	  top: 5px;
+      right: -10px;
+	  top: -10px;
       color: $medium-gray;
       position: absolute;
       
       .icon-decline_Outline{
-	      margin-top: -20px;
+	      margin-top: 0;
       }
     }
   }
@@ -273,8 +280,116 @@ a.mb_btn {
   transform: translate(0px, 50%);;
 }*/
 @media all and (max-width: $small) {
-
+  .fmodal_container, .fmodal_full_page_cont {
+    padding: 0;
+  }
+  .modal_top_head {
+    display: none;
+  }
+  .fmodal_wrap, .fmodal_head, .fmodal_body {
+    border-radius: 0;
+    width: 100%;
+    padding: 15px;
+    border: none;
+  }
+  .fmodal_wrap {
+    padding: 0;
+  }
+  .fmodal_head {
+    padding: 20px 15px;
+    h2 {
+      font-size: 1.6em;
+    }
+    a {
+      font-size: $icon-font-size + 3;
+      color: $mid-gray;
+      display: block;
+      text-transform: uppercase;
+      margin-right: 5px;
+      &:hover {
+        color: $medium-gray;
+      }
+    }
+  }
+  .fmodal_body {
+    h4 {
+      font-size: 1.3em;
+      margin: 10px 0 25px;
+    }
+  }
+  .mb_btns {
+    margin-bottom: 20px;
+    a {
+      font-size: 1.5em;
+    }
+  }
+  .mb_btn {
+    font-size: 1.5em;
+    padding: 20px 15px;
+    line-height: 1;
+  }
+  .mb_btm_txt {
+    line-height: 1.45;
+    font-size: 1.4em;
+  }
+  .mw_btm {
+    padding: 0 10px 10px;
+    a {
+      white-space: nowrap;
+    }
+  }
+  .modal_input {
+    margin-bottom: 20px;
+    input {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 1.3em;
+    }
+  }
+  .fmodal_wrap_medium {
+    padding: 70px 0 20px;
+    .fmodal_body {
+      padding: 15px;
+      &> h2 {
+        font-size: 1.6em;
+        padding-bottom: 0;
+      }
+      h4 {
+        padding-bottom: 30px;
+        line-height: 1.35;
+      }
+    }
+  }
+  .modal_icon {
+    padding-bottom: 35px;
+  }
+  .mb_btn_bhome {
+    width: 100%;
+  }
+  .mb_btn_white {
+    border-width: 2px;
+  }
+  .mmodal_container {
+    padding-top: 55px;
+    .fmodal_wrap {
+      border-radius: 6px;
+    }
+    .fmodal_head {
+      border-radius: 6px 6px 0 0;
+    }
+    .fmodal_body {
+      border-radius: 0 0 6px 6px;
+    }
+    .mb_btm_txt {
+      font-size: 1em;
+      color: $medium-gray;
+    }
+  }
 }
 @media all and (max-width: $iphone) {
-
+  .mb_btns {
+    span[class^="icon-Facebook_Square"] {
+      left: 10px;
+    }
+  }
 }

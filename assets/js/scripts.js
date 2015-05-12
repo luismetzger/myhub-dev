@@ -18,7 +18,7 @@
     function setHeight(){
         var getWindowHeight = $(window).height();
         $wrap.css('min-height', getWindowHeight + 'px');
-        $wrap2.css('height', getWindowHeight-240 + 'px');
+        $wrap2.css('min-height', getWindowHeight-240 + 'px');
         $fullHeightBox.css('min-height', getWindowHeight + 'px');
         if ( $(window).width() > 768 ) {
           $wrap.css('max-height', '700px');
@@ -233,10 +233,8 @@ var $modal_wrap = $(".fmodal_wrap"),
     $('form').on('submit', function(e){
         if(!$can_mform_submit){
             e.preventDefault();
-            console.log($(this));
             return false;
         }
-        e.preventDefault();
     });
 
     $modal_form[0].reset();
