@@ -11731,6 +11731,126 @@
   padding-right: 0px;
 }
 
+.hide_before_after:after {
+  display: none;
+}
+.hide_before_after:before {
+  display: none;
+}
+
+.default-input, .modal_input input {
+  width: 100%;
+  padding: 15px 15px 15px 65px;
+  font-size: 1.2em;
+  color: #323A45;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: #F4F5F7;
+}
+
+textarea.default-input {
+  font-size: 1em;
+  padding-left: 15px;
+}
+
+.right-arrow, .sl_links li a:after, .support_center_wrap li a:after {
+  font-family: "myhub-icomoon";
+  text-transform: none;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  margin-top: -.75em;
+  content: "\e68b";
+  display: block;
+  color: #9EA7B3;
+  font-size: 36px;
+}
+
+/**
+ * onoff.css
+ * Author: http://proto.io/freebies/onoff/
+ * Author: Timmy Willison
+ */
+.onoffswitch {
+  position: relative;
+  width: 86px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.onoffswitch-checkbox {
+  display: none;
+}
+
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #FF6B42;
+  border-radius: 40px;
+}
+
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  -webkit-transition: margin 0.2s ease-in;
+  transition: margin 0.2s ease-in;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  float: left;
+  padding: 0;
+  width: 50%;
+  height: 42px;
+  color: white;
+  font: bold 14px/26px Trebuchet, Arial, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+  content: "";
+  padding-left: 10px;
+  color: #FFFFFF;
+  background-color: #FF6B42;
+}
+
+.onoffswitch-inner:after {
+  content: "";
+  padding-right: 10px;
+  color: #999999;
+  background-color: #FF6B42;
+  text-align: right;
+}
+
+.onoffswitch-switch {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 40px;
+  width: 42px;
+  margin: 2px;
+  background: #FFFFFF;
+  border: 1px solid #E5603B;
+  border-radius: 25px;
+  box-shadow: 0 0 2px #E5603B;
+  -webkit-transition: right 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
+  transition: right 0.2s ease-in, box-shadow 0.2s ease-in;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0;
+}
+
 .nav.navbar-nav.navbar-right {
   margin-right: 0;
 }
@@ -15908,7 +16028,7 @@ header h1 {
 .cd-item-info p {
   margin: 1em 0;
   margin: 5px 0;
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-family: 100;
   font-size: 18px;
   color: #1D2735;
@@ -16136,7 +16256,7 @@ header h1 {
   }
 
   .cd-item-info h3 {
-    font-family: "Gill Sans W01", sans-serif;
+    font-family: "Avenir W01", sans-serif;
     font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
@@ -16187,7 +16307,7 @@ header h1 {
 
   .cd-item-info p {
     margin: 5px 0;
-    font-family: "Gill Sans W01", sans-serif;
+    font-family: "Avenir W01", sans-serif;
     font-family: 100;
     font-size: 18px;
     color: #1D2735;
@@ -16734,7 +16854,7 @@ div.joined a.join_action .event-detail-desktop-rsvp-button.selected-rsvp-option:
 }
 
 .mobile-rsvp-bar {
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   position: fixed;
   bottom: 0;
   left: 0px;
@@ -16764,7 +16884,7 @@ div.joined a.join_action .event-detail-desktop-rsvp-button.selected-rsvp-option:
   background-image: url("/assets/images/users_white.svg");
 }
 .mobile-rsvp-bar div.mobile-rsvp-bar-comments-button {
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-size: 12pt;
   margin-left: 3px;
   margin-right: -3px;
@@ -16789,7 +16909,7 @@ div.joined a.join_action .event-detail-desktop-rsvp-button.selected-rsvp-option:
 }
 
 .mobile-rsvp-actions {
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-size: 16pt;
   position: fixed;
   bottom: 0px;
@@ -17699,7 +17819,7 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
   border: 1px solid #9EA7B3;
   border-radius: 8px;
   color: #FFFFFF;
-  width: 460px;
+  width: 480px;
   margin: 0 auto;
   max-width: 100%;
 }
@@ -17730,19 +17850,13 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
   font-size: 1em;
   color: #323A45;
 }
+.fmodal_body .mw_btm h3 {
+  margin: 0;
+}
 
 .modal_input {
   position: relative;
   margin-bottom: 15px;
-}
-.modal_input input {
-  width: 100%;
-  padding: 15px 15px 15px 65px;
-  font-size: 1.2em;
-  color: #323A45;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  background: #F4F5F7;
 }
 .modal_input span[class^="icon"] {
   position: absolute;
@@ -17754,7 +17868,7 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
   font-size: 32px;
 }
 .modal_input span.icon-x, .modal_input span.icon-checkmark {
-  color: #FF6B42;
+  color: #DD4B39;
   font-size: 22px;
   right: 10px;
   left: auto;
@@ -18087,10 +18201,301 @@ a.mb_btn {
     left: 10px;
   }
 }
+.settings_page_container {
+  padding: 30px 0;
+}
+
+.spc_left {
+  float: left;
+  width: 320px;
+}
+
+.stl_top {
+  padding: 25px 0 25px 25px;
+  background: #F4F5F7;
+}
+
+.stlt_img {
+  float: left;
+  width: 80px;
+}
+.stlt_img img {
+  display: block;
+  border-radius: 100px;
+  width: 100%;
+}
+
+.stlt_txt {
+  padding-left: 20px;
+  float: left;
+}
+.stlt_txt h3 {
+  color: #323A45;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 15px 0 3px;
+}
+.stlt_txt a {
+  font-size: 1.1em;
+  color: #5E6D81;
+}
+
+.sl_links_wrap {
+  margin-top: 45px;
+}
+
+.sl_links {
+  background: #F4F5F7;
+  padding-left: 22px;
+}
+.sl_links li {
+  display: block;
+}
+.sl_links li a {
+  display: block;
+  position: relative;
+  color: #5E6D81;
+  padding: 20px 0;
+  border-bottom: 1px solid #9EA7B3;
+  font-size: 1.2em;
+}
+.sl_links li a:before {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  left: -20px;
+  top: 50%;
+  border: 4px solid #FF6B42;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  content: '';
+}
+.sl_links li:last-child a {
+  border-bottom: none;
+}
+.sl_links li.active a, .sl_links li a:hover {
+  color: #323A45;
+}
+.sl_links li.active a:before, .sl_links li a:hover:before {
+  visibility: visible;
+  height: 100%;
+  top: 0;
+}
+
+.sll_socials {
+  margin-top: 35px;
+}
+.sll_socials li {
+  width: 48%;
+}
+.sll_socials li a {
+  display: block;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
+  font-size: 37px;
+  color: #FFFFFF;
+}
+.sll_socials li.fb_slls a {
+  background: #3B5998;
+}
+.sll_socials li.fb_slls a:hover {
+  background: #355089;
+}
+.sll_socials li.twt_slls a {
+  background: #2E97E9;
+}
+.sll_socials li.twt_slls a:hover {
+  background: #2988D2;
+}
+
+.spc_content {
+  margin-left: 340px;
+}
+
+.account_form label {
+  color: #323A45;
+  font-weight: 200;
+  font-size: 1.2em;
+}
+.account_form input {
+  padding-left: 15px;
+}
+.account_form .modal_input input {
+  padding-left: 65px;
+}
+
+.ac_pb_btm {
+  padding: 20px;
+}
+
+.apb_left {
+  float: left;
+}
+.apb_left h3 {
+  color: #323A45;
+  margin: 10px 0 5px;
+}
+.apb_left p {
+  color: #9EA7B3;
+}
+
+.deactivate-button {
+  display: block;
+  float: right;
+  width: 115px;
+  padding: 5px;
+  font-size: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #E5603B;
+  border-radius: 5px;
+}
+.deactivate-button:hover {
+  background: #FF6B42;
+  color: #FFFFFF;
+}
+
+.panel-settings.panel {
+  border: 1px solid #9EA7B3;
+}
+.panel-settings.panel > .panel-heading {
+  border-color: #9EA7B3;
+}
+.panel-settings .panel-title {
+  color: #323A45;
+  font-size: 1.5em;
+}
+.panel-settings .panel-body {
+  padding: 30px;
+  color: #323A45;
+}
+
+.snotifications_table {
+  padding: 0 10px;
+}
+.snotifications_table th, .snotifications_table td {
+  padding: 6px 10px;
+  text-align: center;
+  border-bottom: 1px solid #9EA7B3;
+  vertical-align: middle;
+}
+.snotifications_table th:first-child, .snotifications_table td:first-child {
+  padding-left: 0;
+  text-align: left;
+}
+.snotifications_table th {
+  color: #323A45;
+  font-size: 1.2em;
+  font-weight: 200;
+}
+.snotifications_table th .icon-iphone {
+  font-size: 37px;
+}
+.snotifications_table td {
+  color: #5E6D81;
+  font-size: 1em;
+  padding: 15px 10px;
+}
+.snotifications_table td span[class^="icon"] {
+  font-size: 20px;
+  cursor: pointer;
+}
+.snotifications_table td span[class^="icon-close"] {
+  color: #9EA7B3;
+  background: #9EA7B3;
+  border-radius: 15px;
+  border: 1px solid #9EA7B3;
+  font-size: 17px;
+}
+
+.mb_btn_lgray {
+  border-color: #F4F5F7;
+  background: #F4F5F7;
+  color: #9EA7B3;
+  padding: 15px;
+}
+.mb_btn_lgray:hover {
+  background: #9EA7B3;
+}
+
+.pmb_input {
+  width: 50%;
+  margin-right: 20px;
+  float: left;
+}
+
+.pmb_input_wrap {
+  margin-top: 20px;
+  min-height: 95px;
+}
+.pmb_input_wrap .pmb_input input {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #323A45;
+  background: #bbc1c9;
+}
+.pmb_input_wrap .pmb_input span[class^="icon-Mastercard"], .pmb_input_wrap .pmb_input span[class^="icon-Visa"] {
+  font-size: 40px;
+}
+.pmb_input_wrap .mb_btn {
+  padding: 30px 0;
+  width: 105px;
+  color: #FFFFFF;
+}
+
+.light_txt {
+  color: #F4F5F7;
+  padding-top: 20px;
+}
+
+.mb_btn_red {
+  background: #DD4B39;
+  color: #FFFFFF;
+}
+.mb_btn_red:hover {
+  background: #c23321;
+}
+
+.support_center_wrap li {
+  display: block;
+  border-bottom: 1px solid #9EA7B3;
+}
+.support_center_wrap li h4 {
+  margin: 0;
+  padding: 20px 0 10px;
+  font-size: 1.15em;
+}
+.support_center_wrap li a {
+  color: #5E6D81;
+  display: block;
+  padding: 20px 0;
+  position: relative;
+}
+.support_center_wrap li a:before {
+  display: none;
+}
+.support_center_wrap li a:hover {
+  color: #323A45;
+}
+
+@media all and (min-width: 768px) {
+  .settings_page_container {
+    margin-top: 55px;
+  }
+
+  .ac_pb_btm {
+    padding: 20% 0 5%;
+  }
+}
 body {
   background-color: #fff;
   color: #555;
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-size: 18px !important;
   font-weight: 200;
 }
@@ -18330,7 +18735,7 @@ a#ln-logo {
 
 .banner-tilte {
   color: #FFF;
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   position: absolute;
   top: 31%;
   left: 0;
@@ -18345,7 +18750,7 @@ a#ln-logo {
 
 .banner-tilte span {
   color: #FFF;
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   text-align: center;
   top: 50%;
   left: 43%;
@@ -18362,7 +18767,7 @@ a#ln-logo {
   float: left;
   margin-right: 40px;
   margin-top: 10px;
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-size: 18px;
 }
 
@@ -18468,7 +18873,7 @@ a#ln-logo {
 }
 
 .twilow_sms label {
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-size: 18px;
   font-weight: 300;
   color: inherit;
@@ -18929,7 +19334,7 @@ a#ln-logo {
   display: inline-block;
   width: 200px;
   text-align: center;
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-weight: 300;
   font-size: 20px;
   padding: 12px 25px;
@@ -19158,7 +19563,7 @@ a#ln-logo {
 
 /*page content default*/
 .page_content {
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-size: 18px;
   color: #323a45;
 }
@@ -19223,7 +19628,7 @@ a#ln-logo {
 }
 
 .headerwrap h2 {
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-weight: 100;
 }
 
@@ -19255,7 +19660,7 @@ a#ln-logo {
   color: #1D2735;
 }
 .absr_txt p {
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-family: 100;
   font-size: 20px;
   color: #1D2735;
@@ -19275,7 +19680,7 @@ a#ln-logo {
   }
 
   .abt_txt {
-    font-family: "Gill Sans W01", sans-serif;
+    font-family: "Avenir W01", sans-serif;
     font-weight: 100;
     font-size: 18px;
   }
@@ -19340,7 +19745,7 @@ a#ln-logo {
   color: #1D2735;
 }
 #about_team_cont p {
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-weight: 100;
   color: #1D2735;
 }
@@ -19418,7 +19823,7 @@ a#ln-logo {
 .fNav li {
   margin: 5px 0 0;
   min-width: 115px;
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -19467,7 +19872,7 @@ a#ln-logo {
   color: #1D2735;
 }
 .hiwp_txt2 p {
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-weight: 100;
   font-size: 20px;
   color: #1D2735;
@@ -19493,7 +19898,7 @@ a#ln-logo {
 
 .hwi_tablinks li a {
   display: block;
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-weight: 400;
   font-size: 28px;
   padding: 7px 15px;
@@ -19524,7 +19929,7 @@ a#ln-logo {
 }
 
 .hwi_price_thumbs_wrap h3 {
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-weight: 200;
   font-size: 20px;
   text-transform: uppercase;
@@ -19626,7 +20031,7 @@ a#ln-logo {
 
 .hwip_txt h4 {
   color: #00bd96;
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-weight: 100;
   font-size: 25px;
   line-height: 30px;
@@ -19701,7 +20106,7 @@ table {
 
 .hwi_lctbl td:nth-child(2) {
   font-size: 1.8em;
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-weight: 300;
 }
 
@@ -19711,7 +20116,7 @@ table {
   font-size: 40px;
   line-height: 1;
   margin: 0;
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-weight: 100;
 }
 
@@ -19879,7 +20284,7 @@ table {
 
 .flogoCont p {
   max-width: 350px;
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-weight: 100;
   font-size: 18px;
 }
@@ -19895,7 +20300,7 @@ table {
   color: #1D2735;
 }
 #hwi_pool_price p {
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-weight: 100;
   font-size: 20px;
   color: #1D2735;
@@ -19908,7 +20313,7 @@ table {
   color: #1D2735;
 }
 #hiw_lcost p {
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-weight: 100;
   font-size: 20px;
   color: #1D2735;
@@ -19921,7 +20326,7 @@ table {
   color: #1D2735;
 }
 #hiw_sinvitation p {
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-weight: 100;
   font-size: 20px;
   color: #1D2735;
@@ -19934,7 +20339,7 @@ table {
   color: #1D2735;
 }
 #hiw_collaborate p {
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-weight: 100;
   font-size: 20px;
   color: #1D2735;
@@ -19948,7 +20353,7 @@ table {
   padding-bottom: 25px;
 }
 #hiw_mcalender p {
-  font-family: "Gill Sans W01", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-weight: 100;
   font-size: 20px;
   color: #1D2735;

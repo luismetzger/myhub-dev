@@ -24,7 +24,7 @@ $twitter-blue: #2E97E9;
 $twitter-blue-2: #2988D2;
 $link-blue: #399AE7;
 $google-red: #DD4B39;
-$google-red-2: #11A47E;
+$google-red-2: darken($google-red, 10%);
 $green-button: #00BA84;
 // refactor
 $green: $green-button;
@@ -43,15 +43,16 @@ $button-gray: #6B727A;
 
 $icon-font-size: 32px;
 $light-fonts: "Gill Sans W01", sans-serif;
-$main-fonts: $light-fonts;
 $light-weight:100;
 $regular-weight:200;
 $medium-weight:300;
 $bold-weight:400;
 $vbold-weight:700;
 $heavy-weight:900;
-$regular-fonts: "Gill Sans W01", sans-serif;
+//$regular-fonts: "Gill Sans W01", sans-serif;
 $headline: "Avenir W01", sans-serif;
+$regular-fonts: $headline;
+$main-fonts: $regular-fonts;
 $helvatica-fonts:"Helvetica Neue", sans-serif;
 $pump-fonts:"Pump W01", sans-serif;
 $fontAwsome: "FontAwesome", sans-serif;

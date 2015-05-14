@@ -28,7 +28,7 @@
   border: 1px solid $mid-gray;
   border-radius: 8px;
   color: $full-white;
-  width: 460px;
+  width: 480px;
   margin: 0 auto;
   max-width: 100%;
   form {
@@ -56,18 +56,17 @@
     font-size: 1em;
     color: $medium-gray;
   }
+  .mw_btm {
+    h3 {
+      margin: 0;
+    }
+  }
 }
 .modal_input {
   position: relative;
   margin-bottom: 15px;
   input {
-    width: 100%;
-    padding: 15px 15px 15px 65px;
-    font-size: 1.2em;
-    color: $medium-gray;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    background: $off-white;
+    @extend .default-input;
   }
   span[class^="icon"]{
     position: absolute;
@@ -79,7 +78,7 @@
     font-size: $icon-font-size;
   }
   span.icon-x, span.icon-checkmark {
-    color: $orange;
+    color: $google-red;
     font-size: 22px;
     right: 10px;
     left: auto;

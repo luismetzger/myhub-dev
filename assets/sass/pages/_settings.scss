@@ -1,0 +1,291 @@
+.settings_page_container {
+  padding: 30px 0;
+}
+.spc_left {
+  float: left;
+  width: 320px;
+}
+.stl_top {
+  padding: 25px 0 25px 25px;
+  background: $off-white;
+}
+.stlt_img {
+  float: left;
+  width: 80px;
+  img {
+    display: block;
+    border-radius: 100px;
+    width: 100%;
+  }
+}
+.stlt_txt {
+  padding-left: 20px;
+  float: left;
+  h3 {
+    color: $medium-gray;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 15px 0 3px;
+  }
+  a {
+    font-size: 1.1em;
+    color: $tag-gray;
+  }
+}
+.sl_links_wrap {
+  margin-top: 45px;
+}
+.sl_links {
+  background: $off-white;
+  padding-left: 22px;
+  li {
+    display: block;
+    a {
+      display: block;
+      position: relative;
+      color: $tag-gray;
+      padding: 20px 0;
+      border-bottom: 1px solid $light-gray;
+      font-size: 1.2em;
+
+      &:after {
+        @extend .right-arrow;
+      }
+      &:before {
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        left: -20px;
+        top: 50%;
+        border: 4px solid $orange;
+        @include transition(200ms);
+        content: '';
+      }
+    }
+    &:last-child a {
+      border-bottom: none;
+    }
+    &.active a, a:hover {
+      color: $medium-gray;
+      &:before {
+        visibility: visible;
+        height: 100%;
+        top: 0;
+      }
+    }
+  }
+}
+.sll_socials {
+  margin-top: 35px;
+  li {
+    width: 48%;
+    a {
+      display: block;
+      border-radius: 4px;
+      text-align: center;
+      padding: 10px;
+      font-size: $icon-font-size + 5;
+      color: $full-white;
+    }
+    &.fb_slls a {
+      background: $facebook-blue;
+      &:hover {
+        background: $facebook-blue-2;
+      }
+    }
+    &.twt_slls a {
+      background: $twitter-blue;
+      &:hover {
+        background: $twitter-blue-2;
+      }
+    }
+  }
+}
+.spc_content {
+  margin-left: 340px;
+}
+.account_form {
+  label {
+    color: $medium-gray;
+    font-weight: $regular-weight;
+    font-size: 1.2em;
+  }
+  input {
+    padding-left: 15px;
+  }
+  .modal_input input {
+    padding-left: 65px;
+  }
+}
+.ac_pb_btm {
+  padding: 20px;
+}
+.apb_left {
+  float: left;
+  h3 {
+    color: $medium-gray;
+    margin: 10px 0 5px;
+  }
+  p {
+    color: $light-gray;
+  }
+}
+.deactivate-button {
+  display: block;
+  float: right;
+  width: 115px;
+  padding: 5px;
+  font-size: $icon-font-size + 4;
+  text-align: center;
+  color: $full-white;
+  background: $orange-2;
+  border-radius: 5px;
+  &:hover {
+    background: $orange;
+    color: $full-white;
+  }
+}
+
+.panel-settings {
+  &.panel {
+    border: 1px solid $light-gray;
+    & > .panel-heading {
+      border-color: $light-gray;
+    }
+  }
+  .panel-title {
+    color: $medium-gray;
+    font-size: 1.5em;
+  }
+  .panel-body {
+    padding: 30px;
+    color: $medium-gray;
+  }
+}
+
+.snotifications_table {
+  padding: 0 10px;
+  th, td {
+    padding: 6px 10px;
+    text-align: center;
+    border-bottom: 1px solid $light-gray;
+    vertical-align: middle;
+    &:first-child {
+      padding-left: 0;
+      text-align: left;
+    }
+  }
+  th {
+    color: $medium-gray;
+    font-size: 1.2em;
+    font-weight: $regular-weight;
+    .icon-iphone {
+      font-size: $icon-font-size + 5;
+    }
+  }
+  td {
+    color: $tag-gray;
+    font-size: 1em;
+    padding: 15px 10px;
+    span[class^="icon"] {
+      font-size: $icon-font-size - 12;
+      cursor: pointer;
+    }
+    span[class^="icon-close"] {
+      color: $light-gray;
+      background: $light-gray;
+      border-radius: 15px;
+      border: 1px solid $light-gray;
+      font-size: $icon-font-size - 15;
+    }
+  }
+}
+.mb_btn_lgray {
+  border-color: $off-white;
+  background: $off-white;
+  color: $light-gray;
+  padding: 15px;
+  &:hover {
+    background: $light-gray;
+  }
+}
+.pmb_input {
+  width: 50%;
+  margin-right: 20px;
+  float: left;
+}
+.pmb_input_wrap {
+  margin-top: 20px;
+  min-height: 95px;
+
+  .pmb_input {
+    input {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      color: $medium-gray;
+      background: lighten($light-gray, 10%);
+    }
+    span[class^="icon-Mastercard"], span[class^="icon-Visa"] {
+      font-size: $icon-font-size + 8;
+    }
+  }
+  .mb_btn {
+    padding: 30px 0;
+    width: 105px;
+    color: $full-white;
+  }
+}
+.light_txt {
+  color: $off-white;
+  padding-top: 20px;
+}
+.mb_btn_red {
+  background: $google-red;
+  color: $full-white;
+  &:hover {
+    background: $google-red-2;
+  }
+}
+.support_center_wrap {
+  li {
+    display: block;
+    border-bottom: 1px solid $light-gray;
+    h4 {
+      margin: 0;
+      padding: 20px 0 10px;
+      font-size: 1.15em;
+    }
+    a {
+      color: $tag-gray;
+      display: block;
+      padding: 20px 0;
+      position: relative;
+      &:before {
+        display: none;
+      }
+      &:after {
+        @extend .right-arrow;
+      }
+      &:hover {
+        color: $medium-gray;
+      }
+    }
+  }
+}
+
+@media all and (min-width: $small + 1){
+  .settings_page_container {
+    margin-top: 55px;
+  }
+  .ac_pb_btm {
+    padding: 20% 0 5%;
+  }
+}
+@media all and (max-width: $small) {
+
+}
+@media all and (max-width: $iphone) {
+
+}

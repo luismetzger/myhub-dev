@@ -237,7 +237,9 @@ var $modal_wrap = $(".fmodal_wrap"),
         }
     });
 
-    $modal_form[0].reset();
+    if($modal_form.length > 0){
+        $modal_form[0].reset();
+    }
 
     var $mmodal_wrap = $('.mmodal_container');
     $mmodal_wrap.modal('toggle');
@@ -246,5 +248,6 @@ var $modal_wrap = $(".fmodal_wrap"),
         $mmodal_wrap.modal('hide');
     });
 
+    $('input.onoffswitch-checkbox').onoff();
 
 });

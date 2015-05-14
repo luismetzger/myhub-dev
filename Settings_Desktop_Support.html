@@ -9,16 +9,19 @@
     <!-- Core Framework CSS before SASS -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/myhub-icons.css" rel="stylesheet">
+     <link href="assets/css/myhub-icons.css" rel="stylesheet">
+    
     
     <!-- Fonts -->
     <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/c2c138df-bec8-4ae7-abb7-59de83a2ce0b.css"/>
-    
+
+
     <!--add more stylesheet before this line-->
     <link href="assets/css/app.css" rel="stylesheet">
-    
-	<!-- Script for SVG -->
+
+    <!-- Script for SVG -->
     <script type="text/javascript" src="assets/js/modernizr.custom.70954.js"></script>
+
 
 </head>
 <body>
@@ -29,9 +32,9 @@
     <ul>
         <li class="p-nav-profile">
             <a href="#">
-            <img class="img-circle" src="assets/images/eric-hubbell.png" alt=""/>
-            <strong>Eric Hubble</strong>
-            view profile</a>
+                <img class="img-circle" src="assets/images/eric-hubbell.png" alt=""/>
+                <strong>Eric Hubble</strong>
+                view profile</a>
         </li>
         <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
         <li><a href="#"><i class="fa fa-plus"></i> Create</a></li>
@@ -41,10 +44,11 @@
     </ul>
     <div class="ln-cr">
         <ul>
-	         <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+            <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
         </ul>
     </div>
 </nav>
+
 
 
 
@@ -52,7 +56,9 @@
 
 <!-- class="container-push"-->
 
-<div id="pushy_wrapper" class="page_wrap">
+<div id="pushy_wrapper" class="section">
+
+
     <div class="top-header">
         <!--add this class nav menu-->
 
@@ -98,119 +104,67 @@
     </div>
     <!--end header nav-->
 
-    <div id="profile_info_header" class="hidden-xs">
+    <div class="settings_page_container">
         <div class="container">
-            <div class="profile_head">
 
-                <div class="profile-image">
-                    <img src="assets/images/eric-hubbell.png" alt=""/>
-                </div>
-
-                <div class="profile-bio">
-                    <h2>Erick Hubbell</h2>
-                    <div class="clearfix"></div>
-                    <a href="https://twitter.com/erichubbell" class="eric_twt">@erichubbell</a>
-                    <p>Born in Iowa, Raised in the NL, UVM Grad, NE Sports Fan, CO Living. CEO / Founder @ Myhub.</p>
-                    <div class="ph_info">
-                        Denver, CO |
-                        <a href="www.myhubapp.com">www.myhubapp.com</a>
+            <div class="spc_left">
+                <div class="stl_top clearfix">
+                    <div class="stlt_img">
+                        <img src="assets/images/pimg_icons/AT.png" alt=""/>
+                    </div>
+                    <div class="stlt_txt">
+                        <h3>Erick Hubbell</h3>
+                        <a class="eric_twt" href="https://twitter.com/erichubbell">@erichubbell</a>
                     </div>
                 </div>
-                <div class="profile-button">
-                    <a role="button" href="#" class="btn btn-default">This is you</a>
-                </div>
-
-            </div>
-            <div class="profile_nav">
-                <ul class="clearfix">
-                    <li role="presentation" class="active"><a href="#"> 0 Upcoming</a></li>
-                    <li role="presentation"><a href="#"> 25 Past </a></li>
-                    <li role="presentation"><a href="#"> 25 Hosting </a></li>
-                    <li role="presentation"><a href="#"> 25 Following </a></li>
-                    <li role="presentation"><a href="#"> 25 Followers </a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--end profile header-->
-
-    <div id="profile_info_header_mobile" class="visible-xs">
-        <div class="container">
-            <div class="row">
-                <div id="carousel_profile_head" class="profile_head carousel slide" data-ride="carousel" data-interval="false">
-
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel_profile_head" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel_profile_head" data-slide-to="1"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <div class="profile-image">
-                                <img src="assets/images/eric-hubbell.png" alt=""/>
-                            </div>
-
-                            <div class="profile-bio">
-                                <h2>Erick Hubbell</h2>
-                                <div class="clearfix"></div>
-                                <div class="pb-flow">
-                                    10 Followers <span>|</span> 10 Following
-                                </div>
-                                <div class="pb-add_icon">
-                                    <a href="#"><img alt="" src="assets/images/pimg_icons/User_Follow_2@3x.png"></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="profile-bio profile-bio-txt-item2">
-                                <p>Born in Iowa, Raised in the NL, UVM Grad, NE Sports Fan, CO Living. CEO / Founder @ Myhub. Just showing profile length.</p>
-                                <div class="ph_info">
-                                    <h3>Denver, CO</h3>
-                                    <a href="www.myhubapp.com">www.myhubapp.com</a>
-                                </div>
-                            </div>
-                        </div>
+                <!--end top part-->
+                <div class="sl_links_wrap">
+                    <div class="sl_links">
+                        <ul class="clearfix">
+                            <li><a href="#">Edit Profile</a></li>
+                            <li><a href="#">Account Settings</a></li>
+                            <li><a href="#">Payment Methods</a></li>
+                            <li><a href="#">Notifications</a></li>
+                            <li class="active"><a href="#">Support Center</a></li>
+                            <li><a href="#">Log Out</a></li>
+                        </ul>
                     </div>
-
-
-                </div>
-                <div class="profile_nav">
-                    <ul class="clearfix">
-                        <li role="presentation" class="active"><a href="#"> Upcoming</a></li>
-                        <li role="presentation"><a href="#"> Past </a></li>
-                        <li role="presentation"><a href="#"> Hosting </a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--end profile header-->
-
-
-
-    <div id="profile_inner">
-        <div class="container">
-            <div class="profile_me_cont">
-                <div class="pmc_inner">
-                    <div class="cal-img">
-                        <span class="icon-calendar">
-				            <span class="path1"></span>
-                            <span class="path2"></span>
-                            <span class="path3"></span>
-                            <span class="path4"></span>
-                            <span class="path5"></span>
-				        </span>
+                    <div class="sll_socials">
+                        <ul class="clearfix">
+                            <li class="fb_slls pull-left"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li class="twt_slls pull-right"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
                     </div>
-                    <h2>Profile</h2>
-                    <p>We’ll store events your hosting, attending or considering here.</p>
                 </div>
             </div>
+
+            <div class="spc_content">
+                <div class="panel panel-default panel-settings">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Support Center</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form action="#" class="account_form">
+                            <div class="support_center_wrap">
+                                <ul>
+                                    <li><h4>Support</h4></li>
+                                    <li><a href="#">Visit our Blog</a></li>
+                                    <li><a href="#">Visit our FAQ</a></li>
+                                    <li><a href="#">Email Support</a></li>
+                                    <li><h4>Legal</h4></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
+    <!--part1 9-->
     <div id="page_footer_cont" class="inner_footer waypoint active-trans">
 
         <div id="footer_container">
@@ -290,12 +244,12 @@
             </div>
         </div>
     </div>
-    <!--end footer-->
+    <!--end part 9-->
+
 
 </div>
-<!--end section 1-->
+<!--end page wrapper-->
 
-<!--end pushy wrapper-->
 <!--modals-->
 
 
@@ -323,8 +277,6 @@
 </div>
 
 
-
-
 <!--modals ends-->
 
 
@@ -341,13 +293,15 @@
 <script type="text/javascript" src="assets/js/venobox.min.js"></script>
 <script type="text/javascript" src="assets/js/velocity.min.js"></script>
 <script type="text/javascript" src="assets/js/team_view.js"></script>
+<script type="text/javascript" src="assets/js/jquery.onoff.min.js"></script>
 
 
 <!--add scripts before this line-->
 <script type="text/javascript" src="assets/js/scripts.js"></script>
 
-
-
+<!--page specific scripts-->
+<script type="text/javascript">
+</script>
 
 </body>
 </html>
