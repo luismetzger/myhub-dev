@@ -11731,17 +11731,17 @@
   padding-right: 0px;
 }
 
-.hide_before_after:after {
+.hide_before_after:after, .smobile_head_inner:after {
   display: none;
 }
-.hide_before_after:before {
+.hide_before_after:before, .smobile_head_inner:before {
   display: none;
 }
 
 .default-input, .modal_input input {
   width: 100%;
   padding: 15px 15px 15px 65px;
-  font-size: 1.2em;
+  font-size: 1.125em;
   color: #323A45;
   border: 1px solid transparent;
   border-radius: 5px;
@@ -11766,6 +11766,17 @@ textarea.default-input {
   font-size: 36px;
 }
 
+.button-empty, .smobile_head_inner .back_btn, .smobile_head_inner .ms_submit_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.no_border {
+  border: none !important;
+}
+
 /**
  * onoff.css
  * Author: http://proto.io/freebies/onoff/
@@ -11788,8 +11799,12 @@ textarea.default-input {
   display: block;
   overflow: hidden;
   cursor: pointer;
-  border: 2px solid #FF6B42;
+  border: 2px solid #9EA7B3;
   border-radius: 40px;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+  border-color: #FF6B42;
 }
 
 .onoffswitch-inner {
@@ -11822,9 +11837,9 @@ textarea.default-input {
 .onoffswitch-inner:after {
   content: "";
   padding-right: 10px;
-  color: #999999;
-  background-color: #FF6B42;
+  color: #9EA7B3;
   text-align: right;
+  background-color: #9EA7B3;
 }
 
 .onoffswitch-switch {
@@ -11836,11 +11851,11 @@ textarea.default-input {
   width: 42px;
   margin: 2px;
   background: #FFFFFF;
-  border: 1px solid #E5603B;
   border-radius: 25px;
-  box-shadow: 0 0 2px #E5603B;
   -webkit-transition: right 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
   transition: right 0.2s ease-in, box-shadow 0.2s ease-in;
+  border: 1px solid #9EA7B3;
+  box-shadow: 0 0 2px #9EA7B3;
 }
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
@@ -11849,6 +11864,8 @@ textarea.default-input {
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
   right: 0;
+  border: 1px solid #E5603B;
+  box-shadow: 0 0 2px #E5603B;
 }
 
 .nav.navbar-nav.navbar-right {
@@ -12139,15 +12156,14 @@ body > .pushy-left {
   transform: translate3d(-400px, 0, 0);
 }
 
-.landingPage .container-push,
+/*.landingPage .container-push,
 body .container-push {
   -webkit-transform: translate3d(400px, 0, 0) !important;
   -moz-transform: translate3d(400px, 0, 0) !important;
   -ms-transform: translate3d(400px, 0, 0) !important;
   -o-transform: translate3d(400px, 0, 0) !important;
   transform: translate3d(400px, 0, 0) !important;
-}
-
+}*/
 #ln-wrapper {
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
   -moz-transition: -moz-transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
@@ -17351,7 +17367,7 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
 .eric_twt {
   color: #9ea7b3;
   text-decoration: none;
-  font-size: .9em;
+  font-size: 1.125em;
 }
 
 .ph_info {
@@ -17452,7 +17468,7 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
   bottom: 0;
   left: 0;
   font-family: "Helvetica Neue", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   -ms-transform: translate(0px, 30px);
   /* IE 9 */
   -webkit-transform: translate(0px, 30px);
@@ -17497,7 +17513,7 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
   margin: 0 auto;
 }
 .pmc_inner h2 {
-  font-weight: 400;
+  font-weight: 600;
   margin: 13px 0 10px;
 }
 
@@ -17557,7 +17573,7 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
   margin: 0;
   font-size: 20px;
   padding-top: 2px;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
 }
 .pmu_event_date h3 span {
@@ -17646,7 +17662,7 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
 #profile_info_header_mobile .profile_nav li a {
   font-family: "Avenir W01", sans-serif;
   font-size: 1.3em;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 #follow_number {
@@ -17835,7 +17851,7 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
 }
 .fmodal_head h2 {
   margin: 0;
-  font-size: 1.45em;
+  font-size: 1.35em;
   line-height: 1;
   color: #323A45;
 }
@@ -17922,7 +17938,7 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
   background: #00BA84;
   text-align: center;
   text-shadow: 0 0 0 #FFFFFF;
-  font-size: 1.15em;
+  font-size: 1.125em;
 }
 .mb_btn:hover {
   color: #FFFFFF;
@@ -18257,7 +18273,7 @@ a.mb_btn {
   color: #5E6D81;
   padding: 20px 0;
   border-bottom: 1px solid #9EA7B3;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .sl_links li a:before {
   display: block;
@@ -18314,12 +18330,12 @@ a.mb_btn {
 }
 
 .spc_content {
-  margin-left: 340px;
+  margin-left: 365px;
 }
 
 .account_form label {
   color: #323A45;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 1.2em;
 }
 .account_form input {
@@ -18391,7 +18407,7 @@ a.mb_btn {
 .snotifications_table th {
   color: #323A45;
   font-size: 1.2em;
-  font-weight: 200;
+  font-weight: 400;
 }
 .snotifications_table th .icon-iphone {
   font-size: 37px;
@@ -18437,7 +18453,7 @@ a.mb_btn {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #323A45;
-  background: #bbc1c9;
+  background: #D8DEE6;
 }
 .pmb_input_wrap .pmb_input span[class^="icon-Mastercard"], .pmb_input_wrap .pmb_input span[class^="icon-Visa"] {
   font-size: 40px;
@@ -18451,6 +18467,7 @@ a.mb_btn {
 .light_txt {
   color: #F4F5F7;
   padding-top: 20px;
+  font-size: 0.875em;
 }
 
 .mb_btn_red {
@@ -18483,6 +18500,230 @@ a.mb_btn {
   color: #323A45;
 }
 
+span.light_txt {
+  padding: 0;
+}
+
+.fmodal_head .light_txt {
+  color: #9EA7B3;
+  margin-top: 5px;
+  font-size: 0.75em;
+}
+
+.smdl_title {
+  border: 1px solid #9EA7B3;
+  color: #323A45;
+  padding: 10px;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+.smdl_title > span {
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.smdl_title > span[class^="icon"] {
+  margin-top: 0;
+  font-size: 36px;
+}
+
+.settings_modals .modal_input input {
+  padding-left: 15px;
+}
+.settings_modals .fmodal_wrap_medium .fmodal_body {
+  padding: 25px;
+}
+.settings_modals .mb_btns {
+  padding-top: 10px;
+}
+
+.fmodal_body label {
+  color: #323A45;
+}
+
+/**
+Mobile Design
+**/
+.mobile_container {
+  max-width: 767px;
+  margin: 0 auto;
+}
+
+.smobile_head {
+  background: #323A45;
+  min-height: 100px;
+}
+
+.smobile_head_inner {
+  color: #FFFFFF;
+  position: relative;
+}
+.smobile_head_inner h1 {
+  margin: 0;
+  line-height: 100px;
+  color: inherit;
+  font-size: 1.45em;
+}
+.smobile_head_inner .back_btn, .smobile_head_inner .ms_submit_btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -0.5em;
+  font-size: 32px;
+}
+.smobile_head_inner .ms_submit_btn {
+  left: auto;
+  right: 0;
+}
+.smobile_head_inner .icon-arrow_lg_back,
+.smobile_head_inner .icon-checkmark {
+  font-size: 32px;
+}
+
+.smobile_main {
+  padding-top: 50px;
+}
+.smobile_main > h2 {
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  color: #323A45;
+}
+.smobile_main .spc_left {
+  float: none;
+  width: auto;
+}
+.smobile_main .spc_left .sl_links_wrap {
+  margin-top: 0;
+}
+.smobile_main .spc_left .sl_links {
+  background: none;
+  padding-left: 15px;
+}
+.smobile_main .spc_left .sl_links li a {
+  font-size: 18px;
+}
+.smobile_main .spc_left .sl_links li a:before {
+  display: none;
+}
+@media all and (max-width: 480px) {
+  .smobile_main .spc_left .sl_links li a:after {
+    margin-top: -0.3em;
+  }
+}
+.smobile_main .spc_left .sl_links li:first-child a {
+  border-top: 1px solid #9EA7B3;
+}
+.smobile_main .spc_left .sl_links li:last-child a {
+  border-bottom: 1px solid #9EA7B3;
+}
+
+.sm_edit_profile_top {
+  display: table;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.sm_edit_profile_top_inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+.sm_edit_profile_top_inner .sept_img {
+  width: 120px;
+  margin-left: 45px;
+}
+.sm_edit_profile_top_inner .sept_img_mdl {
+  margin: 0 25px;
+  color: #FF6B42;
+  min-width: 32px;
+  display: inline-block;
+  position: relative;
+}
+.sm_edit_profile_top_inner .sept_img_mdl:before {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  font-size: 35px;
+}
+.sm_edit_profile_top_inner .orange_txt {
+  font-weight: 600;
+  font-style: italic;
+  display: inline-block;
+  line-height: 32px;
+}
+
+.orange_txt {
+  color: #FF6B42;
+}
+
+.sfc_tbl {
+  padding-bottom: 20px;
+}
+.sfc_tbl li {
+  text-align: right;
+  border-top: 1px solid #9EA7B3;
+  padding: 20px 20px 20px 0;
+}
+.sfc_tbl li label:not(.onoffswitch-label) {
+  font-size: 1.15em;
+  color: #1D2735;
+  font-weight: 600;
+  margin-top: 10px;
+  float: left;
+  width: 145px;
+  text-align: left;
+}
+.sfc_tbl li .sfc_input_wrap {
+  margin-left: 150px;
+  text-align: right;
+}
+.sfc_tbl li.sfc_da label:not(.onoffswitch-label) {
+  width: auto;
+}
+.sfc_tbl li.sfc_da a {
+  margin-left: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.sfc_tbl .had_border_bottom {
+  border-bottom: 1px solid #9EA7B3;
+}
+.sfc_tbl .no_border {
+  border: none;
+}
+.sfc_tbl .onofWrap {
+  margin-top: 2px;
+}
+.sfc_tbl .onofWrap + div {
+  margin-right: 145px;
+  font-size: 1.125em;
+}
+.sfc_tbl .onofWrap + div label {
+  width: auto;
+  float: none;
+}
+
+.sfc_tbl_edac li label:not(.onoffswitch-label) {
+  width: 120px;
+}
+.sfc_tbl_edac li .sfc_input_wrap {
+  margin-left: 125px;
+}
+
+.sfc_m_input {
+  width: 100%;
+  text-align: right;
+  border: none;
+  font-size: 1.15em;
+  color: #9EA7B3;
+  background: #FFFFFF;
+  padding: 10px 0;
+  height: 50px;
+}
+
+textarea.sfc_m_input {
+  resize: vertical;
+}
+
 @media all and (min-width: 768px) {
   .settings_page_container {
     margin-top: 55px;
@@ -18494,10 +18735,10 @@ a.mb_btn {
 }
 body {
   background-color: #fff;
-  color: #555;
+  color: #5E6D81;
   font-family: "Avenir W01", sans-serif;
-  font-size: 18px !important;
-  font-weight: 200;
+  font-size: 16px !important;
+  font-weight: 400;
 }
 
 .modal-open .modal,
@@ -18535,7 +18776,12 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Avenir W01", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+label {
+  font-weight: 400;
+  color: inherit;
 }
 
 @media screen and (max-width: 480px) {
@@ -18543,6 +18789,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 25px;
     margin: 0.5em 0 0.3em;
   }
+}
+
+.h4, h4 {
+  font-size: 16px;
 }
 
 /* CSS used here will be applied after bootstrap.css */
@@ -19713,7 +19963,7 @@ a#ln-logo {
 
 .abstc_txt h3 {
   font-family: "Helvetica Neue", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   padding-top: 10px;
   font-size: 30px;
 }
@@ -19800,7 +20050,7 @@ a#ln-logo {
 }
 .fNav.col-md-7 h5 {
   font-family: "Avenir W01", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
 }
 .fNav.col-md-7 a {
@@ -19899,7 +20149,7 @@ a#ln-logo {
 .hwi_tablinks li a {
   display: block;
   font-family: "Avenir W01", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 28px;
   padding: 7px 15px;
   color: #1D2735;
@@ -19930,7 +20180,7 @@ a#ln-logo {
 
 .hwi_price_thumbs_wrap h3 {
   font-family: "Avenir W01", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 20px;
   text-transform: uppercase;
   color: #5F6E82;
@@ -20096,7 +20346,7 @@ table {
 .hwi_lctbl td {
   padding: 10px;
   text-align: center;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 1.2em;
 }
 

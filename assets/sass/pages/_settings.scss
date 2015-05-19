@@ -46,7 +46,7 @@
       color: $tag-gray;
       padding: 20px 0;
       border-bottom: 1px solid $light-gray;
-      font-size: 1.2em;
+      font-size: 1em;
 
       &:after {
         @extend .right-arrow;
@@ -104,7 +104,7 @@
   }
 }
 .spc_content {
-  margin-left: 340px;
+  margin-left: 365px;
 }
 .account_form {
   label {
@@ -225,7 +225,7 @@
       padding-top: 30px;
       padding-bottom: 30px;
       color: $medium-gray;
-      background: lighten($light-gray, 10%);
+      background: $lighter-gray;
     }
     span[class^="icon-Mastercard"], span[class^="icon-Visa"] {
       font-size: $icon-font-size + 8;
@@ -240,6 +240,7 @@
 .light_txt {
   color: $off-white;
   padding-top: 20px;
+  font-size: 0.875em;
 }
 .mb_btn_red {
   background: $google-red;
@@ -274,7 +275,234 @@
     }
   }
 }
+span.light_txt {
+  padding: 0;
+}
+.fmodal_head {
+  .light_txt {
+    color: $light-gray;
+    margin-top: 5px;
+    font-size: 0.75em;
+  }
+}
+.smdl_title {
+  border: 1px solid $light-gray;
+  color: $medium-gray;
+  padding: 10px;
+  font-style: italic;
+  margin-bottom: 15px;
+  & > span {
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  & > span[class^="icon"]{
+    margin-top: 0;
+    font-size: $icon-font-size + 4;
+  }
+}
+.settings_modals {
+  .modal_input {
+    input {
+      padding-left: 15px;
+    }
+  }
+  .fmodal_wrap_medium .fmodal_body {
+    padding: 25px;
+  }
+  .mb_btns {
+    padding-top: 10px;
+  }
+}
+.fmodal_body {
+  label {
+    color: $medium-gray;
+  }
+}
 
+/**
+Mobile Design
+**/
+.mobile_container {
+  max-width: 767px;
+  margin: 0 auto;
+}
+.smobile_head {
+  background: $medium-gray;
+  min-height: 100px;
+}
+.smobile_head_inner {
+  color: $full-white;
+  position: relative;
+  @extend .hide_before_after;
+  h1 {
+    margin: 0;
+    line-height: 100px;
+    color: inherit;
+    font-size: 1.45em;
+  }
+  .back_btn, .ms_submit_btn {
+    @extend .button-empty;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -0.5em;
+    font-size: $icon-font-size;
+  }
+  .ms_submit_btn {
+    left: auto;
+    right: 0;
+  }
+  .icon-arrow_lg_back,
+  .icon-checkmark{
+    font-size: $icon-font-size;
+  }
+}
+.smobile_main {
+  padding-top: 50px;
+  & > h2 {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    color: $medium-gray;
+  }
+  .spc_left {
+    float: none;
+    width: auto;
+    .sl_links_wrap {
+      margin-top: 0;
+    }
+    .sl_links {
+      background: none;
+      padding-left: 15px;
+      li {
+        a {
+          font-size: 18px;
+          &:before {
+            display: none;
+          }
+          &:after {
+            @media all and (max-width: $iphone) {
+              margin-top: -0.3em;
+            }
+          }
+        }
+        &:first-child a {
+          border-top: 1px solid $light-gray;
+        }
+        &:last-child a {
+          border-bottom: 1px solid $light-gray;
+        }
+      }
+    }
+  }
+}
+.sm_edit_profile_top {
+  display: table;
+  padding-bottom: 50px;
+  width: 100%;
+}
+.sm_edit_profile_top_inner {
+  display: table-cell;
+  vertical-align: middle;
+  .sept_img {
+    width: 120px;
+    margin-left: 45px;
+  }
+  .sept_img_mdl {
+    margin: 0 25px;
+    color: $orange;
+    min-width: 32px;
+    display: inline-block;
+    position: relative;
+    &:before {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      font-size: $icon-font-size + 3;
+    }
+  }
+  .orange_txt {
+    font-weight: $bold-weight;
+    font-style: italic;
+    display: inline-block;
+    line-height: 32px;
+  }
+}
+.orange_txt {
+  color: $orange;
+}
+.sfc_tbl {
+  padding-bottom: 20px;
+  li {
+    text-align: right;
+    border-top: 1px solid $light-gray;
+    padding: 20px 20px 20px 0;
+    label:not(.onoffswitch-label){
+      font-size: 1.15em;
+      color: $dark-blue;
+      font-weight: $bold-weight;
+      margin-top: 10px;
+      float: left;
+      width: 145px;
+      text-align: left;
+    }
+    .sfc_input_wrap {
+      margin-left: 150px;
+      text-align: right;
+    }
+    &.sfc_da {
+      label:not(.onoffswitch-label) {
+        width: auto;
+      }
+      a {
+        margin-left: 10px;
+        margin-top: 10px;
+        display: inline-block;
+      }
+    }
+  }
+  .had_border_bottom {
+    border-bottom: 1px solid $light-gray;
+  }
+  .no_border {
+    border: none;
+  }
+  .onofWrap {
+    margin-top: 2px;
+  }
+  .onofWrap + div {
+    margin-right: 145px;
+    font-size: 1.125em;
+    label {
+      width: auto;
+      float: none;
+    }
+  }
+}
+.sfc_tbl_edac {
+  li {
+    label:not(.onoffswitch-label) {
+      width: 120px;
+    }
+    .sfc_input_wrap {
+      margin-left: 125px;
+    }
+  }
+}
+
+.sfc_m_input {
+  width: 100%;
+  text-align: right;
+  border: none;
+  font-size: 1.15em;
+  color: $mid-gray;
+  background: $full-white;
+  padding: 10px 0;
+  height: 50px;
+}
+textarea.sfc_m_input {
+  resize: vertical;
+}
 @media all and (min-width: $small + 1){
   .settings_page_container {
     margin-top: 55px;

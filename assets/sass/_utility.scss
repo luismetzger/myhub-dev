@@ -16,7 +16,7 @@
 .default-input {
   width: 100%;
   padding: 15px 15px 15px 65px;
-  font-size: 1.2em;
+  font-size: 1.125em;
   color: $medium-gray;
   border: 1px solid transparent;
   border-radius: 5px;
@@ -38,6 +38,18 @@ textarea.default-input{
   color: $light-gray;
   font-size: $icon-font-size + 4;
 }
+
+.button-empty {
+  background: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.no_border {
+  border: none !important;
+}
+
 
 /**
  * onoff.css
@@ -61,8 +73,12 @@ textarea.default-input{
   display: block;
   overflow: hidden;
   cursor: pointer;
-  border: 2px solid $orange;
+  border: 2px solid $mid-gray;
   border-radius: 40px;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+  border-color: $orange;
 }
 
 .onoffswitch-inner {
@@ -95,9 +111,9 @@ textarea.default-input{
 .onoffswitch-inner:after {
   content: "";
   padding-right: 10px;
-  color: #999999;
-  background-color: $orange;
+  color: $mid-gray;
   text-align: right;
+  background-color: $mid-gray;
 }
 
 .onoffswitch-switch {
@@ -109,11 +125,11 @@ textarea.default-input{
   width: 42px;
   margin: 2px;
   background: $full-white;
-  border: 1px solid $orange-2;
   border-radius: 25px;
-  box-shadow: 0 0 2px $orange-2;
   -webkit-transition: right 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
   transition: right 0.2s ease-in, box-shadow 0.2s ease-in;
+  border: 1px solid $mid-gray;
+  box-shadow: 0 0 2px $mid-gray;
 }
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
@@ -122,4 +138,6 @@ textarea.default-input{
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
   right: 0;
+  border: 1px solid $orange-2;
+  box-shadow: 0 0 2px $orange-2;
 }

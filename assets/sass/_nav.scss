@@ -299,14 +299,14 @@ body > .pushy-left {
   transform: translate3d(-400px, 0, 0);
 }
 
-.landingPage .container-push,
+/*.landingPage .container-push,
 body .container-push {
   -webkit-transform: translate3d(400px, 0, 0) !important;
   -moz-transform: translate3d(400px, 0, 0) !important;
   -ms-transform: translate3d(400px, 0, 0) !important;
   -o-transform: translate3d(400px, 0, 0) !important;
   transform: translate3d(400px, 0, 0) !important;
-}
+}*/
 
 #ln-wrapper {
   -webkit-transition: -webkit-transform .2s cubic-bezier(.16, .68, .43, .99);

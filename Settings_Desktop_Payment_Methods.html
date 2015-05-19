@@ -147,7 +147,7 @@
                         <form action="#" class="account_form pm_wrap">
                             <div class="pm_box">
                                 <h4>Bank Accounts</h4>
-                                <a href="#" class="mb_btn mb_btn_lgray">+ New bank account</a>
+                                <a href="#" class="mb_btn mb_btn_lgray add_bank_link">+ New bank account</a>
                                 <div class="pmb_input_wrap">
                                     <div class="pmb_input modal_input">
                                         <input type="text" value="Well Fargo .... 6829" style="padding-left: 15px;" readonly>
@@ -161,7 +161,7 @@
                             </div>
                             <div class="pm_box">
                                 <h4>Card Accounts</h4>
-                                <a href="#" class="mb_btn mb_btn_lgray">+ New card</a>
+                                <a href="#" class="mb_btn mb_btn_lgray add_card_link">+ New card</a>
                                 <div class="pmb_input_wrap">
                                     <div class="pmb_input modal_input">
                                         <input type="text" readonly value="....6829">
@@ -291,29 +291,163 @@
 <!--modals-->
 
 
-<div class="modal middlemodal fade in" id="downloadAppModal" tabindex="-1" role="dialog" arial-labelledby="downloadAppModalTitle" aria-hidden="false" >
+<div class="modal fade fmodal_container settings_modals settings_modals_add_bank">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <button type="button" class="btn close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
-            <div class="modal-body">
-                <p class="modal-message" style="margin:0 0 1em 0;">Enter your phone number, area code and all.<br>
-                    We’ll text you a download link!</p>
-                <form class="download-app-form" role="form">
-                    <div class="row">
-                        <div class="col-xs-12 twilow_sms">
-                            <label class="sr-only" for="modalSmsInput">Phone number</label>
-                            <input type="tel" id="modalSmsInput" placeholder="xxxxxxxxx" class="form-control">
-                            <button id="twillow_submit">Send SMS</button>
-                        </div>
-                        <div class="hide col-xs-12" id="pp_status"></div>
-
+        <div class="fmodal_wrap fmodal_wrap_medium">
+            <form action="#">
+                <div class="fmodal_head clearfix">
+                    <h2>Create Account <span class="pull-right light_txt">Your data is 256-bit encrypted and SSL secure</span></h2>
+                </div>
+                <div class="fmodal_body">
+                    <div class="smdl_title">
+                        Paying with a bank account is free. You can delete this anytime.
                     </div>
-                </form>
-            </div>
+
+                    <label for="email">Name of the account</label>
+                    <div class="modal_input">
+                        <input type="text" id="email" placeholder="John Smith" required="required"/>
+                        <span class="icon-x"></span>
+                        <span class="icon-checkmark"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="account">Account</label>
+                            <div class="modal_input">
+                                <input type="text" id="account" placeholder="xxxx - xxxx - xxxx - xxxx" required="required"/>
+                                <span class="icon-x"></span>
+                                <span class="icon-checkmark"></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="routing">Routing: #</label>
+                            <div class="modal_input">
+                                <input type="text" id="routing" placeholder="xxxx - xxxx - xxxx - xxxx" required="required"/>
+                                <span class="icon-x"></span>
+                                <span class="icon-checkmark"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="dob">DOB</label>
+                            <div class="modal_input">
+                                <input type="text" id="dob" placeholder="mm / dd / yy" required="required"/>
+                                <span class="icon-x"></span>
+                                <span class="icon-checkmark"></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="pcode">Postal Code</label>
+                            <div class="modal_input">
+                                <input type="text" id="pcode" placeholder="80202" required="required"/>
+                                <span class="icon-x"></span>
+                                <span class="icon-checkmark"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb_btns">
+                        <input type="submit" class="btn mb_btn" value="Submit"/>
+                    </div>
+                </div>
+            </form>
+            <button class="close modal-close">
+                <span class="icon-decline_Outline"></span>
+            </button>
         </div>
     </div>
 </div>
 
+
+<div class="modal fade fmodal_container settings_modals settings_modals_add_card">
+    <div class="modal-dialog">
+        <div class="fmodal_wrap fmodal_wrap_medium">
+            <form action="#">
+                <div class="fmodal_head clearfix">
+                    <h2>Add Card <span class="pull-right light_txt">Your data is 256-bit encrypted and SSL secure</span></h2>
+                </div>
+                <div class="fmodal_body">
+                    <div class="smdl_title clearfix">
+                        <span>We accept any of the following &nbsp;</span>
+                        <span class="icon-Visa">
+                            <span class="path1"></span><span class="path2"></span>
+                            <span class="path3"></span><span class="path4"></span>
+                            <span class="path5"></span><span class="path6"></span>
+                            <span class="path7"></span><span class="path8"></span>
+				        </span>
+                        <span class="icon-Mastercard">
+                            <span class="path1"></span><span class="path2"></span>
+                            <span class="path3"></span><span class="path4"></span>
+                            <span class="path5"></span><span class="path6"></span>
+                            <span class="path7"></span><span class="path8"></span>
+                            <span class="path9"></span><span class="path10"></span>
+                            <span class="path11"></span><span class="path12"></span>
+                            <span class="path13"></span>
+                        </span>
+                        <span class="icon-AmericanExpress">
+                            <span class="path1"></span><span class="path2"></span>
+                        </span>
+                        <span class="icon-Discover">
+                            <span class="path1"></span><span class="path2"></span>
+                            <span class="path3"></span><span class="path4"></span>
+                            <span class="path5"></span>
+                        </span>
+                    </div>
+
+                    <label for="ncard">Name on Card</label>
+                    <div class="modal_input">
+                        <input type="text" id="ncard" placeholder="John Smith" required="required"/>
+                        <span class="icon-x"></span>
+                        <span class="icon-checkmark"></span>
+                    </div>
+
+                    <label for="ccard">Credit Card: #</label>
+                    <div class="modal_input">
+                        <input type="text" id="ccard" placeholder="xxxx - xxxx - xxxx - xxxx" required="required"/>
+                        <span class="icon-x"></span>
+                        <span class="icon-checkmark"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label for="expiration">Expiration</label>
+                            <div class="modal_input">
+                                <input type="text" id="expiration" placeholder="mm / yy" required="required"/>
+                                <span class="icon-x"></span>
+                                <span class="icon-checkmark"></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="cvv">CVV</label>
+                            <div class="modal_input">
+                                <input type="password" id="cvv" placeholder="000" required="required"/>
+                                <span class="icon-x"></span>
+                                <span class="icon-checkmark"></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="zcode">Zip Code</label>
+                            <div class="modal_input">
+                                <input type="text" id="zcode" placeholder="80202" required="required"/>
+                                <span class="icon-x"></span>
+                                <span class="icon-checkmark"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb_btns">
+                        <input type="submit" class="btn mb_btn" value="Submit"/>
+                    </div>
+                </div>
+            </form>
+            <button class="close modal-close">
+                <span class="icon-decline_Outline"></span>
+            </button>
+        </div>
+    </div>
+</div>
 
 <!--modals ends-->
 

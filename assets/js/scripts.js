@@ -1,5 +1,7 @@
 ;$(document).ready(function(){
 
+    var $body = $('body');
+
     /*CHeck email*/
     function IsEmail(email) {
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -165,7 +167,7 @@
       $following_btns = $profile_list_wrap.find('.pl-hover a:not(.not-following)'),
       $not_following_btns = $profile_list_wrap.find('.pl-hover a.not-following');
 
-    $('body').on('click', '.pl-hover a.not-following', function(e){
+    $body.on('click', '.pl-hover a.not-following', function(e){
 
         e.preventDefault();
 
@@ -241,13 +243,26 @@ var $modal_wrap = $(".fmodal_wrap"),
         $modal_form[0].reset();
     }
 
-    var $mmodal_wrap = $('.mmodal_container');
+    var $mmodal_wrap = $('.mmodal_container'),
+        $mmodal_wrap1 = $('.settings_modals_add_bank'),
+        $mmodal_wrap2 = $('.settings_modals_add_card');
     $mmodal_wrap.modal('toggle');
-    $mmodal_wrap.on('click', '.close', function(e){
+    $body.on('click', '.close', function(e){
         e.preventDefault();
-        $mmodal_wrap.modal('hide');
+        $(this).closest('.modal').modal('hide');
     });
 
-    $('input.onoffswitch-checkbox').onoff();
+    var $input_checkbox = $('input.onoffswitch-checkbox');
+    if($input_checkbox.length > 0){
+        $input_checkbox.onoff();
+    }
+
+    $body.on('click', '.add_bank_link', function(e){
+        e.preventDefault();
+        $mmodal_wrap1.modal('show');
+    }).on('click', '.add_card_link', function(e){
+        e.preventDefault();
+        $mmodal_wrap2.modal('show');
+    })
 
 });
