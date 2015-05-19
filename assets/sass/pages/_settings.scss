@@ -12,6 +12,25 @@
 .stlt_img {
   float: left;
   width: 80px;
+  cursor: pointer;
+  position: relative;
+  &:before {
+    position: absolute;
+  }
+  &:after {
+    position: absolute;
+    content: "\e78f";
+    top: 20px;
+    left: 26px;
+    font-size: $icon-font-size;
+    font-family: $icon-font;
+    color: $full-white;
+    opacity: 0.8;
+    display: none;
+  }
+  &:hover:after {
+    display: block;
+  }
   img {
     display: block;
     border-radius: 100px;

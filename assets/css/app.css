@@ -18238,6 +18238,25 @@ a.mb_btn {
 .stlt_img {
   float: left;
   width: 80px;
+  cursor: pointer;
+  position: relative;
+}
+.stlt_img:before {
+  position: absolute;
+}
+.stlt_img:after {
+  position: absolute;
+  content: "\e78f";
+  top: 20px;
+  left: 26px;
+  font-size: 32px;
+  font-family: "myhub-icomoon";
+  color: #FFFFFF;
+  opacity: 0.8;
+  display: none;
+}
+.stlt_img:hover:after {
+  display: block;
 }
 .stlt_img img {
   display: block;
