@@ -56,7 +56,7 @@
 
 <!-- class="container-push"-->
 
-<div id="pushy_wrapper" class="section">
+<div id="pushy_wrapper" class="section hidden-xs">
 
 
     <div class="top-header">
@@ -288,6 +288,175 @@
 </div>
 <!--end page wrapper-->
 
+
+
+<div class="mobile_container settings_container_mobile_wrap visible-xs">
+
+    <div class="smobile_head container-fluid">
+        <div class="smobile_head_inner">
+            <h1 class="text-center">payment methods</h1>
+            <a href="#" class="back_btn"><span class="icon-arrow_lg_back"></span></a>
+        </div>
+    </div>
+
+    <div class="smobile_main container-fluid">
+
+        <h2>Your Payment Methods</h2>
+
+        <div class="sm_form_cont">
+            <form action="#">
+                <div class="sfc_tbl sfc_tbl_pmds">
+                    <ul class="clearfix">
+                        <li class="clearfix">
+                            <div class="modal_input pull-left">
+                                <input class="sfc_m_input" type="text" value="....6829">
+                                        <span class="icon-Visa">
+                                            <span class="path1"></span><span class="path2"></span>
+                                            <span class="path3"></span><span class="path4"></span>
+                                            <span class="path5"></span><span class="path6"></span>
+                                            <span class="path7"></span><span class="path8"></span>
+                                        </span>
+                            </div>
+                            <div class="pull-right green_txt">(3% fee)</div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="pull-left">
+                                <input class="sfc_m_input" type="text" value="Wells Fargo ....6829">
+                            </div>
+                            <div class="pull-right orange_txt">Verify</div>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+        <div class="spc_left" style="padding-top: 100px;">
+            <!--end top part-->
+            <div class="sl_links_wrap">
+                <div class="sl_links">
+                    <ul class="clearfix">
+                        <li><a href="#" class="data-go" data-go="add_card_mobile">Add a Card</a></li>
+                        <li><a href="#" class="data-go" data-go="add_bank_mobile">Add bank account</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div id="add_card_mobile" class="mobile_container settings_container_mobile_wrap hide">
+
+    <div class="smobile_head container-fluid">
+        <div class="smobile_head_inner">
+            <h1 class="text-center">add card</h1>
+            <a href="#" class="back_btn"><span class="icon-arrow_lg_back"></span></a>
+            <button class="ms_submit_btn"><span class="icon-checkmark"></span></button>
+        </div>
+    </div>
+
+    <div class="smobile_main container-fluid">
+        <h2>Please enter your card information</h2>
+        <div class="sm_form_cont">
+            <form action="#">
+                <div class="sfc_tbl sfc_tbl_edac">
+                    <ul class="clearfix">
+                        <li class="clearfix">
+                            <label for="ccardm">Credit card #</label>
+                            <div class="sfc_input_wrap">
+                                <input type="text" class="sfc_m_input" value="1234 5678 4321 9876" id="ccardm"/>
+                            </div>
+                        </li>
+                        <li class="clearfix sfc_add_bank_btm">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <label for="exp">Exp</label>
+                                    <div class="sfc_input_wrap" style="margin-left: 50px;">
+                                        <input type="text" class="sfc_m_input" value="MM / YY" id="exp"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+
+                                    <label for="cvvm">CVV</label>
+                                    <div class="sfc_input_wrap" style="margin-left: 50px;">
+                                        <input type="text" class="sfc_m_input" value="12345" id="cvvm"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="had_border_bottom clearfix">
+                            <label for="zcodem">Zip Code #</label>
+                            <div class="sfc_input_wrap">
+                                <input type="text" class="sfc_m_input" value="12345" id="zcodem"/>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+<div id="add_bank_mobile" class="mobile_container settings_container_mobile_wrap hide">
+
+    <div class="smobile_head container-fluid">
+        <div class="smobile_head_inner">
+            <h1 class="text-center">add bank</h1>
+            <a href="#" class="back_btn"><span class="icon-arrow_lg_back"></span></a>
+            <button class="ms_submit_btn"><span class="icon-checkmark"></span></button>
+        </div>
+    </div>
+
+    <div class="smobile_main container-fluid">
+        <h2>Please enter your banking information</h2>
+        <div class="sm_form_cont">
+            <form action="#">
+                <div class="sfc_tbl sfc_tbl_edac">
+                    <ul class="clearfix">
+                        <li class="clearfix">
+                            <label for="routingm">Routing #</label>
+                            <div class="sfc_input_wrap">
+                                <input type="text" class="sfc_m_input" value="1234 5678 4321 9876" id="routingm"/>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <label for="accountm">Account #</label>
+                            <div class="sfc_input_wrap">
+                                <input type="text" class="sfc_m_input" value="12345" id="accountm"/>
+                            </div>
+                        </li>
+                        <li class="had_border_bottom sfc_add_bank_btm clearfix">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <label for="dobm">DOB</label>
+                                    <div class="sfc_input_wrap" style="margin-left: 50px;">
+                                        <input type="text" class="sfc_m_input" value="MM / YY" id="dobm"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6" style="padding-left: 0;">
+
+                                    <label for="pcodem">Postal Code</label>
+                                    <div class="sfc_input_wrap" style="margin-left: 110px;">
+                                        <input type="text" class="sfc_m_input" value="12345" id="pcodem"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+
+
 <!--modals-->
 
 
@@ -300,7 +469,7 @@
                 </div>
                 <div class="fmodal_body">
                     <div class="smdl_title">
-                        Paying with a bank account is free. You can delete this anytime.
+                        Paying with a bank account is free.
                     </div>
 
                     <label for="email">Name of the account</label>
@@ -465,6 +634,7 @@
 <script type="text/javascript" src="assets/js/venobox.min.js"></script>
 <script type="text/javascript" src="assets/js/velocity.min.js"></script>
 <script type="text/javascript" src="assets/js/team_view.js"></script>
+<script type="text/javascript" src="assets/js/jquery.onoff.min.js"></script>
 
 
 <!--add scripts before this line-->

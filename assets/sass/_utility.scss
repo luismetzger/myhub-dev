@@ -141,3 +141,7 @@ textarea.default-input{
   border: 1px solid $orange-2;
   box-shadow: 0 0 2px $orange-2;
 }
+
+.visible-xs.hide {
+  display: none !important;
+}

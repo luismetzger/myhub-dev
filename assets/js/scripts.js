@@ -263,6 +263,15 @@ var $modal_wrap = $(".fmodal_wrap"),
     }).on('click', '.add_card_link', function(e){
         e.preventDefault();
         $mmodal_wrap2.modal('show');
-    })
+    });
+
+    $('.mobile_container.hide').hide().removeClass('hide');
+
+    $body.on('click', '.data-go', function(e){
+        e.preventDefault();
+        var getId = $(this).attr('data-go');
+        $(this).closest('.mobile_container').addClass('hide');
+        $("#" + getId).fadeIn();
+    });
 
 });

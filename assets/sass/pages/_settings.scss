@@ -382,7 +382,7 @@ Mobile Design
           }
           &:after {
             @media all and (max-width: $iphone) {
-              margin-top: -0.3em;
+//              margin-top: -0.3em;
             }
           }
         }
@@ -430,6 +430,9 @@ Mobile Design
 }
 .orange_txt {
   color: $orange;
+}
+.green_txt {
+  color: $green;
 }
 .sfc_tbl {
   padding-bottom: 20px;
@@ -503,6 +506,26 @@ Mobile Design
 textarea.sfc_m_input {
   resize: vertical;
 }
+.sfc_tbl_pmds {
+  padding-bottom: 20px;
+  .modal_input input, input {
+    padding: 10px 0 10px 60px;
+    background: none;
+    width: 245px;
+    color: $mid-gray;
+  }
+  input {
+    text-align: left;
+    padding-left: 10px;
+  }
+  div.pull-right {
+    padding-top: 10px;
+    font-size: 1.125em;
+    .orange_txt {
+      font-style: italic;
+    }
+  }
+}
 @media all and (min-width: $small + 1){
   .settings_page_container {
     margin-top: 55px;
@@ -515,5 +538,9 @@ textarea.sfc_m_input {
 
 }
 @media all and (max-width: $iphone) {
-
+  .sfc_tbl li.sfc_add_bank_btm {
+    label:not(.onoffswitch-label) {
+      width: auto;
+    }
+  }
 }

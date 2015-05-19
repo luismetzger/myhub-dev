@@ -11868,6 +11868,10 @@ textarea.default-input {
   box-shadow: 0 0 2px #E5603B;
 }
 
+.visible-xs.hide {
+  display: none !important;
+}
+
 .nav.navbar-nav.navbar-right {
   margin-right: 0;
 }
@@ -18605,11 +18609,6 @@ Mobile Design
 .smobile_main .spc_left .sl_links li a:before {
   display: none;
 }
-@media all and (max-width: 480px) {
-  .smobile_main .spc_left .sl_links li a:after {
-    margin-top: -0.3em;
-  }
-}
 .smobile_main .spc_left .sl_links li:first-child a {
   border-top: 1px solid #9EA7B3;
 }
@@ -18653,6 +18652,10 @@ Mobile Design
 
 .orange_txt {
   color: #FF6B42;
+}
+
+.green_txt {
+  color: #00BA84;
 }
 
 .sfc_tbl {
@@ -18724,6 +18727,27 @@ textarea.sfc_m_input {
   resize: vertical;
 }
 
+.sfc_tbl_pmds {
+  padding-bottom: 20px;
+}
+.sfc_tbl_pmds .modal_input input, .sfc_tbl_pmds input {
+  padding: 10px 0 10px 60px;
+  background: none;
+  width: 245px;
+  color: #9EA7B3;
+}
+.sfc_tbl_pmds input {
+  text-align: left;
+  padding-left: 10px;
+}
+.sfc_tbl_pmds div.pull-right {
+  padding-top: 10px;
+  font-size: 1.125em;
+}
+.sfc_tbl_pmds div.pull-right .orange_txt {
+  font-style: italic;
+}
+
 @media all and (min-width: 768px) {
   .settings_page_container {
     margin-top: 55px;
@@ -18731,6 +18755,11 @@ textarea.sfc_m_input {
 
   .ac_pb_btm {
     padding: 20% 0 5%;
+  }
+}
+@media all and (max-width: 480px) {
+  .sfc_tbl li.sfc_add_bank_btm label:not(.onoffswitch-label) {
+    width: auto;
   }
 }
 body {

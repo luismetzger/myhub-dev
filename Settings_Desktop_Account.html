@@ -57,7 +57,7 @@
 <div id="pushy_wrapper" class="section">
 
 
-    <div class="top-header">
+    <div class="top-header hidden-xs">
         <!--add this class nav menu-->
 
         <div class="top-sub-head clearfix">
@@ -102,7 +102,7 @@
     </div>
     <!--end header nav-->
 
-    <div class="settings_page_container">
+    <div class="settings_page_container hidden-xs">
         <div class="container">
 
             <div class="spc_left">
@@ -170,7 +170,7 @@
     </div>
 
     <!--part1 9-->
-    <div id="page_footer_cont" class="inner_footer waypoint active-trans">
+    <div id="page_footer_cont" class="inner_footer waypoint active-trans hidden-xs">
 
         <div id="footer_container">
 
@@ -252,37 +252,82 @@
     <!--end part 9-->
 
 
-</div>
-<!--end page wrapper-->
+    <div class="mobile_container settings_container_mobile_wrap visible-xs">
 
-<!--modals-->
+        <div class="smobile_head container-fluid">
+            <div class="smobile_head_inner">
+                <h1 class="text-center">settings</h1>
+                <a href="#" class="back_btn menu-btn"><i class="fa fa-bars"></i></a>
+            </div>
+        </div>
+
+        <div class="smobile_main container-fluid">
+
+            <div class="spc_left">
+                <!--end top part-->
+                <div class="sl_links_wrap">
+                    <div class="sl_links">
+                        <ul class="clearfix">
+                            <li><a href="#" class="data-go" data-go="edit_profile_m">Edit Profile</a></li>
+                            <li><a href="#">Account Settings</a></li>
+                            <li><a href="#">Payment Methods</a></li>
+                            <li><a href="#">Notifications</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 
 
-<div class="modal middlemodal fade in" id="downloadAppModal" tabindex="-1" role="dialog" arial-labelledby="downloadAppModalTitle" aria-hidden="false" style="display: none;">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <button type="button" class="btn close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
-            <div class="modal-body">
-                <p class="modal-message" style="margin:0 0 1em 0;">Enter your phone number, area code and all.<br>
-                    We’ll text you a download link!</p>
-                <form class="download-app-form" role="form">
-                    <div class="row">
-                        <div class="col-xs-12 twilow_sms">
-                            <label class="sr-only" for="modalSmsInput">Phone number</label>
-                            <input type="tel" id="modalSmsInput" placeholder="xxxxxxxxx" class="form-control">
-                            <button id="twillow_submit">Send SMS</button>
-                        </div>
-                        <div class="hide col-xs-12" id="pp_status"></div>
+    <div id="edit_profile_m" class="mobile_container settings_container_mobile_wrap hide">
 
+        <div class="smobile_head container-fluid">
+            <div class="smobile_head_inner">
+                <h1 class="text-center">edit profile</h1>
+                <a href="#" class="back_btn"><span class="icon-arrow_lg_back"></span></a>
+                <button class="ms_submit_btn"><span class="icon-checkmark"></span></button>
+            </div>
+        </div>
+
+        <div class="smobile_main container-fluid">
+            <div class="sm_form_cont">
+                <form action="#">
+                    <div class="sfc_tbl sfc_tbl_edac">
+                        <ul class="clearfix">
+                            <li class="clearfix">
+                                <label for="email">Email</label>
+                                <div class="sfc_input_wrap">
+                                    <input type="text" class="sfc_m_input" value="eric.hubell@gmail.com" id="email"/>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <label for="password">Password</label>
+                                <div class="sfc_input_wrap">
+                                    <input type="password" class="sfc_m_input" value="afdfds" id="password"/>
+                                </div>
+                            </li>
+                            <li style="padding-top: 23%;" class="clearfix">
+                                &nbsp;
+                            </li>
+                            <li class="had_border_bottom sfc_da clearfix">
+                                <label for="email">Deactivate Account</label>
+                                <a href="#" class="orange_txt"><span class="icon-close"></span></a>
+                            </li>
+                        </ul>
                     </div>
                 </form>
             </div>
         </div>
+
     </div>
+
+
 </div>
-
-
-<!--modals ends-->
+<!--end page wrapper-->
 
 
 
@@ -298,6 +343,7 @@
 <script type="text/javascript" src="assets/js/venobox.min.js"></script>
 <script type="text/javascript" src="assets/js/velocity.min.js"></script>
 <script type="text/javascript" src="assets/js/team_view.js"></script>
+<script type="text/javascript" src="assets/js/jquery.onoff.min.js"></script>
 
 
 <!--add scripts before this line-->

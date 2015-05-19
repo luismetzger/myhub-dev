@@ -56,7 +56,7 @@
 
 <!-- class="container-push"-->
 
-<div id="pushy_wrapper" class="section">
+<div id="pushy_wrapper" class="section hidden-xs">
 
 
     <div class="top-header">
@@ -283,34 +283,83 @@
 </div>
 <!--end page wrapper-->
 
-<!--modals-->
 
+<div class="mobile_container settings_container_mobile_wrap visible-xs">
 
-<div class="modal middlemodal fade in" id="downloadAppModal" tabindex="-1" role="dialog" arial-labelledby="downloadAppModalTitle" aria-hidden="false" style="display: none;">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <button type="button" class="btn close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
-            <div class="modal-body">
-                <p class="modal-message" style="margin:0 0 1em 0;">Enter your phone number, area code and all.<br>
-                    We’ll text you a download link!</p>
-                <form class="download-app-form" role="form">
-                    <div class="row">
-                        <div class="col-xs-12 twilow_sms">
-                            <label class="sr-only" for="modalSmsInput">Phone number</label>
-                            <input type="tel" id="modalSmsInput" placeholder="xxxxxxxxx" class="form-control">
-                            <button id="twillow_submit">Send SMS</button>
-                        </div>
-                        <div class="hide col-xs-12" id="pp_status"></div>
-
-                    </div>
-                </form>
-            </div>
+    <div class="smobile_head container-fluid">
+        <div class="smobile_head_inner">
+            <h1 class="text-center">account settings</h1>
+            <a href="#" class="back_btn"><span class="icon-arrow_lg_back"></span></a>
+            <button class="ms_submit_btn"><span class="icon-checkmark"></span></button>
         </div>
     </div>
+
+    <div class="smobile_main container-fluid">
+        <div class="sm_edit_profile_top">
+            <div class="sm_edit_profile_top_inner text-center">
+                <img class="sept_img" alt="" src="assets/images/eric-hubbell.png">
+                <span class="icon-verified sept_img_mdl">&nbsp;</span>
+                <span class="orange_txt">verified</span>
+            </div>
+        </div>
+
+        <div class="sm_form_cont">
+            <form action="#">
+                <div class="sfc_tbl">
+                    <ul class="clearfix">
+                        <li class="clearfix">
+                            <label for="fname">Full Name</label>
+                            <div class="sfc_input_wrap">
+                                <input type="text" class="sfc_m_input" value="Eric Hubble" id="fname"/>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <label for="username">Username</label>
+                            <div class="sfc_input_wrap">
+                                <input type="text" class="sfc_m_input" value="erichubble" id="username"/>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <label for="location">Location</label>
+                            <div class="sfc_input_wrap">
+                                <input type="text" class="sfc_m_input" value="Denver, CO" id="location"/>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <label for="website">Website</label>
+                            <div class="sfc_input_wrap">
+                                <input type="text" class="sfc_m_input" value="www.myhubapp.com" id="website"/>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <label for="about">About</label>
+                            <div class="sfc_input_wrap">
+                                <textarea class="sfc_m_input" name="about" id="about" cols="30" rows="10">Born in lowa. Raised in NL...</textarea>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="onofWrap pull-right">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" id="onoffswitch1" class="onoffswitch-checkbox">
+                                    <label class="onoffswitch-label" for="onoffswitch1">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="text-left">
+                                <label>Private Profile</label>
+                                <p>Switch privacy on to approve follows and hide
+                                    your events from the public.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+
 </div>
-
-
-<!--modals ends-->
 
 
 
