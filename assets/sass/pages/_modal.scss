@@ -1,6 +1,9 @@
 .fmodal_container {
   padding: 55px 0 0;
 }
+.modal-dialog {
+  z-index: 1050;
+}
 .modal_top_head {
   padding: 15px;
   text-align: center;
@@ -385,13 +388,20 @@ a.mb_btn {
     }
   }
 }
+
+.mb_btns {
+  span[class^="icon-Paper_Airplane"] {
+    left: auto;
+    right: 15px;
+  }
+}
+
+
+
 @media all and (max-width: $iphone) {
   .mb_btns {
     span[class^="icon-Facebook_Square"] {
       left: 10px;
     }
   }
-}
-.close {
-	font-size: 0px;
 }

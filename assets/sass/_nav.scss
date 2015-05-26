@@ -71,7 +71,8 @@
   font-size: 28px;
 }
 
-.navbar-nav > li > .dropdown-menu {
+.navbar-nav > li > .dropdown-menu,
+.dropdown .dropdown-menu {
   margin-top: 2px;
   background: $off-white;
   a {

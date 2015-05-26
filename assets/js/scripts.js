@@ -274,4 +274,30 @@ var $modal_wrap = $(".fmodal_wrap"),
         $("#" + getId).fadeIn();
     });
 
+    $('.eds_mail').on('click', 'a', function(e){
+        e.preventDefault();
+        $('.email_invite_modal').modal('show');
+    });
+
+
+    $(".join-alert").on('click', function(e){
+        e.preventDefault();
+        var $this = $(this);
+        if('function' === typeof sweetAlert){
+
+            setTimeout(function(){
+                $this.text('Joined!');
+            }, 1000);
+
+            swal({
+                title: "",
+                text: "We've added you to our guestlist!",
+                timer: 1500,
+                type: 'success',
+                showConfirmButton: false
+            });
+        }
+
+    });
+
 });

@@ -186,35 +186,35 @@
 }
 .pmulc_img {
   position: relative;
-  & > a img {
+  & > img {
     width: 100%;
     border-radius: 5px;
     display: block;
   }
-  .pmulc_price {
-    position: absolute;
-    right: 0;
-    top: 20px;
-    color: $green;
-    background: $medium-gray;
-    padding: 5px 20px;
-    font-size: 1.3em;
-    &:after, &:before {
-      display: block;
-    }
+}
+.pmulc_price {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  color: $green;
+  background: $medium-gray;
+  padding: 5px 20px;
+  font-size: 1.3em;
+  &:after, &:before {
+    display: block;
   }
-  .pmu_pimg {
-    position: absolute;
-    right: 20px;
-    top: 100%;
-    margin-top: -38px;
-    width: 74px;
-    height: 74px;
-    img {
-      border-radius: 50px;
-      border: 2px solid $off-white;
-      display: block;
-    }
+}
+.pmu_pimg {
+  position: absolute;
+  right: 20px;
+  top: 100%;
+  margin-top: -38px;
+  width: 74px;
+  height: 74px;
+  img {
+    border-radius: 50px;
+    border: 2px solid $off-white;
+    display: block;
   }
 }
 .pmulc_txt {

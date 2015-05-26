@@ -2062,6 +2062,26 @@ embed.E {
   font-size: 14px;
 }
 
+.sweet-alert {
+  background: rgba(50,58,69,0.7);
+  .sa-icon.sa-success {
+    &:after, &:before, .sa-fix {
+      background: inherit;
+    }
+    .sa-placeholder {
+      background: $full-white;
+    }
+    .sa-line.sa-long,
+    .sa-line.sa-tip {
+      z-index: 15;
+      background: $medium-gray;
+    }
+  }
+  p {
+    color: $full-white;
+  }
+}
+
 /**Footer Responsiveness*/
 @media all and (min-width: $small) and (max-width: $medium) {
   #footer_container {
