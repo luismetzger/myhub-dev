@@ -1,4 +1,4 @@
-// Main Navbar
+// Main Navbar 
 .nav.navbar-nav.navbar-right {
   margin-right: 0;
 }
@@ -9,11 +9,11 @@
 }
 
 .navbar-nav > li > .dropdown-menu a:hover {
-  background: $lighter-gray;
+	background: $lighter-gray;
 }
 
 .dropdown-menu>li>a {
-  color: $medium-gray;
+	color: $medium-gray;
 }
 
 #login-button {
@@ -51,10 +51,10 @@
     display: none;
   }
   a {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 14px;
-
+	  font-family: $headline;
+	  font-weight: $light-weight;
+	  font-size: 14px;
+	
   }
 }
 
@@ -68,7 +68,7 @@
 
 .icon-ellipses:before {
 
-  font-size: 28px;
+	font-size: 28px;
 }
 
 .navbar-nav > li > .dropdown-menu,
@@ -270,7 +270,7 @@
 /*pushy overwride*/
 
 .landingPage .pushy,
-body .pushy {
+body > .pushy {
   width: 400px;
   background: $medium-gray;
   font-size: 1.1em;
@@ -278,7 +278,7 @@ body .pushy {
 }
 
 .landingPage .pushy a,
-body .pushy a {
+body > .pushy a {
   font-family: $headline;
   font-weight: $medium-weight;
   font-size: 16px;
@@ -286,13 +286,13 @@ body .pushy a {
 }
 
 .landingPage .pushy a:hover,
-body .pushy a:hover {
+body > .pushy a:hover {
   background: $orange;
   color: $white;
 }
 
 .landingPage .pushy-left,
-body .pushy-left {
+body > .pushy-left {
   -webkit-transform: translate3d(-400px, 0, 0);
   -moz-transform: translate3d(-400px, 0, 0);
   -ms-transform: translate3d(-400px, 0, 0);
@@ -317,7 +317,7 @@ body .container-push {
 }
 
 .landingPage .pushy ul,
-body .pushy ul {
+body > .pushy ul {
   padding: 0;
 }
 
@@ -386,7 +386,7 @@ body .pushy ul {
       a {
         text-align: center;
         &:hover {
-          background: none;
+	        background: none;
         }
       }
       img {
@@ -459,12 +459,12 @@ body .pushy ul {
 
 @media only screen and (max-width: 480px) {
   .landingPage .pushy,
-  body .pushy {
+  body > .pushy {
     width: 250px;
   }
 
   .landingPage .pushy-left,
-  body .pushy-left {
+  body > .pushy-left {
     -webkit-transform: translate3d(-250px, 0, 0);
     -moz-transform: translate3d(-250px, 0, 0);
     -ms-transform: translate3d(-250px, 0, 0);

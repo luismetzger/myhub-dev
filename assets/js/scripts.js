@@ -300,4 +300,11 @@ var $modal_wrap = $(".fmodal_wrap"),
 
     });
 
+    $(".nav_settings_link").on('click', function(e){
+        e.preventDefault();
+        $(".host_btm_links").slideToggle();
+    });
+
+    /*Set right sidebar fixed*/
+
 });

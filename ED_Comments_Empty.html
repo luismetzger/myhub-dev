@@ -56,10 +56,10 @@
 
 <!-- class="container-push"-->
 
-<div id="pushy_wrapper" class="section page_wrap hidden-xs">
+<div id="pushy_wrapper" class="section page_wrap">
 
 
-    <div class="top-header">
+    <div class="top-header hidden-xs">
         <!--add this class nav menu-->
 
         <div class="top-sub-head clearfix">
@@ -104,7 +104,15 @@
     </div>
     <!--end header nav-->
 
-    <div class="ed_banner_wrap">
+    <div class="smobile_head container-fluid visible-xs">
+        <div class="smobile_head_inner">
+            <h1 class="text-center">Concert @ Red Rocks...</h1>
+            <a class="back_btn" href="#"><span class="icon-arrow_lg_back"></span></a>
+        </div>
+    </div>
+
+
+    <div class="ed_banner_wrap hidden-xs">
         &nbsp;
         <div class="pmulc_price">
             $200
@@ -129,7 +137,7 @@
         </div>
     </div>
 
-    <div class="ed_nav_wrap">
+    <div class="ed_nav_wrap hidden-xs">
         <div class="container">
             <div class="ed_profile_nav">
                 <div class="profile_nav">
@@ -146,34 +154,7 @@
     <div class="event_details_page_container">
         <div class="container">
             <div class="ed_pc_inner">
-                <div class="ed_pc_ileft">
-                    <div class="ed_post_content">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Add to the conversation...">
-      <span class="input-group-btn">
-        <button class="btn btn-default btn-gray" type="button"><span class="pull-left">Post</span> <span class="icon-Paper_Airplane pull-right"></span></button>
-      </span>
-                        </div>
-                        <img src="assets/images/pimg_icons/AT.png" alt=""/>
-                    </div>
-
-                    <div class="edc_msg">
-                        <div class="edc_msg_inner">
-                            <span class="icon-messages_II">
-                                <span class="path1"></span>
-                                <span class="path2"></span>
-                                <span class="path3"></span>
-                                <span class="path4"></span>
-                            </span>
-                            <h3>Message</h3>
-                            <p>No ones's posted a message <br/>
-                            yet. Stat the conversation!</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="ed_pc_fx_sidebar">
+                <div class="ed_pc_fx_sidebar hidden-xs">
                     <div class="ed_sidebar_top_link">
                         <ul class="clearfix">
                             <li>
@@ -265,12 +246,43 @@
                     <!--end sidebar cont-->
 
                 </div>
+
+                <div class="ed_pc_ileft">
+                    <div class="ed_post_content">
+                        <div class="input-group">
+                          <span class="input-group-btn visible-xs-inline">
+                            <button class="btn btn-default btn-gray left_gbtn" type="button"><span class="pull-left">Post</span> <span class="icon-upload"></span></button>
+                          </span>
+                            <input type="text" class="form-control" placeholder="Add to the conversation...">
+      <span class="input-group-btn hidden-xs">
+        <button class="btn btn-default btn-gray" type="button"><span class="pull-left">Post</span> <span class="icon-Paper_Airplane pull-right"></span></button>
+      </span>
+                        </div>
+                        <img src="assets/images/pimg_icons/AT.png" alt=""/>
+                    </div>
+
+                    <div class="edc_msg">
+                        <div class="edc_msg_inner">
+                            <span class="icon-messages_II">
+                                <span class="path1"></span>
+                                <span class="path2"></span>
+                                <span class="path3"></span>
+                                <span class="path4"></span>
+                            </span>
+                            <h3>Message</h3>
+                            <p>No ones's posted a message <br/>
+                            yet. Stat the conversation!</p>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </div>
 
     <!--part1 9-->
-    <div id="page_footer_cont" class="inner_footer waypoint active-trans">
+    <div id="page_footer_cont" class="inner_footer waypoint active-trans hidden-xs">
 
         <div id="footer_container">
 
@@ -354,84 +366,6 @@
 
 </div>
 <!--end page wrapper-->
-
-
-<div class="mobile_container settings_container_mobile_wrap visible-xs" style="display: none !important;">
-
-    <div class="smobile_head container-fluid">
-        <div class="smobile_head_inner">
-            <h1 class="text-center">account settings</h1>
-            <a href="#" class="back_btn"><span class="icon-arrow_lg_back"></span></a>
-            <button class="ms_submit_btn"><span class="icon-checkmark"></span></button>
-        </div>
-    </div>
-
-    <div class="smobile_main container-fluid">
-        <div class="sm_edit_profile_top">
-            <div class="sm_edit_profile_top_inner text-center">
-                <img class="sept_img" alt="" src="assets/images/eric-hubbell.png">
-                <span class="icon-verified sept_img_mdl">&nbsp;</span>
-                <span class="orange_txt">verified</span>
-            </div>
-        </div>
-
-        <div class="sm_form_cont">
-            <form action="#">
-                <div class="sfc_tbl">
-                    <ul class="clearfix">
-                        <li class="clearfix">
-                            <label for="fname">Full Name</label>
-                            <div class="sfc_input_wrap">
-                                <input type="text" class="sfc_m_input" value="Eric Hubble" id="fname"/>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <label for="username">Username</label>
-                            <div class="sfc_input_wrap">
-                                <input type="text" class="sfc_m_input" value="erichubble" id="username"/>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <label for="location">Location</label>
-                            <div class="sfc_input_wrap">
-                                <input type="text" class="sfc_m_input" value="Denver, CO" id="location"/>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <label for="website">Website</label>
-                            <div class="sfc_input_wrap">
-                                <input type="text" class="sfc_m_input" value="www.myhubapp.com" id="website"/>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <label for="about">About</label>
-                            <div class="sfc_input_wrap">
-                                <textarea class="sfc_m_input" name="about" id="about" cols="30" rows="10">Born in lowa. Raised in NL...</textarea>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch1" class="onoffswitch-checkbox">
-                                    <label class="onoffswitch-label" for="onoffswitch1">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label>Private Profile</label>
-                                <p>Switch privacy on to approve follows and hide
-                                    your events from the public.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </form>
-        </div>
-    </div>
-
-</div>
 
 
 <!--Modals-->

@@ -350,6 +350,7 @@
   .media {
     .media-left {
       padding-right: 15px;
+      white-space: nowrap;
       img {
         width: 50px;
       }
@@ -412,19 +413,36 @@
 
 .profile-edg-list {
   li {
-    margin-bottom: 50px;
-    overflow: visible;
-    .pl-hover {
-      bottom: 50px;
-      right: 0;
+    height: 200px;
+    &:hover {
+      .pl-hover {
+        display: none;
+      }
+    }
+    .pl_item {
+      position: relative;
+      display: block;
+      height: 150px;
+      .pl-hover {
+        padding-top: 58px;
+        a {
+          display: block;
+          text-align: center;
+        }
+      }
+      &:hover {
+        .pl-hover {
+          display: block;
+        }
+      }
+      > img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
     }
     .plg-name {
-      position: absolute;
-      bottom: -50px;
-      left: 0;
-      right: 0;
-      display: block;
-      height: 50px;
+//      height: 50px;
     }
     .light_txt {
       color: $light-gray;
@@ -522,7 +540,7 @@
   height: auto;
   padding: 10px;
   text-align: center;
-  z-index: 9999;
+  z-index: 500;
   ul {
     display: inline-block;
   }
@@ -574,9 +592,68 @@
     }
   }
 }
+.input-group {
+  textarea.form-control {
+    resize: none;
+  }
+}
+
+
+#follow_number2 {
+  @extend #follow_number;
+}
+
+.host_btm_links {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 450;
+  background: $tag-gray;
+  width: 100%;
+  padding: 15px 15px 100px;
+  display: none;
+  color: $full-white;
+  text-align: center;
+  h3 {
+    color: inherit;
+    margin: 0 0 20px;
+    font-weight: $bold-weight;
+  }
+  ul {
+    @extend .table_list;
+    li {
+      width: 33.33%;
+      text-align: center;
+      a {
+        color: inherit;
+        span[class^="icon"] {
+          font-size: $icon-font-size * 1.8;
+        }
+        strong {
+          display: block;
+          padding-top: 10px;
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+  h4, h2 {
+    font-weight: $bold-weight;
+    color: inherit;
+    font-size: 1.25em;
+  }
+  h2 {
+    font-size: 2.6em;
+    margin: 10px 0;
+  }
+  h5 {
+    color: inherit;
+    font-size: 1.1em;
+  }
+}
+
 
 @media all and (max-width: $small) {
-
   .ed_pc_fx_sidebar {
     position: static;
     width: 100%;
@@ -622,4 +699,58 @@
     padding-right: 10px;
     color: $full-white;
   }
+  .input-group-btn.visible-xs-inline {
+    display: table-cell !important;
+  }
+  .ed_post_content {
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: $off-white;
+    padding: 15px;
+    border-top: 1px solid $mid-gray;
+    > img {
+      display: none;
+    }
+    .input-group {
+      .form-control {
+        padding-left: 15px;
+        border-radius: 5px;
+        border-color: $mid-gray;
+      }
+      .btn {
+        padding-left: 15px;
+        padding-right: 0;
+        border: none;
+        background: none;
+        width: auto;
+        &.left_gbtn {
+          padding-right: 15px;
+          padding-left: 0;
+        }
+        .pull-left {
+          display: none;
+        }
+      }
+      span[class^="icon"] {
+        color: $medium-gray;
+      }
+    }
+  }
+  .joined_invited_list {
+    .fn_tttl {
+      padding: 10px 0;
+    }
+  }
+  .edg_l_empt {
+    padding-top: 45%;
+  }
+  .edcm_icons .icon-girl_II, .edcm_icons .icon-guy, .edcm_icons .icon-Girl_V {
+    font-size: $icon-font-size * 2;
+  }
+
+
 }

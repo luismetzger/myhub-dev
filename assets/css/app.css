@@ -11785,12 +11785,12 @@ textarea.default-input {
 }
 
 .table_list, .progressbar_top ul,
-.progressbar_bottom ul, .ed_sidebar_social ul {
+.progressbar_bottom ul, .ed_sidebar_social ul, .host_btm_links ul {
   display: table;
   width: 100%;
 }
 .table_list li, .progressbar_top ul li,
-.progressbar_bottom ul li, .ed_sidebar_social ul li {
+.progressbar_bottom ul li, .ed_sidebar_social ul li, .host_btm_links ul li {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
@@ -11939,6 +11939,10 @@ textarea.default-input {
 
 .visible-xs.hide {
   display: none !important;
+}
+
+.close {
+  font-size: 0;
 }
 
 .nav.navbar-nav.navbar-right {
@@ -17744,7 +17748,7 @@ body.full-white .social-share-buttons.share-with-text .event-detail-social-share
   font-weight: 600;
 }
 
-#follow_number {
+#follow_number, #follow_number2 {
   background: #F4F5F7;
   font-size: 1.5em;
   text-transform: uppercase;
@@ -19209,6 +19213,7 @@ textarea.sfc_m_input {
 }
 .ed_comment_list .media .media-left {
   padding-right: 15px;
+  white-space: nowrap;
 }
 .ed_comment_list .media .media-left img {
   width: 50px;
@@ -19266,20 +19271,30 @@ textarea.sfc_m_input {
 }
 
 .profile-edg-list li {
-  margin-bottom: 50px;
-  overflow: visible;
+  height: 200px;
 }
-.profile-edg-list li .pl-hover {
-  bottom: 50px;
-  right: 0;
+.profile-edg-list li:hover .pl-hover {
+  display: none;
 }
-.profile-edg-list li .plg-name {
-  position: absolute;
-  bottom: -50px;
-  left: 0;
-  right: 0;
+.profile-edg-list li .pl_item {
+  position: relative;
   display: block;
-  height: 50px;
+  height: 150px;
+}
+.profile-edg-list li .pl_item .pl-hover {
+  padding-top: 58px;
+}
+.profile-edg-list li .pl_item .pl-hover a {
+  display: block;
+  text-align: center;
+}
+.profile-edg-list li .pl_item:hover .pl-hover {
+  display: block;
+}
+.profile-edg-list li .pl_item > img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .profile-edg-list li .light_txt {
   color: #9EA7B3;
@@ -19379,7 +19394,7 @@ textarea.sfc_m_input {
   height: auto;
   padding: 10px;
   text-align: center;
-  z-index: 9999;
+  z-index: 500;
 }
 .btm_link_block ul {
   display: inline-block;
@@ -19428,6 +19443,56 @@ textarea.sfc_m_input {
 .btm_link_block .icns_li span[class^="icon-Messages"] {
   font-size: 45px;
   padding-top: 5px;
+}
+
+.input-group textarea.form-control {
+  resize: none;
+}
+
+.host_btm_links {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 450;
+  background: #5E6D81;
+  width: 100%;
+  padding: 15px 15px 100px;
+  display: none;
+  color: #FFFFFF;
+  text-align: center;
+}
+.host_btm_links h3 {
+  color: inherit;
+  margin: 0 0 20px;
+  font-weight: 600;
+}
+.host_btm_links ul li {
+  width: 33.33%;
+  text-align: center;
+}
+.host_btm_links ul li a {
+  color: inherit;
+}
+.host_btm_links ul li a span[class^="icon"] {
+  font-size: 57.6px;
+}
+.host_btm_links ul li a strong {
+  display: block;
+  padding-top: 10px;
+  font-size: 1.1em;
+}
+.host_btm_links h4, .host_btm_links h2 {
+  font-weight: 600;
+  color: inherit;
+  font-size: 1.25em;
+}
+.host_btm_links h2 {
+  font-size: 2.6em;
+  margin: 10px 0;
+}
+.host_btm_links h5 {
+  color: inherit;
+  font-size: 1.1em;
 }
 
 @media all and (max-width: 767px) {
@@ -19480,6 +19545,59 @@ textarea.sfc_m_input {
     padding-top: 5px;
     padding-right: 10px;
     color: #FFFFFF;
+  }
+
+  .input-group-btn.visible-xs-inline {
+    display: table-cell !important;
+  }
+
+  .ed_post_content {
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: #F4F5F7;
+    padding: 15px;
+    border-top: 1px solid #9EA7B3;
+  }
+  .ed_post_content > img {
+    display: none;
+  }
+  .ed_post_content .input-group .form-control {
+    padding-left: 15px;
+    border-radius: 5px;
+    border-color: #9EA7B3;
+  }
+  .ed_post_content .input-group .btn {
+    padding-left: 15px;
+    padding-right: 0;
+    border: none;
+    background: none;
+    width: auto;
+  }
+  .ed_post_content .input-group .btn.left_gbtn {
+    padding-right: 15px;
+    padding-left: 0;
+  }
+  .ed_post_content .input-group .btn .pull-left {
+    display: none;
+  }
+  .ed_post_content .input-group span[class^="icon"] {
+    color: #323A45;
+  }
+
+  .joined_invited_list .fn_tttl {
+    padding: 10px 0;
+  }
+
+  .edg_l_empt {
+    padding-top: 45%;
+  }
+
+  .edcm_icons .icon-girl_II, .edcm_icons .icon-guy, .edcm_icons .icon-Girl_V {
+    font-size: 64px;
   }
 }
 body.stop-scrolling {
