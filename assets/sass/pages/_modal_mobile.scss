@@ -1,0 +1,50 @@
+@media all and (max-width: $small) {
+  .mobile_fullscreen_modal {
+    background: $full-white;
+    z-index: 3000;
+    .modal-backdrop.in {
+      opacity: 1;
+      background: $full-white;
+    }
+    .modal-dialog, .fmodal_wrap {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .fmodal_wrap {
+      padding: 0;
+      .fmodal_head {
+        border-radius: 0;
+        h2 {
+          font-size: 1.8em;
+          font-weight: $mbold-weight;
+          span {
+            display: none;
+          }
+        }
+      }
+      .fmodal_body {
+        border-radius: 0;
+      }
+      .modal-close {
+        right: 16px;
+        top: 12px;
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+
+        .icon-decline_Outline {
+          color: $mid-gray;
+          &:before {
+            content: "\eb0f";
+          }
+        }
+      }
+      .mb_btns {
+        padding-top: 30px;
+      }
+    }
+  }
+}

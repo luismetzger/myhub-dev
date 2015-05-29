@@ -102,42 +102,10 @@
     </div>
     <!--end header nav-->
 
-
-    <div class="mobile_container settings_container_mobile_wrap visible-xs">
-
-        <div class="smobile_head container-fluid">
-            <div class="smobile_head_inner">
-                <h1 class="text-center">settings</h1>
-                <a href="#" class="back_btn menu-btn"><i class="fa fa-bars"></i></a>
-            </div>
-        </div>
-
-        <div class="smobile_main container-fluid">
-
-            <div class="spc_left">
-                <!--end top part-->
-                <div class="sl_links_wrap">
-                    <div class="sl_links">
-                        <ul class="clearfix">
-                            <li><a href="#" class="data-go" data-go="edit_profile_m">Edit Profile</a></li>
-                            <li><a href="#">Account Settings</a></li>
-                            <li><a href="#">Payment Methods</a></li>
-                            <li><a href="#">Notifications</a></li>
-                            <li><a href="#">Support</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <div class="settings_page_container edit_ac_mobile hidden_first">
+    <div class="settings_page_container hidden-xs">
         <div class="container">
 
-            <div class="spc_left hidden-xs">
+            <div class="spc_left">
                 <div class="stl_top clearfix">
                     <div class="stlt_img">
                         <img src="assets/images/pimg_icons/AT.png" alt=""/>
@@ -170,19 +138,10 @@
 
             <div class="spc_content">
                 <div class="panel panel-default panel-settings">
-                    <div class="panel-heading hidden-xs">
+                    <div class="panel-heading">
                         <h3 class="panel-title">Account Settings</h3>
                     </div>
                     <div class="panel-body">
-
-                        <div class="smobile_head container-fluid visible-xs">
-                            <div class="smobile_head_inner">
-                                <h1 class="text-center">edit profile</h1>
-                                <a href="#" class="back_btn"><span class="icon-arrow_lg_back"></span></a>
-                                <button class="ms_submit_btn"><span class="icon-checkmark"></span></button>
-                            </div>
-                        </div>
-
                         <form action="#" class="account_form">
                             <div class="ac_pb_top">
                                 <div class="form-group">
@@ -292,6 +251,79 @@
     </div>
     <!--end part 9-->
 
+
+    <div class="mobile_container settings_container_mobile_wrap visible-xs">
+
+        <div class="smobile_head container-fluid">
+            <div class="smobile_head_inner">
+                <h1 class="text-center">settings</h1>
+                <a href="#" class="back_btn menu-btn"><i class="fa fa-bars"></i></a>
+            </div>
+        </div>
+
+        <div class="smobile_main container-fluid">
+
+            <div class="spc_left">
+                <!--end top part-->
+                <div class="sl_links_wrap">
+                    <div class="sl_links">
+                        <ul class="clearfix">
+                            <li><a href="#" class="data-go" data-go="edit_profile_m">Edit Profile</a></li>
+                            <li><a href="#">Account Settings</a></li>
+                            <li><a href="#">Payment Methods</a></li>
+                            <li><a href="#">Notifications</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="edit_profile_m" class="mobile_container settings_container_mobile_wrap hide">
+
+        <div class="smobile_head container-fluid">
+            <div class="smobile_head_inner">
+                <h1 class="text-center">edit profile</h1>
+                <a href="#" class="back_btn"><span class="icon-arrow_lg_back"></span></a>
+                <button class="ms_submit_btn"><span class="icon-checkmark"></span></button>
+            </div>
+        </div>
+
+        <div class="smobile_main container-fluid">
+            <div class="sm_form_cont">
+                <form action="#">
+                    <div class="sfc_tbl sfc_tbl_edac">
+                        <ul class="clearfix">
+                            <li class="clearfix">
+                                <label for="email">Email</label>
+                                <div class="sfc_input_wrap">
+                                    <input type="text" class="sfc_m_input" value="eric.hubell@gmail.com" id="email"/>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <label for="password">Password</label>
+                                <div class="sfc_input_wrap">
+                                    <input type="password" class="sfc_m_input" value="afdfds" id="password"/>
+                                </div>
+                            </li>
+                            <li style="padding-top: 23%;" class="clearfix">
+                                &nbsp;
+                            </li>
+                            <li class="had_border_bottom sfc_da clearfix">
+                                <label for="email">Deactivate Account</label>
+                                <a href="#" class="orange_txt"><span class="icon-close"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
 
 
 </div>
