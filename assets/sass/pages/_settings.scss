@@ -545,12 +545,19 @@ textarea.sfc_m_input {
     }
   }
 }
+
+
 @media all and (min-width: $small + 1){
   .settings_page_container {
     margin-top: 55px;
   }
   .ac_pb_btm {
     padding: 20% 0 5%;
+  }
+  .edit_ac_mobile {
+    .onofWrap {
+      display: none;
+    }
   }
 }
 @media all and (max-width: $small) {
@@ -585,19 +592,23 @@ textarea.sfc_m_input {
         }
         input[type="text"],
         input[type="email"],
-        input[type="password"]{
+        input[type="password"],
+        textarea {
           background: $full-white;
           border: none;
           color: $light-gray;
           font-size: 1.15em;
           height: 40px;
-          padding: 10px 0;
+          padding: 5px 0;
           text-align: right;
           width: 300px;
           float: right;
           @media all and (max-width: $iphone) {
             width: 150px;
           }
+        }
+        span.pull-right.light_txt {
+          display: none;
         }
       }
       .form-group, .ac_pb_btm {
@@ -621,6 +632,7 @@ textarea.sfc_m_input {
           text-transform: capitalize;
         }
       }
+
 
       .ac_pb_btm {
         margin-top: 200px;
@@ -653,6 +665,26 @@ textarea.sfc_m_input {
           }
         }
       }
+
+      .snotifications_table {
+        table {
+          border: none;
+        }
+        td {
+          span[class^="icon"]{
+            display: none;
+          }
+        }
+        td:first-child {
+          color: $medium-gray;
+          font-size: 1.15em;
+          font-weight: $bold-weight;
+        }
+      }
+
+    }
+    .sm_edit_profile_top {
+      padding-bottom: 30px;
     }
   }
 }

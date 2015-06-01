@@ -56,10 +56,10 @@
 
 <!-- class="container-push"-->
 
-<div id="pushy_wrapper" class="section hidden-xs">
+<div id="pushy_wrapper" class="section">
 
 
-    <div class="top-header">
+    <div class="top-header hidden-xs">
         <!--add this class nav menu-->
 
         <div class="top-sub-head clearfix">
@@ -104,10 +104,42 @@
     </div>
     <!--end header nav-->
 
-    <div class="settings_page_container">
-        <div class="container">
+
+    <div class="mobile_container settings_container_mobile_wrap visible-xs">
+
+        <div class="smobile_head container-fluid">
+            <div class="smobile_head_inner">
+                <h1 class="text-center">notifications</h1>
+                <a href="#" class="back_btn"><span class="icon-arrow_lg_back"></span></a>
+            </div>
+        </div>
+
+        <div class="smobile_main container-fluid">
+
+            <h2>Notification Types</h2>
 
             <div class="spc_left">
+                <!--end top part-->
+                <div class="sl_links_wrap">
+                    <div class="sl_links">
+                        <ul class="clearfix">
+                            <li><a class="data-go" href="#" data-go="push_m_not">Push Notifications</a></li>
+                            <li><a class="data-go" href="#" data-go="email_m_not">Email Notifications</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="settings_page_container edit_ac_mobile hidden_first">
+        <div class="container">
+
+            <div class="spc_left hidden-xs">
                 <div class="stl_top clearfix">
                     <div class="stlt_img">
                         <img src="assets/images/pimg_icons/AT.png" alt=""/>
@@ -140,15 +172,26 @@
 
             <div class="spc_content">
                 <div class="panel panel-default panel-settings">
-                    <div class="panel-heading">
+                    <div class="panel-heading hidden-xs">
                         <h3 class="panel-title">Notifications</h3>
                     </div>
                     <div class="panel-body">
+
+
+                        <div class="smobile_head container-fluid">
+                            <div class="smobile_head_inner">
+                                <h1 class="text-center">email notifications</h1>
+                                <a href="#" class="back_btn"><span class="icon-arrow_lg_back"></span></a>
+                                <button class="ms_submit_btn"><span class="icon-checkmark"></span></button>
+                            </div>
+                        </div>
+
+
                         <form action="#" class="account_form">
                             
                             <div class="snotifications_table">
                                 <table class="table-responsive">
-                                    <tr>
+                                    <tr class="hidden-xs">
                                         <th>Notification Type</th>
                                         <th><span class="icon-iphone"></span></th>
                                         <th style="width: 30px;"><span class="icon-mail"></span></th>
@@ -162,6 +205,15 @@
                                                 <span class="path2"></span>
                                                 <span class="path3"></span>
                                             </span>
+                                            <div class="onofWrap pull-right">
+                                                <div class="onoffswitch">
+                                                    <input type="checkbox" checked="" class="onoffswitch-checkbox" id="onoffswitch1a">
+                                                    <label for="onoffswitch1a" class="onoffswitch-label">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -173,6 +225,15 @@
                                                 <span class="path2"></span>
                                                 <span class="path3"></span>
                                             </span>
+                                            <div class="onofWrap pull-right">
+                                                <div class="onoffswitch">
+                                                    <input type="checkbox" checked="" class="onoffswitch-checkbox" id="onoffswitch11">
+                                                    <label for="onoffswitch11" class="onoffswitch-label">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -184,6 +245,15 @@
                                                 <span class="path2"></span>
                                                 <span class="path3"></span>
                                             </span>
+                                            <div class="onofWrap pull-right">
+                                                <div class="onoffswitch">
+                                                    <input type="checkbox" checked="" class="onoffswitch-checkbox" id="onoffswitch13">
+                                                    <label for="onoffswitch13" class="onoffswitch-label">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -195,6 +265,15 @@
                                                 <span class="path2"></span>
                                                 <span class="path3"></span>
                                             </span>
+                                            <div class="onofWrap pull-right">
+                                                <div class="onoffswitch">
+                                                    <input type="checkbox" checked="" class="onoffswitch-checkbox" id="onoffswitch1">
+                                                    <label for="onoffswitch1" class="onoffswitch-label">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -206,7 +285,18 @@
                                                 <span class="path3"></span>
                                             </span>
                                         </td>
-                                        <td><span class="icon-close"></span></td>
+                                        <td>
+                                            <span class="icon-close"></span>
+                                            <div class="onofWrap pull-right">
+                                                <div class="onoffswitch">
+                                                    <input type="checkbox" class="onoffswitch-checkbox" id="onoffswitch5">
+                                                    <label for="onoffswitch5" class="onoffswitch-label">
+                                                        <span class="onoffswitch-inner" style=""></span>
+                                                        <span class="onoffswitch-switch" style=""></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Guest pledges</td>
@@ -217,6 +307,15 @@
                                                 <span class="path2"></span>
                                                 <span class="path3"></span>
                                             </span>
+                                            <div class="onofWrap pull-right">
+                                                <div class="onoffswitch">
+                                                    <input type="checkbox" checked="" class="onoffswitch-checkbox" id="onoffswitch4">
+                                                    <label for="onoffswitch4" class="onoffswitch-label">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -228,6 +327,15 @@
                                                 <span class="path2"></span>
                                                 <span class="path3"></span>
                                             </span>
+                                            <div class="onofWrap pull-right">
+                                                <div class="onoffswitch">
+                                                    <input type="checkbox" id="onoffswitch41" class="onoffswitch-checkbox" checked="">
+                                                    <label class="onoffswitch-label" for="onoffswitch41">
+                                                        <span class="onoffswitch-inner" style=""></span>
+                                                        <span class="onoffswitch-switch" style=""></span>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -239,6 +347,15 @@
                                                 <span class="path2"></span>
                                                 <span class="path3"></span>
                                             </span>
+                                            <div class="onofWrap pull-right">
+                                                <div class="onoffswitch">
+                                                    <input type="checkbox" checked="" class="onoffswitch-checkbox" id="onoffswitch42">
+                                                    <label for="onoffswitch42" class="onoffswitch-label">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -250,6 +367,15 @@
                                                 <span class="path2"></span>
                                                 <span class="path3"></span>
                                             </span>
+                                            <div class="onofWrap pull-right">
+                                                <div class="onoffswitch">
+                                                    <input type="checkbox" checked="" class="onoffswitch-checkbox" id="onoffswitch43">
+                                                    <label for="onoffswitch43" class="onoffswitch-label">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                 </table>
@@ -264,7 +390,7 @@
     </div>
 
     <!--part1 9-->
-    <div id="page_footer_cont" class="inner_footer waypoint active-trans">
+    <div id="page_footer_cont" class="inner_footer waypoint active-trans hidden-xs">
 
         <div id="footer_container">
 
@@ -348,391 +474,6 @@
 
 </div>
 <!--end page wrapper-->
-
-
-<div class="mobile_container settings_container_mobile_wrap visible-xs">
-
-    <div class="smobile_head container-fluid">
-        <div class="smobile_head_inner">
-            <h1 class="text-center">notifications</h1>
-            <a href="#" class="back_btn"><span class="icon-arrow_lg_back"></span></a>
-        </div>
-    </div>
-
-    <div class="smobile_main container-fluid">
-
-        <h2>Notification Types</h2>
-
-        <div class="spc_left">
-            <!--end top part-->
-            <div class="sl_links_wrap">
-                <div class="sl_links">
-                    <ul class="clearfix">
-                        <li><a class="data-go" href="#" data-go="push_m_not">Push Notifications</a></li>
-                        <li><a class="data-go" href="#" data-go="email_m_not">Email Notifications</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
-
-<div id="push_m_not" class="mobile_container settings_container_mobile_wrap hide">
-
-    <div class="smobile_head container-fluid">
-        <div class="smobile_head_inner">
-            <h1 class="text-center">push notifications</h1>
-            <a href="#" class="back_btn"><span class="icon-arrow_lg_back"></span></a>
-            <button class="ms_submit_btn"><span class="icon-checkmark"></span></button>
-        </div>
-    </div>
-
-    <div class="smobile_main container-fluid">
-        <div class="sm_form_cont">
-            <form action="#">
-                <div class="sfc_tbl email_notifications_mobile">
-                    <ul class="clearfix">
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch1" class="onoffswitch-checkbox" checked>
-                                    <label class="onoffswitch-label" for="onoffswitch1">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label>New follows</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch2" class="onoffswitch-checkbox" checked>
-                                    <label class="onoffswitch-label" for="onoffswitch2">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label> Follow requests</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch3" class="onoffswitch-checkbox">
-                                    <label class="onoffswitch-label" for="onoffswitch3">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label>Event invites</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch4" class="onoffswitch-checkbox" checked>
-                                    <label class="onoffswitch-label" for="onoffswitch4">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label> Event Updates</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch5" class="onoffswitch-checkbox">
-                                    <label class="onoffswitch-label" for="onoffswitch5">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label> Event comments</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch6" class="onoffswitch-checkbox">
-                                    <label class="onoffswitch-label" for="onoffswitch6">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label> Event comments</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch7" class="onoffswitch-checkbox">
-                                    <label class="onoffswitch-label" for="onoffswitch7">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label>Guest pledges</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch8" class="onoffswitch-checkbox">
-                                    <label class="onoffswitch-label" for="onoffswitch8">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label>When you're debited</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch9" class="onoffswitch-checkbox">
-                                    <label class="onoffswitch-label" for="onoffswitch9">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label>When we send you money</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch10" class="onoffswitch-checkbox" checked>
-                                    <label class="onoffswitch-label" for="onoffswitch10">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label>When you earn credit</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch11" class="onoffswitch-checkbox" checked>
-                                    <label class="onoffswitch-label" for="onoffswitch11">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label>Event Reminders</label>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </form>
-        </div>
-    </div>
-
-</div>
-
-<div id="email_m_not" class="mobile_container settings_container_mobile_wrap hide">
-
-    <div class="smobile_head container-fluid">
-        <div class="smobile_head_inner">
-            <h1 class="text-center">email notifications</h1>
-            <a href="#" class="back_btn"><span class="icon-arrow_lg_back"></span></a>
-            <button class="ms_submit_btn"><span class="icon-checkmark"></span></button>
-        </div>
-    </div>
-
-    <div class="smobile_main container-fluid">
-        <div class="sm_form_cont">
-            <form action="#">
-                <div class="sfc_tbl email_notifications_mobile">
-                    <ul class="clearfix">
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch1" class="onoffswitch-checkbox" checked>
-                                    <label class="onoffswitch-label" for="onoffswitch1">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label>New follows</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch2" class="onoffswitch-checkbox" checked>
-                                    <label class="onoffswitch-label" for="onoffswitch2">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label> Follow requests</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch3" class="onoffswitch-checkbox">
-                                    <label class="onoffswitch-label" for="onoffswitch3">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label>Event invites</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch4" class="onoffswitch-checkbox" checked>
-                                    <label class="onoffswitch-label" for="onoffswitch4">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label> Event Updates</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch5" class="onoffswitch-checkbox">
-                                    <label class="onoffswitch-label" for="onoffswitch5">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label> Event comments</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch6" class="onoffswitch-checkbox">
-                                    <label class="onoffswitch-label" for="onoffswitch6">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label> Event comments</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch7" class="onoffswitch-checkbox">
-                                    <label class="onoffswitch-label" for="onoffswitch7">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label>Guest pledges</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch8" class="onoffswitch-checkbox">
-                                    <label class="onoffswitch-label" for="onoffswitch8">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label>When you're debited</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch9" class="onoffswitch-checkbox">
-                                    <label class="onoffswitch-label" for="onoffswitch9">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label>When we send you money</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch10" class="onoffswitch-checkbox" checked>
-                                    <label class="onoffswitch-label" for="onoffswitch10">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label>When you earn credit</label>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <div class="onofWrap pull-right">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" id="onoffswitch11" class="onoffswitch-checkbox" checked>
-                                    <label class="onoffswitch-label" for="onoffswitch11">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <label>Event Reminders</label>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </form>
-        </div>
-    </div>
-
-</div>
 
 
 

@@ -270,6 +270,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/event_detail\/RedRocks.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 150794,
+		"inputAbbreviatedPath": "\/assets\/images\/event_detail\/RedRocks.png",
+		"outputAbbreviatedPath": "\/assets\/images\/event_detail\/RedRocks.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/festival.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -644,6 +655,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/pimg_icons\/Eric.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6302,
+		"inputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Eric.png",
+		"outputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Eric.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/pimg_icons\/glasses.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6102,
+		"inputAbbreviatedPath": "\/assets\/images\/pimg_icons\/glasses.png",
+		"outputAbbreviatedPath": "\/assets\/images\/pimg_icons\/glasses.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/pimg_icons\/Hands.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -703,7 +736,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 152786,
+		"initialSize": 161527,
 		"inputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Image4.png",
 		"outputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Image4.png",
 		"outputPathIsOutsideProject": 0,
@@ -714,7 +747,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 128102,
+		"initialSize": 130489,
 		"inputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Image5.png",
 		"outputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Image5.png",
 		"outputPathIsOutsideProject": 0,
@@ -725,7 +758,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 138448,
+		"initialSize": 151073,
 		"inputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Image6.png",
 		"outputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Image6.png",
 		"outputPathIsOutsideProject": 0,
@@ -765,6 +798,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/pimg_icons\/jill2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5829,
+		"inputAbbreviatedPath": "\/assets\/images\/pimg_icons\/jill2.png",
+		"outputAbbreviatedPath": "\/assets\/images\/pimg_icons\/jill2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/pimg_icons\/Lauren.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5789,
+		"inputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Lauren.png",
+		"outputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Lauren.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/pimg_icons\/Mask 2.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -783,6 +838,17 @@
 		"initialSize": 1024,
 		"inputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Mask 4.png",
 		"outputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Mask 4.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/pimg_icons\/Phil.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8214,
+		"inputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Phil.png",
+		"outputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Phil.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2695,11 +2761,29 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/Settings_Desktop_Payment_Methodsv0.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Settings_Desktop_Payment_Methodsv0.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/Settings_Desktop_Profile.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Settings_Desktop_Profile.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Settings_Desktop_Profilev0.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Settings_Desktop_Profilev0.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
