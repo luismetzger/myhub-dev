@@ -149,6 +149,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/blank-user.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1489,
+		"inputAbbreviatedPath": "\/assets\/images\/blank-user.png",
+		"outputAbbreviatedPath": "\/assets\/images\/blank-user.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/bpe_img1.png": {
 		"fileType": 32768,
 		"ignore": 0,

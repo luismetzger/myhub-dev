@@ -646,6 +646,7 @@
 
 #follow_number2 {
   @extend #follow_number;
+  font-size: 1.2em;
 }
 
 .host_btm_links {
@@ -1004,4 +1005,16 @@
 		}
 	}
 
+}
+.pro_con.pc_added_user {
+	border: 2px solid #E5603B;
+}
+.profile_list_table {
+	td {
+	border-bottom: none;
+	border-top: 1px solid #9EA7B3;
+		h2{
+			font-weight: 400;
+		}
+	}
 }
