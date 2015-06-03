@@ -259,6 +259,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/event_detail\/bg-host.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.73054e+06,
+		"inputAbbreviatedPath": "\/assets\/images\/event_detail\/bg-host.png",
+		"outputAbbreviatedPath": "\/assets\/images\/event_detail\/bg-host.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/event_detail\/header-bg-Overlay.png": {
 		"fileType": 32768,
 		"ignore": 0,

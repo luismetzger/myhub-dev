@@ -14,6 +14,22 @@
    }
   }
 }
+.ed_banner_wrap_host {
+  @extend .hide_before_after;
+  position: relative;
+  min-height: 500px;
+  background: url("#{$image-path}/event_detail/bg-host.png") no-repeat center center transparent;
+  background-size: cover;
+  .pmulc_price {
+    @extend .pmulc_price;
+    font-size: 1.8em;
+    padding: 5px 20px;
+    top: 50px;
+     @media all and (max-width: $kinda-small) {
+	   display: none;
+   }
+  }
+}
 .edb_btm {
   position: absolute;
   bottom: 20px;
@@ -60,15 +76,19 @@
    font-size: 28px;
     margin: 0 0 4px;
     line-height: 1.15em;
+    font-weight: 100;
    @media all and (max-width: $kinda-small) {
 	   font-size: 16px;
+	   
    }
   }
   p {
     margin: 0;
     font-size: 24px;
+    color: $light-gray;
     @media all and (max-width: $kinda-small) {
 	   font-size: 14px;
+	   
    }
   }
 }
@@ -227,7 +247,7 @@
 }
 .es_profile_txt {
   h2 {
-    font-size: 1.375em;
+    font-size: 20px;
     margin: 0;
     color: inherit;
     @media all and (max-width: $kinda-small) {
@@ -235,12 +255,12 @@
    }
   }
   .eric_twt {
-    font-size: 0.875em;
+    font-size: 16px;
     display: block;
     margin-bottom: 2px;
   }
   .ph_info {
-    font-size: 15px;
+    font-size: 12px;
     color: inherit;
   }
 }
@@ -251,6 +271,7 @@
   li {
     color: $medium-gray;
     vertical-align: bottom;
+    font-size: 16px;
      @media all and (max-width: $kinda-small) {
 	  padding-bottom: 15px;
    }
@@ -261,16 +282,24 @@
       text-align: right;
     }
     &:nth-child(2){
-      font-size: 2.1em;
-      font-weight: $bold-weight;
+      font-size: 36px;
+      font-weight: $regular-weight;
     }
   }
 }
+.progressbar_top ul {
+	padding-bottom: 5px;
+	li {
+		font-size: 16px;
+	}
+}
 .progressbar_bottom ul {
   font-size: 0.875em;
+  padding-top: 5px;
   li {
     color: $tag-gray;
     vertical-align: top;
+    font-size: 14px;
     &:nth-child(2){
       font: inherit;
       color: $light-gray;
@@ -714,7 +743,7 @@
 }
 .ed_pc_fx_sidebar.fixed_t {
   .ed_sidebar_top_link {
-    background: $dark-blue;
+    /*background: $dark-blue;*/
     margin-left: -15px;
     margin-right: -15px;
     padding-left: 15px;
@@ -722,11 +751,14 @@
     > ul {
       > li {
         > a {
-          color: $full-white;
+          color: #5E6D81;
         }
       }
     }
   }
+}
+#button_host_link {
+	color: $full-white;
 }
 
   //Modals

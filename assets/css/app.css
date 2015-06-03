@@ -9701,9 +9701,9 @@
   padding-left: 0px;
   padding-right: 0px; }
 
-.hide_before_after:after, .smobile_head_inner:after, .ed_banner_wrap:after, .ed_pc_inner:after, .ed_post_content:after, .separator:after {
+.hide_before_after:after, .smobile_head_inner:after, .ed_banner_wrap:after, .ed_banner_wrap_host:after, .ed_pc_inner:after, .ed_post_content:after, .separator:after {
   display: none; }
-.hide_before_after:before, .smobile_head_inner:before, .ed_banner_wrap:before, .ed_pc_inner:before, .ed_post_content:before, .separator:before {
+.hide_before_after:before, .smobile_head_inner:before, .ed_banner_wrap:before, .ed_banner_wrap_host:before, .ed_pc_inner:before, .ed_post_content:before, .separator:before {
   display: none; }
 
 .default-input, .modal_input input {
@@ -14346,7 +14346,7 @@ body.full-white .social-share-buttons.share-with-text {
     border-radius: 5px;
     display: block; }
 
-.pmulc_price, .ed_banner_wrap .pmulc_price {
+.pmulc_price, .ed_banner_wrap .pmulc_price, .ed_banner_wrap_host .pmulc_price {
   position: absolute;
   right: 0;
   top: 20px;
@@ -14354,7 +14354,7 @@ body.full-white .social-share-buttons.share-with-text {
   background: #323A45;
   padding: 5px 20px;
   font-size: 1.3em; }
-  .pmulc_price:after, .ed_banner_wrap .pmulc_price:after, .pmulc_price:before, .ed_banner_wrap .pmulc_price:before {
+  .pmulc_price:after, .ed_banner_wrap .pmulc_price:after, .ed_banner_wrap_host .pmulc_price:after, .pmulc_price:before, .ed_banner_wrap .pmulc_price:before, .ed_banner_wrap_host .pmulc_price:before {
     display: block; }
 
 .pmu_pimg {
@@ -15441,6 +15441,19 @@ textarea.sfc_m_input {
       .ed_banner_wrap .pmulc_price {
         display: none; } }
 
+.ed_banner_wrap_host {
+  position: relative;
+  min-height: 500px;
+  background: url("../images/event_detail/bg-host.png") no-repeat center center transparent;
+  background-size: cover; }
+  .ed_banner_wrap_host .pmulc_price {
+    font-size: 1.8em;
+    padding: 5px 20px;
+    top: 50px; }
+    @media all and (max-width: 991px) {
+      .ed_banner_wrap_host .pmulc_price {
+        display: none; } }
+
 .edb_btm {
   position: absolute;
   bottom: 20px;
@@ -15482,13 +15495,15 @@ textarea.sfc_m_input {
     /* font-size: 1.125em; */
     font-size: 28px;
     margin: 0 0 4px;
-    line-height: 1.15em; }
+    line-height: 1.15em;
+    font-weight: 100; }
     @media all and (max-width: 991px) {
       .edb_ltxt h4 {
         font-size: 16px; } }
   .edb_ltxt p {
     margin: 0;
-    font-size: 24px; }
+    font-size: 24px;
+    color: #9EA7B3; }
     @media all and (max-width: 991px) {
       .edb_ltxt p {
         font-size: 14px; } }
@@ -15609,18 +15624,18 @@ textarea.sfc_m_input {
     margin-right: 14px; }
 
 .es_profile_txt h2 {
-  font-size: 1.375em;
+  font-size: 20px;
   margin: 0;
   color: inherit; }
   @media all and (max-width: 991px) {
     .es_profile_txt h2 {
       padding-top: 20px; } }
 .es_profile_txt .eric_twt {
-  font-size: 0.875em;
+  font-size: 16px;
   display: block;
   margin-bottom: 2px; }
 .es_profile_txt .ph_info {
-  font-size: 15px;
+  font-size: 12px;
   color: inherit; }
 
 .progressbar_top ul,
@@ -15629,7 +15644,8 @@ textarea.sfc_m_input {
   .progressbar_top ul li,
   .progressbar_bottom ul li {
     color: #323A45;
-    vertical-align: bottom; }
+    vertical-align: bottom;
+    font-size: 16px; }
     @media all and (max-width: 991px) {
       .progressbar_top ul li,
       .progressbar_bottom ul li {
@@ -15642,14 +15658,21 @@ textarea.sfc_m_input {
       text-align: right; }
     .progressbar_top ul li:nth-child(2),
     .progressbar_bottom ul li:nth-child(2) {
-      font-size: 2.1em;
-      font-weight: 600; }
+      font-size: 36px;
+      font-weight: 400; }
+
+.progressbar_top ul {
+  padding-bottom: 5px; }
+  .progressbar_top ul li {
+    font-size: 16px; }
 
 .progressbar_bottom ul {
-  font-size: 0.875em; }
+  font-size: 0.875em;
+  padding-top: 5px; }
   .progressbar_bottom ul li {
     color: #5E6D81;
-    vertical-align: top; }
+    vertical-align: top;
+    font-size: 14px; }
     .progressbar_bottom ul li:nth-child(2) {
       font: inherit;
       color: #9EA7B3; }
@@ -15975,13 +15998,16 @@ textarea.sfc_m_input {
   left: 0 !important; }
 
 .ed_pc_fx_sidebar.fixed_t .ed_sidebar_top_link {
-  background: #1D2735;
+  /*background: $dark-blue;*/
   margin-left: -15px;
   margin-right: -15px;
   padding-left: 15px;
   padding-right: 15px; }
   .ed_pc_fx_sidebar.fixed_t .ed_sidebar_top_link > ul > li > a {
-    color: #FFFFFF; }
+    color: #5E6D81; }
+
+#button_host_link {
+  color: #FFFFFF; }
 
 .chck_ttl {
   padding: 10px 0 20px;
