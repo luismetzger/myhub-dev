@@ -127,6 +127,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/besties-festival.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 51420,
+		"inputAbbreviatedPath": "\/assets\/images\/besties-festival.png",
+		"outputAbbreviatedPath": "\/assets\/images\/besties-festival.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/bg-image.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -178,6 +189,28 @@
 		"initialSize": 53607,
 		"inputAbbreviatedPath": "\/assets\/images\/bpe_img4.png",
 		"outputAbbreviatedPath": "\/assets\/images\/bpe_img4.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/bros.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 41612,
+		"inputAbbreviatedPath": "\/assets\/images\/bros.png",
+		"outputAbbreviatedPath": "\/assets\/images\/bros.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/Devan.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 68845,
+		"inputAbbreviatedPath": "\/assets\/images\/Devan.png",
+		"outputAbbreviatedPath": "\/assets\/images\/Devan.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -310,6 +343,17 @@
 		"initialSize": 1250,
 		"inputAbbreviatedPath": "\/assets\/images\/flash_dot.png",
 		"outputAbbreviatedPath": "\/assets\/images\/flash_dot.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/friends.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57910,
+		"inputAbbreviatedPath": "\/assets\/images\/friends.png",
+		"outputAbbreviatedPath": "\/assets\/images\/friends.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

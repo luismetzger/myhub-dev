@@ -480,6 +480,9 @@
     }
     .plg-name {
 //      height: 50px;
+		float: left;
+		font-size: 12px;
+		text-align: left;
     }
     .light_txt {
       color: $light-gray;
