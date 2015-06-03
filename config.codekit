@@ -215,6 +215,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/Compass.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8499,
+		"inputAbbreviatedPath": "\/assets\/images\/Compass.png",
+		"outputAbbreviatedPath": "\/assets\/images\/Compass.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/Devan.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -640,6 +651,17 @@
 		"initialSize": 174212,
 		"inputAbbreviatedPath": "\/assets\/images\/Justin_Ko.png",
 		"outputAbbreviatedPath": "\/assets\/images\/Justin_Ko.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/key_Special.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5905,
+		"inputAbbreviatedPath": "\/assets\/images\/key_Special.png",
+		"outputAbbreviatedPath": "\/assets\/images\/key_Special.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1681,6 +1703,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/sass\/pages\/_event_details.scss",
 		"outputAbbreviatedPath": "\/assets\/sass\/css\/_event_details.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/assets\/sass\/pages\/_misc.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/sass\/pages\/_misc.scss",
+		"outputAbbreviatedPath": "\/assets\/sass\/css\/_misc.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

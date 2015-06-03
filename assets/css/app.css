@@ -16222,6 +16222,35 @@ textarea.sfc_m_input {
   .profile_list_table td h2 {
     font-weight: 400; }
 
+#misc_404 {
+  padding: 300px 0; }
+  @media all and (max-width: 991px) {
+    #misc_404 {
+      padding: 100px 0; } }
+  #misc_404 h1 {
+    color: #323A45;
+    font-weight: 900;
+    font-size: 100px;
+    padding: 30px 0; }
+  #misc_404 .title-icon-center {
+    margin-right: 0;
+    margin: 0;
+    width: 100px;
+    margin-top: -20px; }
+  #misc_404 p {
+    color: #323A45;
+    font-size: 18px;
+    font-weight: 100; }
+    @media all and (max-width: 991px) {
+      #misc_404 p {
+        font-size: 20px; } }
+    #misc_404 p a {
+      color: #FF6B42;
+      font-size: 24px;
+      font-weight: 300;
+      text-decoration: underline;
+      margin-left: 3%; }
+
 @media all and (max-width: 767px) {
   .mobile_fullscreen_modal {
     background: #FFFFFF;

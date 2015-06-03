@@ -1,0 +1,41 @@
+#misc_404 {
+	  padding: 300px 0;
+	  @media all and (max-width: $kinda-small) {
+		  padding: 100px 0;
+	}
+	h1 {
+		color: $medium-gray;
+		font-weight: $heavy-weight;
+		font-size: 100px;
+		  padding: 30px 0;
+	}
+	.title-icon-center {
+		margin-right: 0;
+		margin: 0;
+		width: 100px;
+		margin-top: -20px;
+
+		
+	}
+	
+	p {
+		color: $medium-gray;
+		font-size: 18px;
+		font-weight: $light-weight;
+		@media all and (max-width: $kinda-small) {
+			font-size: 20px;
+		}
+		
+		a {
+		color: $orange;
+		font-size: 24px;
+		font-weight: $medium-weight;
+		text-decoration: underline;
+		  margin-left: 3%;
+	}
+		
+	}
+	
+	
+}
+
