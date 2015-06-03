@@ -395,7 +395,18 @@ a.mb_btn {
     right: 15px;
   }
 }
-
+.modal {
+  .modal-dialog {
+    opacity: 0;
+    -webkit-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+  }
+  &.in {
+    .modal-dialog {
+      opacity: 1;
+    }
+  }
+}
 @media all and (max-width: $iphone) {
   .mb_btns {
     span[class^="icon-Facebook_Square"] {

@@ -38,29 +38,3 @@
 [data-ember-action] {
   cursor: pointer;
 }
-
-.ed_cn_share_link {
-	ul
-		{
-			li{
-				a {
-					width: 100% !important;	
-				}	
-				}
-			}
-}
-
-.ed_cn_share_link ul li.email-slam {
-		display: none !important;
-	}	
-@media (max-width: 767px) {
-	.ed_cn_share_link ul li.email-slam {
-		display: block !important;
-	}	
-	
-	.ed_cn_share_link ul li {
-		width: 50% !important;
-		margin:0 0 20px 0 !important;		
-	}
-}
-
