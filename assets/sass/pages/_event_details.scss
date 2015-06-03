@@ -626,7 +626,7 @@
     }
     a {
       color: $full-white;
-      line-height: 55px;
+      line-height: 30px;
       display: block;
       &:hover, &:focus {
         color: $full-white;
@@ -636,13 +636,14 @@
         &.btn {
           width: 150px;
           margin-left: 0;
+          height: 45px;
         }
       }
     }
   }
   .icns_li {
     a {
-      height: 70px;
+      height: 45px;
       width: 90px;
       text-align: center;
       padding-top: 8px;
@@ -655,13 +656,14 @@
     }
     span[class^="icon"]{
       color: $full-white;
-      font-size: 50px;
+      font-size: 35px;
+      margin-top: -7px;
       span:before {
         color: inherit;
       }
     }
     span[class^="icon-Messages"] {
-      font-size: 45px;
+      font-size: 35px;
       padding-top: 5px;
     }
   }
@@ -1030,7 +1032,7 @@
   }
 
   .ed_banner_wrap {
-    min-height: 360px;
+    min-height: 180px;
   }
 
 
