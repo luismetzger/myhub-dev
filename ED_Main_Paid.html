@@ -41,7 +41,7 @@
         <li><a href="#"><i class="fa fa-search"></i> Explore</a></li>
         <li><a href="#"><i class="fa fa-flash"></i> Notification</a></li>
         <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
-    </ul>
+    </ul>	
     <div class="ln-cr">
         <ul>
             <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
@@ -405,7 +405,7 @@
 
                     <div class="modal_input">
                         <label class="sr-only" for="email">Email</label>
-                        <textarea id="email" placeholder="enter email addresses separated by a comma and we'll send an invitation on your behalf" required="required"class="default-input" style="height: 150px;"></textarea>
+                        <textarea id="email" placeholder="enter email addresses separated by a comma and we'll send an invitation on your behalf" requiredclass="default-input" style="height: 150px;"></textarea>
                         <span class="icon-x"></span>
                         <span class="icon-checkmark"></span>
                     </div>
@@ -581,14 +581,14 @@
 
                     <label for="ncard">Name on Card</label>
                     <div class="modal_input">
-                        <input type="text" id="ncard" placeholder="John Smith" required="required"/>
+                        <input type="text" id="ncard" placeholder="John Smith" required/>
                         <span class="icon-x"></span>
                         <span class="icon-checkmark"></span>
                     </div>
 
                     <label for="ccard">Credit Card: #</label>
                     <div class="modal_input">
-                        <input type="text" id="ccard" placeholder="xxxx - xxxx - xxxx - xxxx" required="required"/>
+                        <input type="text" id="ccard" placeholder="xxxx - xxxx - xxxx - xxxx" required/>
                         <span class="icon-x"></span>
                         <span class="icon-checkmark"></span>
                     </div>
@@ -597,7 +597,7 @@
                         <div class="col-sm-4">
                             <label for="expiration">Expiration</label>
                             <div class="modal_input">
-                                <input type="text" id="expiration" placeholder="mm / yy" required="required"/>
+                                <input type="text" id="expiration" placeholder="mm / yy" required/>
                                 <span class="icon-x"></span>
                                 <span class="icon-checkmark"></span>
                             </div>
@@ -605,7 +605,7 @@
                         <div class="col-sm-4">
                             <label for="cvv">CVV</label>
                             <div class="modal_input">
-                                <input type="password" id="cvv" placeholder="000" required="required"/>
+                                <input type="password" id="cvv" placeholder="000" required/>
                                 <span class="icon-x"></span>
                                 <span class="icon-checkmark"></span>
                             </div>
@@ -613,7 +613,7 @@
                         <div class="col-sm-4">
                             <label for="zcode">Zip Code</label>
                             <div class="modal_input">
-                                <input type="text" id="zcode" placeholder="80202" required="required"/>
+                                <input type="text" id="zcode" placeholder="80202" required/>
                                 <span class="icon-x"></span>
                                 <span class="icon-checkmark"></span>
                             </div>
@@ -644,26 +644,30 @@
                         <span class="icon-Checkmark_circle">
 				<span class="path1"></span><span class="path2"></span><span class="path3"></span>
 				</span>
-                        <h3>We have you the guestlist. Now share with friends!</h3>
+                        <h3>We have you on the guestlist! Check your email for a receipt and share with friends.</h3>
                     </div>
+                    
+                   
+                    
 
-                    <div class="ed_cn_share_link">
+                    <div class="ed_cn_share_link link-slam">
                         <ul>
-                            <li>
+                            <li class="col-md-3 col-sm-6 col-xs-12">
                                 <a href="#" class="fb">
                                     Share
                                     <span class="icon-Facebook_Square"></span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="col-md-3 col-sm-6 col-xs-12">
                                 <a href="#" class="twt">
                                     Tweet
                                     <span class="fa fa-twitter"></span>
                                 </a>
                             </li>
-                            <li>
+                        
+                            <li class="col-md-3 col-sm-6 col-xs-12">
                                 <a href="#" class="cal">
-                                    Calender
+                                    Calendar
                                     <span class="icon-Calendar_II">
                                         <span class="path1"></span>
                                         <span class="path2"></span>
@@ -672,8 +676,25 @@
                                     </span>
                                 </a>
                             </li>
+                            <li class="col-md-3 col-sm-6 col-xs-12 email-slam">
+                                <a href="#" class="cal">
+                                    Email
+                                    <span class="icon-mail">
+                                        <span class="path1"></span>
+                                        <span class="path2"></span>
+                                        <span class="path3"></span>
+                                        <span class="path4"></span>
+                                        <span class="path5"></span>
+                                        <span class="path6"></span>
+                                        <span class="path7"></span>
+                                        <span class="path8"></span>
+                                    </span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
+                    
+                 
 
                 </div>
             </form>

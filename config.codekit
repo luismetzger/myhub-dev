@@ -1533,6 +1533,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/assets\/sass\/app.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/sass\/app.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/sass\/app.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,

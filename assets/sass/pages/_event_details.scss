@@ -809,6 +809,7 @@
     h3 {
       color: $tag-gray;
       font-size: 1.2em;
+      font-weight: $light-weight;
     }
   }
 
@@ -834,7 +835,7 @@
           text-align: center;
           font-size: 1em;
           padding: 10px 16px;
-          width: 145px;
+          width: 100%;
           max-width: 98%;
           line-height: 32px;
           span[class^="icon"],
@@ -875,6 +876,8 @@
       }
     }
   }
+  
+  
 
 
   @media all and (max-width: $small) {
@@ -988,4 +991,14 @@
 	   padding: 12px 0;
    }
 	
+}
+.smdl_title {
+	
+	span {
+	@media all and (max-width: $kinda-small) {
+		
+			font-size: .8em;
+		}
+	}
+
 }
