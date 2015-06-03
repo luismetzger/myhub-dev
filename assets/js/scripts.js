@@ -321,19 +321,23 @@ var $modal_wrap = $(".fmodal_wrap"),
 
     /*Set right sidebar fixed*/
     var get_offset,
+        get_nav_offset,
         $right_sidebar = $(".ed_pc_fx_sidebar"),
         $ed_nav_wrap = $(".ed_nav_wrap"),
         $loaded = false;
     $(window).load(function(){
         get_offset = $right_sidebar.offset();
+        get_nav_offset = $ed_nav_wrap.offset();
         $loaded = true;
     });
     $(window).scroll(function(){
         if($(this).width() > 767 && $loaded) {
-            if($(this).scrollTop() > get_offset.top){
+            if($(this).scrollTop() > get_nav_offset.top + 3){
+                $('body').addClass('has_fixed_subnav');
                 $right_sidebar.addClass('fixed_t').css('left', get_offset.left + 'px');
                 $ed_nav_wrap.addClass('fixed_t').css('left', get_offset.left + 'px');
             } else {
+                $('body').removeClass('has_fixed_subnav');
                 $right_sidebar.removeClass('fixed_t').removeAttr('style');
                 $ed_nav_wrap.removeClass('fixed_t').removeAttr('style');
             }
@@ -345,7 +349,10 @@ var $modal_wrap = $(".fmodal_wrap"),
 
     $('.modal').on('hidden.bs.modal', function () {
         // do something…
-        //$('.modal').modal('hide');
+        /*$('.modal').css('display', 'block').find('.modal-dialog').fadeOut(300, function(){
+            $('.modal').hide().find('.modal-dialog').css('display', 'block');
+        });*/
+
     });
 
     function hide_show_modal_event($btn, $modal){

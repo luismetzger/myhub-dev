@@ -18306,8 +18306,8 @@ a.mb_btn {
 
 .modal .modal-dialog {
   opacity: 0;
-  -webkit-transition: opacity 200ms ease;
-  transition: opacity 200ms ease;
+  -webkit-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
 }
 .modal.in .modal-dialog {
   opacity: 1;
@@ -19908,6 +19908,10 @@ textarea.sfc_m_input {
   display: none;
 }
 
+.has_fixed_subnav {
+  padding-top: 75px;
+}
+
 @media all and (max-width: 767px) {
   .btm_close {
     display: block;
@@ -20047,6 +20051,10 @@ textarea.sfc_m_input {
   }
   .modal-dialog .fmodal_wrap .btm_close .modal-close .icon-decline_Outline {
     font-size: 40px;
+  }
+
+  .has_fixed_subnav {
+    padding-top: 0;
   }
 }
 .list-inline {

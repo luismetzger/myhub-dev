@@ -398,8 +398,8 @@ a.mb_btn {
 .modal {
   .modal-dialog {
     opacity: 0;
-    -webkit-transition: opacity 200ms ease;
-    transition: opacity 200ms ease;
+    -webkit-transition: opacity 400ms ease;
+    transition: opacity 400ms ease;
   }
   &.in {
     .modal-dialog {
