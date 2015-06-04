@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Myhub | Social Planning</title>
+    <meta name="description" content="The fastest, easiest way to plan group activities and collect money from your friends for anything."> 
 
     <!-- Core Framework CSS before SASS -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/myhub-icons.css" rel="stylesheet">
-    
+    <!-- <link href="assets/css/myhub-icons.css" rel="stylesheet"> -->
     
     <!-- Fonts -->
     <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/c2c138df-bec8-4ae7-abb7-59de83a2ce0b.css"/>
@@ -25,7 +25,7 @@
 <body id="home_body" class="fp-viewing-firstPage">
 
 
-<!-- Pushy Menu -->
+<!-- Mobile Menu -->
 <nav class="pushy pushy-left">
     <ul>
         <li><a href="about.html">About</a></li>
@@ -35,30 +35,24 @@
         <li><a href="https://myhubapp.zendesk.com/hc/en-us">FAQ</a></li>
         <li><a href="contact-us.html">Contact us</a></li>
         
-
     </ul>
     <div class="ln-cr">
         <ul>
-        	<li class="col-xs-6 logins"><a href="#">Login</a></li>
+        	<li class="col-xs-6 logins"><a href="/login_modal.html">Login</a></li>
         	<li class="col-xs-6 logins"><a href="#">Sign Up</a></li>
             <li class="clearfix"></li>
 	         <li><a href="https://itunes.apple.com/us/app/myhub/id598502707?mt=8"><span><i id="apple-icon" class="fa fa-apple fa-lg"></i> Download the App </span> </a></li>
         </ul>
     </div>
 </nav>
-
-
-
 <div class="site-overlay"></div>
 
 <!-- class="container-push"-->
-
 <div id="fullpage" class="">
-
     <div id="pushy_wrapper" class="section section1">
         <div class="top-header">
-            <!--add this class nav menu-->
-
+            
+            <!--Nav Menu-->
             <div class="top-sub-head clearfix">
                 <div class="nav-pullleft pull-left">
                     <a href="#" class="menu-btn"><i class="fa fa-bars"></i></a>
@@ -69,7 +63,7 @@
                 </div>
                <ul class="nav navbar-nav navbar-right">
 		        <li><a id="btn_plus" class="btn btn-default hidden-xs" href="#" role="button"><i class="fa fa-plus"></i></a></li>
-		        <li><a id="login-button" href="#">Login or</a></li>
+		        <li><a id="login-button" href="/Login_Modal.html">Login or</a></li>
 		        <li><a id="signup-button" class="btn btn-default" href="#" role="button">Sign Up</a></li>
 		        <li id="dropdown-button" class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="dropdown-icon icon-ellipses"></span></a>
@@ -85,23 +79,17 @@
 		      </ul>
             </div>
         </div>
-        <!--end header nav-->
+        
+        <!-- Section I - desktop -->
         <div id="hs1Content" class="container">
-
-
             <div class="row">
-
-                <div class="col-sm-5">
+                <div class="col-sm-6">
                     <div class="ln-cont-text">
-                        <h2>Your new Social Calendar</h2>
-                        <p>
-                            The fastest, easiest way to plan social events and pool cash with friends for anything
-                        </p>
+                        <h2>Your New Social Calendar</h2>
+                        <p>The fastest, easiest way to plan group activities and pool money with your friends.</p>
                         <div class="ln-vid-link hidden-xs">
                             <a href="http://vimeo.com/122056478?autoplay=1" data-type="vimeo" class="venobox youtubepp2 vbox-item">
-                                <i class="fa fa-play-circle"></i>
-                                watch the video
-                            </a>
+                                <i class="fa fa-play-circle"></i>watch the video</a>
                         </div>
                         <div id="twilow_smsb" class="twilow_sms hidden-xs">
                             <label for="modalSmsInputb">Download the App</label>
@@ -109,32 +97,29 @@
                             <button id="twillow_submitb">Send SMS</button>
                         </div>
                         <div class="visible-xs app-store-img">
-                            <a href="https://itunes.apple.com/us/app/myhub/id598502707?mt=8"><img width="220" src="assets/images/app-store-logo.png" alt="App Store Logo"></a>
+                            <a href="https://itunes.apple.com/us/app/myhub/id598502707?mt=8"><img width="200" src="assets/images/icons/app_store_badge.svg" alt="App Store Logo"></a>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-sm-5 col-sm-push-1 ln-mblImg">
-                    <img alt="" src="assets/images/iPhone 5C.png">
+                <div class="col-sm-4 col-sm-push-2 ln-mblImg">
+                    <img alt="" src="assets/images/Event_Detail_Paid.png">
                 </div>
-
             </div>
         </div>
-
         <div class="hbtmBtns bounce animated">
             <a href="#" date-mvto="2">What's Myhub <br/><i class="fa fa-angle-down"></i></a>
         </div>
 
     </div>
-    <!--end section 1-->
-
+    
+    <!-- Section II - mobile -->
     <div class="section section2" style="background-color: #F4F5F7;">
         <div class="container">
         <div class="row">
 
             <div class="col-sm-5 col-sm-push-1 hw_txt visible-xs">
-                <h2>Welcome to social planning.</h2>
-                <p>With Myhub anyone can quickly plan and share upcoming events with friends. We also include a flexible payments platform making it incredibly easy for you to pool money  and pay yourself out anytime.</p>
+                <h2>What's Myhub?</h2>
+                <p>Myhub is a fun, easy way to get friends together, collect money, and collaborate with your group. Forget missed texts and late payments. Myhub makes group planning fun again.</p>
                 <div class="hwt_lm">
                     <a href="#" class="btn btn-lg btn-learnMore">Learn More</a>
                 </div>
@@ -144,10 +129,11 @@
                 <div class="thumb-img thumb-img2"></div>
                 <div class="thumb-img thumb-img3 hidden-xs"></div>
             </div>
-
+            
+            <!-- Section II - desktop -->    
             <div class="col-sm-5 col-sm-push-1 hw_txt hidden-xs">
-                <h2>Welcome to social planning.</h2>
-                <p>With Myhub anyone can quickly plan and share upcoming events with friends. We also include a flexible payments platform making it incredibly easy for you to pool money  and pay yourself out anytime.</p>
+                <h2>What's Myhub?</h2>
+                <p>Myhub is a fun, easy way to get friends together and collect money, and collaborate with your group. Forget missed texts and late payments. Myhub makes group planning fun again.</p>
                 <div class="hwt_lm">
                     <a href="#" class="btn btn-lg btn-learnMore">Learn More</a>
                 </div>
@@ -158,9 +144,8 @@
             <a href="#" date-mvto="3">Why Myhub <br/><i class="fa fa-angle-down"></i></a>
         </div>
     </div>
-    <!--end section 2-->
-
-
+    
+    <!-- Section III - mobile -->
     <div class="section section3" style="background-color: #fff;">
         <div role="tabpanel" id="hTab_container" class="container">
             <!-- Nav tabs -->
@@ -174,7 +159,7 @@
                 <div role="tabpanel" class="tab-pane active fade in row" id="without_myhub">
                     <div class="col-sm-5 hwhy-txt text-right">
                         <h2>Forget the Run Around.</h2>
-                        <p>Let’s face it, planning group activities is a pain. Everyone ends up jumping across numerous tools just to make something happen. Myhub solves that with a quick and intuitive platform designed for social planning.
+                        <p>Group activities are complicated. Especially when everyone ends up jumping across multiple tools just to make something happen. Myhub solves that wth a social and fun platform designed for you.
                         </p>
 
                         <div class="hwt_lm hwt_lm_sml_pad">
@@ -189,10 +174,11 @@
                         </div>
                     </div>
                 </div>
+                <!-- Section III - desktop -->
                 <div role="tabpanel" class="tab-pane" id="with_myhub">
                     <div class="col-sm-5 hwhy-txt text-right">
                         <h2>Forget the Run Around.</h2>
-                        <p>Let’s face it, planning group activities is a pain. Everyone ends up jumping across numerous tools just to make something happen. Myhub solves that with a quick and intuitive platform designed for collaborative planning
+                        <p>Group activities are complicated. Especially when everyone ends up jumping across multiple tools just to make something happen. Myhub solves that wth a social and fun platform designed for you.
                         </p>
 
                         <div class="hwt_lm hwt_lm_sml_pad">
@@ -214,15 +200,15 @@
             <a href="#" date-mvto="4">How it Works <br/><i class="fa fa-angle-down"></i></a>
         </div>
     </div>
-    <!--end section 3-->
-
-
+    
+    <!-- How it Works (Mobile) -->
     <div class="section section4" style="background-color: #F4F5F7;">
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 col-sm-push-1 hw_txt visible-xs">
                     <h2>How it Works</h2>
-                    <p>It’s simple. Just enter the basic details of your event, choose from our advanced options, then send invites to anyone in your contacts. Everyone can quickly RSVP, pitch in cash, and chat with the rest of the group.</p>
+                    <p>Simply enter the basic details of your activity, choose from our advanced options, then send invites out to your friends. Everyone can quickly RSVP, pitch in cash, and collaborate with the rest of the group.
+                    </p>
                     <div class="hwt_lm">
                         <a href="#" class="btn btn-lg btn-learnMore">Learn More</a>
                     </div>
@@ -232,10 +218,11 @@
                         <embed name="H" class="H" id="H" src="assets/images/slide-4-icons.svg" width="385" height="385">
                     </div>
                 </div>
-
+                <!-- How it Works (Desk) -->
                 <div class="col-sm-5 col-sm-push-1 hw_txt hidden-xs">
                     <h2>How it Works</h2>
-                    <p>It’s simple. Just enter the basic details of your event, choose from our advanced options, then send invites to anyone in your contacts. Everyone can quickly RSVP, pitch in cash, and chat with the rest of the group.</p>
+                    <p>Simply enter the basic details of your activity, choose from our advanced options, then send invites out to your friends. Everyone can quickly RSVP, pitch in cash, and collaborate with the rest of the group.
+                    <p>
                     <div class="hwt_lm">
                         <a href="#" class="btn btn-lg btn-learnMore">Learn More</a>
                     </div>
@@ -246,15 +233,15 @@
             <a href="#" date-mvto="5">The Difference <br/><i class="fa fa-angle-down"></i></a>
         </div>
     </div>
-    <!--end section 4-->
-
+    
+    <!-- Who's it for (Both) -->
     <div class="section section5" style="background-color: #fff;">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
                     <div class="hw_txt">
                         <h2>Designed for Anything.</h2>
-                        <p>No matter what you’re planning, Myhub can scale from private social gatherings all the way up to business or non-profit events that demand flexible and onsite payments. Give it a try and see for yourself.</p>
+                        <p>No matter what you’re planning, Myhub scales from group activities with friends up to business or non-profit fundraisers that demand flexible, onsite payments. Give it a try free and see for yourself.</p>
                         <div class="hwt_lm">
                             <a href="#" class="btn btn-lg btn-learnMore">Contact us</a>
                         </div>
@@ -325,22 +312,20 @@
             </div>
         </div>
         <div class="hbtmBtns">
-            <a href="#" date-mvto="6">The Difference <br/><i class="fa fa-angle-down"></i></a>
+            <a href="#" date-mvto="6"> Get Started <br/><i class="fa fa-angle-down"></i></a>
         </div>
     </div>
-    <!--end section 5-->
-
+    
+    <!-- Get Started (Both)-->
     <div class="section section6" style="background-color: #F4F5F7;">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
                     <div class="hw_txt text-center">
                         <h2>Ready to get started?</h2>
-                        <p>Check it out for yourself absolutely free. The only fee’s occur
-when you collect or pitch in money. </p>
+                        <p>Don't take our word for it. Try it out yourself absolutely free. The only fee’s occur when your friends pitch in money. </p>
                         <div class="hwt_lm hwt_lm_2">
-                            <a href="#" class="btn btn-lg btn-ios"><i class="fa fa-apple"></i> iOS</a>
-                         <!-- <a href="#" class="btn btn-lg btn-default hidden-xs">Start Something</a> -->
+                            <a href="#" class="btn btn-lg btn-ios"><i class="fa fa-apple"></i> Download </a>
                         </div>
                     </div>
                 </div>
@@ -352,24 +337,23 @@ when you collect or pitch in money. </p>
                     </div>
             </div>
         </div>
-
+        
+        <!-- Footer (Desktop) -->
         <div id="footer_container">
-
                 <div class="container">
-
 	                    <div id="fwUpper" class="row hidden-xs">
 	                        <div class="col-sm-4 flogoCont">
 	                            <div class="flogo">
 	                                <a href="#"><img alt="My Hubb" src="assets/images/icons/footer_logo.png"></a>
 	                            </div>
-	                            <p>The fastest, easiest way to plan group activivites and pool cash with friends.</p>
+	                            <p>The fastest, easiest way to plan group activites and collect money from friends.</p>
                                 <div class="footer_socials">
                                     <ul>
-                                        <li><a href="http://myhubapp.tumblr.com/"><i class="fa fa-fw fa-lg fa-tumblr"></i></a></li>
-                                        <li><a href="https://www.facebook.com/Myhubapp"><i class="fa fa-fw fa-lg fa-facebook"></i></a></li>
-                                        <li><a href="https://twitter.com/myhubapp"><i class="fa fa-fw fa-lg fa-twitter"></i></a></li>
-                                        <li><a href="https://www.youtube.com/user/MyHubApp"><i class="fa fa-fw fa-lg fa-youtube"></i></a></li>
-                                        <li><a href="http://instagram.com/myhubapp"><i class="fa fa-fw fa-lg fa-instagram"></i></a></li>
+                                        <li><a href="http://myhubapp.tumblr.com/"><i class="fa fa-fw fa-md fa-tumblr"></i></a></li>
+                                        <li><a href="https://www.facebook.com/Myhubapp"><i class="fa fa-fw fa-md fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/myhubapp"><i class="fa fa-fw fa-md fa-twitter"></i></a></li>
+                                        <li><a href="https://www.youtube.com/user/MyHubApp"><i class="fa fa-fw fa-md fa-youtube"></i></a></li>
+                                        <li><a href="http://instagram.com/myhubapp"><i class="fa fa-fw fa-md fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
 	                        </div>
@@ -381,7 +365,6 @@ when you collect or pitch in money. </p>
 	                                        <li><a href="about.html">About</a></li>
 	                                        <li><a href="how-it-works.html">How it Works</a></li>
 	                                        <li><a href="jobs.html">Jobs</a></li>
-	                                        <li><a target="_blank" href="https://brandfolder.com/myhub">Press</a></li>
 	                                        <li><a href="http://myhubapp.tumblr.com/">Blog</a></li>
 	                                    </ul>
 	                                </div>
@@ -389,27 +372,32 @@ when you collect or pitch in money. </p>
 	                                <div class="col-sm-4 col-xs-6">
 	                                    <h5>Bowtie Blog</h5>
 	                                    <ul style="font-family:'Gill Sans W10 Medium';">
-	                                        <li><a href="#">#NEWS</a></li>
-	                                        <li><a href="#">#RELEASES</a></li>
-	                                        <li><a href="#">#HOWTO</a></li>
-	                                        <li><a href="#">#FUN</a></li>
+	                                        <li><a href="http://blog.myhubapp.com/tagged/news">#NEWS</a></li>
+	                                        <li><a href="http://blog.myhubapp.com/tagged/releases">#RELEASES</a></li>
+	                                        <li><a href="http://blog.myhubapp.com/tagged/howto">#HOWTO</a></li>
+                                            <li><a href="http://blog.myhubapp.com/tagged/ideas">#IDEAS</a></li>
+	                                        <li><a href="http://blog.myhubapp.com/tagged/fun">#FUN</a></li>
 	                                    </ul>
-	                                </div><!--end f nav parts-->
+	                                </div>
 	                                <div class="col-sm-4 col-xs-6">
 	                                    <h5>Help</h5>
 	                                    <ul style="font-family:'Gill Sans W10 Medium';">
-	                                        <li><a href="privacy-policy.html">FAQ</a></li>
-	                                        <li><a href="terms-of-service.html">CONTACT</a></li>
+	                                        <li><a href="#">FAQ</a></li>
+	                                        <li><a href="#">CONTACT</a></li>
+                                            <li><a href="#">TERMS</a></li>
+                                            <li><a href="#">PRIVACY</a></li>
 	                                    </ul>
-	                                </div><!--end f nav parts-->
+	                                </div>
 	                            </div>
-	                        </div><!--end footer nav-->
+	                        </div>
 	                    </div>
 	                    
+                        <!-- Footer (Mobile) -->
 	                    <div id="mobile-footer-nav" class="row visible-xs text-center">
                             <div class="col-xs-12">
                                 <a href="terms-of-service.html">About</a> • <a href="privacy-policy.html">How it Works</a> • <a href="terms-of-service.html">Jobs</a> • <a href="terms-of-service.html">Blog</a> • <a href="terms-of-service.html">FAQ</a> • <a href="terms-of-service.html">Contact</a>
                             </div>
+                            <br>
                             <div class="footer_socials col-xs-12">
                                 <ul>
                                     <li><a href="http://myhubapp.tumblr.com/"><i class="fa fa-fw fa-lg fa-tumblr"></i></a></li>
@@ -424,32 +412,28 @@ when you collect or pitch in money. </p>
                         <embed name="footer_logo_svg" class="footer_logo_svg" id="footer_logo_svg" src="assets/images/CO_Company_Color.svg" width="67" height="67">
                     </div>
                     <div id="fwLpr2" class="row">
-                        <div class="col-xs-12 copy_text text-center">2014 Myhub • <a href="privacy-policy.html">Privacy</a> • <a href="terms-of-service.html">Terms</a></div>
+                        <div class="col-xs-12 copy_text text-center">2015 Myhub • <a href="privacy-policy.html">Privacy</a> • <a href="terms-of-service.html">Terms</a></div>
                     </div>
 
 	            </div>
+            </div>
         </div>
-</div>
-
-</div>
 
     </div>
-<!--end pushy wrapper-->
-<!--modals-->
+</div>
 
-
+<!-- Modals -->
 <div class="modal middlemodal fade in" id="downloadAppModal" tabindex="-1" role="dialog" arial-labelledby="downloadAppModalTitle" aria-hidden="false" style="display: none;">
     <div class="modal-dialog">
         <div class="modal-content">
             <button type="button" class="btn close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
             <div class="modal-body">
-                <p class="modal-message" style="margin:0 0 1em 0;">Enter your phone number, area code and all.<br>
-                    We’ll text you a download link!</p>
+                <p class="modal-message" style="margin:0 0 1em 0;">Please enter your phone number and we'll text you a download link.<br>
                 <form class="download-app-form" role="form">
                     <div class="row">
                         <div class="col-xs-12 twilow_sms">
-                            <label class="sr-only" for="modalSmsInput">Phone number</label>
-                            <input type="tel" id="modalSmsInput" placeholder="xxxxxxxxx" class="form-control">
+                            <label class="sr-only" for="modalSmsInput">Download The App</label>
+                            <input type="tel" id="modalSmsInput" placeholder="Enter Your Phone Number" class="form-control">
                             <button id="twillow_submit">Send SMS</button>
                         </div>
                         <div class="hide col-xs-12" id="pp_status"></div>
@@ -460,13 +444,6 @@ when you collect or pitch in money. </p>
         </div>
     </div>
 </div>
-
-
-
-
-<!--modals ends-->
-
-
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
@@ -480,9 +457,6 @@ when you collect or pitch in money. </p>
 <script type="text/javascript" src="assets/js/pushy.min.js"></script>
 <script type="text/javascript" src="assets/js/venobox.min.js"></script>
 <script type="text/javascript" src="assets/js/custom.js"></script>
-
-
-<!--add scripts before this line-->
 <script type="text/javascript" src="assets/js/scripts.js"></script>
 
 

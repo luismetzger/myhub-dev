@@ -9899,7 +9899,10 @@ textarea.default-input {
 
 @media screen and (max-width: 767px) {
   #login-button {
-    display: none; } }
+    display: none;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-right: 5px; } }
 
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
   background-color: none; }
@@ -9924,8 +9927,8 @@ textarea.default-input {
     display: none; } }
 #dropdown-button a {
   font-family: "Avenir W01", sans-serif;
-  font-weight: 100;
-  font-size: 14px; }
+  font-weight: 400;
+  font-size: 16px; }
 
 .dropdown-icon {
   /*background: url(../images/more.png); */
@@ -9938,7 +9941,8 @@ textarea.default-input {
 
 .navbar-nav > li > .dropdown-menu,
 .dropdown .dropdown-menu {
-  margin-top: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   background: #F4F5F7; }
   .navbar-nav > li > .dropdown-menu a,
   .dropdown .dropdown-menu a {
@@ -9963,7 +9967,7 @@ textarea.default-input {
 
 .navbar-nav > li > a#login-button,
 .navbar-nav > li > a.dropdown-toggle {
-  height: 55px; }
+  height: 54px; }
 
 .navbar-nav > li > a {
   font-family: "Avenir W01", sans-serif;
@@ -9977,6 +9981,7 @@ textarea.default-input {
   background: #FF6B42;
   padding: 8px 15px;
   margin-top: 7px;
+  margin-right: 5px;
   border: none; }
   #btn_plus:hover {
     background: #E5603B;
@@ -9985,11 +9990,11 @@ textarea.default-input {
 /* Menu Appearance */
 .pushy {
   position: fixed;
-  width: 200px;
+  width: 300px;
   height: 100%;
   top: 0;
   z-index: 9999;
-  background: #333332;
+  background: #323A45;
   font-size: 1.1em;
   font-weight: 300;
   -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, 0.7);
@@ -10005,9 +10010,9 @@ textarea.default-input {
   font-size: 24px;
   display: block;
   color: #FFFFFF;
-  padding: 15px 30px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 30px;
+  border-bottom: 1px solid rgba(29, 39, 53, 0.3);
+  border-top: 1px solid rgba(29, 39, 53, 0.3);
   text-decoration: none;
   text-align: left; }
 
@@ -10018,8 +10023,8 @@ textarea.default-input {
 .ln-cr li.col-xs-6 {
   padding: 0; }
   .ln-cr li.col-xs-6 a {
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(29, 39, 53, 0.3);
+    border-left: 1px solid rgba(29, 39, 53, 0.3);
     padding-left: 25px; }
 
 /* Menu Movement */
@@ -10210,7 +10215,7 @@ body > .pushy ul {
     text-align: right; }
 
   .ln-footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%; }
@@ -10351,7 +10356,7 @@ body > .pushy ul {
   opacity: 1; }
 
 .fp-slidesNav.bottom {
-  bottom: 17px; }
+  bottom: 10px; }
 
 .fp-slidesNav.top {
   top: 17px; }
@@ -10406,8 +10411,7 @@ body > .pushy ul {
 
 .fp-viewing-firstPage #fp-nav ul li a span,
 .fp-viewing-firstPage .fp-slidesNav ul li a span {
-  background: #6e7373;
-  border: 1px solid #6e7373; }
+  background: rgba(244, 245, 247, 0.2); }
 
 #fp-nav ul li .fp-tooltip {
   position: absolute;
@@ -10415,7 +10419,7 @@ body > .pushy ul {
   color: #FF6B42;
   font-size: 18px;
   font-family: "Avenir W01", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   white-space: nowrap;
   max-width: 220px;
   overflow: hidden;
@@ -10424,8 +10428,8 @@ body > .pushy ul {
   width: 0; }
 
 #fp-nav ul li:hover .fp-tooltip {
-  -webkit-transition: opacity 0.2s ease-in;
-  transition: opacity 0.2s ease-in;
+  -webkit-transition: opacity 0.1s ease-in;
+  transition: opacity 0.1s ease-in;
   width: auto;
   opacity: 1; }
 
@@ -10433,7 +10437,7 @@ body > .pushy ul {
   right: 20px; }
 
 #fp-nav ul li .fp-tooltip.left {
-  left: 20px; }
+  left: 10px; }
 
 /*!
 Animate.css - http://daneden.me/animate
@@ -17224,6 +17228,7 @@ label {
 @media screen and (max-width: 480px) {
   h2 {
     font-size: 25px;
+    color: #323A45;
     margin: 0.5em 0 0.3em; } }
 
 .h4, h4 {
@@ -17435,9 +17440,9 @@ a#ln-logo {
 
 .ln-cont-text {
   text-align: right;
-  width: 440px;
+  width: 500px;
   margin: 0 auto;
-  padding-top: 20%;
+  padding-top: 10%;
   font-size: 23px; }
   @media screen and (max-width: 767px) {
     .ln-cont-text {
@@ -17446,29 +17451,36 @@ a#ln-logo {
       text-align: center; } }
   @media screen and (max-width: 991px) {
     .ln-cont-text {
-      text-align: center; } }
+      text-align: right; } }
   @media screen and (max-width: 480px) {
     .ln-cont-text {
       font-size: 18px;
+      text-align: center;
       line-height: 1.2; } }
   @media screen and (max-width: 480px) {
     .ln-cont-text p {
       margin-bottom: 5px; } }
 
-.ln-cont-text h1 {
-  font-family: "Helvetica Neue", sans-serif;
+.ln-cont-text h2 {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 600;
   font-size: 38px; }
 
+.ln-cont-text p {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 400;
+  font-size: 24px; }
+
 .ln-vid-link {
-  padding: 10px 0 120px; }
+  padding: 30px 0 70px; }
 
 .ln-vid-link a {
   font-family: "Avenir W01", sans-serif;
   font-weight: 500;
-  color: #ff6b42;
+  color: #FF6B42;
   line-height: 30px;
   display: inline-block;
-  font-size: 20px;
+  font-size: 24px;
   white-space: nowrap; }
 
 .ln-vid-link i {
@@ -17477,8 +17489,8 @@ a#ln-logo {
   float: left; }
 
 .middlemodal #mobileNumber {
-  color: #666;
-  font-size: 1em; }
+  color: #323A45;
+  font-size: 28px; }
 
 .twilow_sms {
   position: relative; }
@@ -17486,18 +17498,18 @@ a#ln-logo {
 .twilow_sms label {
   font-family: "Avenir W01", sans-serif;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 600;
   color: inherit;
   text-transform: uppercase;
   margin-bottom: 8px; }
 
 .twilow_sms input.form-control {
   height: 75px;
-  line-height: 75px;
-  padding-left: 45px;
+  line-height: 30px;
+  padding-left: 30px;
   background: #f4f5f7;
-  color: #a4a8b3;
-  font-size: 20px; }
+  color: #323A45;
+  font-size: 24px; }
 
 #twillow_submit,
 #twillow_submitb {
@@ -17506,7 +17518,7 @@ a#ln-logo {
   height: 64px;
   right: 5px;
   top: 45px;
-  background: url("../images/icons/send_sms_icon.png") no-repeat 0 0;
+  background: url("../images/send_sms.png") no-repeat 0 0;
   background-size: cover;
   text-indent: -9999px;
   border: none;
@@ -17521,17 +17533,15 @@ a#ln-logo {
 #twillow_submitb:hover {
   opacity: 1; }
 
-.ln-mblImg {
-  text-align: right; }
-  @media screen and (max-width: 991px) {
-    .ln-mblImg {
-      text-align: center; } }
+@media screen and (max-width: 991px) {
+  .ln-mblImg {
+    position: center; } }
 
 .hbtmBtns {
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: 35px;
+  bottom: 10px;
   left: 0; }
   @media screen and (max-width: 767px) {
     .hbtmBtns {
@@ -17553,7 +17563,7 @@ a#ln-logo {
   color: #ffffff; }
 
 .middlemodal .modal-body {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-size: 20px;
   padding: 2em; }
 
@@ -17940,8 +17950,8 @@ a#ln-logo {
 .footer_socials li a {
   color: #1d2735;
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
   border: 1px solid #D8DEE6;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -17996,9 +18006,7 @@ a#ln-logo {
 
 #footer_container {
   -ms-transform: translate(0px, 166px);
-  /* IE 9 */
   -webkit-transform: translate(0px, 166px);
-  /* Chrome, Safari, Opera */
   transform: translate(0px, 166px);
   -webkit-transition: -webkit-transform 2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
   -moz-transition: -moz-transform 2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
@@ -18010,16 +18018,12 @@ a#ln-logo {
 
 .waypoint #footer_container {
   -ms-transform: translate(0px, 580px);
-  /* IE 9 */
   -webkit-transform: translate(0px, 580px);
-  /* Chrome, Safari, Opera */
   transform: translate(0px, 580px); }
 
 .active-trans #footer_container {
   -ms-transform: translate(0px, 0px);
-  /* IE 9 */
   -webkit-transform: translate(0px, 0px);
-  /* Chrome, Safari, Opera */
   transform: translate(0px, 0px); }
 
 /*page content default*/
