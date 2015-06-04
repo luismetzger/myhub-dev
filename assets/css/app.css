@@ -10010,11 +10010,15 @@ textarea.default-input {
   font-size: 24px;
   display: block;
   color: #FFFFFF;
-  padding: 20px 30px;
+  padding: 16px 16px;
   border-bottom: 1px solid rgba(29, 39, 53, 0.3);
   border-top: 1px solid rgba(29, 39, 53, 0.3);
   text-decoration: none;
   text-align: left; }
+
+.pushy, html, body {
+  overflow-x: hidden;
+  height: 100%; }
 
 .pushy a:hover {
   background: #FF6B42;
@@ -10029,11 +10033,11 @@ textarea.default-input {
 
 /* Menu Movement */
 .pushy-left {
-  -webkit-transform: translate3d(-200px, 0, 0);
-  -moz-transform: translate3d(-200px, 0, 0);
-  -ms-transform: translate3d(-200px, 0, 0);
-  -o-transform: translate3d(-200px, 0, 0);
-  transform: translate3d(-200px, 0, 0); }
+  -webkit-transform: translate3d(-300px, 0, 0);
+  -moz-transform: translate3d(-300px, 0, 0);
+  -ms-transform: translate3d(-300px, 0, 0);
+  -o-transform: translate3d(-300px, 0, 0);
+  transform: translate3d(-300px, 0, 0); }
 
 .pushy-open {
   -webkit-transform: translate3d(0, 0, 0);
@@ -10043,11 +10047,11 @@ textarea.default-input {
   transform: translate3d(0, 0, 0); }
 
 .container-push, .push-push {
-  -webkit-transform: translate3d(200px, 0, 0);
-  -moz-transform: translate3d(200px, 0, 0);
-  -ms-transform: translate3d(200px, 0, 0);
-  -o-transform: translate3d(200px, 0, 0);
-  transform: translate3d(200px, 0, 0); }
+  -webkit-transform: translate3d(300px, 0, 0);
+  -moz-transform: translate3d(300px, 0, 0);
+  -ms-transform: translate3d(300px, 0, 0);
+  -o-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0); }
 
 /* Menu Transitions */
 .pushy, #container, .push {
@@ -10068,7 +10072,7 @@ textarea.default-input {
   bottom: 0;
   left: 0;
   z-index: 9998;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   -webkit-animation: fade 500ms;
   -moz-animation: fade 500ms;
   -o-animation: fade 500ms;
@@ -10098,7 +10102,7 @@ textarea.default-input {
 @media screen and (max-width: 768px) {
   .pushy {
     font-size: 1.0em; } }
-/*pushy overwride*/
+/* pushy overwride */
 .landingPage .pushy,
 body > .pushy {
   width: 400px;
@@ -10145,9 +10149,9 @@ body > .pushy ul {
   padding: 0; }
 
 .ln-cr {
-  height: 40px;
-  line-height: 40px;
-  padding: 175px 0; }
+  height: 30px;
+  line-height: 30px;
+  padding: 80px 0; }
 
 .logins a {
   padding: 15px 10px; }
@@ -17191,9 +17195,11 @@ body {
   font-size: 16px !important;
   font-weight: 400; }
 
-.modal-open .modal,
-body {
+.modal-open .modal, body {
   padding-right: 0 !important; }
+
+body, html {
+  overflow-x: hidden; }
 
 [class^="icon-"], [class*=" icon-"] {
   font-size: 32px;
@@ -17272,9 +17278,12 @@ label {
  /*   background: url("../images/group-layered.png") no-repeat center center transparent;
 background-size: cover; */ }
 
-@media screen and (max-width: 767px) {
-  .section1 h2 {
-    margin-top: 20px; } }
+.section1 h2 {
+  font-size: 32px;
+  font-weight: 600; }
+  @media screen and (max-width: 767px) {
+    .section1 h2 {
+      margin-top: 20px; } }
 
 @media screen and (max-width: 480px) {
   .section2 .hwt_lm {
@@ -17432,18 +17441,18 @@ a#ln-logo {
   padding-top: 5%; }
   @media screen and (max-width: 767px) {
     #hs1Content {
-      padding-left: 20px;
-      padding-right: 20px; } }
+      padding-left: 10px;
+      padding-right: 10px; } }
   @media screen and (max-width: 480px) {
     #hs1Content {
       padding-top: 0; } }
 
 .ln-cont-text {
   text-align: right;
-  width: 500px;
+  width: 480px;
   margin: 0 auto;
-  padding-top: 10%;
-  font-size: 23px; }
+  padding-top: 20%;
+  font-size: 24px; }
   @media screen and (max-width: 767px) {
     .ln-cont-text {
       max-width: 100%;
@@ -17451,7 +17460,7 @@ a#ln-logo {
       text-align: center; } }
   @media screen and (max-width: 991px) {
     .ln-cont-text {
-      text-align: right; } }
+      text-align: center; } }
   @media screen and (max-width: 480px) {
     .ln-cont-text {
       font-size: 18px;
@@ -17464,19 +17473,23 @@ a#ln-logo {
 .ln-cont-text h2 {
   font-family: "Avenir W01", sans-serif;
   font-weight: 600;
-  font-size: 38px; }
+  color: #FFFFFF;
+  font-size: 32px; }
+  @media screen and (max-width: 767px) {
+    .ln-cont-text h2 {
+      font-size: 28px; } }
 
 .ln-cont-text p {
   font-family: "Avenir W01", sans-serif;
   font-weight: 400;
-  font-size: 24px; }
+  font-size: 20px; }
 
 .ln-vid-link {
   padding: 30px 0 70px; }
 
 .ln-vid-link a {
   font-family: "Avenir W01", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   color: #FF6B42;
   line-height: 30px;
   display: inline-block;
@@ -17666,18 +17679,22 @@ a#ln-logo {
       text-align: center;
       margin: 50px 12px; } }
   .hw_txt h2 {
-    font-weight: 900; }
+    font-weight: 900;
+    color: #323A45;
+    font-size: 20px; }
     @media screen and (max-width: 767px) {
       .hw_txt h2 {
-        font-size: 20px;
+        font-size: 32px;
+        color: #323A45;
         padding-bottom: 10px; } }
   .hw_txt p {
     font-size: "Avenir W01", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 20px; }
     @media screen and (max-width: 767px) {
       .hw_txt p {
-        font-size: 16px; } }
+        font-size: 20px;
+        line-height: 1.2em; } }
 
 .hwt_lm {
   padding-top: 50px; }
@@ -17780,20 +17797,17 @@ a#ln-logo {
   .section4 .hw_txt h2 {
     font-family: "Avenir W01", sans-serif;
     font-weight: 900;
-    font-size: 36px; }
+    color: #323A45; }
     @media screen and (max-width: 767px) {
       .section4 .hw_txt h2 {
-        font-size: 20px; } }
+        font-size: 32x; } }
   .section4 .hw_txt p {
     font-family: "Avenir W01", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 20px; }
     @media screen and (max-width: 767px) {
       .section4 .hw_txt p {
-        font-size: 16px; } }
-
-.section5 h2 {
-  margin-top: 0; }
+        font-size: 20px; } }
 
 .section5 .hw_txt {
   margin: 0 auto;
@@ -17808,17 +17822,18 @@ a#ln-logo {
   .section5 .hw_txt h2 {
     font-family: "Avenir W01", sans-serif;
     font-weight: 900;
-    font-size: 36px; }
+    color: #323A45;
+    font-size: 20px; }
     @media screen and (max-width: 767px) {
       .section5 .hw_txt h2 {
-        font-size: 20px; } }
+        font-size: 32px; } }
   .section5 .hw_txt p {
     font-family: "Avenir W01", sans-serif;
     font-weight: 100;
     font-size: 20px; }
     @media screen and (max-width: 767px) {
       .section5 .hw_txt p {
-        font-size: 16px; } }
+        font-size: 20px; } }
 
 @media screen and (max-width: 767px) {
   .design-icons-cont {
@@ -17849,13 +17864,13 @@ a#ln-logo {
   width: 200px;
   text-align: center;
   font-family: "Avenir W01", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
   padding: 12px 25px;
   line-height: 26px; }
 
 .btn-ios {
-  background: #323a45;
+  background: #323A45;
   color: #fff;
   margin-right: 35px; }
 
@@ -17866,18 +17881,18 @@ a#ln-logo {
 
 .btn-ios:hover {
   color: #FFFFFF;
-  background: #4d6586; }
+  background: #1D2735; }
 
 .hwt_lm_2 .btn-default {
-  border-color: #323a45;
-  color: #323a45; }
+  border-color: #323A45;
+  color: #323A45; }
 
 .section6 .hw_txt {
   max-width: 480px;
   margin: 0 auto; }
   @media screen and (max-width: 767px) {
     .section6 .hw_txt {
-      display: none; } }
+      margin-top: 10%; } }
 
 .hwt_lm_2 {
   padding-top: 25px; }
@@ -18663,10 +18678,6 @@ table {
   color: #1D2735; }
 
 @media screen and (max-width: 767px) {
-  .ln-mblImg {
-    padding-right: 75px; } }
-
-@media screen and (max-width: 767px) {
   .hwhy-txt {
     text-align: center;
     padding-bottom: 30px;
@@ -18674,17 +18685,19 @@ table {
 .hwhy-txt h2 {
   font-family: "Avenir W01", sans-serif;
   font-weight: 900;
+  color: #323A45;
   font-size: 36px; }
   @media screen and (max-width: 767px) {
     .hwhy-txt h2 {
-      font-size: 20px; } }
+      font-size: 32px; } }
 .hwhy-txt p {
   font-family: "Avenir W01", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 20px; }
   @media screen and (max-width: 767px) {
     .hwhy-txt p {
-      font-size: 16px; } }
+      font-size: 20px;
+      line-height: 1.2em; } }
 
 @media screen and (max-width: 767px) {
   #phone-mobile {

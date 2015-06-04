@@ -7,9 +7,12 @@ body {
   font-weight: $regular-weight;
 }
 
-.modal-open .modal,
-body {
+.modal-open .modal, body {
   padding-right: 0 !important;
+}
+
+body, html {
+  overflow-x:hidden;
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -106,7 +109,8 @@ h2 {
 }
 
 .section1 h2 {
-
+  font-size: 32px;
+  font-weight: $bold-weight;
   @media screen and (max-width: $small) {
     margin-top: 20px;
   }
@@ -297,8 +301,8 @@ a#ln-logo {
 #hs1Content {
   padding-top: 5%;
   @media screen and (max-width: $small) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   @media screen and (max-width: $iphone) {
     padding-top: 0;
@@ -307,17 +311,17 @@ a#ln-logo {
 
 .ln-cont-text {
   text-align: right;
-  width: 500px;
+  width: 480px;
   margin: 0 auto;
-  padding-top: 10%;
-  font-size: 23px;
+  padding-top: 20%;
+  font-size: 24px;
   @media screen and (max-width: $small) {
     max-width: 100%;
     padding: 0;
     text-align: center;
   }
   @media screen and (max-width: $kinda-small) {
-    text-align: right;
+    text-align: center;
   }
   @media screen and (max-width: $iphone) {
     font-size: 18px;
@@ -334,13 +338,17 @@ a#ln-logo {
 .ln-cont-text h2 {
   font-family: $headline;
   font-weight: $bold-weight;
-  font-size: 38px;
+  color: $white;
+  font-size: 32px;
+  @media screen and (max-width: $small) {
+    font-size: 28px;
+  }
 }
 
 .ln-cont-text p {
   font-family: $headline;
   font-weight: $regular-weight;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .ln-vid-link {
@@ -349,7 +357,7 @@ a#ln-logo {
 
 .ln-vid-link a {
   font-family: $headline;
-  font-weight: $mbold-weight;
+  font-weight: $bold-weight;
   color: $orange;
   line-height: 30px;
   display: inline-block;
@@ -567,26 +575,29 @@ a#ln-logo {
 .hw_txt {
   margin-top: 25%;
   @media screen and (max-width: $small) {
-
     text-align: center;
     margin: 50px 12px;
   }
   h2 {
     font-weight: $heavy-weight;
+    color: $reg-blue;
+    font-size: 20px;
     @media screen and (max-width: $small) {
-      font-size: 20px;
+      font-size: 32px;
+      color: $reg-blue;
       padding-bottom: 10px;
     }
   }
   p {
     font-size: $headline;
-    font-weight: $light-weight;
+    font-weight: $medium-weight;
     font-size: 20px;
     @media screen and (max-width: $small) {
-      font-size: 16px;
+      font-size: 20px;
+      line-height: 1.2em;
+
     }
   }
-
 }
 
 .hwt_lm {
@@ -707,24 +718,19 @@ a#ln-logo {
   h2 {
     font-family: $headline;
     font-weight: $heavy-weight;
-    font-size: 36px;
+    color: $reg-blue;
     @media screen and (max-width: $small) {
-      font-size: 20px;
+      font-size: 32x;
     }
   }
   p {
     font-family: $headline;
-    font-weight: $light-weight;
+    font-weight: $medium-weight;
     font-size: 20px;
     @media screen and (max-width: $small) {
-      font-size: 16px;
+      font-size: 20px;
     }
   }
-}
-
-.section5 h2 {
-  margin-top: 0;
-
 }
 
 .section5 .hw_txt {
@@ -740,9 +746,10 @@ a#ln-logo {
   h2 {
     font-family: $headline;
     font-weight: $heavy-weight;
-    font-size: 36px;
+    color: $reg-blue;
+    font-size: 20px;
     @media screen and (max-width: $small) {
-      font-size: 20px;
+      font-size: 32px;
     }
   }
   p {
@@ -750,7 +757,7 @@ a#ln-logo {
     font-weight: $light-weight;
     font-size: 20px;
     @media screen and (max-width: $small) {
-      font-size: 16px;
+      font-size: 20px;
     }
   }
 }
@@ -792,14 +799,14 @@ a#ln-logo {
   width: 200px;
   text-align: center;
   font-family: $regular-fonts;
-  font-weight: $medium-weight;
+  font-weight: $regular-weight;
   font-size: 20px;
   padding: 12px 25px;
   line-height: 26px;
 }
 
 .btn-ios {
-  background: #323a45;
+  background: $reg-blue;
   color: #fff;
   margin-right: 35px;
 }
@@ -812,20 +819,19 @@ a#ln-logo {
 
 .btn-ios:hover {
   color: #FFFFFF;
-  background: #4d6586;
+  background: $dark-blue;
 }
 
 .hwt_lm_2 .btn-default {
-  border-color: #323a45;
-  color: #323a45;
+  border-color: $reg-blue;
+  color: $reg-blue;
 }
 
 .section6 .hw_txt {
   max-width: 480px;
   margin: 0 auto;
-
   @media screen and (max-width: $small) {
-    display: none;
+    margin-top: 10%;
   }
 }
 
@@ -1821,7 +1827,7 @@ embed.E {
 
 .ln-mblImg {
   @media screen and (max-width: $small) {
-    padding-right: 75px;
+    //padding-right: 75px;
   }
 }
 
@@ -1837,17 +1843,19 @@ embed.E {
   h2 {
     font-family: $headline;
     font-weight: $heavy-weight;
+    color: $reg-blue;
     font-size: 36px;
     @media screen and (max-width: $small) {
-      font-size: 20px;
+      font-size: 32px;
     }
   }
   p {
     font-family: $headline;
-    font-weight: $light-weight;
+    font-weight: $medium-weight;
     font-size: 20px;
     @media screen and (max-width: $small) {
-      font-size: 16px;
+      font-size: 20px;
+      line-height: 1.2em;
     }
   }
 }

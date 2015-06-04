@@ -741,6 +741,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/Myhub_Homepage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.43273e+06,
+		"inputAbbreviatedPath": "\/assets\/images\/Myhub_Homepage.png",
+		"outputAbbreviatedPath": "\/assets\/images\/Myhub_Homepage.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/pimg_icons\/AT.png": {
 		"fileType": 32768,
 		"ignore": 0,
