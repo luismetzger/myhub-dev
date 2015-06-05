@@ -125,6 +125,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/App_Store_Badge.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1881,
+		"inputAbbreviatedPath": "\/assets\/images\/App_Store_Badge.png",
+		"outputAbbreviatedPath": "\/assets\/images\/App_Store_Badge.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/banner_jobs.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -356,6 +367,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/Event_Detail_Paid.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/assets\/images\/Event_Detail_Paid.png",
+		"outputAbbreviatedPath": "\/assets\/images\/Event_Detail_Paid.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/festival.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -576,17 +598,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/icons\/send_sms_icon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 5118,
-		"inputAbbreviatedPath": "\/assets\/images\/icons\/send_sms_icon.png",
-		"outputAbbreviatedPath": "\/assets\/images\/icons\/send_sms_icon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/images\/iPhone 5C.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -697,13 +708,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/more.png": {
+	"\/assets\/images\/More.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 536,
-		"inputAbbreviatedPath": "\/assets\/images\/more.png",
-		"outputAbbreviatedPath": "\/assets\/images\/more.png",
+		"inputAbbreviatedPath": "\/assets\/images\/More.png",
+		"outputAbbreviatedPath": "\/assets\/images\/More.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -726,6 +737,17 @@
 		"initialSize": 28322,
 		"inputAbbreviatedPath": "\/assets\/images\/myhub-logo.png",
 		"outputAbbreviatedPath": "\/assets\/images\/myhub-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/Myhub_Homepage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.43273e+06,
+		"inputAbbreviatedPath": "\/assets\/images\/Myhub_Homepage.png",
+		"outputAbbreviatedPath": "\/assets\/images\/Myhub_Homepage.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1126,13 +1148,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/send_sms_icon.png": {
+	"\/assets\/images\/send_sms.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 5118,
-		"inputAbbreviatedPath": "\/assets\/images\/send_sms_icon.png",
-		"outputAbbreviatedPath": "\/assets\/images\/send_sms_icon.png",
+		"initialSize": 2256,
+		"inputAbbreviatedPath": "\/assets\/images\/send_sms.png",
+		"outputAbbreviatedPath": "\/assets\/images\/send_sms.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2958,7 +2980,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Luis Metzger",
+"lastSavedByUser": "FBH",
 "manualImportLinks": {
 	},
 "projectAttributes": {

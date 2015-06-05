@@ -9899,7 +9899,10 @@ textarea.default-input {
 
 @media screen and (max-width: 767px) {
   #login-button {
-    display: none; } }
+    display: none;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-right: 5px; } }
 
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
   background-color: none; }
@@ -9924,8 +9927,8 @@ textarea.default-input {
     display: none; } }
 #dropdown-button a {
   font-family: "Avenir W01", sans-serif;
-  font-weight: 100;
-  font-size: 14px; }
+  font-weight: 400;
+  font-size: 16px; }
 
 .dropdown-icon {
   /*background: url(../images/more.png); */
@@ -9938,7 +9941,8 @@ textarea.default-input {
 
 .navbar-nav > li > .dropdown-menu,
 .dropdown .dropdown-menu {
-  margin-top: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   background: #F4F5F7; }
   .navbar-nav > li > .dropdown-menu a,
   .dropdown .dropdown-menu a {
@@ -9963,7 +9967,7 @@ textarea.default-input {
 
 .navbar-nav > li > a#login-button,
 .navbar-nav > li > a.dropdown-toggle {
-  height: 55px; }
+  height: 54px; }
 
 .navbar-nav > li > a {
   font-family: "Avenir W01", sans-serif;
@@ -9977,6 +9981,7 @@ textarea.default-input {
   background: #FF6B42;
   padding: 8px 15px;
   margin-top: 7px;
+  margin-right: 5px;
   border: none; }
   #btn_plus:hover {
     background: #E5603B;
@@ -9985,11 +9990,11 @@ textarea.default-input {
 /* Menu Appearance */
 .pushy {
   position: fixed;
-  width: 200px;
+  width: 300px;
   height: 100%;
   top: 0;
   z-index: 9999;
-  background: #333332;
+  background: #323A45;
   font-size: 1.1em;
   font-weight: 300;
   -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, 0.7);
@@ -10005,11 +10010,15 @@ textarea.default-input {
   font-size: 24px;
   display: block;
   color: #FFFFFF;
-  padding: 15px 30px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 16px 16px;
+  border-bottom: 1px solid rgba(29, 39, 53, 0.3);
+  border-top: 1px solid rgba(29, 39, 53, 0.3);
   text-decoration: none;
   text-align: left; }
+
+.pushy, html, body {
+  overflow-x: hidden;
+  height: 100%; }
 
 .pushy a:hover {
   background: #FF6B42;
@@ -10018,17 +10027,17 @@ textarea.default-input {
 .ln-cr li.col-xs-6 {
   padding: 0; }
   .ln-cr li.col-xs-6 a {
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(29, 39, 53, 0.3);
+    border-left: 1px solid rgba(29, 39, 53, 0.3);
     padding-left: 25px; }
 
 /* Menu Movement */
 .pushy-left {
-  -webkit-transform: translate3d(-200px, 0, 0);
-  -moz-transform: translate3d(-200px, 0, 0);
-  -ms-transform: translate3d(-200px, 0, 0);
-  -o-transform: translate3d(-200px, 0, 0);
-  transform: translate3d(-200px, 0, 0); }
+  -webkit-transform: translate3d(-300px, 0, 0);
+  -moz-transform: translate3d(-300px, 0, 0);
+  -ms-transform: translate3d(-300px, 0, 0);
+  -o-transform: translate3d(-300px, 0, 0);
+  transform: translate3d(-300px, 0, 0); }
 
 .pushy-open {
   -webkit-transform: translate3d(0, 0, 0);
@@ -10038,11 +10047,11 @@ textarea.default-input {
   transform: translate3d(0, 0, 0); }
 
 .container-push, .push-push {
-  -webkit-transform: translate3d(200px, 0, 0);
-  -moz-transform: translate3d(200px, 0, 0);
-  -ms-transform: translate3d(200px, 0, 0);
-  -o-transform: translate3d(200px, 0, 0);
-  transform: translate3d(200px, 0, 0); }
+  -webkit-transform: translate3d(300px, 0, 0);
+  -moz-transform: translate3d(300px, 0, 0);
+  -ms-transform: translate3d(300px, 0, 0);
+  -o-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0); }
 
 /* Menu Transitions */
 .pushy, #container, .push {
@@ -10063,7 +10072,7 @@ textarea.default-input {
   bottom: 0;
   left: 0;
   z-index: 9998;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   -webkit-animation: fade 500ms;
   -moz-animation: fade 500ms;
   -o-animation: fade 500ms;
@@ -10093,7 +10102,7 @@ textarea.default-input {
 @media screen and (max-width: 768px) {
   .pushy {
     font-size: 1.0em; } }
-/*pushy overwride*/
+/* pushy overwride */
 .landingPage .pushy,
 body > .pushy {
   width: 400px;
@@ -10140,9 +10149,9 @@ body > .pushy ul {
   padding: 0; }
 
 .ln-cr {
-  height: 40px;
-  line-height: 40px;
-  padding: 175px 0; }
+  height: 30px;
+  line-height: 30px;
+  padding: 80px 0; }
 
 .logins a {
   padding: 15px 10px; }
@@ -10210,7 +10219,7 @@ body > .pushy ul {
     text-align: right; }
 
   .ln-footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%; }
@@ -10351,7 +10360,7 @@ body > .pushy ul {
   opacity: 1; }
 
 .fp-slidesNav.bottom {
-  bottom: 17px; }
+  bottom: 10px; }
 
 .fp-slidesNav.top {
   top: 17px; }
@@ -10406,8 +10415,7 @@ body > .pushy ul {
 
 .fp-viewing-firstPage #fp-nav ul li a span,
 .fp-viewing-firstPage .fp-slidesNav ul li a span {
-  background: #6e7373;
-  border: 1px solid #6e7373; }
+  background: rgba(244, 245, 247, 0.2); }
 
 #fp-nav ul li .fp-tooltip {
   position: absolute;
@@ -10415,7 +10423,7 @@ body > .pushy ul {
   color: #FF6B42;
   font-size: 18px;
   font-family: "Avenir W01", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   white-space: nowrap;
   max-width: 220px;
   overflow: hidden;
@@ -10424,8 +10432,8 @@ body > .pushy ul {
   width: 0; }
 
 #fp-nav ul li:hover .fp-tooltip {
-  -webkit-transition: opacity 0.2s ease-in;
-  transition: opacity 0.2s ease-in;
+  -webkit-transition: opacity 0.1s ease-in;
+  transition: opacity 0.1s ease-in;
   width: auto;
   opacity: 1; }
 
@@ -10433,7 +10441,7 @@ body > .pushy ul {
   right: 20px; }
 
 #fp-nav ul li .fp-tooltip.left {
-  left: 20px; }
+  left: 10px; }
 
 /*!
 Animate.css - http://daneden.me/animate
@@ -17187,9 +17195,11 @@ body {
   font-size: 16px !important;
   font-weight: 400; }
 
-.modal-open .modal,
-body {
+.modal-open .modal, body {
   padding-right: 0 !important; }
+
+body, html {
+  overflow-x: hidden; }
 
 [class^="icon-"], [class*=" icon-"] {
   font-size: 32px;
@@ -17224,6 +17234,7 @@ label {
 @media screen and (max-width: 480px) {
   h2 {
     font-size: 25px;
+    color: #323A45;
     margin: 0.5em 0 0.3em; } }
 
 .h4, h4 {
@@ -17267,9 +17278,12 @@ label {
  /*   background: url("../images/group-layered.png") no-repeat center center transparent;
 background-size: cover; */ }
 
-@media screen and (max-width: 767px) {
-  .section1 h2 {
-    margin-top: 20px; } }
+.section1 h2 {
+  font-size: 32px;
+  font-weight: 600; }
+  @media screen and (max-width: 767px) {
+    .section1 h2 {
+      margin-top: 20px; } }
 
 @media screen and (max-width: 480px) {
   .section2 .hwt_lm {
@@ -17427,18 +17441,18 @@ a#ln-logo {
   padding-top: 5%; }
   @media screen and (max-width: 767px) {
     #hs1Content {
-      padding-left: 20px;
-      padding-right: 20px; } }
+      padding-left: 10px;
+      padding-right: 10px; } }
   @media screen and (max-width: 480px) {
     #hs1Content {
       padding-top: 0; } }
 
 .ln-cont-text {
   text-align: right;
-  width: 440px;
+  width: 480px;
   margin: 0 auto;
   padding-top: 20%;
-  font-size: 23px; }
+  font-size: 24px; }
   @media screen and (max-width: 767px) {
     .ln-cont-text {
       max-width: 100%;
@@ -17450,25 +17464,36 @@ a#ln-logo {
   @media screen and (max-width: 480px) {
     .ln-cont-text {
       font-size: 18px;
+      text-align: center;
       line-height: 1.2; } }
   @media screen and (max-width: 480px) {
     .ln-cont-text p {
       margin-bottom: 5px; } }
 
-.ln-cont-text h1 {
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 38px; }
+.ln-cont-text h2 {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 36px; }
+  @media screen and (max-width: 767px) {
+    .ln-cont-text h2 {
+      font-size: 28px; } }
+
+.ln-cont-text p {
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 400;
+  font-size: 20px; }
 
 .ln-vid-link {
-  padding: 10px 0 120px; }
+  padding: 30px 0 70px; }
 
 .ln-vid-link a {
   font-family: "Avenir W01", sans-serif;
-  font-weight: 500;
-  color: #ff6b42;
+  font-weight: 600;
+  color: #FF6B42;
   line-height: 30px;
   display: inline-block;
-  font-size: 20px;
+  font-size: 24px;
   white-space: nowrap; }
 
 .ln-vid-link i {
@@ -17477,8 +17502,8 @@ a#ln-logo {
   float: left; }
 
 .middlemodal #mobileNumber {
-  color: #666;
-  font-size: 1em; }
+  color: #323A45;
+  font-size: 28px; }
 
 .twilow_sms {
   position: relative; }
@@ -17486,18 +17511,18 @@ a#ln-logo {
 .twilow_sms label {
   font-family: "Avenir W01", sans-serif;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 600;
   color: inherit;
   text-transform: uppercase;
   margin-bottom: 8px; }
 
 .twilow_sms input.form-control {
   height: 75px;
-  line-height: 75px;
-  padding-left: 45px;
+  line-height: 30px;
+  padding-left: 30px;
   background: #f4f5f7;
-  color: #a4a8b3;
-  font-size: 20px; }
+  color: #323A45;
+  font-size: 24px; }
 
 #twillow_submit,
 #twillow_submitb {
@@ -17506,7 +17531,7 @@ a#ln-logo {
   height: 64px;
   right: 5px;
   top: 45px;
-  background: url("../images/icons/send_sms_icon.png") no-repeat 0 0;
+  background: url("../images/send_sms.png") no-repeat 0 0;
   background-size: cover;
   text-indent: -9999px;
   border: none;
@@ -17521,17 +17546,15 @@ a#ln-logo {
 #twillow_submitb:hover {
   opacity: 1; }
 
-.ln-mblImg {
-  text-align: right; }
-  @media screen and (max-width: 991px) {
-    .ln-mblImg {
-      text-align: center; } }
+@media screen and (max-width: 991px) {
+  .ln-mblImg {
+    position: center; } }
 
 .hbtmBtns {
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: 35px;
+  bottom: 10px;
   left: 0; }
   @media screen and (max-width: 767px) {
     .hbtmBtns {
@@ -17553,7 +17576,7 @@ a#ln-logo {
   color: #ffffff; }
 
 .middlemodal .modal-body {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Avenir W01", sans-serif;
   font-size: 20px;
   padding: 2em; }
 
@@ -17656,18 +17679,22 @@ a#ln-logo {
       text-align: center;
       margin: 50px 12px; } }
   .hw_txt h2 {
-    font-weight: 900; }
+    font-weight: 900;
+    color: #323A45;
+    font-size: 36px; }
     @media screen and (max-width: 767px) {
       .hw_txt h2 {
-        font-size: 20px;
+        font-size: 32px;
+        color: #323A45;
         padding-bottom: 10px; } }
   .hw_txt p {
     font-size: "Avenir W01", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 20px; }
     @media screen and (max-width: 767px) {
       .hw_txt p {
-        font-size: 16px; } }
+        font-size: 20px;
+        line-height: 1.2em; } }
 
 .hwt_lm {
   padding-top: 50px; }
@@ -17770,20 +17797,17 @@ a#ln-logo {
   .section4 .hw_txt h2 {
     font-family: "Avenir W01", sans-serif;
     font-weight: 900;
-    font-size: 36px; }
+    color: #323A45; }
     @media screen and (max-width: 767px) {
       .section4 .hw_txt h2 {
-        font-size: 20px; } }
+        font-size: 32x; } }
   .section4 .hw_txt p {
     font-family: "Avenir W01", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 20px; }
     @media screen and (max-width: 767px) {
       .section4 .hw_txt p {
-        font-size: 16px; } }
-
-.section5 h2 {
-  margin-top: 0; }
+        font-size: 20px; } }
 
 .section5 .hw_txt {
   margin: 0 auto;
@@ -17798,17 +17822,18 @@ a#ln-logo {
   .section5 .hw_txt h2 {
     font-family: "Avenir W01", sans-serif;
     font-weight: 900;
+    color: #323A45;
     font-size: 36px; }
     @media screen and (max-width: 767px) {
       .section5 .hw_txt h2 {
-        font-size: 20px; } }
+        font-size: 32px; } }
   .section5 .hw_txt p {
     font-family: "Avenir W01", sans-serif;
     font-weight: 100;
     font-size: 20px; }
     @media screen and (max-width: 767px) {
       .section5 .hw_txt p {
-        font-size: 16px; } }
+        font-size: 20px; } }
 
 @media screen and (max-width: 767px) {
   .design-icons-cont {
@@ -17839,13 +17864,13 @@ a#ln-logo {
   width: 200px;
   text-align: center;
   font-family: "Avenir W01", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
   padding: 12px 25px;
   line-height: 26px; }
 
 .btn-ios {
-  background: #323a45;
+  background: #323A45;
   color: #fff;
   margin-right: 35px; }
 
@@ -17856,18 +17881,18 @@ a#ln-logo {
 
 .btn-ios:hover {
   color: #FFFFFF;
-  background: #4d6586; }
+  background: #1D2735; }
 
 .hwt_lm_2 .btn-default {
-  border-color: #323a45;
-  color: #323a45; }
+  border-color: #323A45;
+  color: #323A45; }
 
 .section6 .hw_txt {
   max-width: 480px;
   margin: 0 auto; }
   @media screen and (max-width: 767px) {
     .section6 .hw_txt {
-      display: none; } }
+      margin-top: 10%; } }
 
 .hwt_lm_2 {
   padding-top: 25px; }
@@ -17940,8 +17965,8 @@ a#ln-logo {
 .footer_socials li a {
   color: #1d2735;
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
   border: 1px solid #D8DEE6;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -17996,9 +18021,7 @@ a#ln-logo {
 
 #footer_container {
   -ms-transform: translate(0px, 166px);
-  /* IE 9 */
   -webkit-transform: translate(0px, 166px);
-  /* Chrome, Safari, Opera */
   transform: translate(0px, 166px);
   -webkit-transition: -webkit-transform 2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
   -moz-transition: -moz-transform 2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
@@ -18010,16 +18033,12 @@ a#ln-logo {
 
 .waypoint #footer_container {
   -ms-transform: translate(0px, 580px);
-  /* IE 9 */
   -webkit-transform: translate(0px, 580px);
-  /* Chrome, Safari, Opera */
   transform: translate(0px, 580px); }
 
 .active-trans #footer_container {
   -ms-transform: translate(0px, 0px);
-  /* IE 9 */
   -webkit-transform: translate(0px, 0px);
-  /* Chrome, Safari, Opera */
   transform: translate(0px, 0px); }
 
 /*page content default*/
@@ -18659,10 +18678,6 @@ table {
   color: #1D2735; }
 
 @media screen and (max-width: 767px) {
-  .ln-mblImg {
-    padding-right: 75px; } }
-
-@media screen and (max-width: 767px) {
   .hwhy-txt {
     text-align: center;
     padding-bottom: 30px;
@@ -18670,17 +18685,19 @@ table {
 .hwhy-txt h2 {
   font-family: "Avenir W01", sans-serif;
   font-weight: 900;
+  color: #323A45;
   font-size: 36px; }
   @media screen and (max-width: 767px) {
     .hwhy-txt h2 {
-      font-size: 20px; } }
+      font-size: 32px; } }
 .hwhy-txt p {
   font-family: "Avenir W01", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 20px; }
   @media screen and (max-width: 767px) {
     .hwhy-txt p {
-      font-size: 16px; } }
+      font-size: 20px;
+      line-height: 1.2em; } }
 
 @media screen and (max-width: 767px) {
   #phone-mobile {
