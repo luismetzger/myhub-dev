@@ -1,3 +1,4 @@
+// SASS Stuff
 @import 'variables';
 @import 'mixins';
 @import 'fonts';
@@ -10,18 +11,14 @@
 @import 'venobox';
 @import 'teamview';
 
-
-
 // Web App Login/Logout User
 @import 'pages/event-detail';
 @import 'pages/password-reset';
 @import 'pages/add-card';
 
 
-
 // Pages
-@import 'pages/privacy-policy';
-@import 'pages/terms-of-service';
+@import 'pages/legal';
 @import 'pages/pflow';
 @import 'pages/modal';
 @import 'pages/settings';

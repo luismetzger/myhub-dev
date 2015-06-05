@@ -1,0 +1,37 @@
+// Legal Pages
+
+.legal-text {
+	ul {
+		list-style: decimal;
+		margin: 0px;
+		padding: 0px;
+		color: $reg-blue;
+		font-weight: $light-weight;
+		font-size: 16px;
+	}
+	h2 {
+		color: $reg-blue;
+		font-weight: $bold-weight;
+		font-size: 24px
+	}
+	p {
+		color: $reg-blue;
+		font-weight: $light-weight;
+		font-size: 16px;
+	}
+	li {
+		list-style: decimal;
+		margin-left: 40px;
+		padding: 5px;
+	}
+	a {
+		color: $twitter-blue;
+	}
+	h3 {
+		color: $reg-blue;
+		text-transform: uppercase;
+		font-size: 18px;
+		margin-left: 20px;
+		font-weight: $bold-weight;
+	}
+}

@@ -1,6 +1,7 @@
-.legal-text {
-	
-	color: $dark-blue;
-	padding: 0 30px;
+// Terms of Service Styles
 
+.legal-text ul, li {
+  list-style: decimal;
+  margin: 0;
+  padding: 10;
 }

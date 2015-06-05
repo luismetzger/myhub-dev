@@ -14278,13 +14278,33 @@ body.full-white .social-share-buttons.share-with-text {
       body.full-white .social-share-buttons.share-with-text .event-detail-social-share-button.social-share-button-calendar:hover {
         background-color: #546274; }
 
-.legal-text {
-  color: #1D2735;
-  padding: 0 30px; }
-
-.legal-text {
-  color: #1D2735;
-  padding: 0 30px; }
+.legal-text ul {
+  list-style: decimal;
+  margin: 0px;
+  padding: 0px;
+  color: #323A45;
+  font-weight: 100;
+  font-size: 16px; }
+.legal-text h2 {
+  color: #323A45;
+  font-weight: 600;
+  font-size: 24px; }
+.legal-text p {
+  color: #323A45;
+  font-weight: 100;
+  font-size: 16px; }
+.legal-text li {
+  list-style: decimal;
+  margin-left: 40px;
+  padding: 5px; }
+.legal-text a {
+  color: #2E97E9; }
+.legal-text h3 {
+  color: #323A45;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-left: 20px;
+  font-weight: 600; }
 
 #profile_info_header {
   background: #f4f5f7; }
@@ -17233,7 +17253,7 @@ label {
 
 @media screen and (max-width: 480px) {
   h2 {
-    font-size: 25px;
+    font-size: 24px;
     color: #323A45;
     margin: 0.5em 0 0.3em; } }
 
@@ -17342,6 +17362,11 @@ a#ln-logo {
 .top-sub-head.fixed .downlo {
   background: #FF6B42;
   color: #fff; }
+
+.top-sub-head ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 5; }
 
 .sub-logo {
   float: left;
@@ -17952,23 +17977,18 @@ a#ln-logo {
   display: inline-block;
   width: 34px;
   height: 34px;
-  border: 1px solid #D8DEE6;
+  border: none;
   background-repeat: no-repeat;
   background-size: 40px 40px;
   position: relative;
   background-color: #D8DEE6;
   border-radius: 50%;
   text-align: center;
-  padding-top: 20%;
-  opacity: 0.8; }
+  padding-top: 20%; }
 
 .footer_socials li a:hover {
   opacity: 1;
   transition: all 333ms ease-in-out; }
-
-.f-tumblr a {
-  background-image: url("../images/icons/fallback/tumblr.png");
-  background-image: linear-gradient(transparent, transparent), url("../images/icons/tumblr.svg"); }
 
 .f-facebook a {
   background-image: url("../images/icons/fallback/facebook.png");
@@ -17977,6 +17997,10 @@ a#ln-logo {
 .f-twitter a {
   background-image: url("../images/icons/fallback/twitter.png");
   background-image: linear-gradient(transparent, transparent), url("../images/icons/twitter.svg"); }
+
+.f-tumblr a {
+  background-image: url("../images/icons/fallback/tumblr.png");
+  background-image: linear-gradient(transparent, transparent), url("../images/icons/tumblr.svg"); }
 
 .f-youtube a {
   background-image: url("../images/icons/fallback/youtube_circle.png");
@@ -18004,29 +18028,30 @@ a#ln-logo {
   height: 55px;
   background: url("../images/icons/App_Store_Light.svg") no-repeat transparent; }
 
-#footer_container {
+/*#footer_container {
   -ms-transform: translate(0px, 166px);
   -webkit-transform: translate(0px, 166px);
   transform: translate(0px, 166px);
-  -webkit-transition: -webkit-transform 1s cubic-bezier(0.16, 0.68, 0.43, 0.99);
-  -moz-transition: -moz-transform 1s cubic-bezier(0.16, 0.68, 0.43, 0.99);
-  -o-transition: -o-transform 1s cubic-bezier(0.16, 0.68, 0.43, 0.99);
-  transition: transform 1s cubic-bezier(0.16, 0.68, 0.43, 0.99); }
-  @media screen and (max-width: 767px) {
-    #footer_container {
-      margin-top: -174px; } }
-
+  -webkit-transition: -webkit-transform 1s cubic-bezier(.16, .68, .43, .99);
+  -moz-transition: -moz-transform 1s cubic-bezier(.16, .68, .43, .99);
+  -o-transition: -o-transform 1s cubic-bezier(.16, .68, .43, .99);
+  transition: transform 1s cubic-bezier(.16, .68, .43, .99);
+  @media screen and (max-width: $small) {
+    margin-top: -174px;
+  }
+}
 .waypoint #footer_container {
   -ms-transform: translate(0px, 580px);
   -webkit-transform: translate(0px, 580px);
-  transform: translate(0px, 580px); }
+  transform: translate(0px, 580px);
+}
 
 .active-trans #footer_container {
   -ms-transform: translate(0px, 0px);
   -webkit-transform: translate(0px, 0px);
-  transform: translate(0px, 0px); }
-
-/*page content default*/
+  transform: translate(0px, 0px);
+}
+*/
 .page_content {
   font-family: "Avenir W01", sans-serif;
   font-size: 18px;
@@ -18258,10 +18283,10 @@ a#ln-logo {
   width: 48.5%; }
 
 [class*="hiw-part"] {
-  padding: 8% 0; }
+  padding: 5% 0; }
 
 .hiwp_txt2 {
-  padding-top: 8%; }
+  padding-top: 5%; }
   @media screen and (max-width: 767px) {
     .hiwp_txt2 {
       padding-top: 0;

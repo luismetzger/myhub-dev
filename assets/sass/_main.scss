@@ -1,4 +1,4 @@
-
+// Basics 
 body {
   background-color: #fff;
   color: $tag-gray;
@@ -55,7 +55,7 @@ label {
 
 h2 {
   @media screen and (max-width: $iphone) {
-    font-size: 25px;
+    font-size: 24px;
     color: $reg-blue;
     margin: 0.5em 0 0.3em;
   }
@@ -191,6 +191,13 @@ a#ln-logo {
 .top-sub-head.fixed .downlo {
   background: #FF6B42;
   color: #fff;
+}
+
+.top-sub-head ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 5;
+
 }
 
 .sub-logo {
@@ -894,10 +901,6 @@ a#ln-logo {
   @media screen and (max-width: $small) {
     text-align: center;
   }
-  @media screen and (max-width: $kinda-small) {
-  }
-  @media screen and (min-width: $large) {
-  }
 }
 
 .footer_socials li {
@@ -910,7 +913,7 @@ a#ln-logo {
   display: inline-block;
   width: 34px;
   height: 34px;
-  border: 1px solid #D8DEE6;
+  border: none;
   background-repeat: no-repeat;
   background-size: 40px 40px;
   position: relative;
@@ -918,7 +921,6 @@ a#ln-logo {
   border-radius: 50%;
   text-align: center;
   padding-top: 20%;
-  opacity: 0.8;
 }
 
 .footer_socials li a:hover {
@@ -926,31 +928,26 @@ a#ln-logo {
   @include ease;
 }
 
-.f-tumblr a {
-  background-image: url("../images/icons/fallback/tumblr.png");
-  background-image: linear-gradient(transparent, transparent), url("../images/icons/tumblr.svg");
-}
-
 .f-facebook a {
   background-image: url("../images/icons/fallback/facebook.png");
   background-image: linear-gradient(transparent, transparent), url("../images/icons/facebook.svg");
 }
-
 .f-twitter a {
   background-image: url("../images/icons/fallback/twitter.png");
   background-image: linear-gradient(transparent, transparent), url("../images/icons/twitter.svg");
 }
-
+.f-tumblr a {
+  background-image: url("../images/icons/fallback/tumblr.png");
+  background-image: linear-gradient(transparent, transparent), url("../images/icons/tumblr.svg");
+}
 .f-youtube a {
   background-image: url("../images/icons/fallback/youtube_circle.png");
   background-image: linear-gradient(transparent, transparent), url("../images/icons/youtube_circle.svg");
 }
-
 .f-instagram a {
   background-image: url("../images/icons/fallback/instagram.png");
   background-image: linear-gradient(transparent, transparent), url("../images/icons/instagram.svg");
 }
-
 .f-linkedin a {
   background-image: url("../images/icons/fallback/linkedin.png");
   background-image: linear-gradient(transparent, transparent), url("../images/icons/linkedin.svg");
@@ -973,7 +970,8 @@ a#ln-logo {
   background: url("../images/icons/App_Store_Light.svg") no-repeat transparent;
 }
 
-#footer_container {
+// Animated Footer on Homepage 
+/*#footer_container {
   -ms-transform: translate(0px, 166px);
   -webkit-transform: translate(0px, 166px);
   transform: translate(0px, 166px);
@@ -996,8 +994,8 @@ a#ln-logo {
   -webkit-transform: translate(0px, 0px);
   transform: translate(0px, 0px);
 }
+*/
 
-/*page content default*/
 .page_content {
   font-family: $main-fonts;
   font-size: 18px;
@@ -1297,11 +1295,11 @@ a#ln-logo {
 }
 
 [class*="hiw-part"] {
-  padding: 8% 0;
+  padding: 5% 0;
 }
 
 .hiwp_txt2 {
-  padding-top: 8%;
+  padding-top: 5%;
   @media screen and (max-width: $small) {
     padding-top: 0;
     text-align: center;
