@@ -14278,33 +14278,37 @@ body.full-white .social-share-buttons.share-with-text {
       body.full-white .social-share-buttons.share-with-text .event-detail-social-share-button.social-share-button-calendar:hover {
         background-color: #546274; }
 
-.legal-text ul {
-  list-style: decimal;
-  margin: 0px;
-  padding: 0px;
-  color: #323A45;
-  font-weight: 100;
-  font-size: 16px; }
-.legal-text h2 {
-  color: #323A45;
-  font-weight: 600;
-  font-size: 24px; }
-.legal-text p {
-  color: #323A45;
-  font-weight: 100;
-  font-size: 16px; }
-.legal-text li {
-  list-style: decimal;
-  margin-left: 40px;
-  padding: 5px; }
-.legal-text a {
-  color: #2E97E9; }
-.legal-text h3 {
-  color: #323A45;
-  text-transform: uppercase;
-  font-size: 18px;
-  margin-left: 20px;
-  font-weight: 600; }
+.legal-text {
+  padding-top: 5%;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .legal-text ul {
+    list-style: decimal;
+    margin: 0px;
+    padding: 0px;
+    color: #323A45;
+    font-weight: 100;
+    font-size: 16px; }
+  .legal-text h2 {
+    color: #323A45;
+    font-weight: 600;
+    font-size: 24px; }
+  .legal-text p {
+    color: #323A45;
+    font-weight: 100;
+    font-size: 16px; }
+  .legal-text li {
+    list-style: decimal;
+    margin-left: 40px;
+    padding: 5px; }
+  .legal-text a {
+    color: #2E97E9; }
+  .legal-text h3 {
+    color: #323A45;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-left: 20px;
+    font-weight: 600; }
 
 #profile_info_header {
   background: #f4f5f7; }
@@ -18282,7 +18286,7 @@ a#ln-logo {
   margin: 35px 0 0 1.5%;
   width: 48.5%; }
 
-[class*="hiw-part"] {
+.hiw-part {
   padding: 5% 0; }
 
 .hiwp_txt2 {

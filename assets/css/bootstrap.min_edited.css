@@ -1417,8 +1417,8 @@ pre code {
 }
 }
 .container-fluid {
-	padding-right:0px;
-	padding-left:0px;
+	padding-right:15px;
+	padding-left:15px;
 	margin-right:auto;
 	margin-left:auto
 }
