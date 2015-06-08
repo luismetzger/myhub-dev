@@ -83,6 +83,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/images\/About-Header.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/assets\/images\/About-Header.png",
+		"outputAbbreviatedPath": "\/assets\/images\/About-Header.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/after-group.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -145,17 +156,6 @@
 		"initialSize": 51420,
 		"inputAbbreviatedPath": "\/assets\/images\/besties-festival.png",
 		"outputAbbreviatedPath": "\/assets\/images\/besties-festival.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/images\/bg-image.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2.5589e+06,
-		"inputAbbreviatedPath": "\/assets\/images\/bg-image.png",
-		"outputAbbreviatedPath": "\/assets\/images\/bg-image.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -237,6 +237,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/Denver_Map.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.37587e+06,
+		"inputAbbreviatedPath": "\/assets\/images\/Denver_Map.png",
+		"outputAbbreviatedPath": "\/assets\/images\/Denver_Map.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/Devan.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -266,6 +277,39 @@
 		"initialSize": 166723,
 		"inputAbbreviatedPath": "\/assets\/images\/Eric_Hubbell.png",
 		"outputAbbreviatedPath": "\/assets\/images\/Eric_Hubbell.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/Event-I.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26662,
+		"inputAbbreviatedPath": "\/assets\/images\/Event-I.png",
+		"outputAbbreviatedPath": "\/assets\/images\/Event-I.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/Event-II.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27038,
+		"inputAbbreviatedPath": "\/assets\/images\/Event-II.png",
+		"outputAbbreviatedPath": "\/assets\/images\/Event-II.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/Event-III.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31413,
+		"inputAbbreviatedPath": "\/assets\/images\/Event-III.png",
+		"outputAbbreviatedPath": "\/assets\/images\/Event-III.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -413,39 +457,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/friends_beach-mask.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19283,
-		"inputAbbreviatedPath": "\/assets\/images\/friends_beach-mask.png",
-		"outputAbbreviatedPath": "\/assets\/images\/friends_beach-mask.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/images\/Friends_Beach.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.24124e+06,
-		"inputAbbreviatedPath": "\/assets\/images\/Friends_Beach.png",
-		"outputAbbreviatedPath": "\/assets\/images\/Friends_Beach.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/images\/galvanize_logo.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 8162,
-		"inputAbbreviatedPath": "\/assets\/images\/galvanize_logo.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/galvanize_logo.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/images\/Galvanize_Outside.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -457,24 +468,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/group-3.png": {
-		"fileType": 32768,
+	"\/assets\/images\/headers\/Hands.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.15896e+06,
-		"inputAbbreviatedPath": "\/assets\/images\/group-3.png",
-		"outputAbbreviatedPath": "\/assets\/images\/group-3.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/images\/group-layered.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.15813e+06,
-		"inputAbbreviatedPath": "\/assets\/images\/group-layered.png",
-		"outputAbbreviatedPath": "\/assets\/images\/group-layered.png",
+		"initialSize": 440712,
+		"inputAbbreviatedPath": "\/assets\/images\/headers\/Hands.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/headers\/Hands.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -486,6 +486,17 @@
 		"initialSize": 149150,
 		"inputAbbreviatedPath": "\/assets\/images\/how-it-works-headerBg.png",
 		"outputAbbreviatedPath": "\/assets\/images\/how-it-works-headerBg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/HP_Splash.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 490488,
+		"inputAbbreviatedPath": "\/assets\/images\/HP_Splash.png",
+		"outputAbbreviatedPath": "\/assets\/images\/HP_Splash.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -611,28 +622,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/jobs-bg.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.16249e+06,
-		"inputAbbreviatedPath": "\/assets\/images\/jobs-bg.png",
-		"outputAbbreviatedPath": "\/assets\/images\/jobs-bg.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/images\/jobs_page_bg.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 29305,
-		"inputAbbreviatedPath": "\/assets\/images\/jobs_page_bg.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/jobs_page_bg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/images\/Justin.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -728,17 +717,6 @@
 		"initialSize": 28322,
 		"inputAbbreviatedPath": "\/assets\/images\/myhub-logo.png",
 		"outputAbbreviatedPath": "\/assets\/images\/myhub-logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/images\/Myhub_Homepage.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2.43273e+06,
-		"inputAbbreviatedPath": "\/assets\/images\/Myhub_Homepage.png",
-		"outputAbbreviatedPath": "\/assets\/images\/Myhub_Homepage.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1139,24 +1117,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/send_sms.png": {
+	"\/assets\/images\/Send_sms.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 2256,
-		"inputAbbreviatedPath": "\/assets\/images\/send_sms.png",
-		"outputAbbreviatedPath": "\/assets\/images\/send_sms.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/images\/slide-2-Images.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 325846,
-		"inputAbbreviatedPath": "\/assets\/images\/slide-2-Images.png",
-		"outputAbbreviatedPath": "\/assets\/images\/slide-2-Images.png",
+		"inputAbbreviatedPath": "\/assets\/images\/Send_sms.png",
+		"outputAbbreviatedPath": "\/assets\/images\/Send_sms.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1834,699 +1801,6 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/AutoPagingIterator.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/AutoPagingIterator.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Capability.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Capability.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/HttpException.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/HttpException.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/HttpStream.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/HttpStream.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/InstanceResource.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/InstanceResource.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/ListResource.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/ListResource.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/NumberType.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/NumberType.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Page.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Page.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/PartialApplicationHelper.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/PartialApplicationHelper.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/RequestValidator.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/RequestValidator.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Resource.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Resource.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Account.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Account.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Accounts.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Accounts.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Application.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Application.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Applications.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Applications.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/AuthorizedConnectApp.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/AuthorizedConnectApp.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/AuthorizedConnectApps.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/AuthorizedConnectApps.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/AvailablePhoneNumber.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/AvailablePhoneNumber.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/AvailablePhoneNumbers.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/AvailablePhoneNumbers.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Call.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Call.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Calls.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Calls.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Conference.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Conference.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Conferences.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Conferences.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/ConnectApp.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/ConnectApp.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/ConnectApps.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/ConnectApps.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Credential.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Credential.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/CredentialList.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/CredentialList.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/CredentialListMapping.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/CredentialListMapping.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/CredentialListMappings.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/CredentialListMappings.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/CredentialLists.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/CredentialLists.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Credentials.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Credentials.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Domain.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Domain.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Domains.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Domains.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/IncomingPhoneNumber.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/IncomingPhoneNumber.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/IncomingPhoneNumbers.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/IncomingPhoneNumbers.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/IpAccessControlList.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/IpAccessControlList.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/IpAccessControlListMapping.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/IpAccessControlListMapping.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/IpAccessControlListMappings.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/IpAccessControlListMappings.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/IpAccessControlLists.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/IpAccessControlLists.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/IpAddress.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/IpAddress.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/IpAddresses.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/IpAddresses.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Media.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Media.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/MediaInstance.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/MediaInstance.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Member.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Member.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Members.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Members.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Message.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Message.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Messages.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Messages.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Notification.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Notification.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Notifications.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Notifications.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/OutgoingCallerId.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/OutgoingCallerId.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/OutgoingCallerIds.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/OutgoingCallerIds.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Participant.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Participant.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Participants.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Participants.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Queue.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Queue.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Queues.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Queues.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Recording.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Recording.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Recordings.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Recordings.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Sandbox.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Sandbox.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/ShortCode.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/ShortCode.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/ShortCodes.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/ShortCodes.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Sip.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Sip.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/SmsMessage.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/SmsMessage.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/SmsMessages.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/SmsMessages.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Transcription.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Transcription.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/Transcriptions.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/Transcriptions.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/UsageRecord.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/UsageRecord.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/UsageRecords.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/UsageRecords.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/UsageTrigger.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/UsageTrigger.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Rest\/UsageTriggers.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Rest\/UsageTriggers.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/RestException.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/RestException.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/SIPListResource.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/SIPListResource.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/TimeRangeResource.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/TimeRangeResource.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/TinyHttp.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/TinyHttp.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/Twiml.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/Twiml.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio-php\/Services\/Twilio\/UsageResource.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio-php\/Services\/Twilio\/UsageResource.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/twilio_sms.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/twilio_sms.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/contact-us.html": {
 		"fileType": 8192,
