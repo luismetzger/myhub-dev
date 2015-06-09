@@ -2,7 +2,7 @@
 
     var $body = $('body');
 
-    /*CHeck email*/
+    // Check email
     function IsEmail(email) {
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         return regex.test(email);
@@ -40,7 +40,7 @@
         $wrap.removeClass('container-push');
     });
 
-    /*add twiolio SMS popup*/
+    // add twiolio SMS popup
 
     var ppStatus = $("#pp_status"),
         ppSmsCont = $(".twilow_sms");
@@ -124,38 +124,7 @@
         $('.venobox').venobox();
     }
 
-    /**
-     * Footer waypoint
-     */
-    var pgfooter = $("#page_footer_cont");
-    function addClassforFooter(window){
-        if(window.scrollTop() + window.height() > $(document).height() - 400) {
-            pgfooter.addClass('active-trans');
-        }
-        if(pgfooter.hasClass('inner_footer')){
-            var getfooterHgt = pgfooter.find("#footer_container").outerHeight();
-            pgfooter.css('padding-top', getfooterHgt + 'px')
-        }
-    }
-    /*$("#page_footer_cont").waypoint(function(direction){
-        $(this).addClass('active-trans');
-    }, { offset: '40%' });*/
-
-    $(".hwi_tablinks").on('click', 'li a', function(e){
-        e.preventDefault();
-        var parentLi = $(this).parent('li'),
-            liIndex = parentLi.index();
-        if(parentLi.hasClass('active')){
-            return false;
-        }
-        parentLi.siblings('li').removeClass('active');
-        parentLi.addClass('active');
-        $('#hwi_tab').find('li:eq(' + liIndex +') a').tab('show')
-    });
-
-    /**
-     * dropdown on mouse enter
-     */
+    // Dropdown on mouse enter
     var dContainer = $(".dropdown");
     dContainer.on('mouseenter', function(e){
         dContainer.removeClass('open');

@@ -1,32 +1,22 @@
 // Main Navbar 
-.nav.navbar-nav.navbar-right {
-  margin-right: 0;
-}
+
 .nav > li > a:focus, .nav > li > a:hover,
-.nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
   @include ease;
-  background: darken($dark-blue, 20%);
+  background: darken($dark-blue, 5%);
 }
 
-.navbar-nav > li > .dropdown-menu a:hover {
-	background: $lighter-gray;
-}
-
-.dropdown-menu>li>a {
-	color: $medium-gray;
+#header-logo {
+  margin: 8px auto 0;
+  width: 150px;
 }
 
 #login-button {
+  margin-right: 5px;
+  font-weight: $regular-weight;
   @media screen and (max-width: $small) {
     display: none;
-    padding-top: 5px;
-    margin-top: 10px;
-    margin-right: 5px;
   }
-}
-
-.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
-  background-color: none;
 }
 
 #signup-button {
@@ -34,69 +24,48 @@
   border: none;
   width: 100px;
   padding: 10px;
-  margin-top: 7px;
+  margin-top: 6px;
   color: $full-white;
+  font-weight: $regular-weight;
 
   @media screen and (max-width: $small) {
     display: none;
   }
-
   &:hover {
     @include ease;
-    color: $dark-blue;
-    background: $off-white;
+    background: darken($button-gray, 10%);
   }
 }
 
 #dropdown-button {
+  margin-left: 5px;
   @media screen and (max-width: $small) {
     display: none;
-  }
-  a {
-	  font-family: $headline;
-	  font-weight: $regular-weight;
-	  font-size: 16px;
   }
 }
 
 .dropdown-icon {
-  padding: 0 40px;
-  background-repeat: no-repeat;
-  background-position: center;
-
+  padding: 0 8px;
 }
 
 .icon-ellipses:before {
-
 	font-size: 28px;
 }
 
-.navbar-nav > li > .dropdown-menu,
-.dropdown .dropdown-menu {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background: $off-white;
-  a {
-    font: inherit;
-    &:hover {
-      @include ease;
-      background: $light-gray;
-    }
-  }
-  &:before{
-    font-family: $fontAwsome;
-    content: "\f0d8";
-    color: $off-white;
-    font-size: 22px;
-    right: 50px;
-    position: absolute;
-    top: -20px;
-  }
+.dropdown-menu {
+  background: $dark-blue;
 }
 
-#header-logo {
-  margin: 8px auto 0;
-  width: 150px;
+.dropdown-menu > li > a {
+  padding-top: 8px;
+  font-size: 14px;
+  color: $off-white;
+}
+
+.dropdown-menu > a:hover {
+  @include ease;
+  color: inherit;
+  background: $reg-blue;
 }
 
 .navbar-nav > li > a#login-button,
@@ -110,7 +79,8 @@
   color: $full-white;
 }
 #btn_plus {
-  font-size: 25px;
+  font-size: 24px;
+  font-weight: $regular-weight;
   color: $full-white;
   background: $orange;
   padding: 8px 15px;
@@ -123,8 +93,72 @@
   }
 }
 
-// Pushy Mobile Navigation
-/* Menu Appearance */
+a#ln-logo {
+  width: 190px;
+  display: block;
+  @media screen and (max-width: $small) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.top-header .nav-pullleft {
+  display: none;
+  margin-left: 20px;
+  @media screen and (max-width: $small) {
+    display: block;
+    font-size: 2em;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+}
+
+.top-header #ln-logo {
+}
+
+.top-sub-head {
+  position: absolute;
+  width: 100%;
+  background: $dark-blue;
+  top: 0;
+  padding: 0px;
+  z-index: 600;
+  transition: all 0.5s ease;
+  height: 55px;
+  @media screen and (max-width: $small) {
+    padding: 5px 15px;
+    position: relative;
+  }
+  @media screen and (max-width: $iphone) {
+    padding: 10px 15px;
+  }
+  @media screen and (min-width: $medium) {
+    padding: 0 10px;
+  }
+}
+
+.top-sub-head ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 5;
+
+}
+
+.sub-logo {
+  float: left;
+  margin-left: 10px;
+  @media screen and (max-width: $small) {
+    margin: 0 auto;
+    width: 200px;
+    float: none;
+  }
+  @media screen and (min-width: $medium) {
+    padding: 5px 0 0;
+  }
+}
+
+
+// Pushy Menu Appearance
 
 .pushy {
   position: fixed;
@@ -138,8 +172,8 @@
   -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
   -moz-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
   box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
-  overflow: auto;
-  -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .pushy a {
@@ -173,7 +207,7 @@
   }
 }
 
-/* Menu Movement */
+// Menu Movement
 
 .pushy-left {
   -webkit-transform: translate3d(-300px, 0, 0);
@@ -199,7 +233,7 @@
   transform: translate3d(300px, 0, 0);
 }
 
-/* Menu Transitions */
+// Menu Transitions
 
 .pushy, #container, .push {
   -webkit-transition: -webkit-transform .2s cubic-bezier(.16, .68, .43, .99);
@@ -208,7 +242,7 @@
   transition: transform .2s cubic-bezier(.16, .68, .43, .99);
 }
 
-/* Site Overlay */
+// Site Overlay
 
 .site-overlay {
   display: none;
@@ -265,7 +299,7 @@
   }
 }
 
-/* Example Media Query */
+// Example Media Query
 
 @media screen and (max-width: 768px) {
   .pushy {
@@ -273,7 +307,7 @@
   }
 }
 
-/* pushy overwride */
+// pushy override
 
 .landingPage .pushy,
 body > .pushy {
@@ -339,7 +373,8 @@ body > .pushy ul {
   }
 }
 
-/**Logged in Nav*/
+// Logged in Nav
+
 .logged-in-nav > li > a {
   min-width: 55px;
   text-align: center;

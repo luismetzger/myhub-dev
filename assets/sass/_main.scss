@@ -1,4 +1,5 @@
-// Basics 
+// The Basics 
+
 body {
   background-color: #fff;
   color: $tag-gray;
@@ -64,791 +65,118 @@ h2 {
   font-size: 16px;
 }
 
-// Homepage
 
-.tab-content .tab-pane {
+// Header Styles
+
+.headerwrap {
   position: relative;
-}
-
-#fullpage {
-  font: inherit;
-  background: url("../images/HP_Splash.png") no-repeat center center transparent;
-  background-size: cover;
-}
-
-#home_body .section1 {
-  background: url("../images/HP_Splash.png") no-repeat center center transparent;
-  background-size: cover;
-}
-
-#home_body div.section1 .fp-tableCell {
-
-}
-
-.section {
-  font-size: 18px;
-  @media screen and (max-width: $iphone) {
-    font-size: 16px;
-    line-height: 18px;
-  }
-}
-
-.section1 {
-  color: #FFFFFF;
-}
-
-.section1 h2 {
-  font-size: 32px;
-  font-weight: $bold-weight;
-  @media screen and (max-width: $small) {
-    margin-top: 20px;
-  }
-}
-
-.section2 .hwt_lm {
-  @media screen and (max-width: $iphone) {
-    padding-top: 0;
-    display: none;
-  }
-}
-
-.section3 {
-  @media screen and (max-width: $small) {
-    background: #f4f5f7;
-  }
-}
-
-.nav-wrapper {
-  float: right;
-  margin-top: 10px;
-  @media screen and (max-width: $small) {
-    display: none;
-  }
-}
-
-.nav-wrapper li {
-  float: left;
-  margin-right: 20px;
-  transition: all 0.2s ease;
-}
-
-.nav-wrapper li.subli {
-  color: #FFF;
-  padding: 0 0 2px 0;
-}
-
-.nav-wrapper li.subli:hover {
-  border-bottom: 2px solid #FFF;
-}
-
-a#ln-logo {
-  width: 190px;
-  display: block;
-  @media screen and (max-width: $small) {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.top-header .nav-pullleft {
-  display: none;
-  margin-left: 20px;
-  @media screen and (max-width: $small) {
-    display: block;
-    font-size: 2em;
-    margin: 0 auto;
-    padding: 0 auto;
-  }
-}
-
-.top-header #ln-logo {
-}
-
-.top-sub-head {
-  position: absolute;
-  width: 100%;
-  background: $dark-blue;
-  top: 0;
-  padding: 0px;
-  z-index: 600;
-  transition: all 0.5s ease;
-  height: 55px;
-  @media screen and (max-width: $small) {
-    padding: 5px 15px;
-    position: relative;
-  }
-  @media screen and (max-width: $iphone) {
-    padding: 10px 15px;
-  }
-  @media screen and (min-width: $medium) {
-    padding: 0 10px;
-  }
-}
-
-.top-sub-head.fixed {
-  background-color: rgba(50, 58, 69, 0.9);
-}
-
-.top-sub-head.fixed .downlo {
-  background: #FF6B42;
-  color: #fff;
-}
-
-.top-sub-head ul, li {
-  list-style: none;
-  margin: 0;
-  padding: 5;
-
-}
-
-.sub-logo {
-  float: left;
-  margin-left: 10px;
-  @media screen and (max-width: $small) {
-    margin: 0 auto;
-    width: 200px;
-    float: none;
-  }
-  @media screen and (min-width: $medium) {
-    padding: 5px 0 0;
-  }
-}
-
-.nav-wrapper {
-  float: right;
-  margin-top: 10px;
-}
-
-.nav-wrapper li {
-  float: left;
-  margin-right: 20px;
-  transition: all 0.2s ease;
-}
-
-.nav-wrapper li.subli {
-  color: #FFF;
-  padding: 0 0 2px 0;
-}
-
-.nav-wrapper li.subli:hover,
-.nav-wrapper li.active {
-  border-bottom: 2px solid #FFF;
-}
-
-.banner-tilte {
-  color: #FFF;
-  font-family: $main-fonts;
-  position: absolute;
-  top: 31%;
-  left: 0;
-  text-align: center;
-  width: 100%;
-}
-
-.banner-tilte h1 {
-  color: #FFF;
-  font-size: 35px;
-}
-
-.banner-tilte span {
-  color: #FFF;
-  font-family: $main-fonts;
-  text-align: center;
-  top: 50%;
-  left: 43%;
-  font-size: 16px;
-}
-
-.bottom-header {
-  background-color: #F4F5F7;
-  height: 40px;
-}
-
-.bottom-header li {
-  color: #aaa;
-  float: left;
-  margin-right: 40px;
-  margin-top: 10px;
-  font-family: $main-fonts;
-  font-size: 18px;
-}
-
-.bottom-header li.current {
-  color: #222;
-}
-
-.downlo {
-  border: 1px solid #FF6B42;
-  border-radius: 5px;
-  padding: 7px 22px;
-  display: block;
-}
-
-.nav-wrapper li.downloadlink {
-  color: #FF6B42;
-  margin-top: -8px;
-}
-
-.downlo:hover {
-  background-color: #ff6b42;
-  color: white;
-}
-
-#hs1Content {
-  padding-top: 5%;
-  @media screen and (max-width: $small) {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  @media screen and (max-width: $iphone) {
-    padding-top: 0;
-  }
-}
-
-.ln-cont-text {
-  text-align: right;
-  width: 480px;
-  margin: 0 auto;
-  padding-top: 20%;
-  font-size: 24px;
-  @media screen and (max-width: $small) {
-    max-width: 100%;
-    padding: 0;
-    text-align: center;
-  }
-  @media screen and (max-width: $kinda-small) {
-    text-align: center;
-  }
-  @media screen and (max-width: $iphone) {
-    font-size: 18px;
-    text-align: center;
-    line-height: 1.2;
-  }
-  p {
-    @media screen and (max-width: $iphone) {
-      margin-bottom: 5px;
-    }
-  }
-}
-
-.ln-cont-text h2 {
-  font-family: $headline;
-  font-weight: $bold-weight;
-  color: $white;
-  font-size: 36px;
-  @media screen and (max-width: $small) {
-    font-size: 28px;
-  }
-}
-
-.ln-cont-text p {
-  font-family: $headline;
-  font-weight: $regular-weight;
-  font-size: 20px;
-}
-
-.ln-vid-link {
-  padding: 30px 0 70px;
-}
-
-.ln-vid-link a {
-  font-family: $headline;
-  font-weight: $bold-weight;
-  color: $orange;
-  line-height: 30px;
-  display: inline-block;
-  font-size: 24px;
-  white-space: nowrap;
-}
-
-.ln-vid-link i {
-  font-size: 32px;
-  margin-right: 20px;
-  float: left;
-}
-
-.middlemodal #mobileNumber {
-  color: $medium-gray;
-  font-size: 28px;
-}
-
-.twilow_sms {
-  position: relative;
-}
-
-.twilow_sms label {
-  font-family: $headline;
-  font-size: 18px;
-  font-weight: $bold-weight;
-  color: inherit;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
-
-.twilow_sms input.form-control {
-  height: 75px;
-  line-height: 30px;
-  padding-left: 30px;
-  background: #f4f5f7;
-  color: $reg-blue;
-  font-size: 24px;
-}
-
-#twillow_submit,
-#twillow_submitb {
-  position: absolute;
-  width: 92px;
-  height: 64px;
-  right: 5px;
-  top: 45px;
-  background: url("../images/send_sms.png") no-repeat 0 0;
-  background-size: cover;
-  text-indent: -9999px;
-  border: none;
-  opacity: 0.8;
-}
-
-#twillow_submit {
-  margin-top: -32px;
-  top: 50%;
-  right: 20px;
-}
-
-#twillow_submit:hover,
-#twillow_submitb:hover {
-  opacity: 1;
-}
-
-.ln-mblImg {
-  @media screen and (max-width: $kinda-small) {
-    position: center;
-  }
-  @media screena and (max-width: $iphone) {
-  }
-}
-
-.hbtmBtns {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  bottom: 10px;
-  left: 0;
-  @media screen and (max-width: $small) {
-    display: none;
-  }
-}
-
-.hbtmBtns a {
-  display: inline-block;
-  font-size: 20px;
-  color: #9ea7b3;
-}
-
-.hbtmBtns a i {
-  font-size: 55px;
-  font-weight: bold;
-}
-
-.section1 .hbtmBtns a {
-  color: #d8dee6;
-}
-
-.section1 .hbtmBtns a:hover {
-  color: #ffffff;
-}
-
-.middlemodal .modal-body {
-  font-family: $headline;
-  font-size: 20px;
-  padding: 2em;
-}
-
-.middlemodal .modal-message, .middlemodal #pp_status {
-  color: #000000;
-}
-
-.middlemodal .modal-dialog {
-  margin: 0 auto;
-  height: 100%;
-}
-
-.middlemodal .modal-content {
-  border: 0;
-  background-color: #FFFFFF;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  border-radius: 0;
-  text-align: left;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.middlemodal .modal-content .close {
-  padding: 3px;
-  border: 0;
-  position: absolute;
-  top: -13px;
-  right: -13px;
-  font-size: 1.5em;
-  font-weight: 500;
-  color: #FFFFFF;
-  z-index: 1100;
-  width: auto;
   height: auto;
-  opacity: 0.9;
-  background: #333d46;
-  white-space: nowrap;
-  border-radius: 16px;
-  display: block;
+  max-height: 100%;
 }
 
-.middlemodal .modal-content .close i {
-  width: 1em;
+.headerwrap img.img-responsive {
+  width: 135px;
+  margin: 0 auto;
 }
 
-.middlemodal .modal-content .close:hover {
-  opacity: 1;
-}
-
-#twilow_smsb {
-  display: block !important;
-  @media screen and (max-width: $small) {
-    display: none !important;
-  }
-
-}
-
-// Homepage - Slide II
-
-.thumb-img {
-  width: 290px;
-  height: 240px;
-  margin-top: 10px;
-  @media screen and (max-width: $small) {
-    margin: 15px auto 0;
-    margin-bottom: 50px;
-  }
-}
-
-.hw_txt {
-  margin-top: 25%;
-  @media screen and (max-width: $small) {
-    text-align: center;
-    margin: 50px 12px;
-  }
-  h2 {
-    font-weight: $heavy-weight;
-    color: $reg-blue;
-    font-size: 36px;
-    @media screen and (max-width: $small) {
-      font-size: 32px;
-      color: $reg-blue;
-      padding-bottom: 10px;
-    }
-  }
-  p {
-    font-size: $headline;
-    font-weight: $medium-weight;
-    font-size: 20px;
-    @media screen and (max-width: $small) {
-      font-size: 20px;
-      line-height: 1.2em;
-
-    }
-  }
-}
-
-.hwt_lm {
-  padding-top: 50px;
-  @media screen and (max-width: $small) {
-    padding-top: 50px;
-  }
-  @media screen and (min-width: $large) {
-    padding-top: 20px;
-  }
-  @media screen and (max-width: $iphone) {
-    padding-top: 50px;
-  }
-}
-
-.btn-learnMore {
-  background-color: #d8dee6;
-  border-color: #d8dee6;
-  color: #323a45;
+.headerwrap h1 {
   font-family: $headline;
-  font-weight: $medium-weight;
-  font-size: 16px;
-  @include ease;
+  font-size: 32px;
+  font-weight: $heavy-weight;
+  color: $white;
 }
 
-.btn-learnMore.btn-lg {
-  padding: 12px 25px;
-}
-
-.btn-learnMore:hover {
-  background: #d1e2f9;
-}
-
-.hwt_lm_sml_pad {
-  padding-top: 30px;
-}
-
-#hTab_container {
-  position: relative;
-}
-
-.htab-links {
-  position: absolute;
-  right: 17%;
-  width: 240px;
-  display: block;
-  top: -200px;
-  @media screen and (max-width: $small) {
-    position: relative;
-    top: auto;
-    left: auto;
-    padding: 15px;
-  }
-}
-
-.htab-links > li {
-  display: block;
-  float: left;
-  width: 50%;
-  height: 30px;
-  line-height: 30px;
-  color: #323a45;
-  background: #f4f5f7;
-  text-align: center;
-  box-shawdow: 0px 3px 10px #7A8182;
-}
-
-.htab-links > li a {
-  display: block;
-  width: 100%;
+.headerwrap h2 {
   font-family: $headline;
+  font-size: 24px;
   font-weight: $light-weight;
+  color: $soft-gray;
+}
+
+.headerwrap .ln-vid-link {
+  margin-top: 2%;
+  padding-bottom: 0;
+}
+
+
+
+// Page Styles
+
+.page_content {
+  font-family: $main-fonts;
   font-size: 18px;
+  color: #323a45;
 }
 
-.htab-links > li.active {
-  background: #323a45;
-  box-shawdow: 0px 3px 10px #7A8182;
+.pg-table {
+  display: table;
+  table-layout: auto;
+  width: 100%;
 }
 
-.htab-links > li.active a {
-  color: #FFFFFF;
+.pg-tableCell {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  width: 100%;
 }
 
-.htab-links > li:not(.active):hover a {
-  color: #4c6381;
+.soft-gray-bg {
+  background: $soft-gray;
 }
 
-.htab-links > li:first-child {
-  border-radius: 18px 0 0 18px;
+.white-bg {
+  background: $white;
 }
 
-.htab-links > li:last-child {
-  border-radius: 0 18px 18px 0;
-}
 
-.slide-3-img {
-  width: 479px;
-  max-width: 100%;
-  @media screen and (max-width: $small) {
 
-    padding-top: 0px;
-    margin-top: 0px;
-    text-align: center;
-    padding-bottom: 50px;
-  }
-}
 
-.section4 .hw_txt {
-  margin-top: 5%;
-  @media screen and (max-width: $small) {
-    margin: 50px 12px;
-  }
+// SweetAlert Override?
 
-  h2 {
-    font-family: $headline;
-    font-weight: $heavy-weight;
-    color: $reg-blue;
-    @media screen and (max-width: $small) {
-      font-size: 32x;
+.sweet-alert {
+  background: rgba(50,58,69,0.7);
+  .sa-icon.sa-success {
+    &:after, &:before, .sa-fix {
+      background: inherit;
+    }
+    .sa-placeholder {
+      background: $full-white;
+    }
+    .sa-line.sa-long,
+    .sa-line.sa-tip {
+      z-index: 15;
+      background: $medium-gray;
     }
   }
   p {
-    font-family: $headline;
-    font-weight: $medium-weight;
-    font-size: 20px;
-    @media screen and (max-width: $small) {
-      font-size: 20px;
-    }
+    color: $full-white;
   }
 }
 
-.section5 .hw_txt {
-  margin: 0 auto;
-  text-align: center;
-  max-width: 725px;
-  @media screen and (min-width: $large) {
-    padding-top: 20px;
-  }
-  @media screen and (max-width: $small) {
-    margin: 50px 12px;
-  }
-  h2 {
-    font-family: $headline;
-    font-weight: $heavy-weight;
-    color: $reg-blue;
-    font-size: 36px;
-    @media screen and (max-width: $small) {
-      font-size: 32px;
-    }
-  }
-  p {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 20px;
-    @media screen and (max-width: $small) {
-      font-size: 20px;
-    }
-  }
-}
 
-.design-icons-cont {
 
-  @media screen and (max-width: $small) {
-    padding-top: 10px;
-    padding-bottom: 50px;
-  }
+// Desktop Footer
 
-  p {
-    text-align: center;
-    margin-top: 5px;
-    @media screen and (max-width: $small) {
-      margin-top: 50px;
-    }
-  }
-}
-
-.design-icon {
-  width: 127px;
-  margin: 35px auto 5px;
-  @media screen and (max-width: $iphone) {
-    margin: 0 auto;
-    height: 118px;
-  }
-  p {
-    @media screen and (max-width: $iphone) {
-      margin: 0 0 5px;
-    }
-  }
-}
-
-.hwt_lm_2 .btn,
-.btn-ios {
-  display: inline-block;
-  width: 200px;
-  text-align: center;
-  font-family: $regular-fonts;
-  font-weight: $regular-weight;
-  font-size: 20px;
-  padding: 12px 25px;
-  line-height: 26px;
-}
-
-.btn-ios {
-  background: $reg-blue;
-  color: #fff;
-  margin-right: 35px;
-}
-
-.btn-ios i {
-  font-size: 23px;
-  color: #FFFFFF;
-  margin-right: 20px;
-}
-
-.btn-ios:hover {
-  color: #FFFFFF;
-  background: $dark-blue;
-}
-
-.hwt_lm_2 .btn-default {
-  border-color: $reg-blue;
-  color: $reg-blue;
-}
-
-.section6 .hw_txt {
-  max-width: 480px;
-  margin: 0 auto;
-  @media screen and (max-width: $small) {
-    margin-top: 10%;
-  }
-}
-
-.hwt_lm_2 {
-  padding-top: 25px;
-  @media screen and (max-width: $iphone) {
-    padding-top: 10px;
-    padding-left: 40px;
-  }
-}
-
-.fMobileImg {
-  max-width: 350px;
-  margin: 50px auto 0;
-  @media screen and (max-width: $small) {
-    margin-top: 50px;
-    padding-left: 10px;
-  }
-}
-
-.copy_text {
-  padding-top: 20px;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-family: $headline;
-  font-weight: $light-weight;
-  @media screen and (max-width: $small) {
-    font-size: 14px;
-  }
-  a {
-    &:hover {
-      color: $lighter-gray;
-      @include ease;
-    }
-  }
-}
-
-#footer_container,
-#footer_container_page {
+#footer_container {
   position: absolute;
-  top: 100%;
-  left: 0;
+  z-index: 1;
   width: 100%;
   height: 260px;
-  padding: 20px 0 15px;
-  background: #1d2735;
-  color: #FFFFFF;
+  padding: 20px 0 20px;
+  background: $dark-blue;
+  color: $off-white;
   margin-top: -0px;
-
   @media screen and (max-width: $small) {
-    height: 340px;
+    height: 300px;
     padding: 75px 0;
-
   }
   @media screen and (min-width: $large) {
     margin-top: 0;
   }
 }
 
-#page_footer_cont #footer_container {
+#page_footer_cont {
   top: auto;
   bottom: 0;
   margin: 0;
@@ -869,15 +197,15 @@ a#ln-logo {
 }
 
 .footer_socials li a {
-  color: #1d2735;
+  color: $dark-blue;
   display: inline-block;
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   border: none;
   background-repeat: no-repeat;
   background-size: 40px 40px;
   position: relative;
-  background-color: #D8DEE6;
+  background-color: $lighter-gray;
   border-radius: 50%;
   text-align: center;
   padding-top: 20%;
@@ -913,22 +241,6 @@ a#ln-logo {
   background-image: linear-gradient(transparent, transparent), url("../images/icons/linkedin.svg");
 }
 
-#co-image {
-  position: absolute;
-  bottom: 70px;
-  height: 67px;
-  width: 67px;
-  left: 50%;
-  margin-left: -35px;
-
-}
-
-#app_store_svg {
-  display: inline-block;
-  width: 146px;
-  height: 55px;
-  background: url("../images/icons/App_Store_Light.svg") no-repeat transparent;
-}
 
 // Mobile Footer
 
@@ -947,141 +259,90 @@ a#ln-logo {
     }
   }
 }
-@media all and (min-width: $small) and (max-width: $kinda-small) {
+
+@media all and (min-width: $small) and (max-width: $small) {
   #footer_container, #footer_container_page {
-    height: 320px;
-    margin-top: -200px;
+    height: 260px;
+    position: absolute;
   }
   #fwLpr2 {
-    padding-top: 71px;
+    text-decoration: none;
+    padding-top: 10px;
   }
 }
+
 @media all and (max-width: $small) {
   #footer_container {
     font-size: 16px;
   }
-  #mobile-footer-nav {
-    padding-top: 70px;
+
+#mobile-footer-nav {
+    top: 10px;
   }
-  #co-image {
-    top: 30px;
+
+.footer_socials {
+    padding: 20px;
   }
-  .footer_socials {
-    padding: 25px 0 20px;
-  }
-  .menu-btn {
+
+.menu-btn {
     display: block;
     color: $full-white;
   }
-  .sub-logo {
-    margin-top: -8px;
-  }
 }
-@media all and (max-width: $iphone) {
+
+@media all and (max-width: $small) {
   .footer_socials {
-    padding: 25px 0 20px;
+    padding: 20px 0 20px;
   }
   #mobile-footer-nav {
+    padding-top: 20px;
     font-size: 14px;
     font-family: $headline;
     font-weight: $light-weight;
   }
 }
 
-.page_content {
-  font-family: $main-fonts;
-  font-size: 18px;
-  color: #323a45;
-}
-
-.pg-table {
-  display: table;
-  table-layout: auto;
-  width: 100%;
-}
-
-.pg-tableCell {
-  display: table-cell;
-  height: 100%;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.light-grey-bg {
-  background: #f4f5f7;
-}
 
 // About Page Styles
 
 #about_head {
-  background: url("../images/About-Header.png");
+  background: url("../images//headers/about-header.png");
   background-size: cover;
-  h1 {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 50px;
-  }
-  h2 {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 36px;
-  }
-}
-
-.headerwrap {
-  position: relative;
-  height: auto;
-  max-height: 100%;
-  color: #FFFFFF;
-}
-
-.headerwrap .pg-tableCell {
-  background: none repeat scroll 0 0 rgba(50, 58, 69, 0.8);
-}
-
-.headerwrap img.img-responsive {
-  width: 135px;
-  margin: 0 auto;
-}
-
-.headerwrap h1 {
-  font-family: $headline;
-  text-transform: uppercase;
-}
-
-.headerwrap .ln-vid-link {
-  margin-top: 4%;
-  padding-bottom: 0;
-}
-
-.headerwrap h2 {
-  font-family: $headline;
-  font-weight: $light-weight;
 }
 
 #about_service,
-#about_Company {
+#about_company,
+#about_belief,
+#about_team,
+#about_start {
   padding-top: 100px;
-  padding-bottom: 200px;
-}
-
-#about_belief_cont {
-  padding-top: 20px;
   padding-bottom: 100px;
-
   h2 {
     color: $dark-blue;
-    font-size: 36px;
+    font-weight: $heavy-weight;
+    font-size: 32px;
+    @media all and (max-width: $small) {
+      padding: 10px;
+      font-size: 36px;
+    }
   }
-
   p {
-    color: $dark-blue;
+    color: $mid-blue;
+    font-weight: $medium-weight;
+    font-size: 18px;
+    @media all and (max-width: $small) {
+      padding-top: 10px;
+      padding-bottom: 60px;
+      font-size: 24px;
+    }
+  }
+  @media all and (max-width: $small) {
+    padding: 40px;
   }
 }
 
 .absr_txt {
-  padding-top: 9.5%;
-
+  padding-top: 5%;
   h2 {
     font-family: $headline;
     font-weight: $light-weight;
@@ -1094,10 +355,9 @@ a#ln-logo {
     font-size: 20px;
     color: $dark-blue;
   }
-}
-
-@media (max-width: 768px) {
-  .about_thumb {
+}  
+@media all and (max-width: $small) {
+.about_thumb {
     margin-bottom: 40px;
   }
   .about_thumb:nth-child(2n+1) {
@@ -1106,11 +366,10 @@ a#ln-logo {
   .absr_txt {
     text-align: center;
   }
-  .abt_txt {
+  .about_text {
     font-family: $regular-fonts;
     font-weight: $light-weight;
     font-size: 18px;
-
   }
 }
 
@@ -1125,35 +384,14 @@ a#ln-logo {
   height: 70px;
 }
 
-.abt_txt {
+.about_text {
   font-family: $headline;
   font-weight: $light-weight;
-  font-size: 20px;
+  font-size: 18px;
   max-width: 200px;
   margin: 0 auto;
   padding-top: 25px;
   color: $dark-blue;
-
-}
-
-.under-line {
-  text-decoration: underline;
-}
-
-.abstc_txt h3 {
-  font-family: $helvatica-fonts;
-  font-weight: $bold-weight;
-  padding-top: 10px;
-  font-size: 30px;
-}
-
-.love {
-  display: inline-block;
-  margin: 0 15px;
-}
-
-.abstc_txt-right {
-  padding-top: 4%;
 }
 
 .about_belief_thumbs {
@@ -1164,38 +402,15 @@ a#ln-logo {
   height: 135px;
 }
 
-#about_team_cont {
-  padding: 3% 0 6%;
-
-  h2 {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 36px;
-    color: $dark-blue;
-  }
-  p {
-    font-family: $regular-fonts;
-    font-weight: $light-weight;
-    color: $dark-blue;
-  }
-}
-
 #page_footer_cont {
   position: relative;
   overflow: hidden;
-
   h2 {
     color: $dark-blue;
   }
   p {
     color: $dark-blue;
   }
-}
-
-#about-prefooter {
-  font-family: $headline;
-  font-weight: $light-weight;
-  font-size: 36px;
 }
 
 #page_footer_cont .hw_txt {
@@ -1203,13 +418,10 @@ a#ln-logo {
   max-width: 480px;
 }
 
-#fwUpper {
-  padding: 0px 0 8px;
-}
-
 .flogo {
-  margin-bottom: 15px;
-  width: 206px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 180px;
   a {
     display: block;
   }
@@ -1266,11 +478,40 @@ a#ln-logo {
   }
 }
 
-/*How it works page styles*/
+// How it works
 
-.hiw_part-header {
-  background-image: url("../images/how-it-works-headerBg.png");
+#hiw_head {
+  background: url("../images/headers/hiw-header.png");
+  background-size: cover;
 }
+
+.hiw-basics {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  h2 {
+    color: $dark-blue;
+    font-weight: $heavy-weight;
+    font-size: 32px;
+    @media all and (max-width: $small) {
+      padding: 10px;
+      font-size: 36px;
+    }
+  }
+  p {
+    color: $mid-blue;
+    font-weight: $medium-weight;
+    font-size: 18px;
+    @media all and (max-width: $small) {
+      padding-top: 10px;
+      padding-bottom: 60px;
+      font-size: 24px;
+    }
+  }
+  @media all and (max-width: $small) {
+    padding: 40px;
+  }
+}
+
 
 .hwi_bpe_thumbs {
   margin: -35px 0 0 -1.5%;
@@ -1287,26 +528,6 @@ a#ln-logo {
 
 .hiw-part {
   padding: 5% 0;
-}
-
-.hiwp_txt2 {
-  padding-top: 5%;
-  @media screen and (max-width: $small) {
-    padding-top: 0;
-    text-align: center;
-  }
-  h2 {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 32px;
-    color: $dark-blue;
-  }
-  p {
-    font-family: $regular-fonts;
-    font-weight: $light-weight;
-    font-size: 20px;
-    color: $dark-blue;
-  }
 }
 
 .title-icon-left {
@@ -1615,27 +836,14 @@ table {
 
 }
 
-.page_content div[class*="text-"] {
-  @media screen and (max-width: $small) {
-    text-align: center;
-  }
-}
-
-h2 > embed[class*="title-icon-"] {
-  @media screen and (max-width: $small) {
-    float: none;
-    margin: 0 0 10px;
-  }
-}
-
-[class*="hiw-part"] {
+.hiw-part {
   @media screen and (max-width: $small) {
     border-bottom: 1px solid #989898;
     padding: 35px 0;
   }
 }
 
-[class*="hiwp_txt"] {
+.hiwp_txt {
   @media screen and (max-width: $small) {
     padding-top: 0;
   }
@@ -1648,13 +856,13 @@ h2 > embed[class*="title-icon-"] {
   }
 }
 
-[class*="hiwp_txt"] h2 {
+.hiwp_txt h2 {
   @media screen and (max-width: $small) {
     margin-bottom: 15px;
   }
 }
 
-.hwi_mblImg {
+.hiw-screenshot {
   @media screen and (max-width: $small) {
     padding-top: 25px;
   }
@@ -1673,15 +881,6 @@ h2 > embed[class*="title-icon-"] {
       font-family: $headline;
       margin-top: 15px;
     }
-  }
-}
-
-.app-store-img {
-  @media screen and (max-width: $iphone) {
-    padding: 2% 0;
-    width: 140px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -1709,7 +908,6 @@ embed.E {
 }
 
 .flogoCont {
-
   p {
     max-width: 350px;
     font-family: $regular-fonts;
@@ -1721,82 +919,6 @@ embed.E {
 
 #pre-footer {
   p {
-    color: $dark-blue;
-  }
-}
-
-#hwi_pool_price {
-  h2 {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 32px;
-    color: $dark-blue;
-  }
-  p {
-    font-family: $regular-fonts;
-    font-weight: $light-weight;
-    font-size: 20px;
-    color: $dark-blue;
-  }
-}
-
-#hiw_lcost {
-  h2 {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 32px;
-    color: $dark-blue;
-  }
-  p {
-    font-family: $regular-fonts;
-    font-weight: $light-weight;
-    font-size: 20px;
-    color: $dark-blue;
-  }
-}
-
-#hiw_sinvitation {
-  h2 {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 32px;
-    color: $dark-blue;
-  }
-  p {
-    font-family: $regular-fonts;
-    font-weight: $light-weight;
-    font-size: 20px;
-    color: $dark-blue;
-  }
-}
-
-#hiw_collaborate {
-  h2 {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 32px;
-    color: $dark-blue;
-  }
-  p {
-    font-family: $regular-fonts;
-    font-weight: $light-weight;
-    font-size: 20px;
-    color: $dark-blue;
-  }
-}
-
-#hiw_mcalender {
-  h2 {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 28px;
-    color: $dark-blue;
-    padding-bottom: 25px;
-  }
-  p {
-    font-family: $regular-fonts;
-    font-weight: $light-weight;
-    font-size: 20px;
     color: $dark-blue;
   }
 }
@@ -1836,12 +958,6 @@ embed.E {
   }
 }
 
-#co-image {
-  @media screen and (max-width: $small) {
-
-  }
-}
-
 #phone-mobile {
   @media screen and (max-width: $small) {
     display: none;
@@ -1851,20 +967,6 @@ embed.E {
 .hiwp_txt8 {
   @media screen and (max-width: $small) {
     text-align: center;
-  }
-}
-
-#mobile-footer-nav {
-  padding: 0;
-  @media screen and (min-width: $kinda-small) {
-    display: none;
-  }
-}
-
-#fwLpr2 {
-  font-size: 13px;
-  a {
-    font-size: 13px;
   }
 }
 
@@ -1878,43 +980,123 @@ embed.E {
   margin-right: auto;
 }
 
-#hiw_head {
-  h1 {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 40px;
-    text-transform: none;
-    @media screen and (max-width: $iphone) {
-      font-size: 30px;
-    }
-  }
+// Jobs Page
+
+#jobs_head {
+  background-image: url("../images/headers/jobs-header.jpg");
+  background-size: cover;
+  min-height: 360px;
+}
+
+.job_links {
+  background: none repeat scroll 0 0 transparent;
+  cursor: pointer;
+  padding: 15px;
+  margin-top: 20px;
   h2 {
+    margin: 0;
+    font-family: $headline;
+    font-weight: 500;
+    font-size: 18px;
+    color: $dark-blue;
+    text-transform: uppercase;
+  }
+}
+
+.email-us {
+  margin-top: 20px;
+  padding: 14px;
+  border-style: solid;
+  border-color: $tag-gray;
+  border-width: 1px;
+  p {
     font-family: $headline;
     font-weight: $light-weight;
-    font-size: 24px;
-    @media screen and (max-width: $iphone) {
-      font-size: 18px;
+    font-size: 14px;
+  }
+}
+
+.send_us_btn .btn {
+  background: $orange;
+  border: none;
+  font-family: $headline;
+  font-weight: $light-weight;
+  font-size: 18px;
+
+  &:hover {
+    background: $orange-2;
+  }
+}
+
+.apply_btn {
+  margin: 0 10px 10px 0;
+  .btn {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    background: $orange;
+    border: none;
+    font-family: $headline;
+    font-weight: $light-weight;
+    font-size: 20px;
+
+    &:hover {
+      background: $orange-2;
     }
   }
+}
+
+.job-date {
+  font-weight: $light-weight;
+  font-size: 14px;
+}
+
+.jobsCont {
+  padding: 80px 0;
+}
+
+.jobs_txt {
   h3 {
     font-family: $headline;
     font-weight: $light-weight;
-    font-size: 20px;
-
+    font-size: 32px;
+  }
+  p {
+    font-family: $headline;
+    font-weight: $light-weight;
+    font-size: 14px;
+  }
+  h4 {
+    font-family: $headline;
+    font-weight: $light-weight;
+    font-size: 16px;
+    text-transform: uppercase;
   }
 }
 
-#about_head {
-  h1 {
-    font-family: $headline;
-  }
-  h2 {
-    font-family: $headline;
-    font-size: 20px;
+.apply_btn .btn {
+  background: $green-button;
+  &:hover {
+    background: darken($green-button, 10%);
+    @include ease;
   }
 }
 
-// Contact Us page
+.send_us_btn .btn {
+  background: $green-button;
+  &:hover {
+    background: darken($green-button, 10%);
+    @include ease;
+  }
+}
+
+// Contact Us
+
+#contact_head {
+  background-image: url("../images/headers/denver-map.png");
+  background-size: cover;
+  min-height: 300px;
+}
 
 .container .support-us {
   background-color: #f4f5f7;
@@ -1938,6 +1120,7 @@ embed.E {
     color: #2e97e9;
   }
 }
+
 .support-form {
   background: #f4f5f7 none;
   border: medium none;
@@ -1968,6 +1151,7 @@ embed.E {
     margin-top: -26px;
   }
 }
+
 .require-text {
   font-family: $headline;
   font-weight: $medium-weight;
@@ -1979,151 +1163,6 @@ embed.E {
     color: $tag-gray;
     padding-top: 158px;
   }
-}
-
-// Jobs Page
-
-.jobs_part-header {
-  background-image: url("../images/jobs-bg.png");
-  min-height: 335px;
-}
-.jobs_about_team {
-  background: url("../images/jobs_page_bg.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0);
-  padding: 0 0 1%;
-}
-.jobs_about_team .media > .pull-right {
-  margin-top: 40px;
-}
-.job_links {
-  background: none repeat scroll 0 0 transparent;
-  cursor: pointer;
-  padding: 15px;
-  margin-top: 20px;
-  h2 {
-    margin: 0;
-    font-family: $headline;
-    font-weight: 500;
-    font-size: 18px;
-    color: $dark-blue;
-    text-transform: uppercase;
-  }
-}
-.email-us {
-  margin-top: 20px;
-  padding: 14px;
-  border-style: solid;
-  border-color: $tag-gray;
-  border-width: 1px;
-  p {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 14px;
-  }
-}
-.send_us_btn .btn {
-  background: $orange;
-  border: none;
-  font-family: $headline;
-  font-weight: $light-weight;
-  font-size: 18px;
-
-  &:hover {
-    background: $orange-2;
-  }
-}
-.apply_btn {
-  margin: 0 10px 10px 0;
-  .btn {
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
-    background: $orange;
-    border: none;
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 20px;
-
-    &:hover {
-      background: $orange-2;
-    }
-  }
-}
-.job-date {
-  font-weight: $light-weight;
-  font-size: 14px;
-}
-
-.sweet-alert {
-  background: rgba(50,58,69,0.7);
-  .sa-icon.sa-success {
-    &:after, &:before, .sa-fix {
-      background: inherit;
-    }
-    .sa-placeholder {
-      background: $full-white;
-    }
-    .sa-line.sa-long,
-    .sa-line.sa-tip {
-      z-index: 15;
-      background: $medium-gray;
-    }
-  }
-  p {
-    color: $full-white;
-  }
-}
-
-// Jobs Page
-
-.jobsCont {
-  padding: 80px 0;
-}
-.jobs_txt {
-  h3 {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 32px;
-  }
-  p {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 14px;
-  }
-  h4 {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 16px;
-    text-transform: uppercase;
-  }
-}
-.job-date {
-  font-family: $headline;
-  font-weight: $medium-weight;
-  font-size: 16px;
-  color: $lighter-gray;
-  font-style: italic
-}
-.apply_btn .btn {
-  background: $green-button;
-  &:hover {
-    background: darken($green-button, 10%);
-    @include ease;
-  }
-}
-
-.send_us_btn .btn {
-  background: $green-button;
-  &:hover {
-    background: darken($green-button, 10%);
-    @include ease;
-  }
-}
-
-// Support Page Styles
-
-.support_part-header {
-  background-image: url("../images/Denver_Map.png");
-  min-height: 335px;
 }
 
 .upload-drop-zone {
@@ -2147,22 +1186,27 @@ embed.E {
     background: $tag-gray;
   }
 }
+
 .upload-drop-zone.drop {
   color: #222;
   border-color: #222;
 }
+
 #dropzone-cont {
   width: 100%;
   padding: 0;
 }
+
 .panel-default {
   border-color: transparent;
 }
+
 .panel {
   box-shadow: none;
   -webkit-box-shadow: transparent;
   margin-bottom: 0;
 }
+
 .btn-green {
   background: $green-button;
   width: 200px;
@@ -2183,9 +1227,7 @@ embed.E {
   }
 
 }
+
 .page_wrap {
   padding-top: 55px;
-}
-.inner_footer {
-  padding-top: 240px;
 }

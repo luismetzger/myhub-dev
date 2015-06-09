@@ -15,14 +15,15 @@
   }
 }
 
-// -------------- Transition/Ease -------------- //
-@mixin ease($time: 333ms, $el: all, $anim: ease-in-out) {
+// Transition/Ease
+
+@mixin ease($time: 150ms, $el: all, $anim: ease-in-out) {
   transition: $el $time $anim;
 }
 
-//transition with browsr prefix
+// Transition with browser prefix
 
-@mixin transition($time: 333ms, $el: all, $anim: ease) {
+@mixin transition($time: 150ms, $el: all, $anim: ease) {
   -webkit-transition: $el $time $anim;
   -moz-transition: $el $time $anim;
   -o-transition: $el $time $anim;

@@ -1,0 +1,609 @@
+// Homepages
+
+.tab-content .tab-pane {
+  position: relative;
+}
+
+#fullpage {
+  font: inherit;
+  background: url("../images/headers/homepage-header.png") no-repeat center center transparent;
+  background-size: cover;
+}
+
+#home_body .section1 {
+  background: url("../images//headers/homepage-header.png") no-repeat center center transparent;
+  background-size: cover;
+}
+
+#home_body div.section1 .fp-tableCell {
+
+}
+
+.section {
+  font-size: 18px;
+  @media screen and (max-width: $iphone) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.app-store-img {
+  @media screen and (max-width: $iphone) {
+    padding: 2%;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// HP - Section I
+
+.section1 {
+  color: $white;
+}
+
+.section1 h2 {
+  font-size: 32px;
+  font-weight: $bold-weight;
+  @media screen and (max-width: $small) {
+    margin-top: 20px;
+  }
+}
+
+#hs1Content {
+  padding-top: 5%;
+  @media screen and (max-width: $small) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @media screen and (max-width: $iphone) {
+    padding-top: 0;
+  }
+}
+
+.ln-cont-text {
+  text-align: right;
+  width: 480px;
+  margin: 0 auto;
+  padding-top: 20%;
+  font-size: 24px;
+  @media screen and (max-width: $small) {
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  @media screen and (max-width: $kinda-small) {
+    text-align: center;
+  }
+  @media screen and (max-width: $iphone) {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.2;
+  }
+  p {
+    @media screen and (max-width: $iphone) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.ln-cont-text h2 {
+  font-family: $headline;
+  font-weight: $bold-weight;
+  color: $white;
+  font-size: 36px;
+  @media screen and (max-width: $small) {
+    font-size: 28px;
+  }
+}
+
+.ln-cont-text p {
+  font-family: $headline;
+  font-weight: $regular-weight;
+  font-size: 20px;
+}
+
+.ln-vid-link {
+  padding: 30px 0 70px;
+}
+
+.ln-vid-link a {
+  font-family: $headline;
+  font-weight: $bold-weight;
+  color: $orange;
+  line-height: 30px;
+  display: inline-block;
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+.ln-vid-link i {
+  font-size: 32px;
+  margin-right: 20px;
+  float: left;
+}
+
+.middlemodal #mobileNumber {
+  color: $medium-gray;
+  font-size: 28px;
+}
+
+.twilow_sms {
+  position: relative;
+}
+
+.twilow_sms label {
+  font-family: $headline;
+  font-size: 18px;
+  font-weight: $bold-weight;
+  color: inherit;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.twilow_sms input.form-control {
+  height: 75px;
+  line-height: 30px;
+  padding-left: 30px;
+  background: #f4f5f7;
+  color: $reg-blue;
+  font-size: 24px;
+}
+
+#twillow_submit,
+#twillow_submitb {
+  position: absolute;
+  width: 92px;
+  height: 64px;
+  right: 5px;
+  top: 45px;
+  background: url("../images/send_sms.png") no-repeat 0 0;
+  background-size: cover;
+  text-indent: -9999px;
+  border: none;
+  opacity: 0.8;
+}
+
+#twillow_submit {
+  margin-top: -32px;
+  top: 50%;
+  right: 20px;
+}
+
+#twillow_submit:hover,
+#twillow_submitb:hover {
+  opacity: 1;
+}
+
+.ln-mblImg {
+  @media screen and (max-width: $kinda-small) {
+    position: center;
+  }
+  @media screena and (max-width: $iphone) {
+  }
+}
+
+.hbtmBtns {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 10px;
+  left: 0;
+  @media screen and (max-width: $small) {
+    display: none;
+  }
+}
+
+.hbtmBtns a {
+  display: inline-block;
+  font-size: 20px;
+  color: #9ea7b3;
+}
+
+.hbtmBtns a i {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.section1 .hbtmBtns a {
+  color: #d8dee6;
+}
+
+.section1 .hbtmBtns a:hover {
+  color: #ffffff;
+}
+
+.middlemodal .modal-body {
+  font-family: $headline;
+  font-size: 20px;
+  padding: 2em;
+}
+
+.middlemodal .modal-message, .middlemodal #pp_status {
+  color: #000000;
+}
+
+.middlemodal .modal-dialog {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.middlemodal .modal-content {
+  border: 0;
+  background-color: #FFFFFF;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border-radius: 0;
+  text-align: left;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.middlemodal .modal-content .close {
+  padding: 3px;
+  border: 0;
+  position: absolute;
+  top: -13px;
+  right: -13px;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #FFFFFF;
+  z-index: 1100;
+  width: auto;
+  height: auto;
+  opacity: 0.9;
+  background: #333d46;
+  white-space: nowrap;
+  border-radius: 16px;
+  display: block;
+}
+
+.middlemodal .modal-content .close i {
+  width: 1em;
+}
+
+.middlemodal .modal-content .close:hover {
+  opacity: 1;
+}
+
+#twilow_smsb {
+  display: block !important;
+  @media screen and (max-width: $small) {
+    display: none !important;
+  }
+}
+
+
+
+// HP - Slide II
+
+.section2 .hwt_lm {
+  @media screen and (max-width: $iphone) {
+    padding-top: 0;
+    display: none;
+  }
+}
+
+.thumb-img {
+  width: 290px;
+  height: 240px;
+  margin-top: 10px;
+  @media screen and (max-width: $small) {
+    margin: 15px auto 0;
+    margin-bottom: 50px;
+  }
+}
+
+.hw_txt {
+  margin-top: 25%;
+  @media screen and (max-width: $small) {
+    text-align: center;
+    margin: 50px 12px;
+  }
+  h2 {
+    font-weight: $heavy-weight;
+    color: $reg-blue;
+    font-size: 36px;
+    @media screen and (max-width: $small) {
+      font-size: 32px;
+      color: $reg-blue;
+      padding-bottom: 10px;
+    }
+  }
+  p {
+    font-weight: $medium-weight;
+    font-size: 20px;
+    @media screen and (max-width: $small) {
+      font-size: 20px;
+      line-height: 1.2em;
+
+    }
+  }
+}
+
+.hwt_lm {
+  padding-top: 50px;
+  @media screen and (max-width: $small) {
+    padding-top: 50px;
+  }
+  @media screen and (min-width: $large) {
+    padding-top: 20px;
+  }
+  @media screen and (max-width: $iphone) {
+    padding-top: 50px;
+  }
+}
+
+.btn-learnMore {
+  background-color: $mid-gray;
+  border-color: none;
+  color: $soft-gray;
+  font-family: $headline;
+  font-weight: $medium-weight;
+  font-size: 16px;
+  @include ease;
+}
+
+.btn-learnMore.btn-lg {
+  padding: 12px 25px;
+}
+
+.btn-learnMore:hover {
+  background-color: darken($mid-gray, 5%);
+}
+
+.hwt_lm_sml_pad {
+  padding-top: 30px;
+}
+
+#hTab_container {
+  position: relative;
+}
+
+.htab-links {
+  position: absolute;
+  right: 17%;
+  width: 240px;
+  display: block;
+  top: -200px;
+  @media screen and (max-width: $small) {
+    position: relative;
+    top: auto;
+    left: auto;
+    padding: 15px;
+  }
+}
+
+.htab-links > li {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  color: #323a45;
+  background: #f4f5f7;
+  text-align: center;
+  box-shawdow: 0px 3px 10px #7A8182;
+}
+
+.htab-links > li a {
+  display: block;
+  width: 100%;
+  font-family: $headline;
+  font-weight: $light-weight;
+  font-size: 18px;
+}
+
+.htab-links > li.active {
+  background: #323a45;
+  box-shawdow: 0px 3px 10px #7A8182;
+}
+
+.htab-links > li.active a {
+  color: #white;
+}
+
+.htab-links > li:not(.active):hover a {
+  color: #4c6381;
+}
+
+.htab-links > li:first-child {
+  border-radius: 18px 0 0 18px;
+}
+
+.htab-links > li:last-child {
+  border-radius: 0 18px 18px 0;
+}
+
+
+// HP - Slide 3
+
+.section3 {
+  @media screen and (max-width: $small) {
+    background: $soft-gray;
+  }
+}
+
+.slide-3-img {
+  width: 479px;
+  max-width: 100%;
+  @media screen and (max-width: $small) {
+
+    padding-top: 0px;
+    margin-top: 0px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}
+
+// HP - Slide 4
+
+.section4 .hw_txt {
+  margin-top: 5%;
+  @media screen and (max-width: $small) {
+    margin: 50px 12px;
+  }
+
+  h2 {
+    font-family: $headline;
+    font-weight: $heavy-weight;
+    color: $reg-blue;
+    @media screen and (max-width: $small) {
+      font-size: 32x;
+    }
+  }
+  p {
+    font-family: $headline;
+    font-weight: $medium-weight;
+    font-size: 20px;
+    @media screen and (max-width: $small) {
+      font-size: 20px;
+    }
+  }
+}
+
+
+
+// HP - Slide 5
+
+.section5 .hw_txt {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 725px;
+  @media screen and (min-width: $large) {
+    padding-top: 20px;
+  }
+  @media screen and (max-width: $small) {
+    margin: 50px 12px;
+  }
+  h2 {
+    font-family: $headline;
+    font-weight: $heavy-weight;
+    color: $reg-blue;
+    font-size: 36px;
+    @media screen and (max-width: $small) {
+      font-size: 32px;
+    }
+  }
+  p {
+    font-family: $headline;
+    font-weight: $light-weight;
+    font-size: 20px;
+    @media screen and (max-width: $small) {
+      font-size: 20px;
+    }
+  }
+}
+
+.design-icons-cont {
+
+  @media screen and (max-width: $small) {
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 5px;
+    @media screen and (max-width: $small) {
+      margin-top: 50px;
+    }
+  }
+}
+
+.design-icon {
+  width: 127px;
+  margin: 35px auto 5px;
+  @media screen and (max-width: $iphone) {
+    margin: 0 auto;
+    height: 118px;
+  }
+  p {
+    @media screen and (max-width: $iphone) {
+      margin: 0 0 5px;
+    }
+  }
+}
+
+.hwt_lm_2 .btn,
+.btn-ios {
+  display: inline-block;
+  width: 240px;
+  text-align: center;
+  font-family: $regular-fonts;
+  font-weight: $regular-weight;
+  font-size: 20px;
+  padding: 12px 25px;
+  line-height: 32px;
+}
+
+.btn-ios {
+  background: $reg-blue;
+  color: #fff;
+  margin-right: 35px;
+}
+
+.btn-ios i {
+  font-size: 23px;
+  color: #FFFFFF;
+  margin-right: 20px;
+}
+
+.btn-ios:hover {
+  color: #FFFFFF;
+  background: $dark-blue;
+}
+
+.hwt_lm_2 .btn-default {
+  border-color: $reg-blue;
+  color: $reg-blue;
+}
+
+
+
+// HP - Slide 6
+
+.section6 .hw_txt {
+  max-width: 480px;
+  margin: 0 auto;
+  @media screen and (max-width: $small) {
+    margin-top: 10%;
+  }
+}
+
+.hwt_lm_2 {
+  padding-top: 25px;
+  @media screen and (max-width: $iphone) {
+    padding-top: 10px;
+    padding-left: 40px;
+  }
+}
+
+.fMobileImg {
+  max-width: 430px;
+  margin: 30px auto 0;
+  @media screen and (max-width: $small) {
+    margin-top: 40px;
+    padding-left: 10px;
+  }
+}
+
+.copy_text {
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: $headline;
+  font-weight: $light-weight;
+  @media screen and (max-width: $small) {
+    font-size: 14px;
+  }
+  a {
+    &:hover {
+      color: $lighter-gray;
+      @include ease;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-/* ------ venobox.css --------*/
+// venobox.css 
 .vbox-overlay *, .vbox-overlay *:before, .vbox-overlay *:after {
   -webkit-backface-visibility: hidden;
   -webkit-box-sizing: border-box;
@@ -10,9 +10,8 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-/* ------- overlay: change here background color and opacity ----- */
+// Overlay
 .vbox-overlay {
-  background: #181818;
   background: rgba(50, 58, 69, 0.8);
   width: 100%;
   height: auto;
@@ -35,9 +34,7 @@ body {
   position: relative;
 }
 
-/* ----- preloader - choose between CIRCLE, IOS, DOTS, QUADS ----- */
-
-/* circle preloader */
+// Preloader
 .vbox-preloader {
   position: fixed;
   width: 32px;
@@ -223,7 +220,7 @@ body {
      to { background-position: -384px; }
 }
 */
-/* ----- navigation ----- */
+// navigation 
 .vbox-close {
   cursor: pointer;
   position: fixed;
@@ -300,7 +297,7 @@ body {
   display: none;
 }
 
-/* ------- inline window ------ */
+// inline window 
 .vbox-inline {
   width: 420px;
   height: 315px;
@@ -311,7 +308,7 @@ body {
   overflow: auto;
 }
 
-/* ------- Video & iFrames window ------ */
+// Video & iFrames window 
 .venoframe {
   border: none;
   background-color: transparent !important;
@@ -345,7 +342,7 @@ body {
   */
 }
 
-/* ------- PLease do NOT edit this! (or do it at your own risk) ------ */
+// PLease do NOT edit this! (or do it at your own risk)
 .vbox-container {
   position: relative;
   background: #000;
