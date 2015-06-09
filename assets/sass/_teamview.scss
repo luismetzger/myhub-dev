@@ -2,16 +2,17 @@
 
 
 .team-thumbs {
+  padding-top: 5%;
   h3 {
     font-family: $headline;
-    font-weight: $regular-weight;
+    font-weight: $mbold-weight;
     font-size: 28px;
     color: $reg-blue;
   }
   h4 {
     font-family: $headline;
     font-weight: $light-weight;
-    font-size: 24px;
+    font-size: 20px;
     color: $mid-blue;
   }
 }

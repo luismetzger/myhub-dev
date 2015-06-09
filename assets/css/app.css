@@ -12917,16 +12917,18 @@ body {
   overflow: hidden;
   z-index: 1; }
 
-.team-thumbs h3 {
-  font-family: "Avenir W01", sans-serif;
-  font-weight: 400;
-  font-size: 28px;
-  color: #323A45; }
-.team-thumbs h4 {
-  font-family: "Avenir W01", sans-serif;
-  font-weight: 100;
-  font-size: 24px;
-  color: #5E6D81; }
+.team-thumbs {
+  padding-top: 5%; }
+  .team-thumbs h3 {
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: #323A45; }
+  .team-thumbs h4 {
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: #5E6D81; }
 
 .event-detail-hero-buffer {
   position: relative;
@@ -17503,7 +17505,7 @@ label {
     font-family: "Avenir W01", sans-serif;
     font-weight: 100;
     font-size: 18px; } }
-#about_thumbs_cont {
+#about_tidbits {
   padding: 40px 0; }
 
 .abt_img {
@@ -17511,17 +17513,17 @@ label {
 
 .about_text {
   font-family: "Avenir W01", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 18px;
   max-width: 200px;
   margin: 0 auto;
   padding-top: 25px;
   color: #1D2735; }
 
-.about_belief_thumbs {
+.about-belief-thumbs {
   padding-top: 5%; }
 
-.about_belief_thumbs .abt_img {
+.about-belief-thumbs .abt_img {
   height: 135px; }
 
 #page_footer_cont {

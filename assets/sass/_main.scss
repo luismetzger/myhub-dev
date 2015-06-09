@@ -376,7 +376,7 @@ h2 {
 .ab_service_video img {
 }
 
-#about_thumbs_cont {
+#about_tidbits {
   padding: 40px 0;
 }
 
@@ -386,7 +386,7 @@ h2 {
 
 .about_text {
   font-family: $headline;
-  font-weight: $light-weight;
+  font-weight: $regular-weight;
   font-size: 18px;
   max-width: 200px;
   margin: 0 auto;
@@ -394,11 +394,11 @@ h2 {
   color: $dark-blue;
 }
 
-.about_belief_thumbs {
+.about-belief-thumbs {
   padding-top: 5%;
 }
 
-.about_belief_thumbs .abt_img {
+.about-belief-thumbs .abt_img {
   height: 135px;
 }
 
