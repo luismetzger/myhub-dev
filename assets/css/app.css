@@ -14264,7 +14264,7 @@ body.full-white .social-share-buttons.share-with-text {
 
 .legal-text {
   padding-top: 3%;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   padding-left: 15px;
   padding-right: 15px; }
   .legal-text ul {
@@ -17331,35 +17331,34 @@ label {
   bottom: 0;
   margin: 0; }
 
-.footer_socials {
+.footer-social {
   text-align: left;
   overflow: hidden;
   padding: 10px 0; }
   @media screen and (max-width: 767px) {
-    .footer_socials {
+    .footer-social {
       text-align: center; } }
 
-.footer_socials li {
+.footer-social li {
   display: inline-block;
   margin: 0 5px; }
+  .footer-social li:hover {
+    color: #D8DEE6;
+    transition: all 150ms ease-in-out; }
 
-.footer_socials li a {
+.footer-social li a {
   color: #1D2735;
+  padding-top: 5px;
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   border: none;
   background-repeat: no-repeat;
   background-size: 40px 40px;
   position: relative;
-  background-color: #D8DEE6;
+  background-color: #5E6D81;
   border-radius: 50%;
-  text-align: center;
-  padding-top: 20%; }
-
-.footer_socials li a:hover {
-  opacity: 1;
-  transition: all 150ms ease-in-out; }
+  text-align: center; }
 
 .f-facebook a {
   background-image: url("../images/icons/fallback/facebook.png");
@@ -17384,6 +17383,48 @@ label {
 .f-linkedin a {
   background-image: url("../images/icons/fallback/linkedin.png");
   background-image: linear-gradient(transparent, transparent), url("../images/icons/linkedin.svg"); }
+
+.footer-links {
+  padding-top: 20px;
+  float: right;
+  left: auto;
+  right: 0;
+  width: 450px;
+  position: relative;
+  z-index: 100; }
+  .footer-links h5 {
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase; }
+  .footer-links a {
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 100;
+    font-size: 14px; }
+    .footer-links a:hover {
+      color: #D8DEE6;
+      transition: all 150ms ease-in-out; }
+  .footer-links li {
+    margin: 6px 0 0;
+    min-width: 115px;
+    font-family: "Avenir W01", sans-serif;
+    color: #5E6D81;
+    font-size: 16px; }
+
+.footer-logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 100; }
+  .footer-logo a {
+    display: block; }
+  .footer-logo p {
+    padding: 10px;
+    font-size: 18px;
+    color: #5E6D81 !important;
+    font-family: "Avenir W01", sans-serif; }
+  .footer-logo img {
+    padding: 10px;
+    width: 210px; }
 
 @media all and (min-width: 767px) and (max-width: 992px) {
   #footer_container {
@@ -17411,7 +17452,7 @@ label {
   #mobile-footer-nav {
     top: 10px; }
 
-  .footer_socials {
+  .footer_social {
     padding: 20px; }
 
   .menu-btn {
@@ -17426,6 +17467,17 @@ label {
     font-size: 14px;
     font-family: "Avenir W01", sans-serif;
     font-weight: 100; } }
+#page_footer_cont {
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+  background-color: #1D2735;
+  overflow: hidden; }
+  #page_footer_cont h2 {
+    color: #F4F5F7; }
+  #page_footer_cont p {
+    color: #F4F5F7; }
+
 #about_head {
   background: url("../images//headers/about-header.png");
   background-size: cover; }
@@ -17433,15 +17485,13 @@ label {
 #about_service,
 #about_company,
 #about_belief,
-#about_team,
-#about_start {
+#about_team {
   padding-top: 100px;
   padding-bottom: 100px; }
   #about_service h2,
   #about_company h2,
   #about_belief h2,
-  #about_team h2,
-  #about_start h2 {
+  #about_team h2 {
     color: #1D2735;
     font-weight: 900;
     font-size: 32px; }
@@ -17449,15 +17499,13 @@ label {
       #about_service h2,
       #about_company h2,
       #about_belief h2,
-      #about_team h2,
-      #about_start h2 {
+      #about_team h2 {
         padding: 10px;
         font-size: 36px; } }
   #about_service p,
   #about_company p,
   #about_belief p,
-  #about_team p,
-  #about_start p {
+  #about_team p {
     color: #5E6D81;
     font-weight: 300;
     font-size: 18px; }
@@ -17465,8 +17513,7 @@ label {
       #about_service p,
       #about_company p,
       #about_belief p,
-      #about_team p,
-      #about_start p {
+      #about_team p {
         padding-top: 10px;
         padding-bottom: 60px;
         font-size: 24px; } }
@@ -17474,7 +17521,29 @@ label {
     #about_service,
     #about_company,
     #about_belief,
-    #about_team,
+    #about_team {
+      padding: 40px; } }
+
+#about_start {
+  padding-top: 100px; }
+  #about_start h2 {
+    color: #1D2735;
+    font-weight: 900;
+    font-size: 32px; }
+    @media all and (max-width: 767px) {
+      #about_start h2 {
+        padding: 10px;
+        font-size: 36px; } }
+  #about_start p {
+    color: #5E6D81;
+    font-weight: 300;
+    font-size: 18px; }
+    @media all and (max-width: 767px) {
+      #about_start p {
+        padding-top: 10px;
+        padding-bottom: 60px;
+        font-size: 24px; } }
+  @media all and (max-width: 767px) {
     #about_start {
       padding: 40px; } }
 
@@ -17525,64 +17594,6 @@ label {
 
 .about-belief-thumbs .abt_img {
   height: 135px; }
-
-#page_footer_cont {
-  position: relative;
-  overflow: hidden; }
-  #page_footer_cont h2 {
-    color: #1D2735; }
-  #page_footer_cont p {
-    color: #1D2735; }
-
-#page_footer_cont .hw_txt {
-  margin: 0 auto;
-  max-width: 480px; }
-
-.flogo {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 180px; }
-  .flogo a {
-    display: block; }
-  .flogo p {
-    color: #FFFFFF; }
-  .flogo img {
-    width: 206px; }
-
-.fNav.col-md-7 {
-  float: right;
-  left: auto;
-  right: 0;
-  width: 450px;
-  position: relative;
-  z-index: 100; }
-  .fNav.col-md-7 h5 {
-    font-family: "Avenir W01", sans-serif;
-    font-weight: 600;
-    font-size: 16px; }
-  .fNav.col-md-7 a {
-    font-family: "Avenir W01", sans-serif;
-    font-weight: 100;
-    font-size: 14px; }
-    .fNav.col-md-7 a:hover {
-      color: #D8DEE6;
-      transition: all 150ms ease-in-out; }
-
-.fNav h5 {
-  color: inherit;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase; }
-
-.fNav li {
-  margin: 5px 0 0;
-  min-width: 115px;
-  font-family: "Avenir W01", sans-serif;
-  font-size: 14px;
-  text-transform: uppercase; }
-
-#page_footer_cont p {
-  color: #FFFFFF; }
 
 #hiw_head {
   background: url("../images/headers/hiw-header.png");
@@ -17654,12 +17665,6 @@ label {
 .hwi_tablinks li.active a,
 .hwi_tablinks li a:hover {
   background: #E3E7EC; }
-
-#page_footer_cont.hiw-part-footer {
-  padding-bottom: 0; }
-
-#page_footer_cont.hiw-part-footer #footer_container {
-  position: relative; }
 
 .hwi_price_thumbs_wrap {
   padding-top: 4%; }
@@ -17928,15 +17933,6 @@ table {
 @media screen and (max-width: 480px) {
   .headerwrap.pg-table {
     margin-top: -71px; } }
-
-.flogoCont p {
-  max-width: 350px;
-  font-family: "Avenir W01", sans-serif;
-  font-weight: 100;
-  font-size: 18px; }
-
-#pre-footer p {
-  color: #1D2735; }
 
 @media screen and (max-width: 767px) {
   .hwhy-txt {

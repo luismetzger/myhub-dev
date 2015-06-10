@@ -156,7 +156,7 @@ h2 {
 
 
 
-// Desktop Footer
+// Footer Container
 
 #footer_container {
   position: absolute;
@@ -176,13 +176,15 @@ h2 {
   }
 }
 
+// Footer Container - Internal Pages
+
 #page_footer_cont {
   top: auto;
   bottom: 0;
   margin: 0;
 }
 
-.footer_socials {
+.footer-social {
   text-align: left;
   overflow: hidden;
   padding: 10px 0;
@@ -191,29 +193,30 @@ h2 {
   }
 }
 
-.footer_socials li {
+// Footer - Social Icons
+
+.footer-social li {
   display: inline-block;
   margin: 0 5px;
+  &:hover {
+    color: $lighter-gray;
+    @include ease;
+}
 }
 
-.footer_socials li a {
+.footer-social li a {
   color: $dark-blue;
+  padding-top: 5px;
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   border: none;
   background-repeat: no-repeat;
   background-size: 40px 40px;
   position: relative;
-  background-color: $lighter-gray;
+  background-color: $mid-blue;
   border-radius: 50%;
   text-align: center;
-  padding-top: 20%;
-}
-
-.footer_socials li a:hover {
-  opacity: 1;
-  @include ease;
 }
 
 .f-facebook a {
@@ -239,6 +242,61 @@ h2 {
 .f-linkedin a {
   background-image: url("../images/icons/fallback/linkedin.png");
   background-image: linear-gradient(transparent, transparent), url("../images/icons/linkedin.svg");
+}
+
+// Footer - Links
+
+.footer-links {
+  padding-top: 20px;
+  float: right;
+  left: auto;
+  right: 0;
+  width: 450px;
+  position: relative;
+  z-index: 100;
+  h5 {
+    font-family: $headline;
+    font-weight: $mbold-weight;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  a {
+    font-family: $headline;
+    font-weight: $light-weight;
+    font-size: 14px;
+    &:hover {
+      color: $lighter-gray;
+      @include ease;
+    }
+  }
+  li {
+  margin: 6px 0 0;
+  min-width: 115px;
+  font-family: $main-fonts;
+  color: $mid-blue;
+  font-size: 16px;
+  }
+}
+
+// Footer Logo Block
+
+.footer-logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: $light-weight;
+  a {
+    display: block;
+  }
+  p {
+    padding: 10px;
+    font-size: 18px;
+    color: $mid-blue !important;
+    font-family: $regular-fonts;
+  }
+  img {
+    padding: 10px;
+    width: 210px;
+  }
 }
 
 
@@ -280,7 +338,7 @@ h2 {
     top: 10px;
   }
 
-.footer_socials {
+.footer_social {
     padding: 20px;
   }
 
@@ -303,6 +361,25 @@ h2 {
 }
 
 
+
+// Inner Page Footer
+
+#page_footer_cont {
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+  background-color: $dark-blue;
+  overflow: hidden;
+  h2 {
+    color: $soft-gray;
+  }
+  p {
+    color: $soft-gray;
+  }
+}
+
+
+
 // About Page Styles
 
 #about_head {
@@ -313,8 +390,7 @@ h2 {
 #about_service,
 #about_company,
 #about_belief,
-#about_team,
-#about_start {
+#about_team, {
   padding-top: 100px;
   padding-bottom: 100px;
   h2 {
@@ -339,6 +415,32 @@ h2 {
   @media all and (max-width: $small) {
     padding: 40px;
   }
+}
+
+#about_start {
+  padding-top: 100px;
+  h2 {
+      color: $dark-blue;
+      font-weight: $heavy-weight;
+      font-size: 32px;
+      @media all and (max-width: $small) {
+        padding: 10px;
+        font-size: 36px;
+      }
+    }
+    p {
+      color: $mid-blue;
+      font-weight: $medium-weight;
+      font-size: 18px;
+      @media all and (max-width: $small) {
+        padding-top: 10px;
+        padding-bottom: 60px;
+        font-size: 24px;
+      }
+    }
+    @media all and (max-width: $small) {
+      padding: 40px;
+    }
 }
 
 .absr_txt {
@@ -402,81 +504,7 @@ h2 {
   height: 135px;
 }
 
-#page_footer_cont {
-  position: relative;
-  overflow: hidden;
-  h2 {
-    color: $dark-blue;
-  }
-  p {
-    color: $dark-blue;
-  }
-}
 
-#page_footer_cont .hw_txt {
-  margin: 0 auto;
-  max-width: 480px;
-}
-
-.flogo {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 180px;
-  a {
-    display: block;
-  }
-
-  p {
-    color: $white;
-  }
-  img {
-    width: 206px;
-  }
-}
-
-.fNav.col-md-7 {
-  float: right;
-  left: auto;
-  right: 0;
-  width: 450px;
-  position: relative;
-  z-index: 100;
-  h5 {
-    font-family: $headline;
-    font-weight: $bold-weight;
-    font-size: 16px;
-  }
-  a {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 14px;
-    &:hover {
-      color: $lighter-gray;
-      @include ease;
-    }
-  }
-}
-
-.fNav h5 {
-  color: inherit;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.fNav li {
-  margin: 5px 0 0;
-  min-width: 115px;
-  font-family: $main-fonts;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-#page_footer_cont {
-  p {
-    color: $white;
-  }
-}
 
 // How it works
 
@@ -563,14 +591,6 @@ h2 {
 .hwi_tablinks li.active a,
 .hwi_tablinks li a:hover {
   background: #E3E7EC;
-}
-
-#page_footer_cont.hiw-part-footer {
-  padding-bottom: 0;
-}
-
-#page_footer_cont.hiw-part-footer #footer_container {
-  position: relative;
 }
 
 .hwi_price_thumbs_wrap {
@@ -904,22 +924,6 @@ embed.E {
 .headerwrap.pg-table {
   @media screen and (max-width: $iphone) {
     margin-top: -71px;
-  }
-}
-
-.flogoCont {
-  p {
-    max-width: 350px;
-    font-family: $regular-fonts;
-    font-weight: $light-weight;
-    font-size: 18px;
-
-  }
-}
-
-#pre-footer {
-  p {
-    color: $dark-blue;
   }
 }
 
