@@ -341,7 +341,7 @@ var $modal_wrap = $(".fmodal_wrap"),
         $loaded = true;
     });
     $(window).scroll(function(){
-        if($(this).width() > 767 && $loaded) {
+        if($(this).width() > 767 && $loaded && (typeof get_nav_offset != 'undefined')) {
             if($(this).scrollTop() > get_nav_offset.top + 3){
                 $('body').addClass('has_fixed_subnav');
                 $right_sidebar.addClass('fixed_t').css('left', get_offset.left + 'px');
