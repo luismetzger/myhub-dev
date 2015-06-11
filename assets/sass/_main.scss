@@ -7,12 +7,9 @@ body {
   font-weight: $regular-weight;
 }
 
-.modal-open .modal, body {
+.modal-open .modal,
+body {
   padding-right: 0 !important;
-}
-
-body, html {
-  overflow-x:hidden;
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -56,7 +53,6 @@ label {
 h2 {
   @media screen and (max-width: $iphone) {
     font-size: 25px;
-    color: $reg-blue;
     margin: 0.5em 0 0.3em;
   }
 }
@@ -109,8 +105,7 @@ h2 {
 }
 
 .section1 h2 {
-  font-size: 32px;
-  font-weight: $bold-weight;
+
   @media screen and (max-width: $small) {
     margin-top: 20px;
   }
@@ -301,8 +296,8 @@ a#ln-logo {
 #hs1Content {
   padding-top: 5%;
   @media screen and (max-width: $small) {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   @media screen and (max-width: $iphone) {
     padding-top: 0;
@@ -311,10 +306,10 @@ a#ln-logo {
 
 .ln-cont-text {
   text-align: right;
-  width: 480px;
+  width: 440px;
   margin: 0 auto;
   padding-top: 20%;
-  font-size: 24px;
+  font-size: 23px;
   @media screen and (max-width: $small) {
     max-width: 100%;
     padding: 0;
@@ -325,7 +320,6 @@ a#ln-logo {
   }
   @media screen and (max-width: $iphone) {
     font-size: 18px;
-    text-align: center;
     line-height: 1.2;
   }
   p {
@@ -335,33 +329,22 @@ a#ln-logo {
   }
 }
 
-.ln-cont-text h2 {
-  font-family: $headline;
-  font-weight: $bold-weight;
-  color: $white;
-  font-size: 36px;
-  @media screen and (max-width: $small) {
-    font-size: 28px;
-  }
-}
-
-.ln-cont-text p {
-  font-family: $headline;
-  font-weight: $regular-weight;
-  font-size: 20px;
+.ln-cont-text h1 {
+  font-family: $helvatica-fonts;
+  font-size: 38px;
 }
 
 .ln-vid-link {
-  padding: 30px 0 70px;
+  padding: 10px 0 120px;
 }
 
 .ln-vid-link a {
   font-family: $headline;
-  font-weight: $bold-weight;
-  color: $orange;
+  font-weight: 500;
+  color: #ff6b42;
   line-height: 30px;
   display: inline-block;
-  font-size: 24px;
+  font-size: 20px;
   white-space: nowrap;
 }
 
@@ -372,8 +355,8 @@ a#ln-logo {
 }
 
 .middlemodal #mobileNumber {
-  color: $medium-gray;
-  font-size: 28px;
+  color: #666;
+  font-size: 1em;
 }
 
 .twilow_sms {
@@ -381,9 +364,9 @@ a#ln-logo {
 }
 
 .twilow_sms label {
-  font-family: $headline;
+  font-family: $regular-fonts;
   font-size: 18px;
-  font-weight: $bold-weight;
+  font-weight: $medium-weight;
   color: inherit;
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -391,11 +374,11 @@ a#ln-logo {
 
 .twilow_sms input.form-control {
   height: 75px;
-  line-height: 30px;
-  padding-left: 30px;
+  line-height: 75px;
+  padding-left: 45px;
   background: #f4f5f7;
-  color: $reg-blue;
-  font-size: 24px;
+  color: #a4a8b3;
+  font-size: 20px;
 }
 
 #twillow_submit,
@@ -405,7 +388,7 @@ a#ln-logo {
   height: 64px;
   right: 5px;
   top: 45px;
-  background: url("../images/send_sms.png") no-repeat 0 0;
+  background: url("../images/icons/send_sms_icon.png") no-repeat 0 0;
   background-size: cover;
   text-indent: -9999px;
   border: none;
@@ -424,10 +407,12 @@ a#ln-logo {
 }
 
 .ln-mblImg {
+  text-align: right;
   @media screen and (max-width: $kinda-small) {
-    position: center;
+    text-align: center;
   }
   @media screena and (max-width: $iphone) {
+    //    padding-top: 10px;
   }
 }
 
@@ -435,7 +420,7 @@ a#ln-logo {
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: 10px;
+  bottom: 35px;
   left: 0;
   @media screen and (max-width: $small) {
     display: none;
@@ -462,7 +447,7 @@ a#ln-logo {
 }
 
 .middlemodal .modal-body {
-  font-family: $headline;
+  font-family: $helvatica-fonts;
   font-size: 20px;
   padding: 2em;
 }
@@ -575,29 +560,26 @@ a#ln-logo {
 .hw_txt {
   margin-top: 25%;
   @media screen and (max-width: $small) {
+
     text-align: center;
     margin: 50px 12px;
   }
   h2 {
     font-weight: $heavy-weight;
-    color: $reg-blue;
-    font-size: 36px;
     @media screen and (max-width: $small) {
-      font-size: 32px;
-      color: $reg-blue;
+      font-size: 20px;
       padding-bottom: 10px;
     }
   }
   p {
     font-size: $headline;
-    font-weight: $medium-weight;
+    font-weight: $light-weight;
     font-size: 20px;
     @media screen and (max-width: $small) {
-      font-size: 20px;
-      line-height: 1.2em;
-
+      font-size: 16px;
     }
   }
+
 }
 
 .hwt_lm {
@@ -718,19 +700,24 @@ a#ln-logo {
   h2 {
     font-family: $headline;
     font-weight: $heavy-weight;
-    color: $reg-blue;
-    @media screen and (max-width: $small) {
-      font-size: 32x;
-    }
-  }
-  p {
-    font-family: $headline;
-    font-weight: $medium-weight;
-    font-size: 20px;
+    font-size: 36px;
     @media screen and (max-width: $small) {
       font-size: 20px;
     }
   }
+  p {
+    font-family: $headline;
+    font-weight: $light-weight;
+    font-size: 20px;
+    @media screen and (max-width: $small) {
+      font-size: 16px;
+    }
+  }
+}
+
+.section5 h2 {
+  margin-top: 0;
+
 }
 
 .section5 .hw_txt {
@@ -746,10 +733,9 @@ a#ln-logo {
   h2 {
     font-family: $headline;
     font-weight: $heavy-weight;
-    color: $reg-blue;
     font-size: 36px;
     @media screen and (max-width: $small) {
-      font-size: 32px;
+      font-size: 20px;
     }
   }
   p {
@@ -757,7 +743,7 @@ a#ln-logo {
     font-weight: $light-weight;
     font-size: 20px;
     @media screen and (max-width: $small) {
-      font-size: 20px;
+      font-size: 16px;
     }
   }
 }
@@ -799,14 +785,14 @@ a#ln-logo {
   width: 200px;
   text-align: center;
   font-family: $regular-fonts;
-  font-weight: $regular-weight;
+  font-weight: $medium-weight;
   font-size: 20px;
   padding: 12px 25px;
   line-height: 26px;
 }
 
 .btn-ios {
-  background: $reg-blue;
+  background: #323a45;
   color: #fff;
   margin-right: 35px;
 }
@@ -819,19 +805,20 @@ a#ln-logo {
 
 .btn-ios:hover {
   color: #FFFFFF;
-  background: $dark-blue;
+  background: #4d6586;
 }
 
 .hwt_lm_2 .btn-default {
-  border-color: $reg-blue;
-  color: $reg-blue;
+  border-color: #323a45;
+  color: #323a45;
 }
 
 .section6 .hw_txt {
   max-width: 480px;
   margin: 0 auto;
+
   @media screen and (max-width: $small) {
-    margin-top: 10%;
+    display: none;
   }
 }
 
@@ -920,8 +907,8 @@ a#ln-logo {
 .footer_socials li a {
   color: #1d2735;
   display: inline-block;
-  width: 34px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #D8DEE6;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -986,8 +973,8 @@ a#ln-logo {
 }
 
 #footer_container {
-  -ms-transform: translate(0px, 166px);
-  -webkit-transform: translate(0px, 166px);
+  -ms-transform: translate(0px, 166px); /* IE 9 */
+  -webkit-transform: translate(0px, 166px); /* Chrome, Safari, Opera */
   transform: translate(0px, 166px);
   -webkit-transition: -webkit-transform 2s cubic-bezier(.16, .68, .43, .99);
   -moz-transition: -moz-transform 2s cubic-bezier(.16, .68, .43, .99);
@@ -998,14 +985,14 @@ a#ln-logo {
   }
 }
 .waypoint #footer_container {
-  -ms-transform: translate(0px, 580px);
-  -webkit-transform: translate(0px, 580px);
+  -ms-transform: translate(0px, 580px); /* IE 9 */
+  -webkit-transform: translate(0px, 580px); /* Chrome, Safari, Opera */
   transform: translate(0px, 580px);
 }
 
 .active-trans #footer_container {
-  -ms-transform: translate(0px, 0px);
-  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px); /* IE 9 */
+  -webkit-transform: translate(0px, 0px); /* Chrome, Safari, Opera */
   transform: translate(0px, 0px);
 }
 
@@ -1827,7 +1814,7 @@ embed.E {
 
 .ln-mblImg {
   @media screen and (max-width: $small) {
-    //padding-right: 75px;
+    padding-right: 75px;
   }
 }
 
@@ -1843,19 +1830,17 @@ embed.E {
   h2 {
     font-family: $headline;
     font-weight: $heavy-weight;
-    color: $reg-blue;
     font-size: 36px;
     @media screen and (max-width: $small) {
-      font-size: 32px;
+      font-size: 20px;
     }
   }
   p {
     font-family: $headline;
-    font-weight: $medium-weight;
+    font-weight: $light-weight;
     font-size: 20px;
     @media screen and (max-width: $small) {
-      font-size: 20px;
-      line-height: 1.2em;
+      font-size: 16px;
     }
   }
 }

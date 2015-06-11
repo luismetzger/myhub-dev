@@ -1,0 +1,163 @@
+.create_cont_wrap {
+  padding-bottom: 75px;
+  position: relative;
+  @extend .hide_before_after;
+}
+.cr_header {
+  height: 70px;
+  background: $off-white;
+  h2 {
+    float: left;
+    font-size: 20px;
+    color: $medium-gray;
+    margin: 0;
+    padding-top: 20px;
+  }
+  .progress_wrap {
+    float: right;
+    width: 350px;
+    margin-right: 10%;
+    margin-top: 15px;
+    .progress {
+      background: $light-gray;
+      height: 15px;
+      margin-bottom: 8px;
+    }
+    .progress-bar {
+      border-radius: 10px;
+    }
+  }
+  .crpw_lists {
+    @extend .table_list;
+    li {
+      width: 20%;
+      font-size: 12px;
+      color: $tag-gray;
+    }
+  }
+}
+.cr_body_wrap {
+  padding: 5% 0;
+}
+.cr_item_wrap {
+  h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: $medium-gray;
+    .icon-question {
+      color: $light-gray;
+      font-size: $icon-font-size *0.75;
+      margin-left: 5px;
+    }
+  }
+}
+.cr_input_wrap {
+  padding: 15px 15px 15px 75px;
+  background: $soft-gray;
+  position: relative;
+  border-radius: 8px;
+  @extend .hide_before_after;
+
+  span[class^="icon"] {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.45em;
+    color: $light-gray;
+    right: 15px;
+    left: auto;
+    font-size: $icon-font-size * 0.75;
+  }
+  span[class*="ciw_lic"]{
+    font-size: $icon-font-size;
+    color: $medium-gray;
+    right: auto;
+    left: 15px;
+  }
+}
+.cr_nostyle_input {
+  font-size: 24px;
+  font-weight: $medium-weight;
+  color: $light-gray;
+  border: none;
+  width: 80%;
+  background: none;
+}
+.cr_item_divide {
+  margin: 6% 0;
+  position: relative;
+  text-align: center;
+  &:after {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 3px;
+    overflow: hidden;
+    width: 300px;
+    left: 50%;
+    top: 50%;
+    margin-top: -1px;
+    margin-left: -150px;
+    z-index: 5;
+    background: $medium-gray;
+  }
+  span {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    font-style: italic;
+    font-size: 18px;
+    color: $light-gray;
+    background: $full-white;
+    padding: 0 50px;
+  }
+}
+.ciw_links {
+  a {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 24px;
+    font-weight: $medium-weight;
+    color: $twitter-blue;
+    &:hover {
+      color: $twitter-blue-2;
+    }
+  }
+}
+.cri_lists {
+  padding: 10px 0 10px 75px;
+  li {
+    padding: 8px;
+    font-size: 24px;
+    font-weight: $medium-weight;
+    color: $light-gray;
+  }
+}
+.cr_footer {
+  padding: 10px;
+  background: $off-white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+}
+.cr_footer_btn {
+  text-align: center;
+  width: auto;
+  color: $full-white;
+  min-width: 150px;
+  span[class^="icon"]{
+    font-size: $icon-font-size * 0.5;
+    font-weight: $bold-weight;
+    float: left;
+    margin-right: 10px;
+    margin-top: 6px;
+  }
+  &.pull-right {
+    span[class^="icon"]{
+      float: right;
+      margin-right: 0;
+      margin-left: 10px;
+    }
+  }
+}

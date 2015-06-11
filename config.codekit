@@ -125,17 +125,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/App_Store_Badge.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1881,
-		"inputAbbreviatedPath": "\/assets\/images\/App_Store_Badge.png",
-		"outputAbbreviatedPath": "\/assets\/images\/App_Store_Badge.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/images\/banner_jobs.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -367,17 +356,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/Event_Detail_Paid.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/assets\/images\/Event_Detail_Paid.png",
-		"outputAbbreviatedPath": "\/assets\/images\/Event_Detail_Paid.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/images\/festival.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -598,6 +576,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/icons\/send_sms_icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5118,
+		"inputAbbreviatedPath": "\/assets\/images\/icons\/send_sms_icon.png",
+		"outputAbbreviatedPath": "\/assets\/images\/icons\/send_sms_icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/iPhone 5C.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -708,13 +697,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/More.png": {
+	"\/assets\/images\/more.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 536,
-		"inputAbbreviatedPath": "\/assets\/images\/More.png",
-		"outputAbbreviatedPath": "\/assets\/images\/More.png",
+		"inputAbbreviatedPath": "\/assets\/images\/more.png",
+		"outputAbbreviatedPath": "\/assets\/images\/more.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -737,17 +726,6 @@
 		"initialSize": 28322,
 		"inputAbbreviatedPath": "\/assets\/images\/myhub-logo.png",
 		"outputAbbreviatedPath": "\/assets\/images\/myhub-logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/images\/Myhub_Homepage.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2.43273e+06,
-		"inputAbbreviatedPath": "\/assets\/images\/Myhub_Homepage.png",
-		"outputAbbreviatedPath": "\/assets\/images\/Myhub_Homepage.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -855,7 +833,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 161527,
+		"initialSize": 152786,
 		"inputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Image4.png",
 		"outputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Image4.png",
 		"outputPathIsOutsideProject": 0,
@@ -866,7 +844,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 130489,
+		"initialSize": 128102,
 		"inputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Image5.png",
 		"outputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Image5.png",
 		"outputPathIsOutsideProject": 0,
@@ -877,7 +855,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 151073,
+		"initialSize": 138448,
 		"inputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Image6.png",
 		"outputAbbreviatedPath": "\/assets\/images\/pimg_icons\/Image6.png",
 		"outputPathIsOutsideProject": 0,
@@ -1148,13 +1126,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/send_sms.png": {
+	"\/assets\/images\/send_sms_icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2256,
-		"inputAbbreviatedPath": "\/assets\/images\/send_sms.png",
-		"outputAbbreviatedPath": "\/assets\/images\/send_sms.png",
+		"initialSize": 5118,
+		"inputAbbreviatedPath": "\/assets\/images\/send_sms_icon.png",
+		"outputAbbreviatedPath": "\/assets\/images\/send_sms_icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1662,7 +1640,7 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/assets\/sass\/app.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
@@ -1673,7 +1651,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -1702,6 +1680,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/sass\/pages\/_add-card.scss",
 		"outputAbbreviatedPath": "\/assets\/sass\/css\/_add-card.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/assets\/sass\/pages\/_create.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/sass\/pages\/_create.scss",
+		"outputAbbreviatedPath": "\/assets\/sass\/css\/_create.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -2614,6 +2608,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/Create_What.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Create_What.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Create_When.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Create_When.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/ED_Comments.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2664,15 +2676,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/ED_Main_Host.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/ED_Main_Host1.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/ED_Main_Host1.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -2878,29 +2881,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/Settings_Desktop_Accountv0.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Settings_Desktop_Accountv0.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/Settings_Desktop_Notifications.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Settings_Desktop_Notifications.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/Settings_Desktop_Notificationsv0.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Settings_Desktop_Notificationsv0.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -2914,29 +2899,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/Settings_Desktop_Payment_Methodsv0.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Settings_Desktop_Payment_Methodsv0.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/Settings_Desktop_Profile.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Settings_Desktop_Profile.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/Settings_Desktop_Profilev0.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Settings_Desktop_Profilev0.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -2980,7 +2947,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "FBH",
+"lastSavedByUser": "Luis Metzger",
 "manualImportLinks": {
 	},
 "projectAttributes": {

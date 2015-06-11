@@ -1,4 +1,3 @@
-/*
 @font-face {
     font-family: 'myhub-icomoon';
     src:url('fonts/myhub-icomoon.eot?vlcfem');
@@ -24,7 +23,7 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-/*
+
 .icon-activity:before {
 	content: "\e600";
 }

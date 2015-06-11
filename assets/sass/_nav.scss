@@ -19,9 +19,7 @@
 #login-button {
   @media screen and (max-width: $small) {
     display: none;
-    padding-top: 5px;
-    margin-top: 10px;
-    margin-right: 5px;
+
   }
 }
 
@@ -54,10 +52,8 @@
   }
   a {
 	  font-family: $headline;
-	  font-weight: $regular-weight;
-	  font-size: 16px;
-    //margin-top: 4px;
-    //margin-bottom:4px;
+	  font-weight: $light-weight;
+	  font-size: 14px;
 	
   }
 }
@@ -77,8 +73,7 @@
 
 .navbar-nav > li > .dropdown-menu,
 .dropdown .dropdown-menu {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 2px;
   background: $off-white;
   a {
     font: inherit;
@@ -105,7 +100,7 @@
 
 .navbar-nav > li > a#login-button,
 .navbar-nav > li > a.dropdown-toggle {
-  height: 54px;
+  height: 55px;
 }
 .navbar-nav > li > a {
   font-family: $headline;
@@ -119,7 +114,6 @@
   background: $orange;
   padding: 8px 15px;
   margin-top: 7px;
-  margin-right:5px;
   border: none;
   &:hover {
     background: $orange-2;
@@ -128,15 +122,16 @@
 }
 
 // Pushy Mobile Navigation
+
 /* Menu Appearance */
 
 .pushy {
   position: fixed;
-  width: 300px;
+  width: 200px;
   height: 100%;
   top: 0;
   z-index: 9999;
-  background: $reg-blue;
+  background: #333332;
   font-size: 1.1em;
   font-weight: 300;
   -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
@@ -152,16 +147,11 @@
   font-size: 24px;
   display: block;
   color: $white;
-  padding: 16px 16px;
-  border-bottom: 1px solid rgba(29, 39, 53, 0.3);
-  border-top: 1px solid rgba(29, 39, 53, 0.3);
+  padding: 15px 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  border-top: 1px solid rgba(255, 255, 255, .1);
   text-decoration: none;
   text-align: left;
-}
-
-.pushy, html, body {
-  overflow-x: hidden;
-  height:100%;
 }
 
 .pushy a:hover {
@@ -171,8 +161,8 @@
 .ln-cr li.col-xs-6 {
   padding: 0;
   a {
-    border-right: 1px solid rgba(29, 39, 53, 0.3);
-    border-left: 1px solid rgba(29, 39, 53, .3);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, .1);
     padding-left: 25px;
   }
 }
@@ -180,11 +170,11 @@
 /* Menu Movement */
 
 .pushy-left {
-  -webkit-transform: translate3d(-300px, 0, 0);
-  -moz-transform: translate3d(-300px, 0, 0);
-  -ms-transform: translate3d(-300px, 0, 0);
-  -o-transform: translate3d(-300px, 0, 0);
-  transform: translate3d(-300px, 0, 0);
+  -webkit-transform: translate3d(-200px, 0, 0);
+  -moz-transform: translate3d(-200px, 0, 0);
+  -ms-transform: translate3d(-200px, 0, 0);
+  -o-transform: translate3d(-200px, 0, 0);
+  transform: translate3d(-200px, 0, 0);
 }
 
 .pushy-open {
@@ -196,11 +186,11 @@
 }
 
 .container-push, .push-push {
-  -webkit-transform: translate3d(300px, 0, 0);
-  -moz-transform: translate3d(300px, 0, 0);
-  -ms-transform: translate3d(300px, 0, 0);
-  -o-transform: translate3d(300px, 0, 0);
-  transform: translate3d(300px, 0, 0);
+  -webkit-transform: translate3d(200px, 0, 0);
+  -moz-transform: translate3d(200px, 0, 0);
+  -ms-transform: translate3d(200px, 0, 0);
+  -o-transform: translate3d(200px, 0, 0);
+  transform: translate3d(200px, 0, 0);
 }
 
 /* Menu Transitions */
@@ -226,7 +216,7 @@
   bottom: 0;
   left: 0;
   z-index: 9998;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-animation: fade 500ms;
   -moz-animation: fade 500ms;
   -o-animation: fade 500ms;
@@ -277,7 +267,7 @@
   }
 }
 
-/* pushy overwride */
+/*pushy overwride*/
 
 .landingPage .pushy,
 body > .pushy {
@@ -332,9 +322,9 @@ body > .pushy ul {
 }
 
 .ln-cr {
-  height: 30px;
-  line-height: 30px;
-  padding: 80px 0;
+  height: 40px;
+  line-height: 40px;
+  padding: 175px 0;
 }
 
 .logins {
@@ -342,6 +332,7 @@ body > .pushy ul {
     padding: 15px 10px;
   }
 }
+
 
 /**Logged in Nav*/
 .logged-in-nav > li > a {
@@ -432,7 +423,7 @@ body > .pushy ul {
     text-align: right;
   }
   .ln-footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;

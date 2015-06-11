@@ -71,7 +71,7 @@ textarea.default-input{
   border-radius: 10px;
 }
 .progress-bar-success {
-  background: $green;
+//  background: $green;
   border-radius: 10px;
 }
 .btn-gray, .btn.btn-gray {
@@ -208,4 +208,8 @@ textarea.default-input{
 }
 .close {
   font-size: 0;
+}
+.top_place_holder {
+  height: 55px;
+  width: 100%;
 }

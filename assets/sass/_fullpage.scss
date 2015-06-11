@@ -115,7 +115,7 @@
 }
 
 .fp-slidesNav.bottom {
-  bottom: 10px;
+  bottom: 17px;
 }
 
 .fp-slidesNav.top {
@@ -179,7 +179,8 @@
 
 .fp-viewing-firstPage #fp-nav ul li a span,
 .fp-viewing-firstPage .fp-slidesNav ul li a span {
-  background: rgba(244, 245, 247, 0.2);
+  background: #6e7373;
+  border: 1px solid #6e7373;
 }
 
 #fp-nav ul li .fp-tooltip {
@@ -188,7 +189,7 @@
   color: $orange;
   font-size: 18px;
   font-family: $headline;
-  font-weight: $regular-weight;
+  font-weight: $light-weight;
   white-space: nowrap;
   max-width: 220px;
   overflow: hidden;
@@ -198,8 +199,8 @@
 }
 
 #fp-nav ul li:hover .fp-tooltip {
-  -webkit-transition: opacity 0.1s ease-in;
-  transition: opacity 0.1s ease-in;
+  -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
   width: auto;
   opacity: 1;
 }
@@ -209,5 +210,5 @@
 }
 
 #fp-nav ul li .fp-tooltip.left {
-  left: 10px;
+  left: 20px;
 }

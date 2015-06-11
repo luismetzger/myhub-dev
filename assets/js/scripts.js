@@ -27,9 +27,19 @@
           $fullHeightBox.css('max-height', '700px');
         }
     }
+
+    var $noFooterCont = $('.create_cont_wrap');
+    function setHeightNoFooter($cont){
+        $cont.css('minHeight', $(window).height() - 55 + 'px');
+    }
+    setHeightNoFooter($noFooterCont);
+
+
+
     setHeight();
     $(window).resize(function(){
         setHeight();
+        setHeightNoFooter($noFooterCont);
     });
 
     $('.menu-btn').on('click', function(e){
@@ -409,6 +419,7 @@ var $modal_wrap = $(".fmodal_wrap"),
     });
 
 
+    $('[data-toggle="tooltip"]').tooltip();
 
 
 });

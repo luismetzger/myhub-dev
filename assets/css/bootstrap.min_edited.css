@@ -1124,7 +1124,6 @@ hr {
 }
 .h2, h2 {
 	font-size:30px
-	font-weight: 500;
 }
 .h3, h3 {
 	font-size:24px
@@ -1417,8 +1416,8 @@ pre code {
 }
 }
 .container-fluid {
-	padding-right:0px;
-	padding-left:0px;
+	padding-right:15px;
+	padding-left:15px;
 	margin-right:auto;
 	margin-left:auto
 }
@@ -2884,10 +2883,10 @@ tbody.collapse.in {
 	min-width:160px;
 	padding:5px 0;
 	margin:2px 0 0;
-	font-size:16px;
+	font-size:14px;
 	text-align:left;
 	list-style:none;
-	background-color:#f4f5f7;
+	background-color:#fff;
 	-webkit-background-clip:padding-box;
 	background-clip:padding-box;
 	border:1px solid #ccc;
