@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Myhub | Social Planning</title>
+
+    <!-- Core Framework CSS before SASS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+     <link href="assets/css/myhub-icons.css" rel="stylesheet">
+    
+    
+    <!-- Fonts -->
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/c2c138df-bec8-4ae7-abb7-59de83a2ce0b.css"/>
+
+
+    <!--add more stylesheet before this line-->
+    <link href="assets/css/app.css" rel="stylesheet">
+
+    <!-- Script for SVG -->
+    <script type="text/javascript" src="assets/js/modernizr.custom.70954.js"></script>
+
+
+</head>
+<body>
+
+
+<!-- Pushy Menu -->
+<nav class="pushy pushy-left logged-in-pushy">
+    <ul>
+        <li class="p-nav-profile">
+            <a href="#">
+                <img class="img-circle" src="assets/images/eric-hubbell.png" alt=""/>
+                <strong>Eric Hubble</strong>
+                view profile</a>
+        </li>
+        <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fa fa-plus"></i> Create</a></li>
+        <li><a href="#"><i class="fa fa-search"></i> Explore</a></li>
+        <li><a href="#"><i class="fa fa-flash"></i> Notification</a></li>
+        <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+    </ul>
+    <div class="ln-cr">
+        <ul>
+            <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="site-overlay"></div>
+
+<!-- class="container-push"-->
+
+<div id="pushy_wrapper" class="section">
+
+
+    <div class="top-header hidden-xs">
+        <!--add this class nav menu-->
+
+        <div class="top-sub-head clearfix">
+            <div class="nav-pullleft pull-left">
+                <a href="#" class="menu-btn"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="sub-logo">
+                <a id="ln-logo" href="index.html"><img id="header-logo" class="img-responsive" src="assets/images/myhub-logo.png">
+                </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right logged-in-nav">
+                <li><a href="#"><i class="fa fa-flash rounded"></i></a></li>
+                <li><a href="#"><img src="assets/images/flash_dot.png" alt=""/></a></li>
+                <li>                       <a id="btn_plus" class="btn btn-default hidden-xs" href="#" role="button"><i class="fa fa-plus"></i></a></li>
+                <li class="dropdown">
+                    <a id="loggedinNav" href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        <img src="assets/images/Jeff.png" alt=""/>
+                        <span>You</span>
+                        <i class="fa-caret-down fa"></i>
+                    </a>
+
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                <li id="dropdown-button" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-cog"></i></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a></li>
+                        <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
+                        <li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="i"></i> Make admin</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--end header nav-->
+
+    <div class="top_place_holder hidden-xs">
+        &nbsp;
+    </div>
+
+<div class="create_cont_wrap">
+
+<div class="cr_header">
+    <div class="container">
+
+        <h2>Invites</h2>
+
+        <div class="progress_wrap">
+            <div class="progress">
+                <div class="progress-bar  progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                </div>
+            </div>
+
+            <ul class="crpw_lists">
+                <li>what</li>
+                <li>when</li>
+                <li>where</li>
+                <li>advanced</li>
+                <li>invites</li>
+            </ul>
+
+        </div>
+
+
+    </div>
+</div>
+
+<div class="cr_body_wrap">
+    <div class="container">
+
+        <form>
+
+            <div class="auth_links clearfix">
+                <ul class="pull-left">
+                    <li><a href="#">Followers</a></li>
+                    <li class="active"><a href="#">Gmail</a></li>
+                    <li><a href="#">Email</a></li>
+                </ul>
+                <div class="inv_search_wrap">
+                    <label for="s_input">
+                        <span class="icon-search_Premium">
+				<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span>
+				</span>
+                    </label>
+                    <input type="text" id="s_input" placeholder="Search for a friend"/>
+                </div>
+            </div>
+
+
+            <div class="cr_invite_cont_wrap auth_cont_free">
+                <div class="top_place_holder hidden-xs">
+                    &nbsp;
+                </div>
+                <h3>Connect your Gmail account to send invites <br/> to anyone in your address book</h3>
+                <a href="#" class="mb_btn mb_btn_orange-2">Connect with gmail</a>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+
+<div class="cr_footer">
+    <div class="container">
+        <a class="mb_btn mb_btn_gray cr_footer_btn pull-left" href="#">Back <span class="icon-arrow_lg_back"></span></a>
+        <a class="mb_btn mb_btn_orange cr_footer_btn pull-right confirm_modal_open" href="#">Post <span class="icon-checkmark"></span></a>
+    </div>
+</div>
+
+</div>
+
+
+    <!--part1 9-->
+    <div id="page_footer_cont" class="inner_footer waypoint active-trans hidden">
+
+        <div id="footer_container">
+
+            <div class="container">
+
+                <div id="fwUpper" class="row hidden-xs">
+                    <div class="col-sm-4 flogoCont">
+                        <div class="flogo">
+                            <a href="#"><img alt="My Hubb" src="assets/images/icons/footer_logo.png"></a>
+                        </div>
+                        <p>The fastest, easiest way to plan group activivites and pool cash with friends.</p>
+                        <div class="footer_socials">
+                            <ul>
+                                <li><a href="http://myhubapp.tumblr.com/"><i class="fa fa-fw fa-lg fa-tumblr"></i></a></li>
+                                <li><a href="https://www.facebook.com/Myhubapp"><i class="fa fa-fw fa-lg fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/myhubapp"><i class="fa fa-fw fa-lg fa-twitter"></i></a></li>
+                                <li><a href="https://www.youtube.com/user/MyHubApp"><i class="fa fa-fw fa-lg fa-youtube"></i></a></li>
+                                <li><a href="http://instagram.com/myhubapp"><i class="fa fa-fw fa-lg fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-7  fNav">
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-6">
+                                <h5>COMPANY</h5>
+                                <ul>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="how-it-works.html">How it Works</a></li>
+                                    <li><a href="jobs.html">Jobs</a></li>
+                                    <li><a target="_blank" href="https://brandfolder.com/myhub">Press</a></li>
+                                    <li><a href="http://myhubapp.tumblr.com/">Blog</a></li>
+                                </ul>
+                            </div>
+                            <div class="clearfix visible-xs"></div>
+                            <div class="col-sm-4 col-xs-6">
+                                <h5>Bowtie Blog</h5>
+                                <ul style="font-family:'Gill Sans W10 Medium';">
+                                    <li><a href="#">#NEWS</a></li>
+                                    <li><a href="#">#RELEASES</a></li>
+                                    <li><a href="#">#HOWTO</a></li>
+                                    <li><a href="#">#FUN</a></li>
+                                </ul>
+                            </div><!--end f nav parts-->
+                            <div class="col-sm-4 col-xs-6">
+                                <h5>Help</h5>
+                                <ul style="font-family:'Gill Sans W10 Medium';">
+                                    <li><a href="privacy-policy.html">FAQ</a></li>
+                                    <li><a href="terms-of-service.html">CONTACT</a></li>
+                                </ul>
+                            </div><!--end f nav parts-->
+                        </div>
+                    </div><!--end footer nav-->
+                </div>
+
+                <div id="mobile-footer-nav" class="row visible-xs text-center">
+                    <div class="col-xs-12">
+                        <a href="terms-of-service.html">About</a> • <a href="privacy-policy.html">How it Works</a> • <a href="terms-of-service.html">Jobs</a> • <a href="terms-of-service.html">Blog</a> • <a href="terms-of-service.html">FAQ</a> • <a href="terms-of-service.html">Contact</a>
+                    </div>
+                    <div class="footer_socials col-xs-12">
+                        <ul>
+                            <li><a href="http://myhubapp.tumblr.com/"><i class="fa fa-fw fa-lg fa-tumblr"></i></a></li>
+                            <li><a href="https://www.facebook.com/Myhubapp"><i class="fa fa-fw fa-lg fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/myhubapp"><i class="fa fa-fw fa-lg fa-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/user/MyHubApp"><i class="fa fa-fw fa-lg fa-youtube"></i></a></li>
+                            <li><a href="http://instagram.com/myhubapp"><i class="fa fa-fw fa-lg fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="co-image" class="text-center">
+                    <embed name="footer_logo_svg" class="footer_logo_svg" id="footer_logo_svg" src="assets/images/CO_Company_Color.svg" width="67" height="67">
+                </div>
+                <div id="fwLpr2" class="row">
+                    <div class="col-xs-12 copy_text text-center">2014 Myhub • <a href="privacy-policy.html">Privacy</a> • <a href="terms-of-service.html">Terms</a></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--end part 9-->
+
+
+
+</div>
+<!--end page wrapper-->
+
+<!--Modals-->
+
+<div class="modal fmodal_container settings_modals settings_modals_add_card  ED_checkout_modal_confirmation mobile_fullscreen_modal">
+    <div class="modal-dialog">
+        <div class="fmodal_wrap fmodal_wrap_medium">
+            <form>
+                <div class="fmodal_head clearfix">
+                    <h2>Confirmation</h2>
+                </div>
+                <div class="fmodal_body">
+                    <div class="ed_cn_top">
+                        <span class="icon-Checkmark_circle">
+				<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+				</span>
+                        <h4>Event Posted!</h4>
+                        <p>Now get your friends onboard and you both earn <br/>
+                        $10 when they sign up for Myhub!</p>
+                    </div>
+
+
+
+
+                    <div class="ed_cn_share_link link-slam">
+                        <ul>
+                            <li class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="#" class="fb">
+                                    Share
+                                    <span class="icon-Facebook_Square"></span>
+                                </a>
+                            </li>
+                            <li class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="#" class="twt">
+                                    Tweet
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                            </li>
+
+                            <li class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="#" class="cal">
+                                    Calendar
+                                    <span class="icon-Calendar_II">
+                                        <span class="path1"></span>
+                                        <span class="path2"></span>
+                                        <span class="path3"></span>
+                                        <span class="path4"></span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="visible-xs">
+                                <a href="#" class="eml">
+                                    Email
+                                    <span class="icon-mail"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="btm_close text-center">
+                        <button class="close modal-close">
+                            <span class="icon-decline_Outline"></span>
+                        </button>
+                    </div>
+
+
+
+                </div>
+            </form>
+            <button class="close modal-close">
+                <span class="icon-decline_Outline"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.easings.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="assets/js/pushy.min.js"></script>
+<script type="text/javascript" src="assets/js/venobox.min.js"></script>
+<script type="text/javascript" src="assets/js/velocity.min.js"></script>
+<script type="text/javascript" src="assets/js/team_view.js"></script>
+<script type="text/javascript" src="assets/js/jquery.onoff.min.js"></script>
+
+
+<!--add scripts before this line-->
+<script type="text/javascript" src="assets/js/external/jquery.hotkeys.js"></script>
+<script type="text/javascript" src="assets/js/external/google-code-prettify"></script>
+<script type="text/javascript" src="assets/js/bootstrap-wysiwyg.min.js"></script>
+<script type='text/javascript'>$('#editor').wysiwyg();</script>
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+
+<!--page specific scripts-->
+<script type="text/javascript">
+</script>
+
+</body>
+</html>

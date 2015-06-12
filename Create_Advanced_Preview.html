@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Myhub | Social Planning</title>
+
+    <!-- Core Framework CSS before SASS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+     <link href="assets/css/myhub-icons.css" rel="stylesheet">
+    
+    
+    <!-- Fonts -->
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/c2c138df-bec8-4ae7-abb7-59de83a2ce0b.css"/>
+
+
+    <!--add more stylesheet before this line-->
+    <link href="assets/css/app.css" rel="stylesheet">
+
+    <!-- Script for SVG -->
+    <script type="text/javascript" src="assets/js/modernizr.custom.70954.js"></script>
+
+
+</head>
+<body class="pushy-active">
+
+
+<!-- Pushy Menu -->
+<nav class="pushy pushy-left logged-in-pushy">
+    <ul>
+        <li class="p-nav-profile">
+            <a href="#">
+                <img class="img-circle" src="assets/images/eric-hubbell.png" alt=""/>
+                <strong>Eric Hubble</strong>
+                view profile</a>
+        </li>
+        <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fa fa-plus"></i> Create</a></li>
+        <li><a href="#"><i class="fa fa-search"></i> Explore</a></li>
+        <li><a href="#"><i class="fa fa-flash"></i> Notification</a></li>
+        <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+    </ul>
+    <div class="ln-cr">
+        <ul>
+            <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+<div class="site-overlay-n"></div>
+
+<!-- class="container-push"-->
+
+<div id="pushy_wrapper" class="section page_wrap">
+
+
+    <div class="top-header">
+        <!--add this class nav menu-->
+
+        <div class="top-sub-head clearfix">
+            <div class="nav-pullleft pull-left">
+                <a href="#" class="menu-btn"><i class="fa fa-bars"></i></a>
+            </div>
+
+            <a href="#" class="nav_right_link nav_settings_link visible-xs"><span class="icon-Settings"></span></a>
+
+            <div class="sub-logo">
+                <a id="ln-logo" href="index.html"><img id="header-logo" class="img-responsive" src="assets/images/myhub-logo.png">
+                </a>
+            </div>
+
+
+            <ul class="nav navbar-nav navbar-right logged-in-nav">
+                <li><a href="#"><i class="fa fa-flash rounded"></i></a></li>
+                <li><a href="#"><img src="assets/images/flash_dot.png" alt=""/></a></li>
+                <li>                       <a id="btn_plus" class="btn btn-default hidden-xs" href="#" role="button"><i class="fa fa-plus"></i></a></li>
+                <li class="dropdown">
+                    <a id="loggedinNav" href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        <img src="assets/images/Jeff.png" alt=""/>
+                        <span>You</span>
+                        <i class="fa-caret-down fa"></i>
+                    </a>
+
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                <li id="dropdown-button" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-cog"></i></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a></li>
+                        <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
+                        <li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="i"></i> Make admin</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--end header nav-->
+
+    <div class="ed_banner_wrap_host">
+        &nbsp;
+        <div class="pmulc_price">
+            $200
+        </div>
+        <div class="edb_btm">
+            <div class="container-fluid">
+                <div class="edb_btm_lft">
+                    <div class="ed_date">
+                        <span class="cal_in">may <strong>25</strong></span>
+                    </div>
+                    <div class="edb_ltxt">
+                        <h4>Concert @ Red Rocks with Friends</h4>
+                        <p>8:00 PM &bull; Morrison, CA &bull; 15 going</p>
+                    </div>
+                </div>
+                <div class="edb_btm_right">
+                    <a href="#"> <span class="icon-lock"></span>
+                        <span class="hidden-xs">Private</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ed_nav_wrap hidden-xs">
+        <div class="container">
+            <div class="ed_profile_nav">
+                <div class="profile_nav">
+                    <ul class="clearfix">
+                        <li role="presentation" class="active"><a href="#">Details</a></li>
+                        <li role="presentation"><a href="#">Guest List</a></li>
+                        <li role="presentation"><a href="#">Comments</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	
+    <div class="event_details_page_container">
+        <div class="container">
+            <div class="ed_pc_inner">
+
+
+                <div class="ed_pc_fx_sidebar">
+                    <div class="ed_sidebar_top_link hidden-xs">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="" class="btn btn-default btn-green countribute_btn" id="button_host_link">Contribute</a>
+                            </li>
+                            <li class="dropdown admin_dropdown_list" id="dropdown_admin">
+                                <a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="icon-Settings"></span> Admin &nbsp; <i class="fa fa-caret-down"></i></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li class="active"><a href="#"><span class="icon-edit"></span> Edit this event</a></li>
+                                    <li><a href="#"><span class="icon-dollar_bills"></span> Request a Payout</a></li>
+                                    <li><a href="#"><span class="icon-close"></span> Shut off RSVPs temporarily</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end sidebar cont-->
+
+                    <div class="ed_sidebar_cont">
+                        <div class="esc_inner clearfix">
+                            <div class="stlt_img">
+                                <img alt="" src="assets/images/event_detail/Jill.png">
+                            </div>
+                            <div class="es_profile_txt">
+                                <h2 class="">Jill Schneider <span class="icon-verified orange_txt pull-right"></span></h2>
+                                <a class="eric_twt hidden-xs" href="https://twitter.com/jillschneider">@jillschneider</a>
+                                <div class="ph_info hidden-xs">
+                                    Denver, CO |
+                                    <a href="www.myhubapp.com">www.myhubapp.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end sidebar cont-->
+
+                    <div class="separator visible-xs">
+                        <span class="icon-Money_circle">
+				<span class="path1"></span><span class="path2"></span>
+				</span>
+                    </div>
+
+                    <div class="ed_sidebar_cont">
+                        <div class="esc_inner clearfix">
+                            <div class="progressbar_top">
+                                <ul>
+                                    <li class="">$25</li>
+                                    <li class="">$500</li>
+                                    <li class="">$1000</li>
+                                </ul>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                                    <span class="sr-only">50% Complete (success)</span>
+                                </div>
+                            </div>
+                            <div class="progressbar_bottom">
+                                <ul>
+                                    <li class="">Price</li>
+                                    <li class="">50%</li>
+                                    <li class="">Goal</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end sidebar cont-->
+
+                    <div class="separator visible-xs">
+                        <span class="icon-info_outline"></span>
+                    </div>
+
+                    <div class="ed_sidebar_cont ed_sidebar_cont_social hidden-xs">
+                        <div class="esc_inner clearfix">
+                            <div class="ed_sidebar_social">
+                                <ul class="clearfix">
+                                    <li class="eds_fb"><a href="#"><span class="icon-Facebook_Square"></span></a></li>
+                                    <li class="eds_twt"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                    <li class="eds_mail"><a href="#"><span class="icon-mail"></span></a></li>
+                                    <li class="eds_cal">
+                                        <a href="#">
+                                            <span class="icon-Calendar_II">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                            <span class="path3"></span>
+                                            <span class="path4"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="eds_link"><a href="#"><span class="icon-Link"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end sidebar cont-->
+
+                    <div class="ed_sidebar_cont hidden-xs">
+                        <div class="esc_inner clearfix">
+                            <a href="#"><img src="assets/images/event_detail/App_Store_Blue_Fill.png" alt="App Store"/></a>
+                        </div>
+                    </div>
+                    <!--end sidebar cont-->
+
+                </div>
+
+                <div class="ed_pc_ileft">
+                    <div class="edm_links">
+                        <ul class="list-inline">
+                            <li><a href="#">#Denver</a></li>
+                            <li><a href="#">#Musin</a></li>
+                            <li><a href="#">#Friends</a></li>
+                            <li><a href="#">#Friday</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="edm_contents">
+                        <p>This is a test of things to come. Based on the image above we’re going on a road trip though! This is a test of things to come. Based on the image above we’re going on a road trip though! This is a test of things to come. Based on the image above we’re going to a concert at Red Rocks and it’s going to be packed. It’s probably Pearl Jam or one of those other big bands form the nineties that helped invite rock n roll.</p>
+                        <div class="read_more_wrap">
+                            <a class="btn btn-default read-more" href="#" role="button">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="separator">
+                        <span class="icon-location_outline"></span>
+                    </div>
+
+                    <div class="ed_map_container">
+                        <div class="emc_ttl">
+                            <h3>Highway 101</h3>
+                            <p>Santa Monica Blvd. Los Angeles, CA</p>
+                        </div>
+                        <div class="ed_map_img">
+                            <img src="assets/images/event_detail/map.JPG" alt=""/>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="btm_link_block visible-xs">
+        <ul class="clearfix">
+            <li class="icns_li">
+                <a href="#"><span class="icon-Users"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+				</span></a>
+            </li>
+            <li>
+                <a class="btn btn-default btn-green countribute_btn" href="">Contribute</a>
+            </li>
+            <li class="icns_li">
+                <a href="#"><span class="icon-Messages">
+				<span class="path1"></span><span class="path2"></span>
+				</span></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="host_btm_links">
+        <h3>You have <span class="green_txt">$0</span> in escrow.</h3>
+        <ul class="clearfix">
+            <li><a href="#"><span class="icon-edit"></span> <strong>Edit</strong></a></li>
+            <li><a href="#"><span class="icon-dollar_bills"></span> <strong>Payout</strong></a></li>
+            <li><a href="#"><span class="icon-close"></span> <strong>Close</strong></a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="cr_footer" style="z-index:9999;">
+        <div class="container">
+            <a class="mb_btn mb_btn_gray cr_footer_btn pull-left" href="#">Back <span class="icon-arrow_lg_back"></span></a>
+            <a class="mb_btn mb_btn_orange cr_footer_btn pull-right" href="#">Next <span class="icon-arrow_lg_fwd"></span></a>
+        </div>
+    </div>
+
+
+    <!--part1 9-->
+    <div id="page_footer_cont" class="inner_footer waypoint active-trans">
+
+        <div id="footer_container">
+
+            <div class="container">
+
+                <div id="fwUpper" class="row hidden-xs">
+                    <div class="col-sm-4 flogoCont">
+                        <div class="flogo">
+                            <a href="#"><img alt="My Hubb" src="assets/images/icons/footer_logo.png"></a>
+                        </div>
+                        <p>The fastest, easiest way to plan group activivites and pool cash with friends.</p>
+                        <div class="footer_socials">
+                            <ul>
+                                <li><a href="http://myhubapp.tumblr.com/"><i class="fa fa-fw fa-lg fa-tumblr"></i></a></li>
+                                <li><a href="https://www.facebook.com/Myhubapp"><i class="fa fa-fw fa-lg fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/myhubapp"><i class="fa fa-fw fa-lg fa-twitter"></i></a></li>
+                                <li><a href="https://www.youtube.com/user/MyHubApp"><i class="fa fa-fw fa-lg fa-youtube"></i></a></li>
+                                <li><a href="http://instagram.com/myhubapp"><i class="fa fa-fw fa-lg fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-7  fNav">
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-6">
+                                <h5>COMPANY</h5>
+                                <ul>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="how-it-works.html">How it Works</a></li>
+                                    <li><a href="jobs.html">Jobs</a></li>
+                                    <li><a target="_blank" href="https://brandfolder.com/myhub">Press</a></li>
+                                    <li><a href="http://myhubapp.tumblr.com/">Blog</a></li>
+                                </ul>
+                            </div>
+                            <div class="clearfix visible-xs"></div>
+                            <div class="col-sm-4 col-xs-6">
+                                <h5>Bowtie Blog</h5>
+                                <ul style="font-family:'Gill Sans W10 Medium';">
+                                    <li><a href="#">#NEWS</a></li>
+                                    <li><a href="#">#RELEASES</a></li>
+                                    <li><a href="#">#HOWTO</a></li>
+                                    <li><a href="#">#FUN</a></li>
+                                </ul>
+                            </div><!--end f nav parts-->
+                            <div class="col-sm-4 col-xs-6">
+                                <h5>Help</h5>
+                                <ul style="font-family:'Gill Sans W10 Medium';">
+                                    <li><a href="privacy-policy.html">FAQ</a></li>
+                                    <li><a href="terms-of-service.html">CONTACT</a></li>
+                                </ul>
+                            </div><!--end f nav parts-->
+                        </div>
+                    </div><!--end footer nav-->
+                </div>
+
+                <div id="mobile-footer-nav" class="row visible-xs text-center">
+                    <div class="col-xs-12">
+                        <a href="terms-of-service.html">About</a> • <a href="privacy-policy.html">How it Works</a> • <a href="terms-of-service.html">Jobs</a> • <a href="terms-of-service.html">Blog</a> • <a href="terms-of-service.html">FAQ</a> • <a href="terms-of-service.html">Contact</a>
+                    </div>
+                    <div class="footer_socials col-xs-12">
+                        <ul>
+                            <li><a href="http://myhubapp.tumblr.com/"><i class="fa fa-fw fa-lg fa-tumblr"></i></a></li>
+                            <li><a href="https://www.facebook.com/Myhubapp"><i class="fa fa-fw fa-lg fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/myhubapp"><i class="fa fa-fw fa-lg fa-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/user/MyHubApp"><i class="fa fa-fw fa-lg fa-youtube"></i></a></li>
+                            <li><a href="http://instagram.com/myhubapp"><i class="fa fa-fw fa-lg fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="co-image" class="text-center">
+                    <embed name="footer_logo_svg" class="footer_logo_svg" id="footer_logo_svg" src="assets/images/CO_Company_Color.svg" width="67" height="67">
+                </div>
+                <div id="fwLpr2" class="row">
+                    <div class="col-xs-12 copy_text text-center">2014 Myhub • <a href="privacy-policy.html">Privacy</a> • <a href="terms-of-service.html">Terms</a></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--end part 9-->
+
+
+</div>
+<!--end page wrapper-->
+
+<!--Modals-->
+
+<div class="modal fmodal_container email_invite_modal">
+    <div class="modal-dialog">
+        <div class="fmodal_wrap">
+            <form>
+                <div class="fmodal_head">
+                    <h2>Invite via email</h2>
+                </div>
+                <div class="fmodal_body">
+                    <h4>Send invites to friends.</h4>
+
+                    <div class="modal_input">
+                        <label class="sr-only" for="email">Email</label>
+                        <textarea id="email" placeholder="enter email addresses separated by a comma and we'll send an invitation on your behalf" required="required"class="default-input" style="height: 150px;"></textarea>
+                        <span class="icon-x"></span>
+                        <span class="icon-checkmark"></span>
+                    </div>
+
+
+                    <div class="mb_btns">
+                        <input type="button" class="btn mb_btn" value="Send"/>
+                        <span class="icon-Paper_Airplane"></span>
+                    </div>
+
+                </div>
+            </form>
+            <button class="close modal-close">
+                <span class="icon-decline_Outline"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fmodal_container settings_modals settings_modals_add_card ED_checkout_modal ED_checkout_modal_wrap mobile_fullscreen_modal">
+    <div class="modal-dialog">
+        <div class="fmodal_wrap fmodal_wrap_medium">
+            <form>
+                <div class="fmodal_head clearfix">
+                    <h2>Checkout <span class="pull-right light_txt">Your data is 256-bit encrypted and SSL secure</span></h2>
+                </div>
+                <div class="fmodal_body">
+
+                    <div class="chck_ttl">
+                        <label for="chk_dlr">Please pitch in the following amount to attend:</label>
+                        <input class="checkout_input" id="chk_dlr" type="text" placeholder="$25.00" />
+                    </div>
+
+                 <a href="#">   <div class="chk_apm_box cab_dg_bg show_card_modal">
+                        <ul>
+                            <li>
+                                <span><span class="icon-Credit_Card_II"></span></span>
+                                <span>Add Payment Method</span>
+                            </li>
+                        </ul>
+                    </div> </a>
+
+                    <div class="chk_apm_box cab_light_bg">
+                        <ul>
+                            <li>
+                                <span>Subtotal</span>
+                                <span>$25.00</span>
+                            </li>
+                            <li>
+                                <span>(Credit)</span>
+                                <span>($0.00)</span>
+                            </li>
+                            <li>
+                                <span>Total</span>
+                                <span>$25.00</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb_btns">
+                        <input type="submit" class="btn mb_btn" value="Confirm Payment"/>
+                    </div>
+                </div>
+            </form>
+            <button class="close modal-close">
+                <span class="icon-decline_Outline"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal fmodal_container settings_modals settings_modals_add_card  ED_checkout_modal_card_added  ED_checkout_modal_wrap mobile_fullscreen_modal">
+    <div class="modal-dialog">
+        <div class="fmodal_wrap fmodal_wrap_medium">
+            <form>
+                <div class="fmodal_head clearfix">
+                    <h2>Checkout <span class="pull-right light_txt">Your data is 256-bit encrypted and SSL secure</span></h2>
+                </div>
+                <div class="fmodal_body">
+
+                    <div class="chck_ttl">
+                        <label for="chk_dlr1">Please pitch in the following amount:</label>
+                        <input class="checkout_input" id="chk_dlr1" type="text" placeholder="$25.00" />
+                    </div>
+
+                    <div class="chk_apm_box cab_dg_bg">
+                        <ul>
+                            <li>
+                                <span>
+                                    <span class="icon-Visa">
+			                            <span class="path1"></span><span class="path2"></span>
+			                            <span class="path3"></span><span class="path4"></span>
+			                            <span class="path5"></span><span class="path6"></span>
+			                            <span class="path7"></span><span class="path8"></span>
+							        </span>
+                                    <span class="edch_cn">
+                                        &bull;&bull;&bull;&bull;&bull;
+                                        0300
+                                    </span>
+                                </span>
+                                <span>
+                                    <i class="green_txt">3% fee</i>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="chk_apm_box cab_light_bg">
+                        <ul>
+                            <li>
+                                <span>Subtotal</span>
+                                <span>$25.00</span>
+                            </li>
+                            <li>
+                                <span>(Credit)</span>
+                                <span>($0.00)</span>
+                            </li>
+                            <li>
+                                <span>Total</span>
+                                <span>$25.00</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb_btns">
+                        <input type="submit" class="btn mb_btn" value="Confirm Payment"/>
+                    </div>
+                </div>
+            </form>
+            <button class="close modal-close">
+                <span class="icon-decline_Outline"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fmodal_container ED_checkout_modals_add_card settings_modals settings_modals_add_card mobile_fullscreen_modal">
+    <div class="modal-dialog">
+        <div class="fmodal_wrap fmodal_wrap_medium">
+            <form>
+                <div class="fmodal_head clearfix">
+                    <h2>Add Card <span class="pull-right light_txt">Your data is 256-bit encrypted and SSL secure</span></h2>
+                </div>
+                <div class="fmodal_body">
+                    <div class="smdl_title clearfix">
+                        <span>We accept any of the following &nbsp;</span>
+                        <span class="icon-Visa">
+                            <span class="path1"></span><span class="path2"></span>
+                            <span class="path3"></span><span class="path4"></span>
+                            <span class="path5"></span><span class="path6"></span>
+                            <span class="path7"></span><span class="path8"></span>
+				        </span>
+                        <span class="icon-Mastercard">
+                            <span class="path1"></span><span class="path2"></span>
+                            <span class="path3"></span><span class="path4"></span>
+                            <span class="path5"></span><span class="path6"></span>
+                            <span class="path7"></span><span class="path8"></span>
+                            <span class="path9"></span><span class="path10"></span>
+                            <span class="path11"></span><span class="path12"></span>
+                            <span class="path13"></span>
+                        </span>
+                        <span class="icon-AmericanExpress">
+                            <span class="path1"></span><span class="path2"></span>
+                        </span>
+                        <span class="icon-Discover">
+                            <span class="path1"></span><span class="path2"></span>
+                            <span class="path3"></span><span class="path4"></span>
+                            <span class="path5"></span>
+                        </span>
+                    </div>
+
+                    <label for="ncard">Name on Card</label>
+                    <div class="modal_input">
+                        <input type="text" id="ncard" placeholder="John Smith" required="required"/>
+                        <span class="icon-x"></span>
+                        <span class="icon-checkmark"></span>
+                    </div>
+
+                    <label for="ccard">Credit Card: #</label>
+                    <div class="modal_input">
+                        <input type="text" id="ccard" placeholder="xxxx - xxxx - xxxx - xxxx" required="required"/>
+                        <span class="icon-x"></span>
+                        <span class="icon-checkmark"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label for="expiration">Expiration</label>
+                            <div class="modal_input">
+                                <input type="text" id="expiration" placeholder="mm / yy" required="required"/>
+                                <span class="icon-x"></span>
+                                <span class="icon-checkmark"></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="cvv">CVV</label>
+                            <div class="modal_input">
+                                <input type="password" id="cvv" placeholder="000" required="required"/>
+                                <span class="icon-x"></span>
+                                <span class="icon-checkmark"></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="zcode">Zip Code</label>
+                            <div class="modal_input">
+                                <input type="text" id="zcode" placeholder="80202" required="required"/>
+                                <span class="icon-x"></span>
+                                <span class="icon-checkmark"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb_btns">
+                        <input type="submit" class="btn mb_btn" value="Submit Card Info"/>
+                    </div>
+                </div>
+            </form>
+            <button class="close modal-close">
+                <span class="icon-decline_Outline"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal fmodal_container settings_modals settings_modals_add_card  ED_checkout_modal_confirmation mobile_fullscreen_modal">
+    <div class="modal-dialog">
+        <div class="fmodal_wrap fmodal_wrap_medium">
+            <form>
+                <div class="fmodal_head clearfix">
+                    <h2>Confirmation</h2>
+                </div>
+                <div class="fmodal_body">
+                    <div class="ed_cn_top">
+                        <span class="icon-Checkmark_circle">
+				<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+				</span>
+                        <h3>We have you on the guestlist! Check your email for a receipt and share with friends.</h3>
+                    </div>
+                    
+                   
+                    
+
+                    <div class="ed_cn_share_link link-slam">
+                        <ul>
+                            <li class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="#" class="fb">
+                                    Share
+                                    <span class="icon-Facebook_Square"></span>
+                                </a>
+                            </li>
+                            <li class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="#" class="twt">
+                                    Tweet
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                            </li>
+                        
+                            <li class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="#" class="cal">
+                                    Calendar
+                                    <span class="icon-Calendar_II">
+                                        <span class="path1"></span>
+                                        <span class="path2"></span>
+                                        <span class="path3"></span>
+                                        <span class="path4"></span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="visible-xs">
+                                <a href="#" class="eml">
+                                    Email
+                                    <span class="icon-mail"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="btm_close text-center">
+                        <button class="close modal-close">
+                            <span class="icon-decline_Outline"></span>
+                        </button>
+                    </div>
+
+
+
+                </div>
+            </form>
+            <button class="close modal-close">
+                <span class="icon-decline_Outline"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.easings.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="assets/js/pushy.min.js"></script>
+<script type="text/javascript" src="assets/js/venobox.min.js"></script>
+<script type="text/javascript" src="assets/js/velocity.min.js"></script>
+<script type="text/javascript" src="assets/js/team_view.js"></script>
+<script type="text/javascript" src="assets/js/jquery.onoff.min.js"></script>
+
+
+<!--add scripts before this line-->
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+
+<!--page specific scripts-->
+<script type="text/javascript">
+
+
+
+</script>
+
+</body>
+</html>

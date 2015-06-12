@@ -11731,10 +11731,10 @@
   padding-right: 0px;
 }
 
-.hide_before_after:after, .smobile_head_inner:after, .ed_banner_wrap:after, .ed_banner_wrap_host:after, .ed_pc_inner:after, .ed_post_content:after, .separator:after, .create_cont_wrap:after, .cr_input_wrap:after {
+.hide_before_after:after, .smobile_head_inner:after, .ed_banner_wrap:after, .ed_banner_wrap_host:after, .ed_pc_inner:after, .ed_post_content:after, .separator:after, .create_cont_wrap:after, .cr_input_wrap:after, .auth_links li a:after, .inv_search_wrap:after {
   display: none;
 }
-.hide_before_after:before, .smobile_head_inner:before, .ed_banner_wrap:before, .ed_banner_wrap_host:before, .ed_pc_inner:before, .ed_post_content:before, .separator:before, .create_cont_wrap:before, .cr_input_wrap:before {
+.hide_before_after:before, .smobile_head_inner:before, .ed_banner_wrap:before, .ed_banner_wrap_host:before, .ed_pc_inner:before, .ed_post_content:before, .separator:before, .create_cont_wrap:before, .cr_input_wrap:before, .auth_links li a:before, .inv_search_wrap:before {
   display: none;
 }
 
@@ -12003,6 +12003,11 @@ div[data-role="editor-toolbar"] {
   cursor: pointer;
 }
 
+/*aa*/
+.icon-Money_circle .path1:before {
+  color: inherit;
+}
+
 .nav.navbar-nav.navbar-right {
   margin-right: 0;
 }
@@ -12206,11 +12211,11 @@ div[data-role="editor-toolbar"] {
 }
 
 /* Site Overlay */
-.site-overlay {
+.site-overlay, .site-overlay-n {
   display: none;
 }
 
-.pushy-active .site-overlay {
+.pushy-active .site-overlay, .pushy-active .site-overlay-n {
   display: block;
   position: fixed;
   top: 0;
@@ -20266,6 +20271,9 @@ textarea.sfc_m_input {
   width: 80%;
   background: none;
 }
+.cr_nostyle_input.green_txt {
+  color: #00ba84;
+}
 
 .cr_item_divide {
   margin: 6% 0;
@@ -20321,7 +20329,7 @@ textarea.sfc_m_input {
 .cr_footer {
   padding: 10px;
   background: #F4F5F7;
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -20421,6 +20429,133 @@ textarea.sfc_m_input {
 
 .larget_font {
   font-size: 1.25em;
+}
+
+.auth_links {
+  border-bottom: 1px solid #9EA7B3;
+}
+.auth_links li {
+  display: block;
+  float: left;
+}
+.auth_links li a {
+  display: block;
+  padding: 0 30px 20px;
+  text-align: center;
+  color: #9EA7B3;
+  font-size: 16px;
+  position: relative;
+}
+.auth_links li a:after {
+  display: block;
+  position: absolute;
+  content: '';
+  height: 3px;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  background: #FF6B42;
+  visibility: hidden;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.auth_links li.active a,
+.auth_links li a:hover {
+  color: #323A45;
+}
+.auth_links li.active a:after,
+.auth_links li a:hover:after {
+  visibility: visible;
+  width: 100%;
+  left: 0;
+}
+
+.auth_cont_free {
+  padding-top: 22%;
+  text-align: center;
+}
+.auth_cont_free > span[class^="icon"] {
+  font-size: 68px;
+}
+.auth_cont_free .icon-Money_circle .path2:before {
+  color: #FFFFFF;
+}
+.auth_cont_free .icon-Money_circle .path1:before {
+  color: #EEEEEE;
+}
+.auth_cont_free h3 {
+  font-size: 20px;
+  color: #5E6D81;
+}
+
+.cr_input_wrap .icon-Money_circle .path1:before {
+  color: inherit;
+}
+
+.ciw_btxt {
+  font-style: italic;
+  font-size: 0.875em;
+  padding-top: 5px;
+}
+
+.inv_search_wrap {
+  float: right;
+  border-radius: 25px;
+  border: 1px solid #9EA7B3;
+  position: relative;
+  padding-left: 50px;
+  margin-top: -6px;
+}
+.inv_search_wrap label {
+  position: absolute;
+  left: 15px;
+  top: 9px;
+}
+.inv_search_wrap label span {
+  font-size: 20px;
+}
+.inv_search_wrap input {
+  width: 180px;
+  font-size: 16px;
+  color: #5E6D81;
+  padding: 7px;
+  border: none;
+  background: transparent;
+}
+
+.cr_invite_cont_wrap {
+  padding-top: 75px;
+}
+
+.cr_inv_input_wrap textarea {
+  color: #9EA7B3;
+}
+
+.ED_checkout_modal_confirmation .fmodal_body h4 {
+  font-size: 1.25em;
+}
+.ED_checkout_modal_confirmation p {
+  color: #9EA7B3;
+}
+
+.mb_btn_orange-2 {
+  background: #E5603B;
+}
+.mb_btn_orange-2:hover {
+  background: #FF6B42;
+}
+
+.auth_cont_free .mb_btn {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #FFFFFF;
+  width: auto;
+}
+
+.cr_invite_cont_wrap > h3 {
+  margin-bottom: 50px;
 }
 
 @media all and (max-width: 767px) {
