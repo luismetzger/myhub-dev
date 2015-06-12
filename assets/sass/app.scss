@@ -1,15 +1,14 @@
-// SASS Stuff
+// Partials
 @import 'variables';
 @import 'mixins';
 @import 'fonts';
 @import 'icons';
-@import 'myhub-icons';
 @import 'utility';
 @import 'nav';
 @import 'fullpage';
 @import 'animate';
 @import 'venobox';
-@import 'teamview';
+
 
 // Web App Login/Logout User
 @import 'pages/event-detail';
@@ -17,9 +16,13 @@
 @import 'pages/add-card';
 
 
+// Marketing Pages
+@import 'mkt/about';
+@import 'mkt/legal';
+@import 'mkt/homepage';
+
+
 // Pages
-@import 'pages/homepage';
-@import 'pages/legal';
 @import 'pages/pflow';
 @import 'pages/modal';
 @import 'pages/settings';
