@@ -28,11 +28,18 @@
         }
     }
 
+    var $map_wrap = $('.cr_map_wrap');
+
+    function setMapHeight($cont){
+        $cont.css('height', $(window).height() - 195 + 'px');
+    }
+    setMapHeight($map_wrap);
 
 
     setHeight();
     $(window).resize(function(){
         setHeight();
+        setMapHeight($map_wrap);
     });
 
     $('.menu-btn').on('click', function(e){
@@ -100,7 +107,6 @@
     $('.hbtmBtns').on('click', 'a', function(e){
         e.preventDefault();
         var sectonNo = $(this).attr('date-mvto');
-        console.log(sectonNo);
         $.fn.fullpage.moveTo(sectonNo);
     });
 
@@ -413,6 +419,29 @@ var $modal_wrap = $(".fmodal_wrap"),
         hide_show_modal($('.ED_checkout_modal_confirmation'));
 
         return false;
+    });
+
+    function showCrossIcon($input, $icon){
+        if($input.val() !== ''){
+            $icon.removeClass('hide');
+        } else {
+            $icon.addClass('hide');
+        }
+    }
+    var $iconInput = $(".cr_nostyle_input"),
+        $cIcon = $iconInput.siblings('.ciw_ric');
+    $cIcon.on('click', function(e){
+        e.preventDefault();
+        $(this).addClass('hide').siblings(".cr_nostyle_input").val("");
+    });
+    $iconInput.on('keyup', function(){
+        showCrossIcon($(this), $(this).siblings('.ciw_ric'));
+    });
+
+    $(window).load(function(){
+        $iconInput.each(function(){
+            showCrossIcon($(this), $(this).siblings('.ciw_ric'));
+        })
     });
 
 

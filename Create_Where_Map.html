@@ -106,16 +106,18 @@
         &nbsp;
     </div>
 
-    <div class="create_cont_wrap">
+    <div class="create_cont_wrap" style="padding-bottom: 0;">
 
         <div class="cr_header">
             <div class="container">
 
-                <h2>When</h2>
+                <h2>Where</h2>
+
+                <a href="#" data-toggle="tooltip" title="What's the Plan?" class="pull-right"><span class="icon-question"></span></a>
 
                 <div class="progress_wrap">
                     <div class="progress">
-                        <div class="progress-bar  progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                        <div class="progress-bar  progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
                         </div>
                     </div>
                     
@@ -129,44 +131,24 @@
 
                 </div>
 
+
                 
             </div>
         </div>
 
-        <div class="cr_body_wrap">
-            <div class="container">
-                <div class="crb_inner">
-                    <form>
+        <div class="cr_map_wrap">
+            <form>
 
-                        <div class="cr_item_wrap">
-                            <h3>
-                                When's it start?
-                            </h3>
-                            <div class="cr_input_wrap">
-                                <input type="text" class="cr_nostyle_input timePicker" placeholder="Tonight @ 7:00PM"/>
-                                <span class="icon-clock_II ciw_lic"></span>
-                                <a href="#" class="ciw_ric"><span class="icon-decline_Outline"></span></a>
-                            </div>
-                        </div>
 
-                        <div class="cr_item_divide">
-                            <span>Optional</span>
-                        </div>
-
-                        <div class="cr_item_wrap">
-                            <h3>
-                                When's it end?
-                            </h3>
-                            <div class="cr_input_wrap">
-                                <input type="text" class="cr_nostyle_input timePicker" placeholder="Tonight @ 9:00PM"/>
-                                <span class="icon-clock_II ciw_lic"></span>
-                                <a href="#" class="ciw_ric"><span class="icon-decline_Outline"></span></a>
-                            </div>
-                        </div>
-
-                    </form>
+                <div class="cr_input_wrap">
+                    <input id="geocomplete" type="text" placeholder="Type in an address" class="cr_nostyle_input" />
+                    <span class="icon-Current_Location_II ciw_lic"></span>
+                    <a href="#" class="ciw_ric"><span class="icon-decline_Outline"></span></a>
                 </div>
-            </div>
+
+            </form>
+
+            <div class="map_canvas"></div>
         </div>
 
         <div class="cr_footer">
@@ -176,8 +158,8 @@
             </div>
         </div>
 
-
     </div>
+
 
 
     <!--part1 9-->
@@ -269,6 +251,60 @@
 
 
 
+<div class="modal fmodal_container settings_modals settings_modals_add_card   cre_checkout_modal_confirmation mobile_fullscreen_modal" style="z-index: 9999">
+    <div class="modal-dialog">
+        <div class="fmodal_wrap fmodal_wrap_medium">
+            <form>
+                <div class="fmodal_head clearfix">
+                    <h2>Get Your Location</h2>
+                </div>
+                <div class="fmodal_body">
+                    <div class="ed_cn_top">
+                        <h4>Do you want to get the location
+                            <br/>in the map based on your address?</h4>
+
+                    </div>
+
+
+
+
+                    <div class="cwm_loc_btns">
+                        <ul class="row">
+                            <li class="col-sm-4 col-lg-push-2 col-xs-12">
+                                <a href="#" class="mb_btn show_location">
+                                    Yes
+                                </a>
+                            </li>
+                            <li class="col-sm-4 col-lg-push-2 col-xs-12">
+                                <a href="#" class="mb_btn mb_btn_orange close_modal">
+                                    No
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="btm_close text-center">
+                        <button class="close modal-close">
+                            <span class="icon-decline_Outline"></span>
+                        </button>
+                    </div>
+
+
+
+                </div>
+            </form>
+            <button class="close modal-close">
+                <span class="icon-decline_Outline"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 
@@ -282,29 +318,22 @@
 <script type="text/javascript" src="assets/js/velocity.min.js"></script>
 <script type="text/javascript" src="assets/js/team_view.js"></script>
 <script type="text/javascript" src="assets/js/jquery.onoff.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery-ui-custom.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery-ui-timepicker.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery-ui-touch-punch.min.js"></script>
+
+
+<!--Map Scripts-->
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+<script src="assets/js/jquery.geocomplete.min.js"></script>
+<script type="text/javascript" src="assets/js/gmap.js"></script>
 
 
 <!--add scripts before this line-->
 <script type="text/javascript" src="assets/js/scripts.js"></script>
 
-<!--page specific scripts-->
 <script type="text/javascript">
-    $('.timePicker').datetimepicker({
-        prevText: '<i class="fa fa-chevron-left"></i>',
-        nextText: '<i class="fa fa-chevron-right"></i>',
-        beforeShow: function(input, inst) {
-            var newclass = 'smart-forms';
-            var smartpikr = inst.dpDiv.parent();
-            if (!smartpikr.hasClass('smart-forms')){
-                inst.dpDiv.wrap('<div class="'+newclass+'"></div>');
-            }
-        }
 
-    });
+    $(".cre_checkout_modal_confirmation").modal('show');
+
+
 </script>
-
 </body>
 </html>

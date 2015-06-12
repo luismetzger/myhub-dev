@@ -34,6 +34,9 @@
       color: $tag-gray;
     }
   }
+  a.pull-right {
+    margin-top: 18px;
+  }
 }
 .cr_body_wrap {
   padding: 5% 0;
@@ -48,10 +51,14 @@
     margin: 0 0 10px;
     color: $medium-gray;
     .icon-question {
-      color: $light-gray;
-      font-size: $icon-font-size *0.75;
       margin-left: 5px;
     }
+  }
+}
+a[data-toggle="tooltip"] {
+  .icon-question {
+    color: $light-gray;
+    font-size: $icon-font-size *0.75;
   }
 }
 .cr_input_wrap {
@@ -320,6 +327,7 @@
     top: 9px;
     span {
       font-size: 20px;
+      display: block;
     }
   }
   input {
@@ -339,7 +347,7 @@
     color: $mid-gray;
   }
 }
-.ED_checkout_modal_confirmation {
+.cre_checkout_modal_confirmation {
   .fmodal_body h4 {
     font-size: 1.25em;
   }
@@ -364,5 +372,61 @@
 .cr_invite_cont_wrap {
   > h3 {
     margin-bottom: 50px;
+  }
+}
+.map_canvas {
+  width: 100%;
+  height: 100%;
+}
+
+#multiple li {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.cr_map_wrap {
+  position: relative;
+  @extend .hide_before_after;
+  .cr_input_wrap {
+    position: absolute;
+    max-width: 600px;
+    top: 200px;
+    left: 50%;
+    margin-left: -300px;
+    z-index: 9998;
+    width: 100%;
+    padding: 0;
+    .cr_nostyle_input {
+      padding: 15px 25px 15px 75px;
+      width: 100%;
+    }
+  }
+}
+.pac-container {
+  margin-top: -4px;
+  &:after {
+    display: none !important;
+  }
+  .pac-item {
+    padding: 10px 15px;
+    position: relative;
+    > span:last-child {
+      display: block;
+      margin-top: -2px;
+      line-height: 1;
+    }
+    &:after {
+      display: block;
+      position: absolute;
+      content: "\e78f";
+      font-family: "myhub-icomoon";
+      font-size: 20px;
+      color: $medium-gray;
+      right: 15px;
+      top: 50%;
+      margin-top: -15px;
+    }
+  }
+  .pac-icon {
+    display: none;
   }
 }

@@ -24,7 +24,7 @@
 
 
 </head>
-<body class="pushy-active">
+<body class="">
 
 
 <!-- Pushy Menu -->
@@ -52,7 +52,7 @@
 
 
 
-<div class="site-overlay-n"></div>
+<div class="site-overlay"></div>
 
 <!-- class="container-push"-->
 
@@ -727,6 +727,83 @@
 </div>
 
 
+<!--Modals-->
+
+<div class="modal fmodal_container settings_modals settings_modals_add_card   cre_checkout_modal_confirmation mobile_fullscreen_modal">
+    <div class="modal-dialog">
+        <div class="fmodal_wrap fmodal_wrap_medium">
+            <form>
+                <div class="fmodal_head clearfix">
+                    <h2>Confirmation</h2>
+                </div>
+                <div class="fmodal_body">
+                    <div class="ed_cn_top">
+                        <span class="icon-Checkmark_circle">
+				<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+				</span>
+                        <h4>Event Posted!</h4>
+                        <p>Now get your friends onboard and you both earn <br/>
+                            $10 when they sign up for Myhub!</p>
+                    </div>
+
+
+
+
+                    <div class="ed_cn_share_link link-slam">
+                        <ul>
+                            <li class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="#" class="fb">
+                                    Share
+                                    <span class="icon-Facebook_Square"></span>
+                                </a>
+                            </li>
+                            <li class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="#" class="twt">
+                                    Tweet
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                            </li>
+
+                            <li class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="#" class="cal">
+                                    Calendar
+                                    <span class="icon-Calendar_II">
+                                        <span class="path1"></span>
+                                        <span class="path2"></span>
+                                        <span class="path3"></span>
+                                        <span class="path4"></span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="visible-xs">
+                                <a href="#" class="eml">
+                                    Email
+                                    <span class="icon-mail"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="btm_close text-center">
+                        <button class="close modal-close">
+                            <span class="icon-decline_Outline"></span>
+                        </button>
+                    </div>
+
+
+
+                </div>
+            </form>
+            <button class="close modal-close">
+                <span class="icon-decline_Outline"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 
@@ -748,6 +825,7 @@
 <!--page specific scripts-->
 <script type="text/javascript">
 
+    $(".cre_checkout_modal_confirmation").modal('show');
 
 
 </script>
