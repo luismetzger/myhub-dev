@@ -1,0 +1,109 @@
+// Jobs Page Styles
+
+#jobs_head {
+  background-image: url("../images/headers/jobs-header.jpg");
+  background-size: cover;
+  min-height: 360px;
+}
+
+.job_links {
+  background: none repeat scroll 0 0 transparent;
+  cursor: pointer;
+  padding: 15px;
+  margin-top: 20px;
+  h2 {
+    margin: 0;
+    font-family: $headline;
+    font-weight: 500;
+    font-size: 18px;
+    color: $dark-blue;
+    text-transform: uppercase;
+  }
+}
+
+.email-us {
+  margin-top: 20px;
+  padding: 14px;
+  border-style: solid;
+  border-color: $tag-gray;
+  border-width: 1px;
+  p {
+    font-family: $headline;
+    font-weight: $light-weight;
+    font-size: 14px;
+  }
+}
+
+.send_us_btn .btn {
+  background: $orange;
+  border: none;
+  font-family: $headline;
+  font-weight: $light-weight;
+  font-size: 18px;
+
+  &:hover {
+    background: $orange-2;
+  }
+}
+
+.apply_btn {
+  margin: 0 10px 10px 0;
+  .btn {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    background: $orange;
+    border: none;
+    font-family: $headline;
+    font-weight: $light-weight;
+    font-size: 20px;
+
+    &:hover {
+      background: $orange-2;
+    }
+  }
+}
+
+.job-date {
+  font-weight: $light-weight;
+  font-size: 14px;
+}
+
+.jobsCont {
+  padding: 80px 0;
+}
+
+.jobs_txt {
+  h3 {
+    font-family: $headline;
+    font-weight: $light-weight;
+    font-size: 32px;
+  }
+  p {
+    font-family: $headline;
+    font-weight: $light-weight;
+    font-size: 14px;
+  }
+  h4 {
+    font-family: $headline;
+    font-weight: $light-weight;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+
+.apply_btn .btn {
+  background: $green-button;
+  &:hover {
+    background: darken($green-button, 10%);
+    @include ease;
+  }
+}
+
+.send_us_btn .btn {
+  background: $green-button;
+  &:hover {
+    background: darken($green-button, 10%);
+    @include ease;
+  }
+}

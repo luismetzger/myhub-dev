@@ -1,5 +1,123 @@
 // About Page Styles
 
+#about_head {
+  background: url("../images//headers/about-header.png");
+  background-size: cover;
+}
+
+.about-section{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  h2 {
+    color: $dark-blue;
+    font-weight: $heavy-weight;
+    font-size: 32px;
+    @media all and (max-width: $small) {
+      padding: 10px;
+      font-size: 36px;
+    }
+  }
+  p {
+    color: $mid-blue;
+    font-weight: $medium-weight;
+    font-size: 18px;
+    @media all and (max-width: $small) {
+      padding-top: 10px;
+      padding-bottom: 60px;
+      font-size: 24px;
+    }
+  }
+  @media all and (max-width: $small) {
+    padding: 40px;
+  }
+}
+
+#about_start {
+  padding-top: 100px;
+  h2 {
+      color: $dark-blue;
+      font-weight: $heavy-weight;
+      font-size: 32px;
+      @media all and (max-width: $small) {
+        padding: 10px;
+        font-size: 36px;
+      }
+    }
+    p {
+      color: $mid-blue;
+      font-weight: $medium-weight;
+      font-size: 18px;
+      @media all and (max-width: $small) {
+        padding-top: 10px;
+        padding-bottom: 60px;
+        font-size: 24px;
+      }
+    }
+    @media all and (max-width: $small) {
+      padding: 40px;
+    }
+}
+
+.absr_txt {
+  padding-top: 5%;
+  h2 {
+    font-family: $headline;
+    font-weight: $light-weight;
+    font-size: 36px;
+    color: $dark-blue;
+  }
+  p {
+    font-family: $regular-fonts;
+    font-family: $light-weight;
+    font-size: 20px;
+    color: $dark-blue;
+  }
+}  
+@media all and (max-width: $small) {
+.about-thumb {
+    margin-bottom: 40px;
+  }
+  .about-thumb:nth-child(2n+1) {
+    clear: left;
+  }
+  .absr_txt {
+    text-align: center;
+  }
+  .about_text {
+    font-family: $regular-fonts;
+    font-weight: $light-weight;
+    font-size: 18px;
+  }
+}
+
+.ab_service_video img {
+}
+
+#about_tidbits {
+  padding: 40px 0;
+}
+
+.abt_img {
+  height: 70px;
+}
+
+.about_text {
+  font-family: $headline;
+  font-weight: $regular-weight;
+  font-size: 18px;
+  max-width: 200px;
+  margin: 0 auto;
+  padding-top: 25px;
+  color: $dark-blue;
+}
+
+.about-belief-thumbs {
+  padding-top: 5%;
+}
+
+.about-belief-thumbs .abt_img {
+  height: 135px;
+}
 
 .team-thumbs {
   padding-top: 5%;
@@ -16,3 +134,4 @@
     color: $mid-blue;
   }
 }
+
