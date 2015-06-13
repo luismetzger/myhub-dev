@@ -8,7 +8,8 @@
 @import 'fullpage';
 @import 'animate';
 @import 'venobox';
-
+@import 'buttons';
+@import 'sweetalert';
 
 // Web App Login/Logout User
 @import 'pages/event-detail';
@@ -30,11 +31,10 @@
 @import 'pages/settings';
 @import 'pages/event_details';
 @import 'pages/misc';
+@import 'pages/modal_mobile';
 
 
 //Main css and responsive css
-@import 'pages/modal_mobile';
-@import 'sweetalert';
 @import 'main';
 @import 'responsive';
 

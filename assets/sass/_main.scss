@@ -154,8 +154,38 @@ h2 {
 
 #page_footer_cont {
   top: auto;
-  bottom: 0;
-  margin: 0;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+  background-color: $dark-blue;
+  overflow: hidden;
+  h2 {
+    color: $soft-gray;
+  }
+  p {
+    color: $soft-gray;
+  }
+}
+
+.footer-logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: $light-weight;
+  a {
+    display: block;
+  }
+  p {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: $lighter-gray !important;
+    font-family: $regular-fonts;
+  }
+  img {
+    padding: 10px;
+    width: 210px;
+  }
 }
 
 .footer-social {
@@ -167,15 +197,13 @@ h2 {
   }
 }
 
-// Footer - Social Icons
-
 .footer-social li {
   display: inline-block;
   margin: 0 5px;
   &:hover {
     color: $lighter-gray;
     @include ease;
-}
+  }
 }
 
 .footer-social li a {
@@ -191,34 +219,11 @@ h2 {
   background-color: $mid-blue;
   border-radius: 50%;
   text-align: center;
+  &:hover {
+      background-color: $lighter-gray; 
+      @include ease;
+    }
 }
-
-.f-facebook a {
-  background-image: url("../images/icons/fallback/facebook.png");
-  background-image: linear-gradient(transparent, transparent), url("../images/icons/facebook.svg");
-}
-.f-twitter a {
-  background-image: url("../images/icons/fallback/twitter.png");
-  background-image: linear-gradient(transparent, transparent), url("../images/icons/twitter.svg");
-}
-.f-tumblr a {
-  background-image: url("../images/icons/fallback/tumblr.png");
-  background-image: linear-gradient(transparent, transparent), url("../images/icons/tumblr.svg");
-}
-.f-youtube a {
-  background-image: url("../images/icons/fallback/youtube_circle.png");
-  background-image: linear-gradient(transparent, transparent), url("../images/icons/youtube_circle.svg");
-}
-.f-instagram a {
-  background-image: url("../images/icons/fallback/instagram.png");
-  background-image: linear-gradient(transparent, transparent), url("../images/icons/instagram.svg");
-}
-.f-linkedin a {
-  background-image: url("../images/icons/fallback/linkedin.png");
-  background-image: linear-gradient(transparent, transparent), url("../images/icons/linkedin.svg");
-}
-
-// Footer - Links
 
 .footer-links {
   padding-top: 20px;
@@ -231,8 +236,8 @@ h2 {
   h5 {
     font-family: $headline;
     font-weight: $mbold-weight;
+    color: $lighter-gray;
     font-size: 16px;
-    text-transform: uppercase;
   }
   a {
     font-family: $headline;
@@ -252,232 +257,52 @@ h2 {
   }
 }
 
-// Footer Logo Block
-
-.footer-logo {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: $light-weight;
-  a {
-    display: block;
-  }
+#footer_legal {
+  padding-top: 20px;
+  padding-left: 5px;
   p {
-    padding: 10px;
-    font-size: 18px;
+    font-size: 12px;
     color: $mid-blue !important;
-    font-family: $regular-fonts;
   }
-  img {
-    padding: 10px;
-    width: 210px;
-  }
-}
-
-
-// Mobile Footer
-
-@media all and (min-width: $small) and (max-width: $medium) {
-  #footer_container {
-    font-size: 16px;
-  }
-  .footer_socials {
-    padding-bottom: 0;
-    li {
-      margin: 0;
-      a {
-        width: 38px;
-        height: 38px;
-      }
+  a {
+    font-size: 12px;
+    color: $mid-blue;
+    &:hover {
+      color: $lighter-gray; 
+      @include ease;
     }
   }
 }
 
-@media all and (min-width: $small) and (max-width: $small) {
-  #footer_container, #footer_container_page {
-    height: 260px;
-    position: absolute;
-  }
-  #fwLpr2 {
-    text-decoration: none;
-    padding-top: 10px;
-  }
-}
+// Mobile Footer
 
-@media all and (max-width: $small) {
-  #footer_container {
-    font-size: 16px;
-  }
-
-#mobile-footer-nav {
-    top: 10px;
-  }
-
-.footer_social {
-    padding: 20px;
-  }
-
-.menu-btn {
-    display: block;
-    color: $full-white;
-  }
-}
-
-@media all and (max-width: $small) {
-  .footer_socials {
-    padding: 20px 0 20px;
-  }
-  #mobile-footer-nav {
+.mobile-footer-nav {
     padding-top: 20px;
     font-size: 14px;
     font-family: $headline;
     font-weight: $light-weight;
   }
-}
 
-
-
-// Inner Page Footer
-
-#page_footer_cont {
-  padding: 20px;
-  position: relative;
-  z-index: 2;
-  background-color: $dark-blue;
-  overflow: hidden;
-  h2 {
-    color: $soft-gray;
-  }
-  p {
-    color: $soft-gray;
-  }
-}
-
-
-
-// About Page Styles
-
-#about_head {
-  background: url("../images//headers/about-header.png");
-  background-size: cover;
-}
-
-#about_service,
-#about_company,
-#about_belief,
-#about_team, {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  h2 {
-    color: $dark-blue;
-    font-weight: $heavy-weight;
-    font-size: 32px;
-    @media all and (max-width: $small) {
-      padding: 10px;
-      font-size: 36px;
-    }
-  }
-  p {
-    color: $mid-blue;
-    font-weight: $medium-weight;
-    font-size: 18px;
-    @media all and (max-width: $small) {
-      padding-top: 10px;
-      padding-bottom: 60px;
-      font-size: 24px;
-    }
-  }
-  @media all and (max-width: $small) {
-    padding: 40px;
-  }
-}
-
-#about_start {
-  padding-top: 100px;
-  h2 {
-      color: $dark-blue;
-      font-weight: $heavy-weight;
-      font-size: 32px;
-      @media all and (max-width: $small) {
-        padding: 10px;
-        font-size: 36px;
-      }
-    }
-    p {
-      color: $mid-blue;
-      font-weight: $medium-weight;
-      font-size: 18px;
-      @media all and (max-width: $small) {
-        padding-top: 10px;
-        padding-bottom: 60px;
-        font-size: 24px;
-      }
-    }
-    @media all and (max-width: $small) {
-      padding: 40px;
-    }
-}
-
-.absr_txt {
-  padding-top: 5%;
-  h2 {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 36px;
-    color: $dark-blue;
-  }
-  p {
-    font-family: $regular-fonts;
-    font-family: $light-weight;
-    font-size: 20px;
-    color: $dark-blue;
-  }
-}  
-@media all and (max-width: $small) {
-.about-thumb {
-    margin-bottom: 40px;
-  }
-  .about-thumb:nth-child(2n+1) {
-    clear: left;
-  }
-  .absr_txt {
-    text-align: center;
-  }
-  .about_text {
-    font-family: $regular-fonts;
-    font-weight: $light-weight;
-    font-size: 18px;
-  }
-}
-
-.ab_service_video img {
-}
-
-#about_tidbits {
-  padding: 40px 0;
-}
-
-.abt_img {
-  height: 70px;
-}
-
-.about_text {
-  font-family: $headline;
+#mobile_links {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  line-height: 1.4em;
+  color: $lighter-gray;
   font-weight: $regular-weight;
   font-size: 18px;
-  max-width: 200px;
-  margin: 0 auto;
-  padding-top: 25px;
-  color: $dark-blue;
 }
 
-.about-belief-thumbs {
-  padding-top: 5%;
+#mobile_legal {
+  padding-top: 30px;
+  font-weight: $regular-weight;
+  font-size: 14px;
+  p {
+    color: $mid-blue;
+  }
+  a {
+    color: $mid-blue;
+  }
 }
-
-.about-belief-thumbs .abt_img {
-  height: 135px;
-}
-
 
 
 // How it works
@@ -903,7 +728,6 @@ embed.E {
 
 .ln-mblImg {
   @media screen and (max-width: $small) {
-    //padding-right: 75px;
   }
 }
 
@@ -956,256 +780,4 @@ embed.E {
   width: 300px;
   margin-left: auto;
   margin-right: auto;
-}
-
-// Jobs Page
-
-#jobs_head {
-  background-image: url("../images/headers/jobs-header.jpg");
-  background-size: cover;
-  min-height: 360px;
-}
-
-.job_links {
-  background: none repeat scroll 0 0 transparent;
-  cursor: pointer;
-  padding: 15px;
-  margin-top: 20px;
-  h2 {
-    margin: 0;
-    font-family: $headline;
-    font-weight: 500;
-    font-size: 18px;
-    color: $dark-blue;
-    text-transform: uppercase;
-  }
-}
-
-.email-us {
-  margin-top: 20px;
-  padding: 14px;
-  border-style: solid;
-  border-color: $tag-gray;
-  border-width: 1px;
-  p {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 14px;
-  }
-}
-
-.send_us_btn .btn {
-  background: $orange;
-  border: none;
-  font-family: $headline;
-  font-weight: $light-weight;
-  font-size: 18px;
-
-  &:hover {
-    background: $orange-2;
-  }
-}
-
-.apply_btn {
-  margin: 0 10px 10px 0;
-  .btn {
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
-    background: $orange;
-    border: none;
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 20px;
-
-    &:hover {
-      background: $orange-2;
-    }
-  }
-}
-
-.job-date {
-  font-weight: $light-weight;
-  font-size: 14px;
-}
-
-.jobsCont {
-  padding: 80px 0;
-}
-
-.jobs_txt {
-  h3 {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 32px;
-  }
-  p {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 14px;
-  }
-  h4 {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 16px;
-    text-transform: uppercase;
-  }
-}
-
-.apply_btn .btn {
-  background: $green-button;
-  &:hover {
-    background: darken($green-button, 10%);
-    @include ease;
-  }
-}
-
-.send_us_btn .btn {
-  background: $green-button;
-  &:hover {
-    background: darken($green-button, 10%);
-    @include ease;
-  }
-}
-
-// Contact Us
-
-#contact_head {
-  background-image: url("../images/headers/denver-map.png");
-  background-size: cover;
-  min-height: 300px;
-}
-
-.container .support-us {
-  background-color: #f4f5f7;
-  margin: 10px 0;
-  min-height: 132px;
-  width: 100%;
-
-  h2 {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 20px;
-    color: $dark-blue;
-  }
-  p {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 16px;
-    color: $dark-blue;
-  }
-  a {
-    color: #2e97e9;
-  }
-}
-
-.support-form {
-  background: #f4f5f7 none;
-  border: medium none;
-  border-radius: 2px;
-  font-family: $headline;
-  font-weight: $light-weight;
-  color: #9ea7b3;
-  display: block;
-  font-size: 24px;
-  line-height: 1.42857;
-  padding: 13px;
-  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-  width: 100%;
-}
-
-.cus-part2 {
-  .pull-left h3 {
-    margin-top: 0;
-    font-family: $headline;
-    font-weight: $heavy-weight;
-    font-size: 24px;
-    @media screen and (max-width: $iphone) {
-      padding-top: 150px;
-    }
-  }
-  .col-md-8 {
-    padding-top: 0px;
-    margin-top: -26px;
-  }
-}
-
-.require-text {
-  font-family: $headline;
-  font-weight: $medium-weight;
-  font-size: 16px;
-  font-style: italic;
-  color: $lighter-gray;
-  @media screen and (max-width: $iphone) {
-    font-size: 12px;
-    color: $tag-gray;
-    padding-top: 158px;
-  }
-}
-
-.upload-drop-zone {
-  height: 50px;
-  border-width: 1px;
-  margin-bottom: 20px;
-}
-
-.upload-drop-zone {
-  color: $tag-gray;
-  border-style: solid;
-  border-color: $tag-gray;
-  line-height: 50px;
-  text-align: center;
-
-  &:hover {
-    @include ease;
-    color: $lighter-gray;
-    border-color: $lighter-gray;
-    cursor: pointer;
-    background: $tag-gray;
-  }
-}
-
-.upload-drop-zone.drop {
-  color: #222;
-  border-color: #222;
-}
-
-#dropzone-cont {
-  width: 100%;
-  padding: 0;
-}
-
-.panel-default {
-  border-color: transparent;
-}
-
-.panel {
-  box-shadow: none;
-  -webkit-box-shadow: transparent;
-  margin-bottom: 0;
-}
-
-.btn-green {
-  background: $green-button;
-  width: 200px;
-  height: 70px;
-  cursor: pointer;
-  @media screen and (max-width: $iphone) {
-    margin-left: 70px;
-  }
-
-  i {
-    color: $full-white;
-    font-size: 2.5em;
-  }
-
-  &:hover {
-    @include ease;
-    background: darken($green-button, 10%);
-  }
-
-}
-
-.page_wrap {
-  padding-top: 55px;
 }

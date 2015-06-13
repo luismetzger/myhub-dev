@@ -413,13 +413,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/assets\/images\/headers\/About-Header.png": {
+	"\/assets\/images\/headers\/about-header.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 345609,
-		"inputAbbreviatedPath": "\/assets\/images\/headers\/About-Header.png",
-		"outputAbbreviatedPath": "\/assets\/images\/headers\/About-Header.png",
+		"inputAbbreviatedPath": "\/assets\/images\/headers\/about-header.png",
+		"outputAbbreviatedPath": "\/assets\/images\/headers\/about-header.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
@@ -478,6 +478,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
+		},
+	"\/assets\/images\/icons\/colorado_logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24856,
+		"inputAbbreviatedPath": "\/assets\/images\/icons\/colorado_logo.png",
+		"outputAbbreviatedPath": "\/assets\/images\/icons\/colorado_logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/assets\/images\/icons\/dollar_bills.png": {
 		"fileType": 32768,
@@ -994,7 +1005,7 @@
 		"outputAbbreviatedPath": "\/assets\/images\/team\/Andrew.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/assets\/images\/team\/Eric.png": {
 		"fileType": 32768,
@@ -1005,7 +1016,7 @@
 		"outputAbbreviatedPath": "\/assets\/images\/team\/Eric.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/assets\/images\/team\/Jill.png": {
 		"fileType": 32768,
@@ -1016,7 +1027,7 @@
 		"outputAbbreviatedPath": "\/assets\/images\/team\/Jill.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/assets\/images\/team\/Jon.png": {
 		"fileType": 32768,
@@ -1027,7 +1038,7 @@
 		"outputAbbreviatedPath": "\/assets\/images\/team\/Jon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/assets\/images\/team\/Justin.png": {
 		"fileType": 32768,
@@ -1038,7 +1049,7 @@
 		"outputAbbreviatedPath": "\/assets\/images\/team\/Justin.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/assets\/images\/team\/Luis.png": {
 		"fileType": 32768,
@@ -1049,7 +1060,7 @@
 		"outputAbbreviatedPath": "\/assets\/images\/team\/Luis.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/assets\/images\/team_mask_img.png": {
 		"fileType": 32768,
@@ -1303,6 +1314,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/assets\/sass\/_buttons.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/sass\/_buttons.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/_buttons.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/assets\/sass\/_fonts.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1504,6 +1531,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/sass\/mkt\/_about.scss",
 		"outputAbbreviatedPath": "\/assets\/sass\/css\/_about.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/assets\/sass\/mkt\/_buttons.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/sass\/mkt\/_buttons.scss",
+		"outputAbbreviatedPath": "\/assets\/sass\/css\/_buttons.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

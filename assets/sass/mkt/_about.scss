@@ -1,11 +1,6 @@
 // About Page Styles
 
-#about_head {
-  background: url("../images//headers/about-header.png");
-  background-size: cover;
-}
-
-.about-section{
+.about-section {
   padding-top: 100px;
   padding-bottom: 100px;
   h2 {
@@ -13,6 +8,7 @@
     font-weight: $heavy-weight;
     font-size: 32px;
     @media all and (max-width: $small) {
+      text-align: center;
       padding: 10px;
       font-size: 36px;
     }
@@ -20,8 +16,10 @@
   p {
     color: $mid-blue;
     font-weight: $medium-weight;
+    line-height: 1.4em;
     font-size: 18px;
     @media all and (max-width: $small) {
+      text-align: center;
       padding-top: 10px;
       padding-bottom: 60px;
       font-size: 24px;
@@ -32,56 +30,17 @@
   }
 }
 
-#about_start {
-  padding-top: 100px;
-  h2 {
-      color: $dark-blue;
-      font-weight: $heavy-weight;
-      font-size: 32px;
-      @media all and (max-width: $small) {
-        padding: 10px;
-        font-size: 36px;
-      }
-    }
-    p {
-      color: $mid-blue;
-      font-weight: $medium-weight;
-      font-size: 18px;
-      @media all and (max-width: $small) {
-        padding-top: 10px;
-        padding-bottom: 60px;
-        font-size: 24px;
-      }
-    }
-    @media all and (max-width: $small) {
-      padding: 40px;
-    }
+#about_header {
+  background: url("../images//headers/about-header.png");
+  background-size: cover;
 }
 
-.absr_txt {
-  padding-top: 5%;
-  h2 {
-    font-family: $headline;
-    font-weight: $light-weight;
-    font-size: 36px;
-    color: $dark-blue;
-  }
-  p {
-    font-family: $regular-fonts;
-    font-family: $light-weight;
-    font-size: 20px;
-    color: $dark-blue;
-  }
-}  
 @media all and (max-width: $small) {
 .about-thumb {
     margin-bottom: 40px;
   }
   .about-thumb:nth-child(2n+1) {
     clear: left;
-  }
-  .absr_txt {
-    text-align: center;
   }
   .about_text {
     font-family: $regular-fonts;
@@ -90,7 +49,11 @@
   }
 }
 
-.ab_service_video img {
+#about_service h2 {
+    padding-top: 30px;
+}
+
+.about-service-video img {
 }
 
 #about_tidbits {
@@ -101,7 +64,7 @@
   height: 70px;
 }
 
-.about_text {
+.caption {
   font-family: $headline;
   font-weight: $regular-weight;
   font-size: 18px;
@@ -109,6 +72,12 @@
   margin: 0 auto;
   padding-top: 25px;
   color: $dark-blue;
+}
+
+#about_belief {
+  p {
+    
+  }
 }
 
 .about-belief-thumbs {
@@ -119,19 +88,65 @@
   height: 135px;
 }
 
-.team-thumbs {
+.team-images {
   padding-top: 5%;
   h3 {
     font-family: $headline;
     font-weight: $mbold-weight;
     font-size: 28px;
     color: $reg-blue;
+    @media all and (max-width: $small) {
+      font-size: 24;
+    }
   }
   h4 {
     font-family: $headline;
     font-weight: $light-weight;
     font-size: 20px;
     color: $mid-blue;
+    @media all and (max-width: $small) {
+      font-size: 18;
+    }
   }
 }
+
+.team-member {
+  padding-bottom: 2%;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+}
+
+#get_started {
+  padding: 20px;
+  h2 {
+      padding-top: 20px;
+      color: $dark-blue;
+      font-weight: $heavy-weight;
+      font-size: 32px;
+      @media all and (max-width: $small) {
+        text-align: center;
+        padding: 10px;
+        font-size: 36px;
+      }
+    }
+    p {
+      padding-bottom: 20px;
+      color: $mid-blue;
+      font-weight: $medium-weight;
+      font-size: 18px;
+      @media all and (max-width: $small) {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 60px;
+        font-size: 24px;
+      }
+    }
+    a {
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+  }
 
