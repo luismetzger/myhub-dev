@@ -402,27 +402,38 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/assets\/images\/headers\/about-header.png": {
+	"\/assets\/images\/headers\/About-Header.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 345609,
-		"inputAbbreviatedPath": "\/assets\/images\/headers\/about-header.png",
-		"outputAbbreviatedPath": "\/assets\/images\/headers\/about-header.png",
+		"inputAbbreviatedPath": "\/assets\/images\/headers\/About-Header.png",
+		"outputAbbreviatedPath": "\/assets\/images\/headers\/About-Header.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/assets\/images\/headers\/denver-map.png": {
-		"fileType": 32768,
+	"\/assets\/images\/headers\/customer-service.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 283655,
-		"inputAbbreviatedPath": "\/assets\/images\/headers\/denver-map.png",
-		"outputAbbreviatedPath": "\/assets\/images\/headers\/denver-map.png",
+		"initialSize": 500801,
+		"inputAbbreviatedPath": "\/assets\/images\/headers\/customer-service.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/headers\/customer-service.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
+		},
+	"\/assets\/images\/headers\/developers.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 197716,
+		"inputAbbreviatedPath": "\/assets\/images\/headers\/developers.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/headers\/developers.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/assets\/images\/headers\/hiw-header.png": {
 		"fileType": 32768,

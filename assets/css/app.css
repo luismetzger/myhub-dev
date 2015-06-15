@@ -16650,7 +16650,8 @@ Copyright (c) 2014 Daniel Eden
 
 #about_header {
   background: url("../images//headers/about-header.png");
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 @media all and (max-width: 767px) {
   .about-thumb {
@@ -16741,8 +16742,10 @@ Copyright (c) 2014 Daniel Eden
     margin-bottom: 30px; }
 
 .legal-header {
-  background: url("../images/headers/legal-header.png");
-  background-size: cover; }
+  background-image: url("../images/headers/legal-header.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center -100px; }
   .legal-header h1 {
     font-family: "Avenir W01", sans-serif;
     font-weight: 600;
@@ -17265,9 +17268,10 @@ Copyright (c) 2014 Daniel Eden
     transition: all 150ms ease-in-out; }
 
 #jobs_head {
-  background-image: url("../images/headers/jobs-header.jpg");
+  background-image: url("../images/headers/developers.jpg");
   background-size: cover;
-  min-height: 360px; }
+  background-attachment: fixed;
+  background-position: center -100px; }
 
 .job_links {
   background: none repeat scroll 0 0 transparent;
@@ -17350,9 +17354,10 @@ Copyright (c) 2014 Daniel Eden
     transition: all 150ms ease-in-out; }
 
 #contact_head {
-  background-image: url("../images/headers/denver-map.png");
+  background-image: url("../images/headers/customer-service.jpg");
   background-size: cover;
-  min-height: 300px; }
+  background-attachment: fixed;
+  background-position: center -650px; }
 
 .container .support-us {
   background-color: #f4f5f7;
@@ -19802,7 +19807,7 @@ label {
   color: #F4F5F7; }
 
 .ln-vid-link {
-  padding: 20px 0 60px; }
+  padding: 20px 0 20px; }
 
 .ln-vid-link a {
   font-family: "Avenir W01", sans-serif;

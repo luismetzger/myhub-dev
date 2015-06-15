@@ -33,6 +33,7 @@
 #about_header {
   background: url("../images//headers/about-header.png");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 @media all and (max-width: $small) {

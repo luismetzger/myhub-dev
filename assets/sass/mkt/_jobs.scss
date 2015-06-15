@@ -1,9 +1,10 @@
 // Jobs Page Styles
 
 #jobs_head {
-  background-image: url("../images/headers/jobs-header.jpg");
+  background-image: url("../images/headers/developers.jpg");
   background-size: cover;
-  min-height: 360px;
+  background-attachment: fixed;
+  background-position: center -100px;
 }
 
 .job_links {
