@@ -462,7 +462,10 @@ var $modal_wrap = $(".fmodal_wrap"),
     $(window).load(function(){
         $iconInput.each(function(){
             showCrossIcon($(this), $(this).siblings('.ciw_ric'));
-        })
+        });
+    });
+    $body.on('click', '.ui-datepicker-close', function(){
+
     });
 
 

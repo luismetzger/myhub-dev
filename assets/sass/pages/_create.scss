@@ -242,6 +242,7 @@ a[data-toggle="tooltip"] {
 }
 .capl_right_txt {
   margin-top: 15px;
+  white-space: nowrap;
 }
 .larget_font {
   font-size: 1.25em;
@@ -459,6 +460,18 @@ a[data-toggle="tooltip"] {
   color: $green;
 }
 
+.ui-datepicker {
+  width: 30em;
+}
+
+@media all and (min-width: $small + 1) {
+  .cr_header {
+    .back_btn, .ms_submit_btn {
+      display: none;
+    }
+  }
+}
+
 @media all and (max-width: $small) {
 
   .capl_arrr span[class^="icon"] {
@@ -485,6 +498,9 @@ a[data-toggle="tooltip"] {
       margin-top: -0.5em;
       position: absolute;
       top: 50%;
+      span {
+        display: block;
+      }
     }
     .ms_submit_btn {
       left: auto;
@@ -507,7 +523,7 @@ a[data-toggle="tooltip"] {
       text-align: center;
     }
   }
-  .cr_input_wrap {
+  .cr_input_wrap:not(.cr_input_wrap_single_lne_mbl) {
     background: none;
     padding-left: 0;
     padding-right: 0;
@@ -515,6 +531,7 @@ a[data-toggle="tooltip"] {
     input {
       width: 100%;
       text-align: center;
+      line-height: 1;
     }
     span[class*="ciw_lic"] {
       top: -65px;
@@ -685,6 +702,42 @@ a[data-toggle="tooltip"] {
         padding: 10px;
         font-size: 1.125em;
       }
+    }
+  }
+  .cr_input_wrap_single_lne_mbl.cr_input_wrap {
+    background: none;
+    padding-top: 10px;
+    padding-left: 50px;
+    h3 {
+      margin: 3px 0 0;
+    }
+    &:after {
+      display: table;
+      clear: both;
+      content: "";
+    }
+    .ciw_lic {
+      left: 0;
+      top: 20px;
+    }
+    .cr_nostyle_input {
+      float: right;
+      width: 100px;
+      padding: 0;
+      text-align: right;
+      line-height: 1;
+    }
+    span[class*="icon-Money_circle"] {
+      color: $green;
+    }
+  }
+  .ciw_btxt {
+    padding-top: 20px;
+    font-size: 1.1em;
+  }
+  .create_cont_wrap {
+    input[type="text"] {
+      line-height: 1;
     }
   }
 }

@@ -109,32 +109,56 @@
 <div class="create_cont_wrap">
 
 <div class="cr_header">
-    <div class="container">
+        <div class="container">
 
-        <h2>Advanced</h2>
+            <h2>Advanced</h2>
 
-        <div class="progress_wrap">
-            <div class="progress">
-                <div class="progress-bar  progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+            <div class="progress_wrap hidden-xs">
+                <div class="progress">
+                    <div class="progress-bar  progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                    </div>
                 </div>
+
+                <ul class="crpw_lists">
+                    <li>what</li>
+                    <li>when</li>
+                    <li>where</li>
+                    <li>advanced</li>
+                    <li>invites</li>
+                </ul>
+
             </div>
 
-            <ul class="crpw_lists">
-                <li>what</li>
-                <li>when</li>
-                <li>where</li>
-                <li>advanced</li>
-                <li>invites</li>
-            </ul>
+            <h1 class="visible-xs">pricing</h1>
+
+            <a href="#" class="back_btn menu-btn"><span class="icon-arrow_lg_back"></span></a>
+
+            <button class="ms_submit_btn">
+                <span class="icon-checkmark"></span>
+            </button>
+
+
 
         </div>
-
-
     </div>
-</div>
 
 <div class="cr_body_wrap">
     <div class="container">
+
+
+        <div class="capl_btn_select visible-xs caf_btn_select">
+            <div class="btn-group">
+                <input type="radio" class="sr-only" id="public" name="sl_privacy">
+                <label for="public" class="btn btn-default">Free</label>
+                <input type="radio" class="sr-only" id="friend" name="sl_privacy">
+                <label for="friend" class="btn btn-default">Fixed</label>
+                <input type="radio" class="sr-only" id="private" checked name="sl_privacy">
+                <label for="private" class="btn btn-default">Minimum</label>
+            </div>
+        </div>
+
+
+
         <div class="crb_inner">
         <form>
 
@@ -147,10 +171,11 @@
             </div>
 
             <div class="cr_item_wrap" style="padding-top: 7%;">
-                <h3>
-                    Minimum per person?
+                <h3 class="hidden-xs">
+                    Price per person?
                 </h3>
-                <div class="cr_input_wrap">
+                <div class="cr_input_wrap cr_input_wrap_single_lne_mbl">
+                    <h3 class="visible-xs pull-left">Price per person?</h3>
                     <input type="text" class="cr_nostyle_input green_txt" placeholder="$5.00"/>
 
                 <span class="icon-Money_circle ciw_lic">
@@ -165,10 +190,12 @@
             </div>
 
             <div class="cr_item_wrap">
-                <h3>
+                <h3 class="hidden-xs">
                     How much do you need to raise?
                 </h3>
-                <div class="cr_input_wrap">
+                <div class="cr_input_wrap cr_input_wrap_single_lne_mbl">
+
+                    <h3 class="visible-xs pull-left">Set a Fundrasie Goal</h3>
                     <input type="text" class="cr_nostyle_input" placeholder="$500.00"/>
                     <span class="icon-Target ciw_lic">
 				        <span class="path1"></span><span class="path2"></span>
