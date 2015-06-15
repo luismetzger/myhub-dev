@@ -12605,6 +12605,18 @@ div[data-role="editor-toolbar"] {
   display: none;
 }
 
+.back_btn, .ms_submit_btn {
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+.ms_submit_btn {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
 .nav.navbar-nav.navbar-right {
   margin-right: 0;
 }
@@ -21220,6 +21232,68 @@ a[data-toggle="tooltip"] .icon-question {
   display: none;
 }
 
+@media all and (max-width: 767px) {
+  .cr_header {
+    background: #323A45;
+    min-height: 100px;
+    position: relative;
+  }
+  .cr_header .back_btn, .cr_header .ms_submit_btn {
+    left: 15px;
+    margin-top: -0.5em;
+    position: absolute;
+    top: 50%;
+  }
+  .cr_header .ms_submit_btn {
+    left: auto;
+    right: 15px;
+  }
+  .cr_header .progress_wrap {
+    width: 200px;
+    margin-top: 45px;
+  }
+  .cr_header .progress_wrap .progress {
+    background: #9EA7B3;
+  }
+  .cr_header .progress_wrap .progress .progress-bar {
+    background: #FFFFFF;
+  }
+
+  .cr_item_wrap {
+    padding-top: 50px;
+  }
+  .cr_item_wrap h3 {
+    text-align: center;
+  }
+
+  .cr_input_wrap {
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .cr_input_wrap input {
+    width: 100%;
+    text-align: center;
+  }
+  .cr_input_wrap span[class*="ciw_lic"] {
+    top: -65px;
+    left: 50%;
+    margin-left: -0.48em;
+  }
+
+  .cr_item_divide {
+    margin: 45px 0;
+  }
+
+  .ciw_links a {
+    color: inherit;
+  }
+
+  .cr_footer {
+    display: none;
+  }
+}
 @media all and (max-width: 767px) {
   .mobile_fullscreen_modal {
     background: #FFFFFF;

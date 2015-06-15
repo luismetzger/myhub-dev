@@ -430,3 +430,64 @@ a[data-toggle="tooltip"] {
     display: none;
   }
 }
+
+@media all and (max-width: $small) {
+  .cr_header {
+    background: $medium-gray;
+    min-height: 100px;
+    position: relative;
+
+    .back_btn, .ms_submit_btn {
+      left: 15px;
+      margin-top: -0.5em;
+      position: absolute;
+      top: 50%;
+    }
+    .ms_submit_btn {
+      left: auto;
+      right: 15px;
+    }
+    .progress_wrap {
+      width: 200px;
+      margin-top: 45px;
+      .progress {
+        background: $light-gray;
+        .progress-bar {
+          background: $full-white;
+        }
+      }
+    }
+  }
+  .cr_item_wrap {
+    padding-top: 50px;
+    h3 {
+      text-align: center;
+    }
+  }
+  .cr_input_wrap {
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    input {
+      width: 100%;
+      text-align: center;
+    }
+    span[class*="ciw_lic"] {
+      top: -65px;
+      left: 50%;
+      margin-left: -0.48em;
+    }
+  }
+  .cr_item_divide {
+    margin: 45px 0;
+  }
+  .ciw_links {
+    a {
+      color: inherit;
+    }
+  }
+  .cr_footer {
+    display: none;
+  }
+}
