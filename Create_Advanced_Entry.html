@@ -9,9 +9,9 @@
     <!-- Core Framework CSS before SASS -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-     <link href="assets/css/myhub-icons.css" rel="stylesheet">
-    
-    
+    <link href="assets/css/myhub-icons.css" rel="stylesheet">
+
+
     <!-- Fonts -->
     <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/c2c138df-bec8-4ae7-abb7-59de83a2ce0b.css"/>
 
@@ -106,165 +106,185 @@
         &nbsp;
     </div>
 
-<div class="create_cont_wrap">
+    <div class="create_cont_wrap">
 
-<div class="cr_header">
-    <div class="container">
+        <div class="cr_header">
+            <div class="container">
 
-        <h2>Advanced</h2>
+                <h2>Advanced</h2>
 
-        <div class="progress_wrap">
-            <div class="progress">
-                <div class="progress-bar  progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                <div class="progress_wrap">
+                    <div class="progress">
+                        <div class="progress-bar  progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                        </div>
+                    </div>
+
+                    <ul class="crpw_lists">
+                        <li>what</li>
+                        <li>when</li>
+                        <li>where</li>
+                        <li>advanced</li>
+                        <li>invites</li>
+                    </ul>
+
+                </div>
+
+
+                <a href="#" class="back_btn menu-btn"><span class="icon-arrow_lg_back"></span></a>
+
+                <button class="ms_submit_btn">
+                    <span class="icon-arrow_lg_fwd"></span>
+                </button>
+
+
+            </div>
+        </div>
+
+        <div class="cr_body_wrap">
+            <div class="container">
+                <div class="crb_inner">
+                    <form>
+                        <div class="cr_item_divide hidden-xs" style="margin-top: 0;">
+                            <span>Optional</span>
+                        </div>
+
+                        <div class="cr_ad_pr_list">
+                            <ul class="clearfix">
+                                <li class="clearfix">
+                                    <div class="capl_left_cont">
+                                        <h3>Pricing</h3>
+                                        <p>Collect cash or pool money free!</p>
+                                    </div>
+                                    <div class="pull-right capl_right_txt larget_font">
+                                        <span class="green_txt">$5.00</span>
+                                        /
+                                        <span class="green_txt">$500</span>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="capl_left_cont">
+                                        <h3><span class="hidden-xs">Select</span> Privacy</h3>
+                                        <p>
+                                            <span class="hidden-xs">Choose whether your event is public, followers, or private.</span>
+                                            <span class="visible-xs">Chnage privacy for this event.</span>
+                                        </p>
+                                    </div>
+                                    <div class="capl_btn_select hidden-xs">
+                                        <div class="btn-group">
+                                            <input type="radio" name="sl_privacy" checked id="public" class="sr-only"/>
+                                            <label class="btn btn-default" for="public">Public</label>
+                                            <input type="radio" name="sl_privacy" id="friend" class="sr-only"/>
+                                            <label class="btn btn-default" for="friend">Friend</label>
+                                            <input type="radio" name="sl_privacy" id="private" class="sr-only"/>
+                                            <label class="btn btn-default" for="private">Private</label>
+                                        </div>
+                                    </div>
+                                    <a class="capl_arrr visible-xs" href="#"><span class="icon-arrow_lg_fwd"></span></a>
+                                    <a class="capl_arrr visible-xs" href="#"><span class="icon-checkmark"></span></a>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="capl_left_cont">
+                                        <h3><span class="hidden-xs">Add a</span> Cover Photo</h3>
+                                        <p>
+                                            <span class="hidden-xs">Upload a photo and choose from a variety of filters</span>
+                                            <span class="visible-xs">Upload / edit your cover photo</span>
+                                        </p>
+                                    </div>
+                                    <div class="upload_wrap">
+                                        <input type="file" id="up_photo" class="sr-only"/>
+                                        <label for="up_photo">
+                                            <span class="icon-Cloud"></span>
+                                            <br/>
+                                            Upload
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="capl_left_cont">
+                                        <h3>Preview</h3>
+                                        <p>Preview your event before posting.</p>
+                                    </div>
+                                    <a class="capl_arrr vi" href="#"><span class="icon-arrow_lg_fwd"></span></a>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="capl_left_cont">
+                                        <h3>Edit Your Description</h3>
+                                        <p class="visible-xs">Edit your description.</p>
+                                    </div>
+
+                                    <div class="editor_wrap hidden-xs">
+                                        <div class="btn-toolbar" data-role="editor-toolbar"
+                                             data-target="#editor">
+                                            <div class="btn-group">
+                                                <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="fa fa-text-height"></i>&nbsp;<b class="caret"></b></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a data-edit="fontSize 5"><font size="5">Huge</font></a></li>
+                                                    <li><a data-edit="fontSize 3"><font size="3">Normal</font></a></li>
+                                                    <li><a data-edit="fontSize 1"><font size="1">Small</font></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="btn-group">
+                                                <a class="btn btn-default" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="fa fa-bold"></i></a>
+                                                <a class="btn btn-default" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="fa fa-italic"></i></a>
+                                                <a class="btn btn-default" data-edit="strikethrough" title="Strikethrough"><i class="fa fa-strikethrough"></i></a>
+                                                <a class="btn btn-default" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="fa fa-underline"></i></a>
+                                            </div>
+                                            <div class="btn-group">
+                                                <a class="btn btn-default" data-edit="insertunorderedlist" title="Bullet list"><i class="fa fa-list-ul"></i></a>
+                                                <a class="btn btn-default" data-edit="insertorderedlist" title="Number list"><i class="fa fa-list-ol"></i></a>
+                                                <a class="btn btn-default" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="fa fa-outdent"></i></a>
+                                                <a class="btn btn-default" data-edit="indent" title="Indent (Tab)"><i class="fa fa-indent"></i></a>
+                                            </div>
+                                            <div class="btn-group">
+                                                <a class="btn btn-default" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="fa fa-align-left"></i></a>
+                                                <a class="btn btn-default" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="fa fa-align-center"></i></a>
+                                                <a class="btn btn-default" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="fa fa-align-right"></i></a>
+                                                <a class="btn btn-default" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="fa fa-align-justify"></i></a>
+                                            </div>
+                                            <div class="btn-group">
+                                                <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Hyperlink"><i class="fa fa-link"></i></a>
+                                                <div class="dropdown-menu input-append">
+                                                    <input class="col-md-2" placeholder="URL" type="text" data-edit="createLink" />
+                                                    <button class="btn" type="button">Add</button>
+                                                </div>
+                                            </div>
+                                            <div class="btn-group">
+                                                <a class="btn btn-default" data-edit="unlink" title="Remove Hyperlink"><i class="fa fa-unlink"></i></a>
+                                                <a class="btn btn-default" title="Insert picture (or just drag & drop)" id="pictureBtn">
+                                                    <label for="up_pctr"><i class="fa fa-picture-o"></i></label> <input id="up_pctr" type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" class="sr-only" />
+                                                </a>
+                                            </div>
+                                            <div class="btn-group">
+                                                <a class="btn btn-default" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="fa fa-undo"></i></a>
+                                                <a class="btn btn-default" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="fa fa-repeat"></i></a>
+                                                <a class="btn btn-default" data-edit="html" title="Clear Formatting"><i class='glyphicon glyphicon-pencil'></i></a>
+                                            </div>
+                                        </div>
+                                        <div id="editor" class="lead" placeholder="This is a basic example with a simple toolbar."></div>
+                                        <div id="editorPreview"></div>
+                                    </div>
+
+
+                                    <a class="capl_arrr visible-xs" href="#"><span class="icon-arrow_lg_fwd"></span></a>
+                                    <a class="capl_arrr visible-xs" href="#"><span class="icon-checkmark"></span></a>
+
+                                </li>
+                            </ul>
+                        </div>
+
+                    </form>
                 </div>
             </div>
-
-            <ul class="crpw_lists">
-                <li>what</li>
-                <li>when</li>
-                <li>where</li>
-                <li>advanced</li>
-                <li>invites</li>
-            </ul>
-
         </div>
 
-
-    </div>
-</div>
-
-<div class="cr_body_wrap">
-    <div class="container">
-        <div class="crb_inner">
-        <form>
-            <div class="cr_item_divide" style="margin-top: 0;">
-                <span>Optional</span>
+        <div class="cr_footer">
+            <div class="container">
+                <a class="mb_btn mb_btn_gray cr_footer_btn pull-left" href="#">Back <span class="icon-arrow_lg_back"></span></a>
+                <a class="mb_btn mb_btn_orange cr_footer_btn pull-right" href="#">Next <span class="icon-arrow_lg_fwd"></span></a>
             </div>
-
-            <div class="cr_ad_pr_list">
-                <ul class="clearfix">
-                    <li class="clearfix">
-                        <div class="capl_left_cont">
-                            <h3>Pricing</h3>
-                            <p>Upload a photo and choose from a varity of filters.</p>
-                        </div>
-                        <div class="pull-right capl_right_txt larget_font">
-                            <span class="green_txt">$5.00</span>
-                            /
-                            <span class="green_txt">$500</span>
-                        </div>
-                    </li>
-                    <li class="clearfix">
-                        <div class="capl_left_cont">
-                            <h3>Select Privacy</h3>
-                            <p>Choose whether your event is public, followers, or private.</p>
-                        </div>
-                        <div class="capl_btn_select">
-                            <div class="btn-group">
-                                <input type="radio" name="sl_privacy" checked id="public" class="sr-only"/>
-                                <label class="btn btn-default" for="public">Public</label>
-                                <input type="radio" name="sl_privacy" id="friend" class="sr-only"/>
-                                <label class="btn btn-default" for="friend">Friend</label>
-                                <input type="radio" name="sl_privacy" id="private" class="sr-only"/>
-                                <label class="btn btn-default" for="private">Private</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="clearfix">
-                        <div class="capl_left_cont">
-                            <h3>Add a cover photo</h3>
-                            <p>Upload a photo and choose from a variety of filters</p>
-                        </div>
-                        <div class="upload_wrap">
-                            <input type="file" id="up_photo" class="sr-only"/>
-                            <label for="up_photo">
-                                <span class="icon-Cloud"></span>
-                                <br/>
-                                Upload
-                            </label>
-                        </div>
-                    </li>
-                    <li class="clearfix">
-                        <div class="capl_left_cont">
-                            <h3>Preview</h3>
-                            <p>Preview your event before posting.</p>
-                        </div>
-                        <a class="capl_arrr" href="#"><span class="icon-arrow_lg_fwd"></span></a>
-                    </li>
-                    <li class="clearfix">
-                        <div class="capl_left_cont">
-                            <h3>Edit Your Description</h3>
-                        </div>
-
-                        <div class="editor_wrap">
-                            <div class="btn-toolbar" data-role="editor-toolbar"
-                                 data-target="#editor">
-                                <div class="btn-group">
-                                    <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="fa fa-text-height"></i>&nbsp;<b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a data-edit="fontSize 5"><font size="5">Huge</font></a></li>
-                                        <li><a data-edit="fontSize 3"><font size="3">Normal</font></a></li>
-                                        <li><a data-edit="fontSize 1"><font size="1">Small</font></a></li>
-                                    </ul>
-                                </div>
-                                <div class="btn-group">
-                                    <a class="btn btn-default" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="fa fa-bold"></i></a>
-                                    <a class="btn btn-default" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="fa fa-italic"></i></a>
-                                    <a class="btn btn-default" data-edit="strikethrough" title="Strikethrough"><i class="fa fa-strikethrough"></i></a>
-                                    <a class="btn btn-default" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="fa fa-underline"></i></a>
-                                </div>
-                                <div class="btn-group">
-                                    <a class="btn btn-default" data-edit="insertunorderedlist" title="Bullet list"><i class="fa fa-list-ul"></i></a>
-                                    <a class="btn btn-default" data-edit="insertorderedlist" title="Number list"><i class="fa fa-list-ol"></i></a>
-                                    <a class="btn btn-default" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="fa fa-outdent"></i></a>
-                                    <a class="btn btn-default" data-edit="indent" title="Indent (Tab)"><i class="fa fa-indent"></i></a>
-                                </div>
-                                <div class="btn-group">
-                                    <a class="btn btn-default" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="fa fa-align-left"></i></a>
-                                    <a class="btn btn-default" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="fa fa-align-center"></i></a>
-                                    <a class="btn btn-default" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="fa fa-align-right"></i></a>
-                                    <a class="btn btn-default" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="fa fa-align-justify"></i></a>
-                                </div>
-                                <div class="btn-group">
-                                    <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Hyperlink"><i class="fa fa-link"></i></a>
-                                    <div class="dropdown-menu input-append">
-                                        <input class="col-md-2" placeholder="URL" type="text" data-edit="createLink" />
-                                        <button class="btn" type="button">Add</button>
-                                    </div>
-                                </div>
-                                <div class="btn-group">
-                                    <a class="btn btn-default" data-edit="unlink" title="Remove Hyperlink"><i class="fa fa-unlink"></i></a>
-                                    <a class="btn btn-default" title="Insert picture (or just drag & drop)" id="pictureBtn">
-                                        <label for="up_pctr"><i class="fa fa-picture-o"></i></label> <input id="up_pctr" type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" class="sr-only" />
-                                    </a>
-                                </div>
-                                <div class="btn-group">
-                                    <a class="btn btn-default" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="fa fa-undo"></i></a>
-                                    <a class="btn btn-default" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="fa fa-repeat"></i></a>
-                                    <a class="btn btn-default" data-edit="html" title="Clear Formatting"><i class='glyphicon glyphicon-pencil'></i></a>
-                                </div>
-                            </div>
-                            <div id="editor" class="lead" placeholder="This is a basic example with a simple toolbar."></div>
-                            <div id="editorPreview"></div>
-                        </div>
-
-                    </li>
-                </ul>
-            </div>
-
-        </form>
         </div>
-    </div>
-</div>
 
-<div class="cr_footer">
-    <div class="container">
-        <a class="mb_btn mb_btn_gray cr_footer_btn pull-left" href="#">Back <span class="icon-arrow_lg_back"></span></a>
-        <a class="mb_btn mb_btn_orange cr_footer_btn pull-right" href="#">Next <span class="icon-arrow_lg_fwd"></span></a>
     </div>
-</div>
-
-</div>
 
 
     <!--part1 9-->

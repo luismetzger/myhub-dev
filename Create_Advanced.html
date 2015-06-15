@@ -130,6 +130,13 @@
         </div>
 
 
+        <a href="#" class="back_btn menu-btn"><span class="icon-arrow_lg_back"></span></a>
+
+        <button class="ms_submit_btn">
+            <span class="icon-arrow_lg_fwd"></span>
+        </button>
+
+
     </div>
 </div>
 
@@ -137,7 +144,7 @@
     <div class="container">
         <div class="crb_inner">
         <form>
-            <div class="cr_item_divide" style="margin-top: 0;">
+            <div class="cr_item_divide hidden-xs" style="margin-top: 0;">
                 <span>Optional</span>
             </div>
 
@@ -146,16 +153,20 @@
                     <li class="clearfix">
                         <div class="capl_left_cont">
                             <h3>Pricing</h3>
-                            <p>Upload a photo and choose from a varity of filters.</p>
+                            <p>Collect cash or pool money free!</p>
                         </div>
                         <a class="capl_arrr" href="#"><span class="icon-arrow_lg_fwd"></span></a>
+                        <a class="capl_arrr visible-xs" href="#"><span class="icon-checkmark"></span></a>
                     </li>
                     <li class="clearfix">
                         <div class="capl_left_cont">
-                            <h3>Select Privacy</h3>
-                            <p>Choose whether your event is public, followers, or private.</p>
+                            <h3><span class="hidden-xs">Select</span> Privacy</h3>
+                            <p>
+                                <span class="hidden-xs">Choose whether your event is public, followers, or private.</span>
+                                <span class="visible-xs">Chnage privacy for this event.</span>
+                            </p>
                         </div>
-                        <div class="capl_btn_select">
+                        <div class="capl_btn_select hidden-xs">
                             <div class="btn-group">
                                 <input type="radio" name="sl_privacy" checked id="public" class="sr-only"/>
                                 <label class="btn btn-default" for="public">Public</label>
@@ -165,11 +176,16 @@
                                 <label class="btn btn-default" for="private">Private</label>
                             </div>
                         </div>
+                        <a class="capl_arrr visible-xs" href="#"><span class="icon-arrow_lg_fwd"></span></a>
+                        <a class="capl_arrr visible-xs" href="#"><span class="icon-checkmark"></span></a>
                     </li>
                     <li class="clearfix">
                         <div class="capl_left_cont">
-                            <h3>Add a cover photo</h3>
-                            <p>Upload a photo and choose from a variety of filters</p>
+                            <h3><span class="hidden-xs">Add a</span> Cover Photo</h3>
+                            <p>
+                                <span class="hidden-xs">Upload a photo and choose from a variety of filters</span>
+                                <span class="visible-xs">Upload / edit your cover photo</span>
+                            </p>
                         </div>
                         <div class="upload_wrap">
                             <input type="file" id="up_photo" class="sr-only"/>
@@ -185,14 +201,15 @@
                             <h3>Preview</h3>
                             <p>Preview your event before posting.</p>
                         </div>
-                        <a class="capl_arrr" href="#"><span class="icon-arrow_lg_fwd"></span></a>
+                        <a class="capl_arrr vi" href="#"><span class="icon-arrow_lg_fwd"></span></a>
                     </li>
                     <li class="clearfix">
                         <div class="capl_left_cont">
                             <h3>Edit Your Description</h3>
+                            <p class="visible-xs">Edit your description.</p>
                         </div>
 
-                        <div class="editor_wrap">
+                        <div class="editor_wrap hidden-xs">
                             <div class="btn-toolbar" data-role="editor-toolbar"
                                  data-target="#editor">
                                 <div class="btn-group">
@@ -243,6 +260,10 @@
                             <div id="editor" class="lead" placeholder="This is a basic example with a simple toolbar."></div>
                             <div id="editorPreview"></div>
                         </div>
+
+
+                        <a class="capl_arrr visible-xs" href="#"><span class="icon-arrow_lg_fwd"></span></a>
+                        <a class="capl_arrr visible-xs" href="#"><span class="icon-checkmark"></span></a>
 
                     </li>
                 </ul>

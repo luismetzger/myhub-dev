@@ -430,13 +430,56 @@ a[data-toggle="tooltip"] {
     display: none;
   }
 }
+.cr_invite_cont_wrap {
+  .profile-edg-list li {
+    .pl_item {
+      .pl-hover {
+        padding-top: 8px;
+        a {
+          padding-right: 8px;
+          text-align: right;
+          .icon-Checkmark_circle {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid #fff;
+            border-radius: 20px;
+          }
+          &.not-following {
+            .icon-Checkmark_circle {
+              span {
+                visibility: hidden;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.capl_arrr span[class^="icon-checkmark"] {
+  color: $green;
+}
 
 @media all and (max-width: $small) {
+
+  .capl_arrr span[class^="icon"] {
+    color: $tag-gray;
+  }
   .cr_header {
     background: $medium-gray;
     min-height: 100px;
     position: relative;
 
+    h2,
+    a[data-toggle="tooltip"]{
+      display: none;
+    }
+    h1 {
+      color: $full-white;
+      padding-top: 8px;
+      text-align: center;
+      font-size: 1.5em;
+      margin-bottom: 0;
+    }
     .back_btn, .ms_submit_btn {
       left: 15px;
       margin-top: -0.5em;
@@ -489,5 +532,159 @@ a[data-toggle="tooltip"] {
   }
   .cr_footer {
     display: none;
+  }
+  .crpw_lists {
+    display: none !important;
+  }
+  .cr_map_wrap {
+    .cr_input_wrap {
+      background: $off-white;
+      width: 90%;
+      top: 30px;
+      margin-left: -45%;
+      box-shadow: 0 1px 2px #eee;
+      span[class*="ciw_lic"] {
+        top: 50%;
+        left: 15px;
+        margin-left: 0;
+      }
+      .cr_nostyle_input {
+        padding: 15px 30px;
+      }
+    }
+  }
+  .capl_arrr span[class^="icon-checkmark"] {
+    margin-right: 5px;
+    color: $green;
+  }
+  .upload_wrap {
+    margin: 0;
+    label {
+      width: 82px;
+      padding: 10px 0;
+    }
+  }
+  .auth_links {
+    border: none;
+    > ul {
+      display: none;
+    }
+    .inv_search_wrap {
+      padding-right: 50px;
+      text-align: center;
+      width: 100%;
+      float: none;
+      border: none;
+      input {
+        font-size: 18px;
+      }
+      label {
+        top: 5px;
+        span {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  .cr_invite_cont_wrap {
+    padding-top: 25px;
+    .profile_list_table {
+      > h3 {
+        padding: 5px 15px;
+        margin: 0 -15px;
+        background: $off-white;
+        text-transform: uppercase;
+      }
+      tr:first-child {
+        td {
+          border-top: none;
+        }
+      }
+      .followers_table {
+        td {
+          h2 {
+            position: relative;
+            padding-right: 20px;
+            &:after {
+              position: absolute;
+              right: -10px;
+              font-family: "myhub-icomoon";
+              font-size: 20px;
+              color: $orange;
+              content: "\e6ec";
+            }
+          }
+        }
+      }
+      td {
+        h2{
+          font-size: 1.25em;
+        }
+        p:last-child {
+          margin: 5px 0 0;
+          color: $light-gray;
+        }
+        .flw_mbl_lbl {
+          cursor: pointer;
+          .icon-Checkmark_circle {
+            span {
+              visibility: hidden;
+            }
+            border: 1px solid $light-gray;
+            border-radius: 20px;
+          }
+        }
+        input:checked + .flw_mbl_lbl {
+          .icon-Checkmark_circle {
+            span {
+              visibility: visible;
+            }
+            border: 1px solid $full-white;
+          }
+        }
+      }
+    }
+  }
+  .rouneded_img_txt {
+    background: $off-white;
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+    line-height: 65px;
+    text-align: center;
+    color: $tag-gray;
+    border-radius: 50px;
+  }
+  .cr_footer_post_event {
+    display: block;
+    padding: 0;
+    .container {
+      padding: 0;
+    }
+    .cr_footer_btn {
+      width: 100%;
+      height: 75px;
+      padding-top: 26px;
+      border-radius: 0;
+      span[class^="icon"] {
+        font-size: 26px;
+        margin-top: -3px;
+      }
+    }
+  }
+  .auth_cont_free {
+    padding-top: 30%;
+  }
+  .caf_btn_select {
+    float: none;
+    .btn-group {
+      width: 100%;
+      > .btn {
+        width: 33.33%;
+        padding: 10px;
+        font-size: 1.125em;
+      }
+    }
   }
 }
