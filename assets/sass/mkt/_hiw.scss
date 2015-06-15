@@ -1,6 +1,158 @@
 // How it Works Styles
 
 
+#hiw_header {
+  background: url("../images/headers/hiw-header.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hiw-basics {
+  padding-top: 60px;
+  h2 {
+    color: $dark-blue;
+    font-weight: $heavy-weight;
+    font-size: 32px;
+    @media all and (max-width: $small) {
+      padding: 10px;
+      text-align: center;
+      font-size: 36px;
+    }
+  }
+  p {
+    color: $mid-blue;
+    font-weight: $medium-weight;
+    font-size: 18px;
+    @media all and (max-width: $small) {
+      padding-top: 10px;
+      padding-bottom: 40px;
+      font-size: 24px;
+    }
+  }img {
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+}
+
+.hiw-text {
+	padding-top: 100px;
+	margin: 0 auto 0 auto;
+}
+
+// Plan
+
+#create_tools {
+  margin-left: -60px;
+}
+
+.create-tool {
+  padding: 20px;
+  h3{
+		color: $reg-blue;
+		font-size: 16px;
+		font-weight: $heavy-weight;
+	}
+	p {
+		color: $reg-blue;
+		font-size: 14px;
+		font-weight: $regular-weight;
+	}
+}
+
+// Collect
+
+#collection_methods {
+  margin-right: -60px;
+}
+
+.collection-method {
+  padding: 20px;
+  h3{
+		color: $reg-blue;
+		font-size: 16px;
+		font-weight: $heavy-weight;
+	}
+	p {
+		color: $reg-blue;
+		font-size: 14px;
+		font-weight: $regular-weight;
+	}
+}
+
+// Invites
+
+#invite_methods {
+  margin-left: -40px;
+}
+
+.invite-method {
+  padding: 20px;
+  h3 {
+    color: $reg-blue;
+    font-size: 16px;
+    font-weight: $heavy-weight;
+  }
+  p {
+    color: $reg-blue;
+    font-size: 14px;
+    font-weight: $regular-weight;
+  }
+}
+
+// Collaboration
+
+#collaboration_methods {
+  margin-right: -60px;
+}
+
+.collaboration-text {
+  padding-top: 60px;
+  margin: 0 auto 0 auto;
+}
+
+.collaboration-method {
+  padding: 20px;
+  h3 {
+    color: $reg-blue;
+    font-size: 16px;
+    font-weight: $heavy-weight;
+  }
+  p {
+    color: $reg-blue;
+    font-size: 14px;
+    font-weight: $regular-weight;
+  }
+  ol {
+
+  }
+}
 
 
+// Manage
+
+#rsvp_methods {
+  margin-left: -40px;
+}
+
+.rsvp-method {
+  padding: 20px;
+  h3 {
+    color: $reg-blue;
+    font-size: 16px;
+    font-weight: $heavy-weight;
+  }
+  p {
+    color: $reg-blue;
+    font-size: 14px;
+    font-weight: $regular-weight;
+  }
+}
+
+// Cross Platform
+
+#hiw_cross img {
+  padding-top: 60px;
+  padding-bottom: 20px;
+
+}
 

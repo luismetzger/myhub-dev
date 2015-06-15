@@ -121,10 +121,14 @@ a#ln-logo {
 .top-header #ln-logo {
 }
 
+.nav-background {
+  background: none;
+}
+
 .top-sub-head {
   position: absolute;
   width: 100%;
-  background: $dark-blue;
+  background: $dark-blue-opacity;
   top: 0;
   padding: 0px;
   z-index: 600;
@@ -196,7 +200,7 @@ a#ln-logo {
 
 .pushy, html, body {
   overflow-x: hidden;
-  height:100%;
+  height: 100%;
 }
 
 .pushy a:hover {

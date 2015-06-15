@@ -16,6 +16,7 @@ body, html {
   overflow-x:hidden;
 }
 
+
 [class^="icon-"], [class*=" icon-"] {
   font-size: 32px;
   display: inline-block;
@@ -93,9 +94,24 @@ h2 {
   color: $soft-gray;
 }
 
-.headerwrap .ln-vid-link {
-  margin-top: 2%;
-  padding-bottom: 0;
+.ln-vid-link {
+  padding: 20px 0 60px;
+}
+
+.ln-vid-link a {
+  font-family: $headline;
+  font-weight: $bold-weight;
+  color: $orange;
+  line-height: 30px;
+  display: inline-block;
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+.ln-vid-link i {
+  font-size: 32px;
+  margin-right: 20px;
+  float: left;
 }
 
 
@@ -125,10 +141,27 @@ h2 {
   background: $soft-gray;
 }
 
+
 .white-bg {
   background: $white;
 }
 
+
+
+// Misc
+
+.title-icon-center {
+  margin-bottom: -8px;
+  margin-right: 15px;
+}
+
+
+@-moz-document url-prefix() {
+}
+
+.wow {
+   visibility: hidden;
+}
 
 // Footer Container
 
@@ -302,482 +335,4 @@ h2 {
   a {
     color: $mid-blue;
   }
-}
-
-
-// How it works
-
-#hiw_head {
-  background: url("../images/headers/hiw-header.png");
-  background-size: cover;
-}
-
-.hiw-basics {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  h2 {
-    color: $dark-blue;
-    font-weight: $heavy-weight;
-    font-size: 32px;
-    @media all and (max-width: $small) {
-      padding: 10px;
-      font-size: 36px;
-    }
-  }
-  p {
-    color: $mid-blue;
-    font-weight: $medium-weight;
-    font-size: 18px;
-    @media all and (max-width: $small) {
-      padding-top: 10px;
-      padding-bottom: 60px;
-      font-size: 24px;
-    }
-  }
-  @media all and (max-width: $small) {
-    padding: 40px;
-  }
-}
-
-
-.hwi_bpe_thumbs {
-  margin: -35px 0 0 -1.5%;
-  @media screen and (max-width: $small) {
-    margin-top: 0;
-  }
-}
-
-.hwi_bpe_thumbs li {
-  float: left;
-  margin: 35px 0 0 1.5%;
-  width: 48.5%;
-}
-
-.hiw-part {
-  padding: 5% 0;
-}
-
-.title-icon-left {
-  float: left;
-  margin: -5px 15px 0 0;
-}
-
-.title-icon-right {
-  float: right;
-  margin: -5px 0 0 15px;
-}
-
-#hwi_tab .tab-pane {
-  left: 0 !important;
-}
-
-.hwi_tablinks li {
-  padding: 3px 0;
-}
-
-.hwi_tablinks li a {
-  display: block;
-  font-family: $regular-fonts;
-  font-weight: $bold-weight;
-  font-size: 28px;
-  padding: 7px 15px;
-  color: $dark-blue;
-  @media screen and (max-width: $small) {
-    text-align: center;
-  }
-}
-
-.hwi_tablinks li.active a,
-.hwi_tablinks li a:hover {
-  background: #E3E7EC;
-}
-
-.hwi_price_thumbs_wrap {
-  padding-top: 4%;
-}
-
-.hwi_price_thumbs_wrap h3 {
-  font-family: $regular-fonts;
-  font-weight: $regular-weight;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: #5F6E82;
-  margin-bottom: 25px;
-}
-
-.hwi_price_thumbs_winner {
-  max-width: 302px;
-  margin: 0 auto;
-  float: none;
-}
-
-.hwi_price_thumbs {
-  box-shadow: 0 4px 5px #b6b6b6;
-  border: 1px solid #b6b6b6;
-  border-radius: 6px;
-  min-height: 390px;
-}
-
-.hwip_img {
-  position: relative;
-}
-
-.hwip_img:before {
-  display: none;
-}
-
-.roounded_img {
-  position: absolute;
-  width: 65px;
-  height: 65px;
-  overflow: hidden;
-  border: 1px solid #FFFFFF;
-  border-radius: 35px;
-  background: url("../images/Galvanize_Outside.png") center no-repeat;
-  background-size: cover;
-  bottom: -32px;
-  left: 50%;
-  margin-left: -32px;
-}
-
-.hwip_badge {
-  position: absolute;
-  right: 0;
-  top: 20px;
-  background: #323a45;
-  padding: 2px 0;
-  font-size: 20px;
-  color: #00b284;
-  width: 55px;
-}
-
-.hwip_dsep {
-  margin: 60px 15px 45px;
-  height: 1px;
-  border-top: 1px solid #9ea7b3;
-  box-shadow: 0 0 1px #9ea7b3;
-  position: relative;
-}
-
-.dlr_icon {
-  position: absolute;
-  left: 50%;
-  top: -13px;
-  margin-left: -25px;
-  text-align: center;
-  width: 50px;
-  background: #FFFFFF;
-}
-
-.dlr_icon i {
-  font-size: 15px;
-  color: #FFFFFF;
-  background: #9ea7b3;
-  width: 25px;
-  padding: 5px;
-  border-radius: 15px;
-}
-
-.hwip_txt {
-  display: table;
-  width: 100%;
-}
-
-.hwip_txt > div {
-  display: table-cell;
-  width: 50%;
-}
-
-.hwipt_lft, .hwipt_rgt {
-  padding: 0 15px;
-  color: $dark-blue;
-}
-
-.hwipt_rgt {
-  padding-left: 30px;
-}
-
-.hwip_txt h4 {
-  color: #00bd96;
-  font-family: $regular-fonts;
-  font-weight: $light-weight;
-  font-size: 25px;
-  line-height: 30px;
-  margin: 0 0 -5px;
-}
-
-.hwip_3_txt > div {
-  width: auto;
-  padding: 0;
-  color: $dark-blue;
-}
-
-.hwip_3_txt .hwipt_lft {
-  padding-left: 15px;
-  width: 100px;
-}
-
-.hwip_3_txt .hwipt_rgt {
-  padding-right: 15px;
-}
-
-.hwi_price_thumbs .progress {
-  height: 15px;
-  border-radius: 8px;
-  margin: 15px 15px 0;
-}
-
-.hwi_price_thumbs .progress-bar {
-  border-radius: 8px;
-}
-
-table {
-  width: 100%;
-}
-
-.hwi_lctbl {
-  max-width: 100%;
-  width: 420px;
-  @media screen and (min-width: $large) {
-    float: right;
-  }
-  @media screen and (max-width: $small) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.hwi_lctbl tr {
-  border: 1px solid #9ea7b3;
-  border-top: none;
-}
-
-.hwi_lctbl tr:first-child {
-  border-top: 1px solid #9ea7b3;
-}
-
-.hwi_lctbl th,
-.hwi_lctbl td {
-  padding: 10px;
-  text-align: center;
-  font-weight: $regular-weight;
-  font-size: 1.2em;
-}
-
-.hwi_lctbl td {
-  font-size: 0.8em;
-}
-
-.hwi_lctbl td:nth-child(2) {
-  font-size: 1.8em;
-  font-family: $main-fonts;
-  font-weight: $medium-weight;
-}
-
-.hwi_lctbl h4,
-.hwi_lctbl h5 {
-  color: #00b284;
-  font-size: 40px;
-  line-height: 1;
-  margin: 0;
-  font-family: $main-fonts;
-  font-weight: $light-weight;
-}
-
-.hwi_lctbl h5 {
-  font-size: 30px;
-}
-
-.hiwp_txt6 {
-  padding-top: 11%;
-  @media screen and (max-width: $small) {
-    width: auto !important;
-    text-align: center;
-  }
-}
-
-.has_shadow {
-  position: relative;
-  display: inline-block;
-}
-
-.has_shadow:after {
-  border-radius: 35px;
-  box-shadow: 0 8px 8px #aaa;
-  content: " ";
-  height: 135px;
-  left: 5px;
-  position: absolute;
-  bottom: 17px;
-  width: 136px;
-  z-index: -1;
-}
-
-.has_shadow2:after {
-  height: 132px;
-  left: 6px;
-  width: 131px;
-}
-
-.title-icon-center {
-  margin-bottom: -8px;
-  margin-right: 15px;
-}
-
-#hwi_price_carousel_wrap {
-  padding-bottom: 50px;
-}
-
-.carousel-indicators li,
-.carousel-indicators li.active {
-  background-color: #D8D8D8;
-  width: 15px;
-  height: 15px;
-  border-color: #D8D8D8;
-}
-
-.carousel-indicators li.active {
-  background-color: #333B46;
-  border-color: #333B46;
-  margin: 1px;
-}
-
-.carousel-inner .hwi_price_thumbs_winner {
-  margin-bottom: 10px;
-}
-
-.carousel-indicators {
-  bottom: 0;
-  margin-bottom: 0;
-}
-
-@-moz-document url-prefix() {
-
-}
-
-.hiw-part {
-  @media screen and (max-width: $small) {
-    border-bottom: 1px solid #989898;
-    padding: 35px 0;
-  }
-}
-
-.hiwp_txt {
-  @media screen and (max-width: $small) {
-    padding-top: 0;
-  }
-}
-
-.hiwp_txt5 {
-  @media screen and (max-width: $small) {
-    padding-bottom: 50px;
-    text-align: center;
-  }
-}
-
-.hiwp_txt h2 {
-  @media screen and (max-width: $small) {
-    margin-bottom: 15px;
-  }
-}
-
-.hiw-screenshot {
-  @media screen and (max-width: $small) {
-    padding-top: 25px;
-  }
-
-}
-
-.section6 > .container {
-  @media screen and (max-width: $small) {
-    position: relative;
-  }
-}
-
-.section6 {
-  h2 {
-    @media screen and (max-width: $iphone) {
-      font-family: $headline;
-      margin-top: 15px;
-    }
-  }
-}
-
-#fp-nav.right {
-  @media screen and (max-width: $iphone) {
-    right: -7px;
-  }
-}
-
-embed.E {
-  @media screen and (max-width: $iphone) {
-    width: 350px;
-    margin-top: -15px;
-  }
-  @media screen and (max-width: $iphone5) {
-    width: 290px;
-    margin-top: -35px;
-  }
-}
-
-.headerwrap.pg-table {
-  @media screen and (max-width: $iphone) {
-    margin-top: -71px;
-  }
-}
-
-.ln-mblImg {
-  @media screen and (max-width: $small) {
-  }
-}
-
-.hwhy-txt {
-
-
-  @media screen and (max-width: $small) {
-    text-align: center;
-    padding-bottom: 30px;
-    margin: 50px 12px;
-  }
-
-  h2 {
-    font-family: $headline;
-    font-weight: $heavy-weight;
-    color: $reg-blue;
-    font-size: 36px;
-    @media screen and (max-width: $small) {
-      font-size: 32px;
-    }
-  }
-  p {
-    font-family: $headline;
-    font-weight: $medium-weight;
-    font-size: 20px;
-    @media screen and (max-width: $small) {
-      font-size: 20px;
-      line-height: 1.2em;
-    }
-  }
-}
-
-#phone-mobile {
-  @media screen and (max-width: $small) {
-    display: none;
-  }
-}
-
-.hiwp_txt8 {
-  @media screen and (max-width: $small) {
-    text-align: center;
-  }
-}
-
-#H {
-  width: 285px;
-}
-
-.after-group {
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
 }

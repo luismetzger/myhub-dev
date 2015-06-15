@@ -103,26 +103,6 @@
   font-size: 20px;
 }
 
-.ln-vid-link {
-  padding: 30px 0 70px;
-}
-
-.ln-vid-link a {
-  font-family: $headline;
-  font-weight: $bold-weight;
-  color: $orange;
-  line-height: 30px;
-  display: inline-block;
-  font-size: 24px;
-  white-space: nowrap;
-}
-
-.ln-vid-link i {
-  font-size: 32px;
-  margin-right: 20px;
-  float: left;
-}
-
 .middlemodal #mobileNumber {
   color: $medium-gray;
   font-size: 28px;
@@ -538,6 +518,22 @@
 
 
 // HP - Slide 6
+
+.section6 > .container {
+  @media screen and (max-width: $small) {
+    position: relative;
+  }
+}
+
+.section6 {
+  h2 {
+    @media screen and (max-width: $iphone) {
+      font-family: $headline;
+      margin-top: 15px;
+    }
+  }
+}
+
 
 .section6 .hw_txt {
   max-width: 480px;

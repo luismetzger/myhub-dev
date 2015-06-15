@@ -1,3 +1,15 @@
+// Header Nav Change
+$(document).ready (function () {
+    $(window).scroll (function () {
+        var sT = $(this).scrollTop();
+            if (sT >= 300) {
+                $('.overlay').addClass('top-sub-head')
+            }else {
+                $('.overlay').removeClass('nav-background')
+            }
+    })
+})
+
 ;$(document).ready(function(){
 
     var $body = $('body');
