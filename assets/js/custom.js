@@ -50,7 +50,21 @@ $(document).ready(function() {
     
     
 // Desktop Menu Dropdown
+
 $('.dropdown-toggle').dropdown();
 $(".dropdown-menu").mouseleave(function(){
       $(".dropdown").removeClass("open");
     });
+
+
+// Header Nav Change
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 300) {
+        $(".top-sub-head").addClass("scrolling");
+    } else {
+        $(".top-sub-head").removeClass("scrolling");
+    }
+});

@@ -1040,16 +1040,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/send_sms.png": {
+	"\/assets\/images\/Send_sms.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2256,
-		"inputAbbreviatedPath": "\/assets\/images\/send_sms.png",
-		"outputAbbreviatedPath": "\/assets\/images\/send_sms.png",
+		"initialSize": 1632,
+		"inputAbbreviatedPath": "\/assets\/images\/Send_sms.png",
+		"outputAbbreviatedPath": "\/assets\/images\/Send_sms.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/assets\/images\/slide-3-img-mobile.png": {
 		"fileType": 32768,

@@ -9874,6 +9874,29 @@ textarea.default-input {
 .close {
   font-size: 0; }
 
+.top-sub-head {
+  position: fixed;
+  width: 100%;
+  background-color: rgba 29, 39, 53, 0.9;
+  top: 0;
+  padding: 0px;
+  z-index: 600;
+  transition: all 0.5s ease;
+  height: 55px; }
+  @media screen and (max-width: 767px) {
+    .top-sub-head {
+      padding: 5px 15px;
+      position: relative; } }
+  @media screen and (max-width: 480px) {
+    .top-sub-head {
+      padding: 10px 15px; } }
+  @media screen and (min-width: 992px) {
+    .top-sub-head {
+      padding: 0 10px; } }
+
+.top-sub-head.scrolling {
+  background-color: #FF6B42; }
+
 .nav > li > a:focus, .nav > li > a:hover,
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
   transition: all 150ms ease-in-out;
@@ -9977,26 +10000,6 @@ a#ln-logo {
 
 .nav-background {
   background: none; }
-
-.top-sub-head {
-  position: absolute;
-  width: 100%;
-  background: rgba(29, 39, 53, 0.9);
-  top: 0;
-  padding: 0px;
-  z-index: 600;
-  transition: all 0.5s ease;
-  height: 55px; }
-  @media screen and (max-width: 767px) {
-    .top-sub-head {
-      padding: 5px 15px;
-      position: relative; } }
-  @media screen and (max-width: 480px) {
-    .top-sub-head {
-      padding: 10px 15px; } }
-  @media screen and (min-width: 992px) {
-    .top-sub-head {
-      padding: 0 10px; } }
 
 .top-sub-head ul, li {
   list-style: none;
@@ -17288,9 +17291,9 @@ Copyright (c) 2014 Daniel Eden
   .jobs-list a {
     font-weight: 400;
     font-size: 16px;
-    color: #323A45; }
+    color: #5E6D81; }
     .jobs-list a:hover {
-      background: #FF6B42; }
+      color: #FF6B42; }
 
 .email-us {
   margin-top: 20px;

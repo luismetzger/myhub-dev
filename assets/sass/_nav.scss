@@ -1,5 +1,32 @@
 // Main Navbar 
 
+.top-sub-head {
+  position: fixed;
+  width: 100%;
+  background-color: rgba (29,39,53,0.9);
+  top: 0;
+  padding: 0px;
+  z-index: 600;
+  transition: all 0.5s ease;
+  height: 55px;
+  @media screen and (max-width: $small) {
+    padding: 5px 15px;
+    position: relative;
+  }
+  @media screen and (max-width: $iphone) {
+    padding: 10px 15px;
+  }
+  @media screen and (min-width: $medium) {
+    padding: 0 10px;
+  }
+}
+
+.top-sub-head.scrolling {
+  background-color: $orange;
+}
+
+
+
 .nav > li > a:focus, .nav > li > a:hover,
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
   @include ease;
@@ -123,27 +150,6 @@ a#ln-logo {
 
 .nav-background {
   background: none;
-}
-
-.top-sub-head {
-  position: absolute;
-  width: 100%;
-  background: $dark-blue-opacity;
-  top: 0;
-  padding: 0px;
-  z-index: 600;
-  transition: all 0.5s ease;
-  height: 55px;
-  @media screen and (max-width: $small) {
-    padding: 5px 15px;
-    position: relative;
-  }
-  @media screen and (max-width: $iphone) {
-    padding: 10px 15px;
-  }
-  @media screen and (min-width: $medium) {
-    padding: 0 10px;
-  }
 }
 
 .top-sub-head ul, li {
