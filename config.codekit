@@ -402,13 +402,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/assets\/images\/headers\/About-Header.png": {
+	"\/assets\/images\/headers\/about-header.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 345609,
-		"inputAbbreviatedPath": "\/assets\/images\/headers\/About-Header.png",
-		"outputAbbreviatedPath": "\/assets\/images\/headers\/About-Header.png",
+		"inputAbbreviatedPath": "\/assets\/images\/headers\/about-header.png",
+		"outputAbbreviatedPath": "\/assets\/images\/headers\/about-header.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
@@ -1040,13 +1040,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/Send_sms.png": {
+	"\/assets\/images\/send_sms.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 2256,
-		"inputAbbreviatedPath": "\/assets\/images\/Send_sms.png",
-		"outputAbbreviatedPath": "\/assets\/images\/Send_sms.png",
+		"inputAbbreviatedPath": "\/assets\/images\/send_sms.png",
+		"outputAbbreviatedPath": "\/assets\/images\/send_sms.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1

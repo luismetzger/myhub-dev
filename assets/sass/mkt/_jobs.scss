@@ -7,27 +7,32 @@
   background-position: center -100px;
 }
 
-.job_links {
-  background: none repeat scroll 0 0 transparent;
+.jobs-list {
+  background: fixed;
+  display: block;
   cursor: pointer;
   padding: 15px;
   margin-top: 20px;
   h2 {
-    margin: 0;
+    margin-top: 10px;
     font-family: $headline;
-    font-weight: 500;
+    font-weight: $heavy-weight;
     font-size: 18px;
     color: $dark-blue;
-    text-transform: uppercase;
+  }
+  a {
+    font-weight: $regular-weight;
+    font-size: 16px;
+    color: $reg-blue;
+    &:hover {
+    background: $orange;
+  }
   }
 }
 
 .email-us {
   margin-top: 20px;
-  padding: 14px;
-  border-style: solid;
-  border-color: $tag-gray;
-  border-width: 1px;
+  padding: 20px;
   p {
     font-family: $headline;
     font-weight: $light-weight;

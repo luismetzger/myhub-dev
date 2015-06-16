@@ -16621,6 +16621,11 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+#about_header {
+  background: url("../images//headers/about-header.png");
+  background-size: cover;
+  background-attachment: fixed; }
+
 .about-section {
   padding-top: 100px;
   padding-bottom: 100px; }
@@ -16647,11 +16652,6 @@ Copyright (c) 2014 Daniel Eden
   @media all and (max-width: 767px) {
     .about-section {
       padding: 40px; } }
-
-#about_header {
-  background: url("../images//headers/about-header.png");
-  background-size: cover;
-  background-attachment: fixed; }
 
 @media all and (max-width: 767px) {
   .about-thumb {
@@ -17273,25 +17273,28 @@ Copyright (c) 2014 Daniel Eden
   background-attachment: fixed;
   background-position: center -100px; }
 
-.job_links {
-  background: none repeat scroll 0 0 transparent;
+.jobs-list {
+  background: fixed;
+  display: block;
   cursor: pointer;
   padding: 15px;
   margin-top: 20px; }
-  .job_links h2 {
-    margin: 0;
+  .jobs-list h2 {
+    margin-top: 10px;
     font-family: "Avenir W01", sans-serif;
-    font-weight: 500;
+    font-weight: 900;
     font-size: 18px;
-    color: #1D2735;
-    text-transform: uppercase; }
+    color: #1D2735; }
+  .jobs-list a {
+    font-weight: 400;
+    font-size: 16px;
+    color: #323A45; }
+    .jobs-list a:hover {
+      background: #FF6B42; }
 
 .email-us {
   margin-top: 20px;
-  padding: 14px;
-  border-style: solid;
-  border-color: #5E6D81;
-  border-width: 1px; }
+  padding: 20px; }
   .email-us p {
     font-family: "Avenir W01", sans-serif;
     font-weight: 100;
