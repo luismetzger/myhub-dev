@@ -29,4 +29,37 @@
   background: $dark-blue;
 }
 
+.email-btn .btn {
+  border: none;
+  background: $green-button;
+  &:hover {
+    background: darken($green-button, 10%);
+    @include ease;
+  }
+}
 
+.apply_btn {
+  margin: 0 10px 10px 0;
+  .btn {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    background: $orange;
+    border: none;
+    font-family: $headline;
+    font-weight: $light-weight;
+    font-size: 20px;
+
+    &:hover {
+      background: $orange-2;
+    }
+  }
+}
+
+.apply_btn .btn {
+  background: $green-button;
+  &:hover {
+    background: darken($green-button, 10%);
+    @include ease;
+  }
+}

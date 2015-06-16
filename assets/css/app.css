@@ -9877,7 +9877,7 @@ textarea.default-input {
 .top-sub-head {
   position: fixed;
   width: 100%;
-  background-color: rgba 29, 39, 53, 0.9;
+  background-color: rgba(29, 39, 53, 0.9);
   top: 0;
   padding: 0px;
   z-index: 600;
@@ -9893,9 +9893,6 @@ textarea.default-input {
   @media screen and (min-width: 992px) {
     .top-sub-head {
       padding: 0 10px; } }
-
-.top-sub-head.scrolling {
-  background-color: #FF6B42; }
 
 .nav > li > a:focus, .nav > li > a:hover,
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
@@ -12941,6 +12938,33 @@ body {
 .btn-ios:hover {
   color: #FFFFFF;
   background: #1D2735; }
+
+.email-btn .btn {
+  border: none;
+  background: #00BA84; }
+  .email-btn .btn:hover {
+    background: #008760;
+    transition: all 150ms ease-in-out; }
+
+.apply_btn {
+  margin: 0 10px 10px 0; }
+  .apply_btn .btn {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    background: #FF6B42;
+    border: none;
+    font-family: "Avenir W01", sans-serif;
+    font-weight: 100;
+    font-size: 20px; }
+    .apply_btn .btn:hover {
+      background: #E5603B; }
+
+.apply_btn .btn {
+  background: #00BA84; }
+  .apply_btn .btn:hover {
+    background: #008760;
+    transition: all 150ms ease-in-out; }
 
 body.stop-scrolling {
   height: 100%;
@@ -17274,64 +17298,45 @@ Copyright (c) 2014 Daniel Eden
   background-image: url("../images/headers/developers.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center -100px; }
+  background-position: center -80px; }
+
+.jobs-container {
+  padding: 60px 0; }
 
 .jobs-list {
-  background: fixed;
   display: block;
   cursor: pointer;
-  padding: 15px;
-  margin-top: 20px; }
+  padding: 20px; }
   .jobs-list h2 {
-    margin-top: 10px;
+    margin: 10px 0 10px;
     font-family: "Avenir W01", sans-serif;
     font-weight: 900;
     font-size: 18px;
     color: #1D2735; }
+  .jobs-list li {
+    margin: 5px 0 5px; }
   .jobs-list a {
     font-weight: 400;
     font-size: 16px;
     color: #5E6D81; }
     .jobs-list a:hover {
       color: #FF6B42; }
+    .jobs-list a:active {
+      color: #323A45; }
 
 .email-us {
   margin-top: 20px;
-  padding: 20px; }
+  padding: 20px;
+  padding-bottom: 40px; }
   .email-us p {
     font-family: "Avenir W01", sans-serif;
     font-weight: 100;
+    color: #323A45;
     font-size: 14px; }
-
-.send_us_btn .btn {
-  background: #FF6B42;
-  border: none;
-  font-family: "Avenir W01", sans-serif;
-  font-weight: 100;
-  font-size: 18px; }
-  .send_us_btn .btn:hover {
-    background: #E5603B; }
-
-.apply_btn {
-  margin: 0 10px 10px 0; }
-  .apply_btn .btn {
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
-    background: #FF6B42;
-    border: none;
-    font-family: "Avenir W01", sans-serif;
-    font-weight: 100;
-    font-size: 20px; }
-    .apply_btn .btn:hover {
-      background: #E5603B; }
 
 .job-date {
   font-weight: 100;
   font-size: 14px; }
-
-.jobsCont {
-  padding: 80px 0; }
 
 .jobs_txt h3 {
   font-family: "Avenir W01", sans-serif;
@@ -17346,18 +17351,6 @@ Copyright (c) 2014 Daniel Eden
   font-weight: 100;
   font-size: 16px;
   text-transform: uppercase; }
-
-.apply_btn .btn {
-  background: #00BA84; }
-  .apply_btn .btn:hover {
-    background: #008760;
-    transition: all 150ms ease-in-out; }
-
-.send_us_btn .btn {
-  background: #00BA84; }
-  .send_us_btn .btn:hover {
-    background: #008760;
-    transition: all 150ms ease-in-out; }
 
 #contact_head {
   background-image: url("../images/headers/customer-service.jpg");

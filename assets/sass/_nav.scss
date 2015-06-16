@@ -3,7 +3,7 @@
 .top-sub-head {
   position: fixed;
   width: 100%;
-  background-color: rgba (29,39,53,0.9);
+  background-color: rgba(29,39,53,0.9);
   top: 0;
   padding: 0px;
   z-index: 600;
@@ -20,11 +20,6 @@
     padding: 0 10px;
   }
 }
-
-.top-sub-head.scrolling {
-  background-color: $orange;
-}
-
 
 
 .nav > li > a:focus, .nav > li > a:hover,

@@ -1,4 +1,4 @@
-// Unsure what all these are
+// App related stuff
 
 ;$(document).ready(function(){
 
