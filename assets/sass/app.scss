@@ -39,3 +39,6 @@
 [data-ember-action] {
   cursor: pointer;
 }
+.loading-slider > span {
+  background-color: $orange;
+}
