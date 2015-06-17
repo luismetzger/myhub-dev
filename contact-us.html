@@ -34,6 +34,7 @@
     
     <!-- Assets -->
     <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/c2c138df-bec8-4ae7-abb7-59de83a2ce0b.css"/>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.css' rel='stylesheet' />
     <script type="text/javascript" src="assets/js/modernizr.custom.70954.js"></script>
     
     <!-- Google Analytics -->
@@ -119,94 +120,77 @@
         </div>
     </div>
 
-    <div class="contact-container">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-sm-6 pull-left"><h3 style="color:#323A45;">Contact Us</h3></div>
-                        <div class="col-sm-6 text-right pull-right require-text">All fields marked with * required</div>
-                        <div class="clearfix"></div>
-                    </div>
-                    
-                    <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">
-                        <div class="form-group">
-
-                            <div class="col-md-12">
-                                <input type="text" class="contact-form" id="first_name" name="first_name" placeholder="Username (if applicable)">
-                            </div>
-                        </div>
-                        <div class="form-group">
-
-                            <div class="col-xs-6">
-                                <input type="text" class="contact-form" id="first_name" name="last_name" placeholder="First Name*" required="">
-                            </div>
-                            <div class="col-xs-6">
-                                <input type="text" class="contact-form" id="last_name" name="last_name" placeholder="Last Name*" required="">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                <input type="text" class="contact-form" id="email" name="email" placeholder="Email Address" required="">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                <select class="contact-form">
-                                    <option value="">What are you contacting us for?</option>
-                                    <option value="1">General Questino</option>
-                                    <option value="2">Account support</option>
-                                    <option value="3">Report a bug</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                <textarea rows="5" class="contact-form" id="comments" name="comments" placeholder="What's up?"></textarea>
-                            </div>
-                        </div>
- 
-                        <div id="dropzone-cont" class="container-fluid">
-					      <div class="panel panel-default">
-					        
-					        <div class="panel-body">
-					
-							  <!-- Drop Zone -->
-					         
-					          <div class="upload-drop-zone" id="drop-zone">						          
-					           <span class="icon-upload"></span> Upload a file or drop it here
-					          </div>
-					          <!-- Upload Finished -->
-					          <div class="js-upload-finished"></div>
-					        </div>
-					      </div>
-					    </div>
-                        <div id="file-upload" class="dropzone file-upload-border"></div>
-                        
-                        <div class="form-group">
-                            <div class="col-md-6" style="padding-bottom:60px;">
-                                <button type="submit" value="Submit" class="submit-btn btn-group-lg">Submit</button>
-                            </div>
-                        </div>
-                    </form>
-
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 pull-left contact-title">
+                    <h3>Get in touch with us</h3>
+                    <p> Please fill out this form for general inquiries.</p>
+                    <hr>
             </div>
             
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 location-text">
-                        <h2> Visit Us </h2>
-                        <hr>
+            <form class="form-horizontal" name="" method="post" action="">
+                <div class="form-group">
+                    <div class="col-sm-6 clearfix">
+                        <h4>First Name* </h4>
+                        <input type="text" class="contact-field" id="first_name" name="first_name" placeholder="John" required>
                     </div>
+                    
+                    <div class="col-sm-6 clearfix">
+                        <h4>Last Name* </h4>
+                        <input type="text" class="contact-field" id="last_name" name="last_name" placeholder="Smith" required>
+                        </div>
+                    
+                    <div class="col-sm-6 clearfix">
+                        <h4>Email Address* </h4>
+                        <input type="text" class="contact-field" id="email" name="email" placeholder="john.smith@gmail.com" required>
+                        </div>
+
+                    <div class="col-sm-6 clearfix">
+                        <h4>Username (not required)</h4>
+                        <input type="text" class="contact-field" id="email" name="email" placeholder="johnsmith">
+                        </div>
+
+                    <div class="col-xs-12">
+                        <h4>Reason for Contact* </h4>
+                        <select class="contact-drop-down">
+                            <option value="1">General Inquiry</option>
+                            <option value="2">Feature Request</option>
+                            <option value="3">Report a Bug</option>
+                            <option value="4">Technical Support</option>
+                        </select>
+                        </div>
+                
+                    <div class="col-xs-12">
+                        <h4>Description* </h4>
+                        <textarea class="contact-field" id="description" name="description" placeholder="Share something with us" rows="5" required></textarea>
+                        </div>
+
+                    <div class="col-xs-12 dropzone">
+                        <form action="/file-upload" class="dropzone">
+                        </form>
+                        </div>
+				    
+                    <div class="col-xs-12 submit-btn">
+                        <button type="submit" value="Submit" action="mailto:support@myhubapp.com" class="btn btn-group-lg">Submit</button>
+                        </div>
                 </div>
-                <div class="row map-canvas">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.272203348859!2d-104.99261100000001!3d39.73353600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7f2c1488519d%3A0xc060410b57f4c717!2s1062+Delaware+St%2C+Denver%2C+CO+80204!5e0!3m2!1sen!2sus!4v1434523288220" width="400" height="400" frameborder="0" style="border:0"></iframe>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 location-text">
+                <h3> Stop on by </h3>
+                <p> We're based at the Galvanize Golden Triangle workspace. </p>
+                <hr>
+            </div>
+        </div>
+        <div class="row map-area">
+            <div id='map-canvas'></div>
+        </div>
+    </div>
+
 
         <!-- Footer -->
         <div id="page_footer_cont">
@@ -291,7 +275,6 @@
 
 
 </div>
-<!--end page wrapper-->
 
 <!--modals-->
 
@@ -314,6 +297,7 @@
 <!--page specific scripts-->
 <script type="text/javascript" src='https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.js'></script>
 <script type="text/javascript" src="assets/js/min/custom-min.js"></script>
+<script type="text/javascript" src="bower_components/dropzone/dist/min/dropzone.min.js"></script>
 
 
 </body>

@@ -17397,99 +17397,173 @@ Copyright (c) 2014 Daniel Eden
   background-attachment: fixed;
   background-position: center -240px; }
 
-.container .support-us {
-  background-color: #f4f5f7;
-  margin: 10px 0;
-  min-height: 132px;
-  width: 100%; }
-  .container .support-us h2 {
+.contact-title {
+  margin-top: 40px; }
+  .contact-title h3 {
     font-family: "Avenir W01", sans-serif;
-    font-weight: 100;
-    font-size: 20px;
-    color: #1D2735; }
-  .container .support-us p {
-    font-family: "Avenir W01", sans-serif;
-    font-weight: 100;
+    color: #323A45;
+    font-weight: 900;
+    font-size: 24px; }
+    @media screen and (max-width: 767px) {
+      .contact-title h3 {
+        padding-top: 100px; } }
+    .contact-title h3 hr {
+      background-color: #9EA7B3;
+      height: 2px; }
+
+form {
+  margin: 10px; }
+  form h4 {
+    color: #323A45;
     font-size: 16px;
-    color: #1D2735; }
-  .container .support-us a {
-    color: #2e97e9; }
+    font-weight: 400;
+    margin-top: 10px; }
+  form input {
+    display: block;
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+    background: #F4F5F7;
+    font-weight: 100;
+    color: #323A45;
+    font-size: 18px; }
+    form input:focus {
+      outline: none;
+      outline-style: solid;
+      outline-color: #323A45; }
 
-.contact-container h3 {
-  margin-top: 0;
-  font-family: "Avenir W01", sans-serif;
-  font-weight: 900;
-  font-size: 24px; }
-  @media screen and (max-width: 480px) {
-    .contact-container h3 {
-      padding-top: 150px; } }
+::-webkit-input-placeholder {
+  color: #9EA7B3; }
 
-.contact-form {
-  background: #f4f5f7 none;
-  border: medium none;
-  border-radius: 2px;
-  font-family: "Avenir W01", sans-serif;
-  font-weight: 100;
-  color: #9ea7b3;
-  display: block;
-  font-size: 24px;
-  line-height: 1.42857;
-  padding: 13px;
-  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-  width: 100%; }
+:-moz-placeholder {
+  color: #9EA7B3; }
 
-.require-text {
-  font-family: "Avenir W01", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  font-style: italic;
-  color: #D8DEE6; }
-  @media screen and (max-width: 480px) {
-    .require-text {
-      font-size: 12px;
-      color: #5E6D81;
-      padding-top: 158px; } }
+::-moz-placeholder {
+  color: #9EA7B3; }
 
-.upload-drop-zone {
-  height: 50px;
-  border-width: 1px;
+:-ms-input-placeholder {
+  color: #9EA7B3; }
+
+.contact-field {
   margin-bottom: 20px; }
 
-.upload-drop-zone {
-  color: #5E6D81;
-  border-style: solid;
-  border-color: #5E6D81;
-  line-height: 50px;
-  text-align: center; }
-  .upload-drop-zone:hover {
-    transition: all 150ms ease-in-out;
-    color: #D8DEE6;
-    border-color: #D8DEE6;
-    cursor: pointer;
-    background: #5E6D81; }
+.contact-drop-down {
+  background: #F4F5F7;
+  border: medium none;
+  height: 40px;
+  border-radius: 2px;
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 500;
+  color: #323A45;
+  display: block;
+  font-size: 16px;
+  padding: 20px;
+  width: 50%; }
+  .contact-drop-down:focus {
+    outline: none;
+    outline-style: solid;
+    outline-color: #323A45; }
 
-.upload-drop-zone.drop {
-  color: #222;
-  border-color: #222; }
+option {
+  display: block;
+  background: #F4F5F7;
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 500;
+  color: #323A45;
+  font-size: 16px; }
 
-#dropzone-cont {
+textarea {
+  margin-top: 10px;
+  display: block;
   width: 100%;
-  padding: 0; }
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  background: #F4F5F7;
+  font-weight: 100;
+  color: #323A45;
+  font-size: 16px; }
+  textarea:focus {
+    outline: none;
+    outline-style: solid;
+    outline-color: #323A45; }
 
-.map-canvas {
+.file-upload {
+  margin: 10px;
+  height: 50px;
+  width: 50%;
+  border: 1px dashed #9EA7B3;
+  overflow: hidden;
   position: relative;
-  margin: 20px;
-  width: 100%; }
-  .map-canvas iframe {
-    width: 100%; }
+  cursor: pointer;
+  background-color: none; }
 
-.panel-default {
-  border-color: transparent; }
+.dropzone, .dropzone * {
+  box-sizing: border-box; }
 
-.panel {
-  box-shadow: none;
-  -webkit-box-shadow: transparent;
-  margin-bottom: 0; }
+.dropzone {
+  position: relative; }
+
+.dropzone .dz-preview {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  margin: 0.5em; }
+
+.dropzone .dz-preview .dz-progress {
+  display: block;
+  height: 15px;
+  border: 1px solid #aaa; }
+
+.dropzone .dz-preview .dz-progress .dz-upload {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: green; }
+
+.dropzone .dz-preview .dz-error-message {
+  color: red;
+  display: none; }
+
+.dropzone .dz-preview.dz-error .dz-error-message, .dropzone .dz-preview.dz-error .dz-error-mark {
+  display: block; }
+
+.dropzone .dz-preview.dz-success .dz-success-mark {
+  display: block; }
+
+.dropzone .dz-preview .dz-error-mark, .dropzone .dz-preview .dz-success-mark {
+  position: absolute;
+  display: none;
+  left: 30px;
+  top: 30px;
+  width: 54px;
+  height: 58px;
+  left: 50%;
+  margin-left: -27px; }
+
+.location-text {
+  margin-top: 40px; }
+  .location-text h3 {
+    font-family: "Avenir W01", sans-serif;
+    color: #323A45;
+    font-weight: 900;
+    font-size: 24px; }
+    @media screen and (max-width: 767px) {
+      .location-text h3 {
+        padding-top: 100px; } }
+    .location-text h3 hr {
+      background-color: #9EA7B3;
+      height: 2px; }
+
+.map-area {
+  margin-bottom: 40px; }
+
+#map-canvas {
+  position: relative;
+  width: 100%;
+  height: 500px; }
 
 #hiw_header {
   background: url("../images/headers/hiw-header.png");
