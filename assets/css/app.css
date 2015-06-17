@@ -12976,6 +12976,26 @@ body {
   .apply_btn .btn:focus {
     outline: none; }
 
+.submit-btn .btn {
+  background: #00BA84;
+  color: #FFFFFF;
+  border-radius: 32px;
+  margin: 0 10px 10px 0;
+  padding: 14px 50px;
+  font-weight: 400;
+  font-size: 18px;
+  box-shadow: inset 0 -1px 1px 0 rgba(0, 0, 0, 0.3); }
+  .submit-btn .btn:hover {
+    background: #00d396;
+    color: #FFFFFF;
+    transition: all 150ms ease-in-out; }
+  .submit-btn .btn:active {
+    background: #00a172;
+    box-shadow: inset 0 2px 1px 0 rgba(0, 0, 0, 0.3);
+    color: #FFFFFF; }
+  .submit-btn .btn:focus {
+    outline: none; }
+
 body.stop-scrolling {
   height: 100%;
   overflow: hidden; }
@@ -17373,8 +17393,9 @@ Copyright (c) 2014 Daniel Eden
 #contact_head {
   background-image: url("../images/headers/customer-service.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center -650px; }
+  background-position: center -240px; }
 
 .container .support-us {
   background-color: #f4f5f7;
@@ -17394,7 +17415,16 @@ Copyright (c) 2014 Daniel Eden
   .container .support-us a {
     color: #2e97e9; }
 
-.support-form {
+.contact-container h3 {
+  margin-top: 0;
+  font-family: "Avenir W01", sans-serif;
+  font-weight: 900;
+  font-size: 24px; }
+  @media screen and (max-width: 480px) {
+    .contact-container h3 {
+      padding-top: 150px; } }
+
+.contact-form {
   background: #f4f5f7 none;
   border: medium none;
   border-radius: 2px;
@@ -17407,18 +17437,6 @@ Copyright (c) 2014 Daniel Eden
   padding: 13px;
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
   width: 100%; }
-
-.cus-part2 .pull-left h3 {
-  margin-top: 0;
-  font-family: "Avenir W01", sans-serif;
-  font-weight: 900;
-  font-size: 24px; }
-  @media screen and (max-width: 480px) {
-    .cus-part2 .pull-left h3 {
-      padding-top: 150px; } }
-.cus-part2 .col-md-8 {
-  padding-top: 0px;
-  margin-top: -26px; }
 
 .require-text {
   font-family: "Avenir W01", sans-serif;
@@ -17458,6 +17476,13 @@ Copyright (c) 2014 Daniel Eden
   width: 100%;
   padding: 0; }
 
+.map-canvas {
+  position: relative;
+  margin: 20px;
+  width: 100%; }
+  .map-canvas iframe {
+    width: 100%; }
+
 .panel-default {
   border-color: transparent; }
 
@@ -17465,21 +17490,6 @@ Copyright (c) 2014 Daniel Eden
   box-shadow: none;
   -webkit-box-shadow: transparent;
   margin-bottom: 0; }
-
-.btn-green {
-  background: #00BA84;
-  width: 200px;
-  height: 70px;
-  cursor: pointer; }
-  @media screen and (max-width: 480px) {
-    .btn-green {
-      margin-left: 70px; } }
-  .btn-green i {
-    color: #FFFFFF;
-    font-size: 2.5em; }
-  .btn-green:hover {
-    transition: all 150ms ease-in-out;
-    background: #008760; }
 
 #hiw_header {
   background: url("../images/headers/hiw-header.png");

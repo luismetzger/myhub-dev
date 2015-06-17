@@ -109,77 +109,51 @@
     <div id="contact_head" class="headerwrap">
         <div class="" style="background: rgba(50, 58, 69, 0.8);padding: 100px 0 100px;">
             <div class="container">
-                <div class="row text-center" style="padding: 100px 0 100px">
+                <div class="row text-center" style="padding: 60px 0 60px">
                     <div class="col-xs-12 animated fadeInUp">
                         <h1>Contact us</h1>
-                        <h2>Have a question? Drop us a line below</h2>
+                        <h2>Have a question? Drop us a line using the form below or try find your answer in our FAQ.</h2>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 
-    <div id="hiw_sinvitation" class="hiw-part6 cus-part2">
+    <div class="contact-container">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 text-left">
-                    <div class="container support-us">
-                        <h2>Support</h2>
-                        <p><a href="#">Support@myhubapp.com</a> </p>
-                        <p>303-222-2222 x.1</p>
-                    </div>
-                    <div class="container support-us">
-                        <h2>Partnerships</h2>
-                        <p><a href="#">Partnerships@myhubapp.com</a> </p>
-                        <p>303-222-2222 x.1</p>
-                    </div>
-                    <div class="container support-us">
-                        <h2>Press</h2>
-                        <p><a href="#">Press@myhubapp.com</a> </p>
-                        <p>303-222-2222 x.1</p>
-                    </div>
-                    <div class="container support-us">
-                        <h2>Headquarters</h2>
-                        <p>1062 Delaware St. <br> Denver, CO 80202 </p>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-
-
                 <div class="col-md-8">
-                    <!--  <div class="hiw-screenshot text-center"> -->
                     <div class="row">
                         <div class="col-sm-6 pull-left"><h3 style="color:#323A45;">Contact Us</h3></div>
                         <div class="col-sm-6 text-right pull-right require-text">All fields marked with * required</div>
                         <div class="clearfix"></div>
                     </div>
+                    
                     <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">
                         <div class="form-group">
 
                             <div class="col-md-12">
-                                <input type="text" class="support-form" id="first_name" name="first_name" placeholder="Username (if applicable)">
+                                <input type="text" class="contact-form" id="first_name" name="first_name" placeholder="Username (if applicable)">
                             </div>
                         </div>
                         <div class="form-group">
 
                             <div class="col-xs-6">
-                                <input type="text" class="support-form" id="first_name" name="last_name" placeholder="First Name*" required="">
+                                <input type="text" class="contact-form" id="first_name" name="last_name" placeholder="First Name*" required="">
                             </div>
                             <div class="col-xs-6">
-                                <input type="text" class="support-form" id="last_name" name="last_name" placeholder="Last Name*" required="">
+                                <input type="text" class="contact-form" id="last_name" name="last_name" placeholder="Last Name*" required="">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-12">
-                                <input type="text" class="support-form" id="email" name="email" placeholder="Email Address" required="">
+                                <input type="text" class="contact-form" id="email" name="email" placeholder="Email Address" required="">
                             </div>
                         </div>
 
-
                         <div class="form-group">
                             <div class="col-md-12">
-                                <select class="support-form">
+                                <select class="contact-form">
                                     <option value="">What are you contacting us for?</option>
                                     <option value="1">General Questino</option>
                                     <option value="2">Account support</option>
@@ -189,16 +163,15 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-12">
-                                <textarea rows="5" class="support-form" id="comments" name="comments" placeholder="What's up?"></textarea>
+                                <textarea rows="5" class="contact-form" id="comments" name="comments" placeholder="What's up?"></textarea>
                             </div>
                         </div>
-                        
+ 
                         <div id="dropzone-cont" class="container-fluid">
 					      <div class="panel panel-default">
 					        
 					        <div class="panel-body">
 					
-					          <!-- Standar Form -->
 							  <!-- Drop Zone -->
 					         
 					          <div class="upload-drop-zone" id="drop-zone">						          
@@ -208,23 +181,34 @@
 					          <div class="js-upload-finished"></div>
 					        </div>
 					      </div>
-					    </div> <!-- /container -->
-       
+					    </div>
                         <div id="file-upload" class="dropzone file-upload-border"></div>
+                        
                         <div class="form-group">
                             <div class="col-md-6" style="padding-bottom:60px;">
-                                <button type="submit" value="Submit" class="btn btn-green"><i class="icon-Paper_Airplane"></i></button>
+                                <button type="submit" value="Submit" class="submit-btn btn-group-lg">Submit</button>
                             </div>
                         </div>
                     </form>
-                    <!-- </div> -->
-                </div>
 
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 location-text">
+                        <h2> Visit Us </h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row map-canvas">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.272203348859!2d-104.99261100000001!3d39.73353600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7f2c1488519d%3A0xc060410b57f4c717!2s1062+Delaware+St%2C+Denver%2C+CO+80204!5e0!3m2!1sen!2sus!4v1434523288220" width="400" height="400" frameborder="0" style="border:0"></iframe>
+                </div>
             </div>
         </div>
     </div>
 
-            <!-- Footer -->
+        <!-- Footer -->
         <div id="page_footer_cont">
             <div class="container">
                 <div class="row hidden-xs">
@@ -312,34 +296,6 @@
 <!--modals-->
 
 
-<div class="modal middlemodal fade in" id="downloadAppModal" tabindex="-1" role="dialog" arial-labelledby="downloadAppModalTitle" aria-hidden="false" style="display: none;">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <button type="button" class="btn close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
-            <div class="modal-body">
-                <p class="modal-message" style="margin:0 0 1em 0;">Enter your phone number, area code and all.<br>
-                    We’ll text you a download link!</p>
-                <form class="download-app-form" role="form">
-                    <div class="row">
-                        <div class="col-xs-12 twilow_sms">
-                            <label class="sr-only" for="modalSmsInput">Phone number</label>
-                            <input type="tel" id="modalSmsInput" placeholder="xxxxxxxxx" class="form-control">
-                            <button id="twillow_submit">Send SMS</button>
-                        </div>
-                        <div class="hide col-xs-12" id="pp_status"></div>
-
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!--modals ends-->
-
-
-
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 
@@ -351,16 +307,14 @@
 <script type="text/javascript" src="assets/js/pushy.min.js"></script>
 <script type="text/javascript" src="assets/js/venobox.min.js"></script>
 <script type="text/javascript" src="assets/js/velocity.min.js"></script>
-<script type="text/javascript" src="assets/js/team_view.js"></script>
-<script type="text/javascript" src="assets/js/dropzone.js"></script>
-
 
 <!--add scripts before this line-->
 <script type="text/javascript" src="assets/js/scripts.js"></script>
 
 <!--page specific scripts-->
-<script type="text/javascript">
-</script>
+<script type="text/javascript" src='https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.js'></script>
+<script type="text/javascript" src="assets/js/min/custom-min.js"></script>
+
 
 </body>
 </html>

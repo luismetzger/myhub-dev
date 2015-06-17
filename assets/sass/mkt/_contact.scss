@@ -3,8 +3,9 @@
 #contact_head {
   background-image: url("../images/headers/customer-service.jpg");
   background-size: cover;
+  background-repeat:no-repeat;
   background-attachment: fixed;
-  background-position: center -650px;
+  background-position: center -240px;
 }
 
 .container .support-us {
@@ -30,7 +31,19 @@
   }
 }
 
-.support-form {
+.contact-container {
+  h3 {
+    margin-top: 0;
+    font-family: $headline;
+    font-weight: $heavy-weight;
+    font-size: 24px;
+    @media screen and (max-width: $iphone) {
+      padding-top: 150px;
+    }
+  }
+}
+
+.contact-form {
   background: #f4f5f7 none;
   border: medium none;
   border-radius: 2px;
@@ -43,22 +56,6 @@
   padding: 13px;
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
   width: 100%;
-}
-
-.cus-part2 {
-  .pull-left h3 {
-    margin-top: 0;
-    font-family: $headline;
-    font-weight: $heavy-weight;
-    font-size: 24px;
-    @media screen and (max-width: $iphone) {
-      padding-top: 150px;
-    }
-  }
-  .col-md-8 {
-    padding-top: 0px;
-    margin-top: -26px;
-  }
 }
 
 .require-text {
@@ -106,6 +103,15 @@
   padding: 0;
 }
 
+.map-canvas {
+  position: relative;
+  margin: 20px;
+  width: 100%;
+  iframe {
+    width: 100%;
+  }
+}
+
 .panel-default {
   border-color: transparent;
 }
@@ -114,25 +120,4 @@
   box-shadow: none;
   -webkit-box-shadow: transparent;
   margin-bottom: 0;
-}
-
-.btn-green {
-  background: $green-button;
-  width: 200px;
-  height: 70px;
-  cursor: pointer;
-  @media screen and (max-width: $iphone) {
-    margin-left: 70px;
-  }
-
-  i {
-    color: $full-white;
-    font-size: 2.5em;
-  }
-
-  &:hover {
-    @include ease;
-    background: darken($green-button, 10%);
-  }
-
 }
