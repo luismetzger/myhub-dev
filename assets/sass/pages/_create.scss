@@ -746,14 +746,13 @@ a[data-toggle="tooltip"] {
 
 /*Create animation on all pages before loading*/
 
-.cd-modal-action {
+.cd-modal-action {/*
   position: absolute;
   right: 390px;
-  top: 0;
+  top: 0;*/
   > a.btn {
-    z-index: -1;
-    width: 0;
-    height: 0;
+    z-index: -100;
+    opacity: 0;
   }
 }
 .cd-modal-action .btn, .cd-modal-action .cd-modal-bg {

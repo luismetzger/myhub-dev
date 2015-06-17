@@ -131,11 +131,12 @@
 
         <h1 class="visible-xs">pricing</h1>
 
-        <a href="#" class="back_btn menu-btn"><span class="icon-arrow_lg_back"></span></a>
+        <a href="Create_Advanced.html" class="back_btn create_slide_btn"><span class="icon-arrow_lg_back"></span></a>
 
-        <button class="ms_submit_btn">
+
+        <a class="ms_submit_btn create_slide_btn" href="Create_Advanced_Preview.html">
             <span class="icon-checkmark"></span>
-        </button>
+        </a>
 
 
     </div>
@@ -144,13 +145,13 @@
 <div class="cr_body_wrap">
     <div class="container">
 
-        <div class="capl_btn_select visible-xs caf_btn_select">
+        <div class="capl_btn_select visible-xs caf_btn_select tab_input_change">
             <div class="btn-group">
-                <input type="radio" class="sr-only" id="public" checked="" name="sl_privacy">
+                <input type="radio" class="sr-only" id="public" checked="" name="sl_privacy" data-active="#cr_free">
                 <label for="public" class="btn btn-default">Free</label>
-                <input type="radio" class="sr-only" id="friend" name="sl_privacy">
+                <input type="radio" class="sr-only" id="friend" name="sl_privacy" data-active="#cr_fixed">
                 <label for="friend" class="btn btn-default">Fixed</label>
-                <input type="radio" class="sr-only" id="private" name="sl_privacy">
+                <input type="radio" class="sr-only" id="private" name="sl_privacy" data-active="#cr_minimum">
                 <label for="private" class="btn btn-default">Minimum</label>
             </div>
         </div>

@@ -28,7 +28,7 @@ function mapInit(){
             e.preventDefault();
 
             $.get("http://ipinfo.io", function (response) {
-                console.log(response);
+                //console.log(response);
 
                 var $address = response.city + ", " + response.region + ", " + response.country;
 
@@ -43,6 +43,7 @@ function mapInit(){
             e.preventDefault();
             $(this).closest('.modal').modal('hide');
         });
+
 
     }
 }

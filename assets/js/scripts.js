@@ -180,42 +180,41 @@
       $following_btns = $profile_list_wrap.find('.pl-hover a:not(.not-following)'),
       $not_following_btns = $profile_list_wrap.find('.pl-hover a.not-following');
 
-    $body.on('click', '.pl-hover a.not-following', function(e){
+    $body.on('click', '.pl-hover a', function(e){
 
         e.preventDefault();
 
         var $this = $(this);
 
-
-        if($this.closest('.cr_invite_cont_wrap').length){
-            console.log('aa');
+        if ($this.closest('.cr_invite_cont_wrap').length) {
 
             $this.animate({
-                opacity : 0
-            }, 500, function() {
-                $this.removeClass('not-following');
+                opacity: 0
+            }, 500, function () {
+                $this.toggleClass('not-following');
                 $this.animate({
-                    opacity : 1
-                }, 500, function() {
+                    opacity: 1
+                }, 500, function () {
                     // Animation complete.
                 });
             });
         } else {
-            $this.hide( "normal", function() {
-                $this.find('img').attr('src', 'assets/images/pimg_icons/User_Follow@3x.png');
-                $this.show('slow',function(){
-                    $this.hide('normal', function(){
-                        $this.find('img').attr('src', 'assets/images/pimg_icons/User_Pending@3x.png');
-                        $this.show('slow', function(){
-                            $this.removeClass('not-following');
+            if($this.hasClass('not-following')) {
+                $this.hide("normal", function () {
+                    $this.find('img').attr('src', 'assets/images/pimg_icons/User_Follow@3x.png');
+                    $this.show('slow', function () {
+                        $this.hide('normal', function () {
+                            $this.find('img').attr('src', 'assets/images/pimg_icons/User_Pending@3x.png');
+                            $this.show('slow', function () {
+                                $this.removeClass('not-following');
+                            });
                         });
                     });
                 });
-            });
-            $(this).animate({
-            }, 5000, function() {
-                // Animation complete.
-            });
+                $(this).animate({}, 5000, function () {
+                    // Animation complete.
+                });
+            }
         }
 
     }).on('click', '.pl-hover a', function(e){
@@ -505,9 +504,10 @@ var $modal_wrap = $(".fmodal_wrap"),
             scaleValue = retrieveScale(actionBtn.next('.cd-modal-bg'));
 
         actionBtn.addClass('to-circle');
-        actionBtn.next('.cd-modal-bg').addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+        actionBtn.next('.cd-modal-bg').addClass('is-visible')/*.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
             animateLayer(actionBtn.next('.cd-modal-bg'), scaleValue, true);
-        });
+        })*/;
+        animateLayer(actionBtn.next('.cd-modal-bg'), scaleValue, true);
 
         //if browser doesn't support transitions...
         if(actionBtn.parents('.no-csstransitions').length > 0 ) animateLayer(actionBtn.next('.cd-modal-bg'), scaleValue, true);
@@ -567,6 +567,8 @@ var $modal_wrap = $(".fmodal_wrap"),
     /*Create page transition start*/
     $body.on('click', '.create_slide_btn', function(e){
         e.preventDefault();
+        $body.children('.cr_footer').hide(0);
+        $(".modal").modal('hide');
         var $url = $(this).attr("href"),
         //var $url = $(this).attr("href"),
         $contantWrap = $("#createContAjaxWrap");
@@ -575,17 +577,23 @@ var $modal_wrap = $(".fmodal_wrap"),
     });
 
     function loadAjaxCont($url, $context, $container){
-        $container.velocity("transition.slideLeftBigOut", { stagger: 250 });
-        $container.load($url + $context, function( response, status, xhr ) {
-            if(status == "success"){
-                funcToRunOnAjax($url);
-                $container.velocity("transition.slideLeftBigIn", {
-                    stagger: 250,
-                    complete: function(){
-                        $container.css('transform', 'none');
+        $container.velocity("transition.slideLeftBigOut", {
+            stagger: 250,
+            complete : function(){
+                $container.load($url + $context, function( response, status, xhr ) {
+                    if(status == "success"){
+                        funcToRunOnAjax($url);
+                        $container.velocity("transition.slideLeftBigIn", {
+                            stagger: 250,
+                            complete: function(){
+                                $container.css('transform', 'none');
+                                $body.children('.cr_footer').remove();
+                                $container.find('.cr_footer').appendTo("body");
+                            }
+                        });
+                        window.history.pushState("/", "", $url);
                     }
                 });
-                window.history.pushState("/", "", $url);
             }
         });
     }
@@ -655,6 +663,11 @@ var $modal_wrap = $(".fmodal_wrap"),
         }
         $parent.addClass('active');
     });
+
+    $body.on('change', '.tab_input_change input[type="radio"]', function(){
+        tabShow($($(this).attr("data-active")), $("#tabWrap"));
+    });
+
     function tabShow($item, $wrap){
         $wrap.velocity("transition.slideLeftOut", { stagger: 250,
             complete : function(){
@@ -673,7 +686,7 @@ var $modal_wrap = $(".fmodal_wrap"),
 
     /*end the create section*/
 
-
+    $(".chosen-select").chosen({no_results_text: "Oops, nothing found!"});
 
 
 

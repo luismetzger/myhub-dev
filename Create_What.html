@@ -133,9 +133,9 @@
 
                     <a href="#" class="back_btn menu-btn"><i class="fa fa-bars"></i></a>
 
-                    <button class="ms_submit_btn">
+                    <a class="ms_submit_btn create_slide_btn" href="Create_When.html">
                         <span class="icon-arrow_lg_fwd"></span>
-                    </button>
+                    </a>
 
                 </div>
             </div>
@@ -168,15 +168,27 @@
                                     #Hashtags
                                 </h3>
                                 <div class="cr_input_wrap">
-                                    <div class="ciw_links">
-                                        <a href="#">#Denver</a>
-                                        <a href="#">#Concerts</a>
-                                        <a href="#">#Fan</a>
+                                    <select tabindex="-1" class="chosen-select" multiple data-placeholder="Your Favorite Tags">
+                                        <option value=""></option>
+                                        <option>#American Black Bear</option>
+                                        <option>#Asiatic Black Bear</option>
+                                        <option>#Giant Panda</option>
+                                        <option>#Sun Bear</option>
+                                        <option selected="">#Denver</option>
+                                        <option selected="">#Concerts</option>
+                                        <option selected="">#Fan</option>
+                                        <option>#Fandome</option>
+                                        <option>#Fantastic</option>
+                                    </select>
+                                    <div class="ciw_links hide">
+                                        <a href="#">#Fans</a>
+                                        <a href="#">#Fandome</a>
+                                        <a href="#">#Fantastic</a>
                                     </div>
                                     <span class="icon-hashtag ciw_lic"></span>
-                                    <a href="#" class="ciw_ric hidden-xs"><span class="icon-decline_Outline"></span></a>
+                                    <!--<a href="#" class="ciw_ric hidden-xs"><span class="icon-decline_Outline"></span></a>-->
                                 </div>
-                                <div class="cri_lists hidden-xs">
+                                <div class="cri_lists hide">
                                     <ul>
                                         <li>#Fans</li>
                                         <li>#Fandom</li>
@@ -744,6 +756,7 @@
 <script type="text/javascript" src="assets/js/velocity.min.js"></script>
 <script type="text/javascript" src="assets/js/team_view.js"></script>
 <script type="text/javascript" src="assets/js/jquery.onoff.min.js"></script>
+<script type="text/javascript" src="assets/js/chosen.jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-ui-custom.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-ui-timepicker.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-ui-touch-punch.min.js"></script>
