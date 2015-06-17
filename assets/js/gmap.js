@@ -1,33 +1,54 @@
-$(function(){
 
-    var options = {
-        map: ".map_canvas",
-        location: "Denver, CO, United States"
-    };
+function mapInit(){
+    if($(".map_canvas").length){
 
-    var $geoComplete = $("#geocomplete");
+        var options = {
+            map: ".map_canvas",
+            location: "Denver, CO, United States",
+            mapOptions: {
+                mapTypeControl : false,
+                panControl : false,
+                rotateControl : false,
+                scaleControl : false,
+                overviewMapControl : false,
+                zoomControl : false
+            },
+            markerOptions: {
+                icon: "http://cordantsolutions.com/assets/images/map_marker.png"
+            }
+        };
 
-    $geoComplete.geocomplete(options);
+        var $geoComplete = $("#geocomplete");
 
-    $("body").on('click', '.show_location', function(e){
-        e.preventDefault();
+        $geoComplete.geocomplete(options);
 
-        $.get("http://ipinfo.io", function (response) {
-            console.log(response);
+        $(".ciw_ric").removeClass('hide');
 
-            var $address = response.city + ", " + response.region + ", " + response.country;
+        $("body").on('click', '.show_location', function(e){
+            e.preventDefault();
 
-            $geoComplete.val($address);
-            $geoComplete.trigger("geocode");
+            $.get("http://ipinfo.io", function (response) {
+                console.log(response);
 
-        }, "jsonp");
+                var $address = response.city + ", " + response.region + ", " + response.country;
 
-        $(this).closest('.modal').modal('hide');
+                $geoComplete.val($address);
+                $geoComplete.trigger("geocode");
 
-    }).on('click', '.close_modal', function(e){
+            }, "jsonp");
+
+            $(this).closest('.modal').modal('hide');
+
+        }).on('click', '.close_modal', function(e){
             e.preventDefault();
             $(this).closest('.modal').modal('hide');
         });
 
+    }
+}
+
+$(function(){
+
+    mapInit();
 
 });

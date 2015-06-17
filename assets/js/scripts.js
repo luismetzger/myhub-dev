@@ -28,7 +28,6 @@
         }
     }
 
-    var $map_wrap = $('.cr_map_wrap');
 
     function setMapHeight($cont){
         var $window = $(window);
@@ -38,13 +37,13 @@
             $cont.css('height', $(window).height() - 195 + 'px');
         }
     }
-    setMapHeight($map_wrap);
+    setMapHeight($('.cr_map_wrap'));
 
 
     setHeight();
     $(window).resize(function(){
         setHeight();
-        setMapHeight($map_wrap);
+        setMapHeight($('.cr_map_wrap'));
     });
 
     $('.menu-btn').on('click', function(e){
@@ -405,8 +404,11 @@ var $modal_wrap = $(".fmodal_wrap"),
     var $ed_add_card_modal = $(".ED_checkout_modals_add_card"),
         $ED_checkout_modal_wrap = $(".ED_checkout_modal_wrap");
 
-    hide_show_modal_event($('.countribute_btn'), $(".ED_checkout_modal"));
-    hide_show_modal_event($('.show_card_modal'), $ed_add_card_modal);
+    function addEventToModal(){
+        hide_show_modal_event($('.countribute_btn'), $(".ED_checkout_modal"));
+        hide_show_modal_event($('.show_card_modal'), $(".ED_checkout_modals_add_card"));
+    }
+    addEventToModal();
 
     $ed_add_card_modal.find('form').on('submit', function(e){
         e.preventDefault();
@@ -415,7 +417,7 @@ var $modal_wrap = $(".fmodal_wrap"),
         return false;
     });
 
-    $ed_add_card_modal.on('click', '.mb_btn', function(e){
+    $body.on('click', '.ED_checkout_modals_add_card .mb_btn', function(e){
         e.preventDefault();
         e.stopImmediatePropagation();
         hide_show_modal($('.ED_checkout_modal_card_added'));
@@ -430,13 +432,13 @@ var $modal_wrap = $(".fmodal_wrap"),
         return false;
     });
 
-    $ED_checkout_modal_wrap.on('click', '.mb_btn', function(e){
+    $body.on('click', '.ED_checkout_modal_wrap .mb_btn', function(e){
         hide_show_modal($('.ED_checkout_modal_confirmation'));
 
         return false;
     });
 
-    $(".confirm_modal_open").on('click', function(e){
+    $body.on('click', ".confirm_modal_open", function(e){
         hide_show_modal($('.ED_checkout_modal_confirmation'));
 
         return false;
@@ -451,11 +453,11 @@ var $modal_wrap = $(".fmodal_wrap"),
     }
     var $iconInput = $(".cr_nostyle_input"),
         $cIcon = $iconInput.siblings('.ciw_ric');
-    $cIcon.on('click', function(e){
+    $body.on('click', '.ciw_ric', function(e){
         e.preventDefault();
         $(this).addClass('hide').siblings(".cr_nostyle_input").val("");
     });
-    $iconInput.on('keyup', function(){
+    $body.on('keyup', ".cr_nostyle_input", function(){
         showCrossIcon($(this), $(this).siblings('.ciw_ric'));
     });
 
@@ -470,6 +472,211 @@ var $modal_wrap = $(".fmodal_wrap"),
 
 
     $('[data-toggle="tooltip"]').tooltip();
+
+
+
+    /*Start the create section*/
+
+    /*Create modal start*/
+    $body.on('click', '.create_init', function(e){
+        e.preventDefault();
+        create_modal_trigger();
+    });
+
+    function create_modal_trigger(){
+        var actionBtn = $('[data-type="modal-trigger"]'),
+            scaleValue = retrieveScale(actionBtn.next('.cd-modal-bg'));
+
+        actionBtn.addClass('to-circle');
+        actionBtn.next('.cd-modal-bg').addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+            animateLayer(actionBtn.next('.cd-modal-bg'), scaleValue, true);
+        });
+
+        //if browser doesn't support transitions...
+        if(actionBtn.parents('.no-csstransitions').length > 0 ) animateLayer(actionBtn.next('.cd-modal-bg'), scaleValue, true);
+
+        setTimeout(function(){
+            window.location = "Create_What.html";
+        }, 2000);
+    }
+
+    $body.on('click', '[data-type="modal-trigger"]', function(){
+        var actionBtn = $(this),
+            scaleValue = retrieveScale(actionBtn.next('.cd-modal-bg'));
+
+        actionBtn.addClass('to-circle');
+        actionBtn.next('.cd-modal-bg').addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+            animateLayer(actionBtn.next('.cd-modal-bg'), scaleValue, true);
+        });
+
+        //if browser doesn't support transitions...
+        if(actionBtn.parents('.no-csstransitions').length > 0 ) animateLayer(actionBtn.next('.cd-modal-bg'), scaleValue, true);
+    });
+
+
+    $(window).on('resize', function(){
+        //on window resize - update cover layer dimention and position
+        if($('.cd-section.modal-is-visible').length > 0) window.requestAnimationFrame(updateLayer);
+    });
+
+    function retrieveScale(btn) {
+        var btnRadius = btn.width()/2,
+            left = btn.offset().left + btnRadius,
+            top = btn.offset().top + btnRadius - $(window).scrollTop(),
+            scale = scaleValue(top, left, btnRadius, $(window).height(), $(window).width());
+
+        btn.css('position', 'fixed').velocity({
+            top: top - btnRadius,
+            left: left - btnRadius,
+            translateX: 0
+        }, 0);
+
+        return scale;
+    }
+
+    function scaleValue( topValue, leftValue, radiusValue, windowW, windowH) {
+        var maxDistHor = ( leftValue > windowW/2) ? leftValue : (windowW - leftValue),
+            maxDistVert = ( topValue > windowH/2) ? topValue : (windowH - topValue);
+        return Math.ceil(Math.sqrt( Math.pow(maxDistHor, 2) + Math.pow(maxDistVert, 2) )/radiusValue);
+    }
+
+    function animateLayer(layer, scaleVal, bool) {
+        layer.velocity({ scale: scaleVal }, 400, function(){
+            $('body').toggleClass('overflow-hidden', bool);
+            (bool)
+                ? layer.parents('.cd-section').addClass('modal-is-visible').end().off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend')
+                : layer.removeClass('is-visible').removeAttr( 'style' ).siblings('[data-type="modal-trigger"]').removeClass('to-circle');
+        });
+    }
+
+    function updateLayer() {
+        var layer = $('.cd-section.modal-is-visible').find('.cd-modal-bg'),
+            layerRadius = layer.width()/2,
+            layerTop = layer.siblings('.btn').offset().top + layerRadius - $(window).scrollTop(),
+            layerLeft = layer.siblings('.btn').offset().left + layerRadius,
+            scale = scaleValue(layerTop, layerLeft, layerRadius, $(window).height(), $(window).width());
+
+        layer.velocity({
+            top: layerTop - layerRadius,
+            left: layerLeft - layerRadius,
+            scale: scale
+        }, 0);
+    }
+    /*Create modal end*/
+
+    /*Create page transition start*/
+    $body.on('click', '.create_slide_btn', function(e){
+        e.preventDefault();
+        var $url = $(this).attr("href"),
+        //var $url = $(this).attr("href"),
+        $contantWrap = $("#createContAjaxWrap");
+        loadAjaxCont($url,  " .create_cont_wrap", $contantWrap);
+
+    });
+
+    function loadAjaxCont($url, $context, $container){
+        $container.velocity("transition.slideLeftBigOut", { stagger: 250 });
+        $container.load($url + $context, function( response, status, xhr ) {
+            if(status == "success"){
+                funcToRunOnAjax($url);
+                $container.velocity("transition.slideLeftBigIn", {
+                    stagger: 250,
+                    complete: function(){
+                        $container.css('transform', 'none');
+                    }
+                });
+                window.history.pushState("/", "", $url);
+            }
+        });
+    }
+
+
+    function funcToRunOnAjax($url){
+        var $urln = $url.substr($url.lastIndexOf("/") + 1);
+
+        if($('.timePicker').length){
+            $('.timePicker').datetimepicker({
+                prevText: '<i class="fa fa-chevron-left"></i>',
+                nextText: '<i class="fa fa-chevron-right"></i>',
+                beforeShow: function(input, inst) {
+                    var newclass = 'smart-forms';
+                    var smartpikr = inst.dpDiv.parent();
+                    if (!smartpikr.hasClass('smart-forms')){
+                        inst.dpDiv.wrap('<div class="'+newclass+'"></div>');
+                    }
+                }
+
+            });
+        }
+
+        if($('#editor').length){
+            $('#editor').wysiwyg();
+        }
+
+        if($('[data-toggle="tooltip"]').length){
+            $('[data-toggle="tooltip"]').tooltip();
+        }
+        $(".cr_nostyle_input").each(function(){
+            showCrossIcon($(this), $(this).siblings('.ciw_ric'));
+        });
+
+        if (typeof mapInit !== 'undefined' && $.isFunction(mapInit)) {
+            if($('.cr_map_wrap').length){
+                mapInit();
+                setMapHeight($('.cr_map_wrap'));
+                $(".cre_map_modal").modal('show');
+            }
+        }
+        if($urln == "Create_Advanced_Preview.html" || $urln == "Create_Share.html"){
+            addEventToModal();
+            $(".cre_confirmation_modal").modal('show');
+        }
+    }
+
+    function setAjaxHeight(){
+        $("#createContAjaxWrap").css('minHeight', $(window).height() - 55 + 'px');
+    }
+    setAjaxHeight();
+
+    $(window).resize(function(){
+        setAjaxHeight();
+    });
+
+    /*Create page transition end*/
+
+
+    /*tab changin on create advance start*/
+    $body.on('click', '.tab_change a', function(e){
+        e.preventDefault();
+        var $parent = $(this).closest('li');
+        $parent.siblings().removeClass('active');
+        if(!$parent.hasClass('active')){
+            tabShow($($(this).attr("href")), $("#tabWrap"));
+        }
+        $parent.addClass('active');
+    });
+    function tabShow($item, $wrap){
+        $wrap.velocity("transition.slideLeftOut", { stagger: 250,
+            complete : function(){
+                $wrap.children().addClass('hide');
+                $item.removeClass('hide');
+            }
+        });
+        $wrap.velocity("transition.slideLeftIn", { stagger: 250 });
+
+        $(".cr_nostyle_input").each(function(){
+            showCrossIcon($(this), $(this).siblings('.ciw_ric'));
+        });
+    }
+    /*tab changin on create advance ends*/
+
+
+    /*end the create section*/
+
+
+
+
+
 
 
 });

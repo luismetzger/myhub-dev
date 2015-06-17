@@ -66,6 +66,7 @@ a[data-toggle="tooltip"] {
   background: $soft-gray;
   position: relative;
   border-radius: 8px;
+  color: $dark-blue;
   @extend .hide_before_after;
 
   span[class^="icon"] {
@@ -87,7 +88,7 @@ a[data-toggle="tooltip"] {
 .cr_nostyle_input {
   font-size: 24px;
   font-weight: $medium-weight;
-  color: $light-gray;
+  color: $dark-blue;
   border: none;
   width: 80%;
   background: none;
@@ -153,6 +154,7 @@ a[data-toggle="tooltip"] {
   bottom: 0;
   width: 100%;
   height: 75px;
+  z-index: 9999;
 }
 .cr_footer_btn {
   text-align: center;
@@ -390,7 +392,7 @@ a[data-toggle="tooltip"] {
   .cr_input_wrap {
     position: absolute;
     max-width: 600px;
-    top: 200px;
+    top: 100px;
     left: 50%;
     margin-left: -300px;
     z-index: 9998;
@@ -416,7 +418,7 @@ a[data-toggle="tooltip"] {
       line-height: 1;
     }
     &:after {
-      display: block;
+      display: none;
       position: absolute;
       content: "\e78f";
       font-family: "myhub-icomoon";
@@ -740,4 +742,74 @@ a[data-toggle="tooltip"] {
       line-height: 1;
     }
   }
+}
+
+/*Create animation on all pages before loading*/
+
+.cd-modal-action {
+  position: absolute;
+  right: 390px;
+  top: 0;
+  > a.btn {
+    z-index: -1;
+    width: 0;
+    height: 0;
+  }
+}
+.cd-modal-action .btn, .cd-modal-action .cd-modal-bg {
+  display: inline-block;
+  height: 4em;
+  background-color: $tag-gray;
+}
+.cd-modal-action .btn {
+  width: 12.5em;
+  border-radius: 5em;
+  color: #ffffff;
+  line-height: 4em;
+  white-space: nowrap;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: color 0.2s 0.3s, width 0.3s 0s;
+  -moz-transition: color 0.2s 0.3s, width 0.3s 0s;
+  transition: color 0.2s 0.3s, width 0.3s 0s;
+}
+.cd-modal-action .btn.to-circle {
+  width: 4em;
+  color: transparent;
+  -webkit-transition: color 0.2s 0s, width 0.3s 0.2s;
+  -moz-transition: color 0.2s 0s, width 0.3s 0.2s;
+  transition: color 0.2s 0s, width 0.3s 0.2s;
+  z-index: -1;
+}
+.cd-modal-action .cd-modal-bg {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 0;
+  width: 4em;
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform: translateX(-2em);
+  -moz-transform: translateX(-2em);
+  -ms-transform: translateX(-2em);
+  -o-transform: translateX(-2em);
+  transform: translateX(-2em);
+  -webkit-transition: visibility 0s 0.5s;
+  -moz-transition: visibility 0s 0.5s;
+  transition: visibility 0s 0.5s;
+}
+.cd-modal-action .cd-modal-bg.is-visible {
+  opacity: 1;
+  visibility: visible;
+  z-index: 99999;
+}
+#createContAjaxWrap {
+//  position: relative;
 }

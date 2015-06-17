@@ -106,80 +106,86 @@
         &nbsp;
     </div>
 
-    <div class="create_cont_wrap">
 
-        <div class="cr_header">
-            <div class="container">
+    <div id="createContAjaxWrap">
 
-                <h2>When</h2>
+        <div class="create_cont_wrap">
 
-                <div class="progress_wrap">
-                    <div class="progress">
-                        <div class="progress-bar  progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+            <div class="cr_header">
+                <div class="container">
+
+                    <h2>When</h2>
+
+                    <div class="progress_wrap">
+                        <div class="progress">
+                            <div class="progress-bar  progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                            </div>
                         </div>
+
+                        <ul class="crpw_lists">
+                            <li>what</li>
+                            <li>when</li>
+                            <li>where</li>
+                            <li>advanced</li>
+                            <li>invites</li>
+                        </ul>
+
                     </div>
-                    
-                    <ul class="crpw_lists">
-                        <li>what</li>
-                        <li>when</li>
-                        <li>where</li>
-                        <li>advanced</li>
-                        <li>invites</li>
-                    </ul>
+
+                    <a href="#" class="back_btn menu-btn"><span class="icon-arrow_lg_back"></span></a>
+
+                    <button class="ms_submit_btn">
+                        <span class="icon-arrow_lg_fwd"></span>
+                    </button>
+
 
                 </div>
-
-                <a href="#" class="back_btn menu-btn"><span class="icon-arrow_lg_back"></span></a>
-
-                <button class="ms_submit_btn">
-                    <span class="icon-arrow_lg_fwd"></span>
-                </button>
-
-
             </div>
-        </div>
 
-        <div class="cr_body_wrap">
-            <div class="container">
-                <div class="crb_inner">
-                    <form>
+            <div class="cr_body_wrap">
+                <div class="container">
+                    <div class="crb_inner">
+                        <form>
 
-                        <div class="cr_item_wrap">
-                            <h3>
-                                When's it start?
-                            </h3>
-                            <div class="cr_input_wrap">
-                                <input type="text" class="cr_nostyle_input timePicker" placeholder="Tonight @ 7:00PM"/>
-                                <span class="icon-clock_II ciw_lic"></span>
-                                <a href="#" class="ciw_ric"><span class="icon-decline_Outline"></span></a>
+                            <div class="cr_item_wrap">
+                                <h3>
+                                    When's it start?
+                                </h3>
+                                <div class="cr_input_wrap">
+                                    <input type="text" class="cr_nostyle_input timePicker" placeholder="Tonight @ 7:00PM"/>
+                                    <span class="icon-clock_II ciw_lic"></span>
+                                    <a href="#" class="ciw_ric"><span class="icon-decline_Outline"></span></a>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="cr_item_divide">
-                            <span>Optional</span>
-                        </div>
-
-                        <div class="cr_item_wrap">
-                            <h3>
-                                When's it end?
-                            </h3>
-                            <div class="cr_input_wrap">
-                                <input type="text" class="cr_nostyle_input timePicker" placeholder="Tonight @ 9:00PM"/>
-                                <span class="icon-clock_II ciw_lic"></span>
-                                <a href="#" class="ciw_ric"><span class="icon-decline_Outline"></span></a>
+                            <div class="cr_item_divide">
+                                <span>Optional</span>
                             </div>
-                        </div>
 
-                    </form>
+                            <div class="cr_item_wrap">
+                                <h3>
+                                    When's it end?
+                                </h3>
+                                <div class="cr_input_wrap">
+                                    <input type="text" class="cr_nostyle_input timePicker" placeholder="Tonight @ 9:00PM"/>
+                                    <span class="icon-clock_II ciw_lic"></span>
+                                    <a href="#" class="ciw_ric"><span class="icon-decline_Outline"></span></a>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="cr_footer">
-            <div class="container">
-                <a class="mb_btn mb_btn_gray cr_footer_btn pull-left" href="#">Back <span class="icon-arrow_lg_back"></span></a>
-                <a class="mb_btn mb_btn_orange cr_footer_btn pull-right" href="#">Next <span class="icon-arrow_lg_fwd"></span></a>
+            <div class="cr_footer">
+                <div class="container">
+                    <a class="mb_btn mb_btn_gray cr_footer_btn pull-left create_slide_btn" href="Create_What.html">Back <span class="icon-arrow_lg_back"></span></a>
+                    <a class="mb_btn mb_btn_orange cr_footer_btn pull-right create_slide_btn" href="Create_Where_Map.html">Next <span class="icon-arrow_lg_fwd"></span></a>
+                </div>
             </div>
+
+
         </div>
 
 
@@ -292,6 +298,8 @@
 <script type="text/javascript" src="assets/js/jquery-ui-custom.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-ui-timepicker.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-ui-touch-punch.min.js"></script>
+<script type="text/javascript" src="assets/js/velocity.min.js"></script>
+<script type="text/javascript" src="assets/js/velocity.ui.js"></script>
 
 
 <!--add scripts before this line-->

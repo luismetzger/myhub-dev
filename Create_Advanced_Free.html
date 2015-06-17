@@ -158,19 +158,104 @@
         <div class="crb_inner">
         <form>
 
-            <div class="auth_links">
+            <div class="auth_links tab_change">
                 <ul class="clearfix">
-                    <li class="active"><a href="#">Free</a></li>
-                    <li><a href="#">Fixed</a></li>
-                    <li><a href="#">Minimum</a></li>
+                    <li class="active"><a href="#cr_free">Free</a></li>
+                    <li><a href="#cr_fixed">Fixed</a></li>
+                    <li><a href="#cr_minimum">Minimum</a></li>
                 </ul>
             </div>
 
-            <div class="auth_cont_free">
+            <div id="tabWrap">
+                <div id="cr_free" class="tc_cont">
+                    <div class="auth_cont_free">
                 <span class="icon-Money_circle">
 				<span class="path1"></span><span class="path2"></span>
 				</span>
-                <h3>Free events are absolutely free.</h3>
+                        <h3>Free events are absolutely free.</h3>
+                    </div>
+                </div>
+
+                <div id="cr_fixed" class="tc_cont hide">
+
+                    <div class="cr_item_wrap" style="padding-top: 7%;">
+                        <h3 class="hidden-xs">
+                            Price per person?
+                        </h3>
+                        <div class="cr_input_wrap cr_input_wrap_single_lne_mbl">
+                            <h3 class="visible-xs pull-left">Price per person?</h3>
+                            <input type="text" class="cr_nostyle_input green_txt" placeholder="$5.00"/>
+
+                <span class="icon-Money_circle ciw_lic">
+                    <span class="path1"></span><span class="path2"></span>
+                </span>
+                            <a href="#" class="ciw_ric"><span class="icon-decline_Outline"></span></a>
+                        </div>
+                    </div>
+
+                    <div class="cr_item_divide">
+                        <span>Optional</span>
+                    </div>
+
+                    <div class="cr_item_wrap">
+                        <h3 class="hidden-xs">
+                            How much do you need to raise?
+                        </h3>
+                        <div class="cr_input_wrap cr_input_wrap_single_lne_mbl">
+
+                            <h3 class="visible-xs pull-left">Set a Fundrasie Goal</h3>
+                            <input type="text" class="cr_nostyle_input" placeholder="$500.00"/>
+                    <span class="icon-Target ciw_lic">
+				        <span class="path1"></span><span class="path2"></span>
+				    </span>
+                            <a href="#" class="ciw_ric"><span class="icon-decline_Outline"></span></a>
+                        </div>
+                        <div class="ciw_btxt">
+                            If you set a goal, no one is charged until you reaise that amount.
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cr_minimum" class="tc_cont hide">
+
+                    <div class="cr_item_wrap" style="padding-top: 7%;">
+                        <h3 class="hidden-xs">
+                            Price per person?
+                        </h3>
+                        <div class="cr_input_wrap cr_input_wrap_single_lne_mbl">
+                            <h3 class="visible-xs pull-left">Price per person?</h3>
+                            <input type="text" class="cr_nostyle_input green_txt" placeholder="$5.00"/>
+
+                <span class="icon-Money_circle ciw_lic">
+                    <span class="path1"></span><span class="path2"></span>
+                </span>
+                            <a href="#" class="ciw_ric"><span class="icon-decline_Outline"></span></a>
+                        </div>
+                    </div>
+
+                    <div class="cr_item_divide">
+                        <span>Optional</span>
+                    </div>
+
+                    <div class="cr_item_wrap">
+                        <h3 class="hidden-xs">
+                            How much do you need to raise?
+                        </h3>
+                        <div class="cr_input_wrap cr_input_wrap_single_lne_mbl">
+
+                            <h3 class="visible-xs pull-left">Set a Fundrasie Goal</h3>
+                            <input type="text" class="cr_nostyle_input" placeholder="$500.00"/>
+                    <span class="icon-Target ciw_lic">
+				        <span class="path1"></span><span class="path2"></span>
+				    </span>
+                            <a href="#" class="ciw_ric"><span class="icon-decline_Outline"></span></a>
+                        </div>
+                        <div class="ciw_btxt">
+                            If you set a goal, no one is charged until you reaise that amount.
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </form>
@@ -178,12 +263,12 @@
     </div>
 </div>
 
-<div class="cr_footer">
-    <div class="container">
-        <a class="mb_btn mb_btn_gray cr_footer_btn pull-left" href="#">Back <span class="icon-arrow_lg_back"></span></a>
-        <a class="mb_btn mb_btn_orange cr_footer_btn pull-right" href="#">Save <span class="icon-checkmark"></span></a>
+    <div class="cr_footer">
+        <div class="container">
+            <a class="mb_btn mb_btn_gray cr_footer_btn pull-left create_slide_btn" href="Create_Advanced.html">Back <span class="icon-arrow_lg_back"></span></a>
+            <a class="mb_btn mb_btn_orange cr_footer_btn pull-right create_slide_btn" href="Create_Advanced_Preview.html">Save <span class="icon-checkmark"></span></a>
+        </div>
     </div>
-</div>
 
 </div>
 
@@ -290,13 +375,24 @@
 <script type="text/javascript" src="assets/js/velocity.min.js"></script>
 <script type="text/javascript" src="assets/js/team_view.js"></script>
 <script type="text/javascript" src="assets/js/jquery.onoff.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui-custom.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui-timepicker.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui-touch-punch.min.js"></script>
+<script type="text/javascript" src="assets/js/velocity.min.js"></script>
+<script type="text/javascript" src="assets/js/velocity.ui.js"></script>
 
 
-<!--add scripts before this line-->
+<!--Map Scripts-->
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+<script src="assets/js/jquery.geocomplete.min.js"></script>
+<script type="text/javascript" src="assets/js/gmap.js"></script>
+
+<!--Editor JS-->
+
 <script type="text/javascript" src="assets/js/external/jquery.hotkeys.js"></script>
 <script type="text/javascript" src="assets/js/external/google-code-prettify"></script>
 <script type="text/javascript" src="assets/js/bootstrap-wysiwyg.min.js"></script>
-<script type='text/javascript'>$('#editor').wysiwyg();</script>
+
 <script type="text/javascript" src="assets/js/scripts.js"></script>
 
 <!--page specific scripts-->

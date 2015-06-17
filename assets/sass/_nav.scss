@@ -108,7 +108,7 @@
   font-weight: $light-weight;
   color: $full-white;
 }
-#btn_plus {
+#btn_plus, #btn_plus1 {
   font-size: 25px;
   color: $full-white;
   background: $orange;
@@ -119,6 +119,10 @@
     background: $orange-2;
     color: $off-white;
   }
+}
+#btn_plus1 {
+  text-align: center;
+  margin: 0;
 }
 
 // Pushy Mobile Navigation
@@ -324,7 +328,7 @@ body > .pushy ul {
 .ln-cr {
   height: 40px;
   line-height: 40px;
-  padding: 175px 0;
+  padding: 140px 0 0;
 }
 
 .logins {
