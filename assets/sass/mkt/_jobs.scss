@@ -11,12 +11,16 @@
   padding: 60px 0;
 }
 
+.job-titles .active {
+  color: $reg-blue;
+}
+
 
 .jobs-list {
+  position:relative;
   display: block;
   cursor: pointer;
   padding: 20px;
-
   h2 {
     margin: 10px 0 10px;
     font-family: $headline;
@@ -46,32 +50,36 @@
   padding-bottom:40px;
   p {
     font-family: $headline;
-    font-weight: $light-weight;
+    font-weight: $medium-weight;
     color: $reg-blue;
     font-size: 14px;
   }
 }
 
 .job-date {
-  font-weight: $light-weight;
+  font-weight: $regular-weight;
+  color: $mid-gray;
   font-size: 14px;
 }
 
-.jobs_txt {
+.job-text {
   h3 {
     font-family: $headline;
-    font-weight: $light-weight;
+    font-weight: $regular-weight;
+    color: $reg-blue;
     font-size: 32px;
+  }
+  h4 {
+    font-family: $headline;
+    font-weight: $mbold-weight;
+    color: $reg-blue;
+    font-size: 16px;
+    text-transform: uppercase;
   }
   p {
     font-family: $headline;
     font-weight: $light-weight;
-    font-size: 14px;
-  }
-  h4 {
-    font-family: $headline;
-    font-weight: $light-weight;
+    color: $reg-blue;
     font-size: 16px;
-    text-transform: uppercase;
   }
 }

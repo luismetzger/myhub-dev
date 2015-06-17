@@ -126,13 +126,6 @@
         $('.venobox').venobox();
     }
 
-    // Dropdown on mouse enter
-    var dContainer = $(".dropdown");
-    dContainer.on('mouseenter', function(e){
-        dContainer.removeClass('open');
-        $(this).addClass('open');
-    });
-
 
   var $profile_list_wrap = $(".profile-list"),
       $following_btns = $profile_list_wrap.find('.pl-hover a:not(.not-following)'),
