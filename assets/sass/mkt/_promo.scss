@@ -1,0 +1,55 @@
+// Promo Page Styles
+
+body {
+	background-color: $reg-blue;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+img {
+	margin-top: 80px;
+}
+
+.welcome-message {
+	margin-top: 300px;
+	h1 {
+		font-family: $headline;
+		font-color: $reg-blue;
+		font-weight: $heavy-weight;
+		font-size: 32px;
+	}
+	p {
+		font-family: $headline;
+		font-color: $reg-blue;
+		font-weight: $light-weight;
+		font-size: 20px;
+	}
+}
+
+.do-something {
+	margin-top: 40px;
+}
+
+
+.input-group {
+	margin-top: 10px;
+}
+
+.input-group-addon {
+	background: $mid-gray;
+	border: none;
+	height: 45px;
+}
+
+.enter-phone {
+	background: $soft-gray;
+	padding: 10;
+	height: 45px;
+	border-radius: 2px;
+	box-shadow: 0 0 0 0;
+	width: 100%;
+
+}

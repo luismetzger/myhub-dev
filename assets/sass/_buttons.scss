@@ -74,6 +74,29 @@
   }
 }
 
+.btn-home {
+  background: none;
+  border: 2px solid $orange;
+  color: $orange;
+  border-radius: 36px;
+  padding: 20px 30px;  
+  font-weight: $regular-weight;
+  font-size: 18px;
+  &:hover {
+    background: lighten($orange, 5%);
+    color: $white;
+    @include ease;
+  }
+  &:active {
+    background: darken($orange, 5%);
+    color: $white;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+
 .submit-btn .btn {
   background: $green;
   color: $white;

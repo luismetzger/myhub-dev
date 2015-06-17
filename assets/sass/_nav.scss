@@ -1,5 +1,29 @@
 // Main Navbar 
 
+.promo-sub-head {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  top: 0;
+  padding: 0px;
+  z-index: 600;
+  transition: all 0.5s ease;
+  height: 55px;
+  @media screen and (max-width: $small) {
+    padding: 5px 15px;
+    position: relative;
+  }
+  @media screen and (max-width: $iphone) {
+    padding: 10px 15px;
+  }
+  @media screen and (min-width: $medium) {
+    padding: 0 10px;
+  }
+}
+
+
+
+
 .top-sub-head {
   position: fixed;
   width: 100%;
@@ -197,6 +221,14 @@ a#ln-logo {
   border-top: 1px solid rgba(29, 39, 53, 0.3);
   text-decoration: none;
   text-align: left;
+  a:hover{
+    background: $orange;
+    color: $white;
+  }
+  a:active {
+    background: $orange;
+    color: $white;
+  }
 }
 
 .pushy, html, body {
@@ -204,10 +236,6 @@ a#ln-logo {
   height: 100%;
 }
 
-.pushy a:hover {
-  background: $orange;
-  color: #FFF;
-}
 .ln-cr li.col-xs-6 {
   padding: 0;
   a {

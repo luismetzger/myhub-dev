@@ -9874,6 +9874,26 @@ textarea.default-input {
 .close {
   font-size: 0; }
 
+.promo-sub-head {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  top: 0;
+  padding: 0px;
+  z-index: 600;
+  transition: all 0.5s ease;
+  height: 55px; }
+  @media screen and (max-width: 767px) {
+    .promo-sub-head {
+      padding: 5px 15px;
+      position: relative; } }
+  @media screen and (max-width: 480px) {
+    .promo-sub-head {
+      padding: 10px 15px; } }
+  @media screen and (min-width: 992px) {
+    .promo-sub-head {
+      padding: 0 10px; } }
+
 .top-sub-head {
   position: fixed;
   width: 100%;
@@ -10041,14 +10061,16 @@ a#ln-logo {
   border-top: 1px solid rgba(29, 39, 53, 0.3);
   text-decoration: none;
   text-align: left; }
+  .pushy a a:hover {
+    background: #FF6B42;
+    color: #FFFFFF; }
+  .pushy a a:active {
+    background: #FF6B42;
+    color: #FFFFFF; }
 
 .pushy, html, body {
   overflow-x: hidden;
   height: 100%; }
-
-.pushy a:hover {
-  background: #FF6B42;
-  color: #FFF; }
 
 .ln-cr li.col-xs-6 {
   padding: 0; }
@@ -12974,6 +12996,24 @@ body {
     box-shadow: inset 0 2px 1px 0 rgba(0, 0, 0, 0.3);
     color: #FFFFFF; }
   .apply_btn .btn:focus {
+    outline: none; }
+
+.btn-home {
+  background: none;
+  border: 2px solid #FF6B42;
+  color: #FF6B42;
+  border-radius: 36px;
+  padding: 20px 30px;
+  font-weight: 400;
+  font-size: 18px; }
+  .btn-home:hover {
+    background: #ff7f5b;
+    color: #FFFFFF;
+    transition: all 150ms ease-in-out; }
+  .btn-home:active {
+    background: #ff5728;
+    color: #FFFFFF; }
+  .btn-home:focus {
     outline: none; }
 
 .submit-btn .btn {
@@ -16867,11 +16907,6 @@ Copyright (c) 2014 Daniel Eden
 .tab-content .tab-pane {
   position: relative; }
 
-#fullpage {
-  font: inherit;
-  background: url("../images/headers/homepage-header.png") no-repeat center center transparent;
-  background-size: cover; }
-
 #home_body .section1 {
   background: url("../images//headers/homepage-header.png") no-repeat center center transparent;
   background-size: cover; }
@@ -17395,7 +17430,9 @@ Copyright (c) 2014 Daniel Eden
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center -240px; }
+  background-position: center -240px;
+  width: 100%;
+  height: auto; }
 
 .contact-title {
   margin-top: 40px; }
@@ -17675,6 +17712,48 @@ textarea {
 #hiw_cross img {
   padding-top: 60px;
   padding-bottom: 20px; }
+
+body {
+  background-color: #323A45;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+img {
+  margin-top: 80px; }
+
+.welcome-message {
+  margin-top: 300px; }
+  .welcome-message h1 {
+    font-family: "Avenir W01", sans-serif;
+    font-color: #323A45;
+    font-weight: 900;
+    font-size: 32px; }
+  .welcome-message p {
+    font-family: "Avenir W01", sans-serif;
+    font-color: #323A45;
+    font-weight: 100;
+    font-size: 20px; }
+
+.do-something {
+  margin-top: 40px; }
+
+.input-group {
+  margin-top: 10px; }
+
+.input-group-addon {
+  background: #9EA7B3;
+  border: none;
+  height: 45px; }
+
+.enter-phone {
+  background: #F4F5F7;
+  padding: 10;
+  height: 45px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 0;
+  width: 100%; }
 
 #profile_info_header {
   background: #f4f5f7; }
