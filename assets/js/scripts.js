@@ -480,94 +480,23 @@ var $modal_wrap = $(".fmodal_wrap"),
 
     /*Start the create section*/
 
-    /*Create modal start*/
+    /*Home page create transition*/
+
     $body.on('click', '.create_init', function(e){
         e.preventDefault();
-        create_modal_trigger();
+        $body.addClass('overflow-hidden');
+        var $wrapper = $("#pushy_wrapper");
+        $wrapper.velocity(
+            {
+                translateX : "-100%"
+            }, {
+                easing: "easeOut",
+                duration: 600,
+                complete : function(){
+                    window.location = "Create_What.html";
+                }
+            });
     });
-
-    function create_modal_trigger(){
-        var actionBtn = $('[data-type="modal-trigger"]'),
-            scaleValue = retrieveScale(actionBtn.next('.cd-modal-bg'));
-
-        actionBtn.addClass('to-circle');
-        actionBtn.next('.cd-modal-bg').addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-            animateLayer(actionBtn.next('.cd-modal-bg'), scaleValue, true);
-        });
-
-        //if browser doesn't support transitions...
-        if(actionBtn.parents('.no-csstransitions').length > 0 ) animateLayer(actionBtn.next('.cd-modal-bg'), scaleValue, true);
-
-        setTimeout(function(){
-            window.location = "Create_What.html";
-        }, 2000);
-    }
-
-    $body.on('click', '[data-type="modal-trigger"]', function(){
-        var actionBtn = $(this),
-            scaleValue = retrieveScale(actionBtn.next('.cd-modal-bg'));
-
-        actionBtn.addClass('to-circle');
-        actionBtn.next('.cd-modal-bg').addClass('is-visible')/*.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-            animateLayer(actionBtn.next('.cd-modal-bg'), scaleValue, true);
-        })*/;
-        animateLayer(actionBtn.next('.cd-modal-bg'), scaleValue, true);
-
-        //if browser doesn't support transitions...
-        if(actionBtn.parents('.no-csstransitions').length > 0 ) animateLayer(actionBtn.next('.cd-modal-bg'), scaleValue, true);
-    });
-
-
-    $(window).on('resize', function(){
-        //on window resize - update cover layer dimention and position
-        if($('.cd-section.modal-is-visible').length > 0) window.requestAnimationFrame(updateLayer);
-    });
-
-    function retrieveScale(btn) {
-        var btnRadius = btn.width()/2,
-            left = btn.offset().left + btnRadius,
-            top = btn.offset().top + btnRadius - $(window).scrollTop(),
-            scale = scaleValue(top, left, btnRadius, $(window).height(), $(window).width());
-
-        btn.css('position', 'fixed').velocity({
-            top: top - btnRadius,
-            left: left - btnRadius,
-            translateX: 0
-        }, 0);
-
-        return scale;
-    }
-
-    function scaleValue( topValue, leftValue, radiusValue, windowW, windowH) {
-        var maxDistHor = ( leftValue > windowW/2) ? leftValue : (windowW - leftValue),
-            maxDistVert = ( topValue > windowH/2) ? topValue : (windowH - topValue);
-        return Math.ceil(Math.sqrt( Math.pow(maxDistHor, 2) + Math.pow(maxDistVert, 2) )/radiusValue);
-    }
-
-    function animateLayer(layer, scaleVal, bool) {
-        layer.velocity({ scale: scaleVal }, 400, function(){
-            $('body').toggleClass('overflow-hidden', bool);
-            (bool)
-                ? layer.parents('.cd-section').addClass('modal-is-visible').end().off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend')
-                : layer.removeClass('is-visible').removeAttr( 'style' ).siblings('[data-type="modal-trigger"]').removeClass('to-circle');
-        });
-    }
-
-    function updateLayer() {
-        var layer = $('.cd-section.modal-is-visible').find('.cd-modal-bg'),
-            layerRadius = layer.width()/2,
-            layerTop = layer.siblings('.btn').offset().top + layerRadius - $(window).scrollTop(),
-            layerLeft = layer.siblings('.btn').offset().left + layerRadius,
-            scale = scaleValue(layerTop, layerLeft, layerRadius, $(window).height(), $(window).width());
-
-        layer.velocity({
-            top: layerTop - layerRadius,
-            left: layerLeft - layerRadius,
-            scale: scale
-        }, 0);
-    }
-    /*Create modal end*/
-
 
 
     $(window).load(function(){
@@ -593,9 +522,9 @@ var $modal_wrap = $(".fmodal_wrap"),
     });
 
     function updateHeaderFooter(){
-        $('.cr_footer').eq($page_number).removeClass("hide")
+        $('.cr_footer.pageid_' + $page_number).removeClass("hide")
             .siblings().addClass("hide");
-        $(".cr_header").eq($page_number).removeClass('hide')
+        $(".cr_header.pageid_" + $page_number).removeClass('hide')
             .siblings(".cr_header").addClass('hide');
     }
 
@@ -766,7 +695,9 @@ var $modal_wrap = $(".fmodal_wrap"),
 
         loadMapOnAjax($urln);
 
-        if($urln == "Create_Advanced_Preview.html" || $urln == "Create_Share.html"){
+        if($urln == "Create_Advanced_Preview.html"){
+            $(".cre_preview_modal").modal('show');
+        } else if($urln == "Create_Share.html"){
             addEventToModal();
             $(".cre_confirmation_modal").modal('show');
         }
@@ -846,6 +777,60 @@ var $modal_wrap = $(".fmodal_wrap"),
         $(".chosen-select").chosen({no_results_text: "Oops, nothing found!"});
     }
 
+
+    /*tab slide for invite section*/
+
+    $body.on('click', '.create_slide_btn_isw', function(e){
+        e.preventDefault();
+        $(".isw_item" + $(this).attr("data-iswitem"))
+            .removeClass('hide').siblings(".isw_item").addClass('hide');
+        var $prevNxtisw = $(this).attr("data-pageinx"),
+            $item = $($(this).attr("href")),
+            $wrap =  $("#tabWrap");
+        tabShowInvite($item, $wrap, $prevNxtisw);
+
+    });
+
+    function tabShowInvite($item, $wrap, $prevNxtisw){
+        $body.addClass('overflow-hidden');
+        var $leftx = "100%",
+            $rightx = "-100%";
+        if($prevNxtisw == "next"){
+            $leftx = "-100%";
+            $rightx = "100%";
+        }
+
+        $wrap.velocity(
+            {
+                translateX : $leftx
+            }, {
+                easing: "easeOut",
+                duration: 600,
+                complete: function () {
+                    $wrap.css('opacity', '0');
+                    $item.removeClass('hide').siblings().addClass('hide');
+                    $wrap.velocity(
+                        {
+                            translateX: $rightx
+                        }, {
+                            duration: 0,
+                            complete: function () {
+                                $wrap.css('opacity', '1');
+                                $wrap.velocity(
+                                    {
+                                        translateX: "0"
+                                    }, {
+                                        easing: "easeIn",
+                                        duration: 700,
+                                        complete: function () {
+                                            $body.removeClass('overflow-hidden');
+                                        }
+                                    });
+                            }
+                        });
+            }
+            });
+    }
 
 
 
