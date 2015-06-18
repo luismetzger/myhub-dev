@@ -919,13 +919,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/assets\/images\/screens\/group.png": {
+	"\/assets\/images\/screens\/Group.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 550615,
-		"inputAbbreviatedPath": "\/assets\/images\/screens\/group.png",
-		"outputAbbreviatedPath": "\/assets\/images\/screens\/group.png",
+		"initialSize": 626245,
+		"inputAbbreviatedPath": "\/assets\/images\/screens\/Group.png",
+		"outputAbbreviatedPath": "\/assets\/images\/screens\/Group.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

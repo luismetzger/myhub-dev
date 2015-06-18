@@ -10009,7 +10009,7 @@ a #ln-logo {
       display: none; } }
 
 #signup_btn {
-  background: rgba(244, 245, 247, 0.8);
+  background: rgba(244, 245, 247, 0.9);
   border: none;
   width: 100px;
   padding: 10px;
@@ -10137,7 +10137,8 @@ a #ln-logo {
   transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99); }
 
 .site-overlay {
-  display: none; }
+  display: none;
+  cursor: pointer; }
 
 .pushy-active .site-overlay {
   display: block;
@@ -12972,6 +12973,7 @@ body {
   border: 1px solid #F4F5F7;
   color: #F4F5F7;
   border-radius: 32px;
+  margin: 20px 0 20px;
   padding: 20px 40px;
   font-weight: 400;
   font-size: 18px; }
@@ -12988,25 +12990,66 @@ body {
   .btn-download:focus {
     outline: none; }
 
-.btn-facebook {
+.btn-start {
   background: #FF6B42;
   border: none;
   color: #FFFFFF;
   border-radius: 32px;
+  margin: 20px 0 20px;
   padding: 20px 30px;
   font-weight: 400;
   font-size: 18px;
   box-shadow: inset 0 -2px 1px 0 rgba(0, 0, 0, 0.3); }
-  .btn-facebook:hover {
+  .btn-start:hover {
     background: #ff7f5b;
     color: #FFFFFF;
     transition: all 150ms ease-in-out; }
-  .btn-facebook:active {
+  .btn-start:active {
     background: #ff5728;
     box-shadow: inset 0 2px 1px 0 rgba(0, 0, 0, 0.3);
     color: #FFFFFF; }
-  .btn-facebook:focus {
+  .btn-start:focus {
     outline: none; }
+
+.btn-download-mobile {
+  background: rgba(244, 245, 247, 0.2);
+  border: none;
+  border-radius: 4px;
+  margin-top: 8px;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 300; }
+  .btn-download-mobile i {
+    padding-right: 20px; }
+  .btn-download-mobile:hover {
+    background: white;
+    color: #FFFFFF;
+    transition: all 150ms ease-in-out; }
+  .btn-download-mobile:active {
+    background: #e5e8ec;
+    box-shadow: inset 0 2px 1px 0 rgba(0, 0, 0, 0.3);
+    color: #FFFFFF; }
+
+.btn-start-mobile {
+  background: rgba(244, 245, 247, 0.9);
+  border: none;
+  border-radius: 4px;
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: #323A45;
+  font-weight: 300; }
+  .btn-start-mobile:hover {
+    background: white;
+    color: #FFFFFF;
+    transition: all 150ms ease-in-out; }
+  .btn-start-mobile:active {
+    background: #e5e8ec;
+    box-shadow: inset 0 2px 1px 0 rgba(0, 0, 0, 0.3);
+    color: #FFFFFF; }
 
 .submit-btn .btn {
   background: #00BA84;
@@ -17705,10 +17748,15 @@ textarea {
   padding-top: 60px;
   padding-bottom: 20px; }
 
+html,
+body {
+  height: 100%;
+  background-color: #323A45; }
+
 #wrapper {
+  position: relative;
   background-color: #323A45;
   min-height: 100%;
-  width: auto;
   height: auto !important;
   height: 100%;
   margin: 0 auto -80px;
@@ -17729,10 +17777,13 @@ textarea {
 }
 */
 .hero {
-  margin-top: 10%; }
+  margin-top: 5%; }
+  @media screen and (max-width: 992px) {
+    .hero {
+      margin-top: 50px; } }
 
 .welcome {
-  margin-top: 200px; }
+  margin-top: 100px; }
   .welcome h1 {
     margin: 20px;
     font-family: "Avenir W01", sans-serif;
@@ -17754,12 +17805,12 @@ textarea {
         margin-top: 10px;
         font-size: 18px;
         text-align: center; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 992px) {
     .welcome {
-      margin-top: 60px; } }
+      margin-top: 50px; } }
 
 .promo-buttons {
-  margin-top: 40px; }
+  margin-top: 60px; }
 
 .disclaimer {
   margin-top: 20px; }
@@ -17770,6 +17821,10 @@ textarea {
   @media screen and (max-width: 767px) {
     .disclaimer {
       margin-top: none; } }
+
+@media screen and (max-width: 767px) {
+  .hero-image {
+    text-align: center; } }
 
 .video-link {
   margin: 20px;
@@ -17782,11 +17837,12 @@ textarea {
   .video-link p {
     padding-bottom: 2px; }
 
-.site-footer, .page-wrap:after {
-  height: 80px; }
-
 .site-footer {
-  background: #323A45; }
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: transparent; }
   .site-footer li {
     font-size: 16px;
     color: #9EA7B3;
@@ -17802,6 +17858,10 @@ textarea {
     color: #5E6D81;
     display: inline;
     padding: 20px; }
+  @media screen and (max-width: 767px) {
+    .site-footer {
+      background-color: #323A45;
+      height: 60px; } }
 
 #profile_info_header {
   background: #f4f5f7; }

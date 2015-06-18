@@ -156,7 +156,7 @@ a #ln-logo {
 }
 
 #signup_btn {
-  background: rgba(244, 245, 247, 0.8);
+  background: rgba(244, 245, 247, 0.9);
   border: none;
   width: 100px;
   padding: 10px;
@@ -319,6 +319,7 @@ a #ln-logo {
 
 .site-overlay {
   display: none;
+  cursor: pointer;
 }
 
 .pushy-active .site-overlay {
