@@ -1,55 +1,133 @@
 // Promo Page Styles
 
+html,
 body {
+  height: 100%;
+  background-color: $reg-blue;
+}
+
+#wrapper {
 	background-color: $reg-blue;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center center;
-	background-repeat: no-repeat;
+	min-height: 100%;
+  	height: auto !important;
+  	height: 100%;
+  	margin: 0 auto -80px;
 }
 
+/*
+#wrapper {
+    position:fixed;
+    padding:0;
+    margin:0;
 
-img {
-	margin-top: 80px;
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+    background-color: $reg-blue;
+}
+*/
+
+.hero {
+ 	margin-top: 10%;
 }
 
-.welcome-message {
-	margin-top: 300px;
+.welcome {
+	margin-top: 200px;
 	h1 {
+		margin: 20px;
 		font-family: $headline;
-		font-color: $reg-blue;
+		color: $soft-gray;
 		font-weight: $heavy-weight;
-		font-size: 32px;
+		font-size: 36px;
+		@media screen and (max-width: $small) {
+	      margin-top: 40px;
+	      font-size: 32px;
+	      text-align: center;
+	    }
 	}
 	p {
+		margin: 20px;
 		font-family: $headline;
-		font-color: $reg-blue;
+		color: $soft-gray;
 		font-weight: $light-weight;
 		font-size: 20px;
+		@media screen and (max-width: $small) {
+	      margin-top: 10px;
+	      font-size: 18px;
+	      text-align: center;
+	    }
 	}
 }
 
-.do-something {
+.promo-buttons {
 	margin-top: 40px;
 }
 
 
-.input-group {
-	margin-top: 10px;
+.disclaimer {
+	margin-top: 20px;
+	p {
+		color: $light-gray;
+		font-size: 14px;
+		font-weight: $light-weight;
+	}
 }
 
-.input-group-addon {
-	background: $mid-gray;
-	border: none;
-	height: 45px;
+.video-link {
+	margin: 20px;
+	font-weight: $mbold-weight;
+	color: $orange;
+	font-size: 18px;
+	i {
+    	font-size: 28px;
+    	margin-right: 20px;
+	}
+	p {
+		padding-bottom: 2px;
+	}
 }
 
-.enter-phone {
-	background: $soft-gray;
-	padding: 10;
-	height: 45px;
-	border-radius: 2px;
-	box-shadow: 0 0 0 0;
-	width: 100%;
 
+// Page Wrap
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -100px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+
+// Sticky Footer
+
+.site-footer, .page-wrap:after {
+  height: 80px; 
+}
+
+.site-footer {
+  	background: transparent;
+	li {
+	    font-size: 16px;
+	    color: $mid-gray;
+	    display: inline;
+	    padding: 20px;
+	    &:hover {
+		    color: $white;
+		    @include ease;
+ 		 }
+	  &:active {
+	    color: $white;
+		}
+	}
+	p {
+		font-size: 14px;
+    	color: $mid-blue;
+    	display: inline;
+    	padding: 20px;
+	}
 }

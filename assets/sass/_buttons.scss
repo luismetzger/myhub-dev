@@ -74,14 +74,41 @@
   }
 }
 
-.btn-home {
+.btn-download {
   background: none;
-  border: 2px solid $orange;
-  color: $orange;
-  border-radius: 36px;
+  border: 1px solid $soft-gray;
+  color: $soft-gray;
+  border-radius: 32px;
+  padding: 20px 40px;  
+  font-weight: $regular-weight;
+  font-size: 18px;
+  i {
+    font-size: 24px;
+    margin-right: 24px;
+  }
+  &:hover {
+    background: lighten($soft-gray, 5%);
+    color: $reg-blue;
+    @include ease;
+  }
+  &:active {
+    background: darken($soft-gray, 5%);
+    color: $reg-blue;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-facebook {
+  background: $orange;
+  border: none;
+  color: $white;
+  border-radius: 32px;
   padding: 20px 30px;  
   font-weight: $regular-weight;
   font-size: 18px;
+  box-shadow: inset 0 -2px 1px 0 rgba(0,0,0,0.3);
   &:hover {
     background: lighten($orange, 5%);
     color: $white;
@@ -89,12 +116,14 @@
   }
   &:active {
     background: darken($orange, 5%);
+    box-shadow: inset 0 2px 1px 0 rgba(0,0,0,0.3);
     color: $white;
   }
   &:focus {
     outline: none;
   }
 }
+
 
 
 .submit-btn .btn {
