@@ -9877,12 +9877,12 @@ textarea.default-input {
 .promo-sub-head {
   position: fixed;
   width: 100%;
-  background-color: transparent;
+  background-color: #323A45;
   top: 0;
   padding: 0px;
   z-index: 600;
   transition: all 0.5s ease;
-  height: 55px; }
+  height: 54px; }
   @media screen and (max-width: 767px) {
     .promo-sub-head {
       padding: 5px 15px;
@@ -9902,7 +9902,7 @@ textarea.default-input {
   padding: 0px;
   z-index: 600;
   transition: all 0.5s ease;
-  height: 55px; }
+  height: 54px; }
   @media screen and (max-width: 767px) {
     .top-sub-head {
       padding: 5px 15px;
@@ -9918,101 +9918,40 @@ textarea.default-input {
   margin: 8px auto 0;
   width: 150px; }
 
-.navbar-nav > li > a#login-button,
-.navbar-nav > li > a.dropdown-toggle {
-  height: 54px; }
-
-.navbar-nav > li > a {
-  font-family: "Avenir W01", sans-serif;
-  font-size: 16px;
-  font-weight: 100;
-  color: #FFFFFF; }
-
-#login-button {
-  background: transparent;
-  margin-right: 5px;
-  font-weight: 400; }
-  @media screen and (max-width: 767px) {
-    #login-button {
-      display: none; } }
-
-#signup-button {
-  background: #6B727A;
-  border: none;
-  width: 100px;
-  padding: 10px;
-  margin-top: 6px;
-  color: #FFFFFF;
-  font-weight: 400; }
-  @media screen and (max-width: 767px) {
-    #signup-button {
-      display: none; } }
-  #signup-button:hover {
-    transition: all 150ms ease-in-out;
-    background: #53595f; }
-
-#dropdown-button {
-  margin-left: 5px; }
-  @media screen and (max-width: 767px) {
-    #dropdown-button {
-      display: none; } }
-
-.dropdown-icon {
-  padding: 0 8px; }
-
-.icon-ellipses:before {
-  font-size: 28px; }
-
-.dropdown-menu {
-  background: #1D2735; }
-
-.dropdown-menu > li > a {
-  padding-top: 8px;
-  font-size: 14px;
-  color: #F4F5F7; }
-
-.dropdown-menu > a:hover {
-  transition: all 150ms ease-in-out;
-  color: inherit;
-  background: #323A45; }
-
-#btn_plus {
-  font-size: 24px;
-  font-weight: 400;
-  color: #FFFFFF;
-  background: #FF6B42;
-  padding: 8px 15px;
-  margin-top: 7px;
-  margin-right: 5px;
-  border: none; }
-  #btn_plus:hover {
-    background: #E5603B;
-    color: #F4F5F7; }
-
-a#ln-logo {
+a #ln-logo {
   width: 190px;
   display: block; }
   @media screen and (max-width: 767px) {
-    a#ln-logo {
+    a #ln-logo {
       width: 100%;
       height: auto; } }
 
-.top-header .nav-pullleft {
-  display: none;
-  margin-left: 20px; }
+.top-header i {
+  display: none; }
   @media screen and (max-width: 767px) {
-    .top-header .nav-pullleft {
+    .top-header i {
       display: block;
       font-size: 2em;
       margin: 0 auto;
       padding: 0 auto; } }
 
+.navbar-nav > li > a {
+  font-family: "Avenir W01", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  color: #FFFFFF;
+  padding: 0px; }
+
 .menu-btn {
   display: block;
-  color: #FFFFFF; }
-
-.nav-background {
-  background: none; }
+  color: #F4F5F7;
+  margin-left: 15px; }
+  .menu-btn i {
+    color: #F4F5F7; }
+    .menu-btn i:hover {
+      color: ligten(#F4F5F7, 5%); }
+    .menu-btn i:active {
+      color: #e5e8ec; }
 
 .top-sub-head ul, li {
   list-style: none;
@@ -10031,9 +9970,102 @@ a#ln-logo {
     .sub-logo {
       padding: 5px 0 0; } }
 
+#create_btn {
+  background: #FF6B42;
+  margin: 8px 10px 0 10px;
+  border: none; }
+  #create_btn span {
+    color: #F4F5F7;
+    padding: 14px 16px 13px 16px;
+    font-size: 20px; }
+  #create_btn:hover {
+    background: #ff7f5b;
+    color: #F4F5F7; }
+  #create_btn:active {
+    background: #ff5728;
+    color: #F4F5F7; }
+  @media screen and (max-width: 767px) {
+    #create_btn {
+      display: none; } }
+
+#login_btn {
+  background: rgba(244, 245, 247, 0.2);
+  border: none;
+  width: 100px;
+  padding: 10px;
+  margin: 8px 10px 0 10px;
+  color: #FFFFFF;
+  font-weight: 300; }
+  #login_btn:hover {
+    transition: all 150ms ease-in-out;
+    background: white;
+    color: #323A45; }
+  #login_btn:active {
+    transition: all 150ms ease-in-out;
+    background: #e5e8ec;
+    color: #323A45; }
+  @media screen and (max-width: 767px) {
+    #login_btn {
+      display: none; } }
+
+#signup_btn {
+  background: rgba(244, 245, 247, 0.8);
+  border: none;
+  width: 100px;
+  padding: 10px;
+  margin: 8px 10px 0 10px;
+  color: #323A45;
+  font-weight: 300; }
+  #signup_btn:hover {
+    transition: all 150ms ease-in-out;
+    background: white; }
+  #signup_btn:active {
+    transition: all 150ms ease-in-out;
+    background: #e5e8ec; }
+  @media screen and (max-width: 767px) {
+    #signup_btn {
+      display: none; } }
+
+#dropdown_button {
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  margin: 8px 20px 0 10px; }
+  #dropdown_button span {
+    color: #F4F5F7;
+    padding: 10px 14px 8px 14px;
+    font-size: 24px; }
+    #dropdown_button span:hover {
+      transition: all 150ms ease-in-out;
+      background: #1D2735; }
+    #dropdown_button span:active {
+      transition: all 150ms ease-in-out;
+      background: #1D2735; }
+    @media screen and (max-width: 767px) {
+      #dropdown_button span {
+        display: none; } }
+
+.dropdown-menu {
+  background: #1D2735;
+  margin: -2px 12px;
+  border-radius: 4px; }
+
+.dropdown-menu > li > a {
+  padding: 5px 0 5px 15px;
+  font-size: 14px;
+  color: #F4F5F7; }
+  .dropdown-menu > li > a:hover {
+    transition: all 150ms ease-in-out;
+    color: #323A45;
+    background: #F4F5F7; }
+
+.pushy html, body {
+  overflow-x: hidden;
+  height: 100%; }
+
 .pushy {
   position: fixed;
-  width: 300px;
+  width: 250px;
   height: 100%;
   top: 0;
   z-index: 9999;
@@ -10046,41 +10078,43 @@ a#ln-logo {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch; }
 
-.pushy a {
+.pushy li a {
   font-family: "Avenir W01", sans-serif;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 16px;
   display: block;
   color: #FFFFFF;
-  padding: 16px 16px;
+  padding: 18px 18px;
   border-bottom: 1px solid rgba(29, 39, 53, 0.3);
   border-top: 1px solid rgba(29, 39, 53, 0.3);
   text-decoration: none;
   text-align: left; }
-  .pushy a a:hover {
+  .pushy li a a:hover {
     background: #FF6B42;
     color: #FFFFFF; }
-  .pushy a a:active {
+  .pushy li a a:active {
     background: #FF6B42;
     color: #FFFFFF; }
 
-.pushy, html, body {
-  overflow-x: hidden;
-  height: 100%; }
-
-.ln-cr li.col-xs-6 {
+.sub-menu li.col-xs-6 {
   padding: 0; }
-  .ln-cr li.col-xs-6 a {
+  .sub-menu li.col-xs-6 a {
     border-right: 1px solid rgba(29, 39, 53, 0.3);
     border-left: 1px solid rgba(29, 39, 53, 0.3);
     padding-left: 25px; }
 
+.logins a {
+  padding: 15px 10px; }
+
+#apple-icon {
+  padding-right: 20px; }
+
 .pushy-left {
-  -webkit-transform: translate3d(-300px, 0, 0);
-  -moz-transform: translate3d(-300px, 0, 0);
-  -ms-transform: translate3d(-300px, 0, 0);
-  -o-transform: translate3d(-300px, 0, 0);
-  transform: translate3d(-300px, 0, 0); }
+  -webkit-transform: translate3d(-250px, 0, 0);
+  -moz-transform: translate3d(-250px, 0, 0);
+  -ms-transform: translate3d(-250px, 0, 0);
+  -o-transform: translate3d(-250px, 0, 0);
+  transform: translate3d(-250px, 0, 0); }
 
 .pushy-open {
   -webkit-transform: translate3d(0, 0, 0);
@@ -10090,11 +10124,11 @@ a#ln-logo {
   transform: translate3d(0, 0, 0); }
 
 .container-push, .push-push {
-  -webkit-transform: translate3d(300px, 0, 0);
-  -moz-transform: translate3d(300px, 0, 0);
-  -ms-transform: translate3d(300px, 0, 0);
-  -o-transform: translate3d(300px, 0, 0);
-  transform: translate3d(300px, 0, 0); }
+  -webkit-transform: translate3d(250px, 0, 0);
+  -moz-transform: translate3d(250px, 0, 0);
+  -ms-transform: translate3d(250px, 0, 0);
+  -o-transform: translate3d(250px, 0, 0);
+  transform: translate3d(250px, 0, 0); }
 
 .pushy, #container, .push {
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
@@ -10113,7 +10147,7 @@ a#ln-logo {
   bottom: 0;
   left: 0;
   z-index: 9998;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-animation: fade 500ms;
   -moz-animation: fade 500ms;
   -o-animation: fade 500ms;
@@ -10148,14 +10182,10 @@ a#ln-logo {
   -o-transition: -o-transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
   transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99); }
 
-.ln-cr {
+.sub-menu {
   height: 30px;
   line-height: 30px;
   padding: 80px 0; }
-
-.logins background
-a {
-  padding: 15px 10px; }
 
 .logged-in-nav > li > a {
   min-width: 55px;
@@ -10187,7 +10217,7 @@ a {
 
 .logged-in-pushy {
   min-height: 540px; }
-  .logged-in-pushy .ln-cr {
+  .logged-in-pushy .sub-menu {
     height: auto;
     padding: 130px 0 0; }
   .logged-in-pushy li a i {
@@ -10243,9 +10273,6 @@ a {
   .landingPage .pushy,
   body > .pushy {
     width: 250px; } }
-#apple-icon {
-  padding-right: 20px; }
-
 #superContainer {
   height: 100%;
   position: relative;
@@ -17678,17 +17705,14 @@ textarea {
   padding-top: 60px;
   padding-bottom: 20px; }
 
-html,
-body {
-  height: 100%;
-  background-color: #323A45; }
-
 #wrapper {
   background-color: #323A45;
   min-height: 100%;
+  width: auto;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -80px; }
+  margin: 0 auto -80px;
+  padding-bottom: -80px; }
 
 /*
 #wrapper {
@@ -17717,7 +17741,6 @@ body {
     font-size: 36px; }
     @media screen and (max-width: 767px) {
       .welcome h1 {
-        margin-top: 40px;
         font-size: 32px;
         text-align: center; } }
   .welcome p {
@@ -17731,6 +17754,9 @@ body {
         margin-top: 10px;
         font-size: 18px;
         text-align: center; } }
+  @media screen and (max-width: 767px) {
+    .welcome {
+      margin-top: 60px; } }
 
 .promo-buttons {
   margin-top: 40px; }
@@ -17741,6 +17767,9 @@ body {
     color: #9EA7B3;
     font-size: 14px;
     font-weight: 100; }
+  @media screen and (max-width: 767px) {
+    .disclaimer {
+      margin-top: none; } }
 
 .video-link {
   margin: 20px;
@@ -17753,20 +17782,11 @@ body {
   .video-link p {
     padding-bottom: 2px; }
 
-.page-wrap {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -100px; }
-
-.page-wrap:after {
-  content: "";
-  display: block; }
-
 .site-footer, .page-wrap:after {
   height: 80px; }
 
 .site-footer {
-  background: transparent; }
+  background: #323A45; }
   .site-footer li {
     font-size: 16px;
     color: #9EA7B3;

@@ -3,12 +3,12 @@
 .promo-sub-head {
   position: fixed;
   width: 100%;
-  background-color: transparent;
+  background-color: $reg-blue;
   top: 0;
   padding: 0px;
   z-index: 600;
   transition: all 0.5s ease;
-  height: 55px;
+  height: 54px;
   @media screen and (max-width: $small) {
     padding: 5px 15px;
     position: relative;
@@ -29,7 +29,7 @@
   padding: 0px;
   z-index: 600;
   transition: all 0.5s ease;
-  height: 55px;
+  height: 54px;
   @media screen and (max-width: $small) {
     padding: 5px 15px;
     position: relative;
@@ -47,106 +47,17 @@
   width: 150px;
 }
 
-.navbar-nav > li > a#login-button,
-.navbar-nav > li > a.dropdown-toggle {
-  height: 54px;
+a #ln-logo {
+    width: 190px;
+    display: block;
+    @media screen and (max-width: $small) {
+      width: 100%;
+      height: auto;
+    }
 }
 
-.navbar-nav > li > a {
-  font-family: $headline;
-  font-size: 16px;
-  font-weight: $light-weight;
-  color: $full-white;
-}
-
-#login-button {
-  background: transparent;
-  margin-right: 5px;
-  font-weight: $regular-weight;
-  @media screen and (max-width: $small) {
-    display: none;
-  }
-}
-
-#signup-button {
-  background: $button-gray;
-  border: none;
-  width: 100px;
-  padding: 10px;
-  margin-top: 6px;
-  color: $full-white;
-  font-weight: $regular-weight;
-
-  @media screen and (max-width: $small) {
-    display: none;
-  }
-  &:hover {
-    @include ease;
-    background: darken($button-gray, 10%);
-  }
-}
-
-#dropdown-button {
-  margin-left: 5px;
-  @media screen and (max-width: $small) {
-    display: none;
-  }
-}
-
-.dropdown-icon {
-  padding: 0 8px;
-}
-
-.icon-ellipses:before {
-	font-size: 28px;
-}
-
-
-// Dropdown Menu
-
-.dropdown-menu {
-  background: $dark-blue;
-}
-
-.dropdown-menu > li > a {
-  padding-top: 8px;
-  font-size: 14px;
-  color: $off-white;
-}
-
-.dropdown-menu > a:hover {
-  @include ease;
-  color: inherit;
-  background: $reg-blue;
-}
-
-#btn_plus {
-  font-size: 24px;
-  font-weight: $regular-weight;
-  color: $full-white;
-  background: $orange;
-  padding: 8px 15px;
-  margin-top: 7px;
-  margin-right:5px;
-  border: none;
-  &:hover {
-    background: $orange-2;
-    color: $off-white;
-  }
-}
-
-a#ln-logo {
-  width: 190px;
-  display: block;
-  @media screen and (max-width: $small) {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.top-header .nav-pullleft {
+.top-header i {
   display: none;
-  margin-left: 20px;
   @media screen and (max-width: $small) {
     display: block;
     font-size: 2em;
@@ -155,17 +66,28 @@ a#ln-logo {
   }
 }
 
+.navbar-nav > li > a {
+  font-family: $headline;
+  font-size: 14px;
+  font-weight: $light-weight;
+  color: $full-white;
+  padding: 0px;
+}
+
 .menu-btn {
-    display: block;
-    color: $full-white;
+  display: block;
+  color: $soft-gray;
+  margin-left: 15px;
+  i {
+    color: $soft-gray;
+      &:hover {
+        color: ligten($soft-gray, 5%)
+      }
+      &:active {
+        color: darken($soft-gray, 5%)
+      }
+    }
   }
-
-.top-header #ln-logo {
-}
-
-.nav-background {
-  background: none;
-}
 
 .top-sub-head ul, li {
   list-style: none;
@@ -186,12 +108,127 @@ a#ln-logo {
   }
 }
 
+// Desktop Nav Buttons
+
+#create_btn {
+  background: $orange;
+  margin: 8px 10px 0 10px;
+  border: none;
+  span {
+    color: $soft-gray;
+    padding: 14px 16px 13px 16px;
+    font-size: 20px;
+  }
+  &:hover {
+    background: lighten($orange, 5%);
+    color: $off-white;
+  }
+  &:active {
+    background: darken($orange, 5%);
+    color: $off-white;
+  }
+  @media screen and (max-width: $small) {
+    display: none;
+  }
+}
+
+#login_btn {
+  background: rgba(244, 245, 247, 0.2);
+  border: none;
+  width: 100px;
+  padding: 10px;
+  margin: 8px 10px 0 10px;
+  color: $full-white;
+  font-weight: $medium-weight;
+  &:hover {
+    @include ease;
+    background: lighten($soft-gray, 5%);
+    color: $reg-blue;
+  }
+  &:active {
+    @include ease;
+    background: darken($soft-gray, 5%);
+    color: $reg-blue;
+  }
+  @media screen and (max-width: $small) {
+    display: none;
+  }
+}
+
+#signup_btn {
+  background: rgba(244, 245, 247, 0.8);
+  border: none;
+  width: 100px;
+  padding: 10px;
+  margin: 8px 10px 0 10px;
+  color: $reg-blue;
+  font-weight: $medium-weight;
+  &:hover {
+    @include ease;
+    background: lighten($soft-gray, 5%);
+  }
+  &:active {
+    @include ease;
+    background: darken($soft-gray, 5%);
+  }
+  @media screen and (max-width: $small) {
+    display: none;
+  }
+}
+
+#dropdown_button {
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  margin: 8px 20px 0 10px;
+  span {
+    color: $soft-gray;
+    padding: 10px 14px 8px 14px;
+    font-size: 24px;
+    &:hover {
+      @include ease;
+      background: $dark-blue;
+    }
+    &:active {
+      @include ease;
+      background: $dark-blue;
+    }
+    @media screen and (max-width: $small) {
+      display: none;
+    }
+  }
+}
+
+// Dropdown Menu
+
+.dropdown-menu {
+  background: $dark-blue;
+  margin: -2px 12px;
+  border-radius: 4px;
+}
+
+.dropdown-menu > li > a {
+  padding: 5px 0 5px 15px;
+  font-size: 14px;
+  color: $soft-gray;
+  &:hover {
+    @include ease;
+    color: $reg-blue;
+    background: $soft-gray;
+  }
+}
+
 
 // Pushy Menu Appearance
 
+.pushy html, body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
 .pushy {
   position: fixed;
-  width: 300px;
+  width: 250px;
   height: 100%;
   top: 0;
   z-index: 9999;
@@ -205,13 +242,13 @@ a#ln-logo {
   -webkit-overflow-scrolling: touch;
 }
 
-.pushy a {
+.pushy li a {
   font-family: $headline;
   font-weight: $medium-weight;
-  font-size: 24px;
+  font-size: 16px;
   display: block;
   color: $white;
-  padding: 16px 16px;
+  padding: 18px 18px;
   border-bottom: 1px solid rgba(29, 39, 53, 0.3);
   border-top: 1px solid rgba(29, 39, 53, 0.3);
   text-decoration: none;
@@ -226,12 +263,7 @@ a#ln-logo {
   }
 }
 
-.pushy, html, body {
-  overflow-x: hidden;
-  height: 100%;
-}
-
-.ln-cr li.col-xs-6 {
+.sub-menu li.col-xs-6 {
   padding: 0;
   a {
     border-right: 1px solid rgba(29, 39, 53, 0.3);
@@ -240,14 +272,22 @@ a#ln-logo {
   }
 }
 
+.logins a {
+    padding: 15px 10px;
+}
+
+#apple-icon {
+  padding-right: 20px;
+}
+
 // Menu Movement
 
 .pushy-left {
-  -webkit-transform: translate3d(-300px, 0, 0);
-  -moz-transform: translate3d(-300px, 0, 0);
-  -ms-transform: translate3d(-300px, 0, 0);
-  -o-transform: translate3d(-300px, 0, 0);
-  transform: translate3d(-300px, 0, 0);
+  -webkit-transform: translate3d(-250px, 0, 0);
+  -moz-transform: translate3d(-250px, 0, 0);
+  -ms-transform: translate3d(-250px, 0, 0);
+  -o-transform: translate3d(-250px, 0, 0);
+  transform: translate3d(-250px, 0, 0);
 }
 
 .pushy-open {
@@ -259,11 +299,11 @@ a#ln-logo {
 }
 
 .container-push, .push-push {
-  -webkit-transform: translate3d(300px, 0, 0);
-  -moz-transform: translate3d(300px, 0, 0);
-  -ms-transform: translate3d(300px, 0, 0);
-  -o-transform: translate3d(300px, 0, 0);
-  transform: translate3d(300px, 0, 0);
+  -webkit-transform: translate3d(250px, 0, 0);
+  -moz-transform: translate3d(250px, 0, 0);
+  -ms-transform: translate3d(250px, 0, 0);
+  -o-transform: translate3d(250px, 0, 0);
+  transform: translate3d(250px, 0, 0);
 }
 
 // Menu Transitions
@@ -289,7 +329,7 @@ a#ln-logo {
   bottom: 0;
   left: 0;
   z-index: 9998;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-animation: fade 500ms;
   -moz-animation: fade 500ms;
   -o-animation: fade 500ms;
@@ -347,18 +387,12 @@ a#ln-logo {
   transition: transform .2s cubic-bezier(.16, .68, .43, .99);
 }
 
-.ln-cr {
+.sub-menu {
   height: 30px;
   line-height: 30px;
   padding: 80px 0;
 }
 
-.logins {
-  background
-  a {
-    padding: 15px 10px;
-  }
-}
 
 // Logged in Nav
 
@@ -399,7 +433,7 @@ a#ln-logo {
 
 .logged-in-pushy {
   min-height: 540px;
-  .ln-cr {
+  .sub-menu {
     height: auto;
     padding: 130px 0 0;
   }
@@ -489,10 +523,4 @@ a#ln-logo {
   body > .pushy {
     width: 250px;
   }
-}
-
-// download button
-
-#apple-icon {
-  padding-right: 20px;
 }

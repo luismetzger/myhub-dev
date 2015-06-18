@@ -14,11 +14,6 @@
         addClassforFooter($(this));
     });
 
-
-    var $wrap = $("#pushy_wrapper.section"),
-        $fullHeightBox = $('.full-height'),
-        $wrap2 = $('.full-page-wrap');
-
     function setHeight(){
         var getWindowHeight = $(window).height();
         $wrap.css('min-height', getWindowHeight + 'px');

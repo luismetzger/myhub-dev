@@ -1,17 +1,13 @@
 // Promo Page Styles
 
-html,
-body {
-  height: 100%;
-  background-color: $reg-blue;
-}
-
 #wrapper {
 	background-color: $reg-blue;
 	min-height: 100%;
+	width: auto;
   	height: auto !important;
   	height: 100%;
   	margin: 0 auto -80px;
+  	padding-bottom: -80px;
 }
 
 /*
@@ -42,7 +38,6 @@ body {
 		font-weight: $heavy-weight;
 		font-size: 36px;
 		@media screen and (max-width: $small) {
-	      margin-top: 40px;
 	      font-size: 32px;
 	      text-align: center;
 	    }
@@ -59,6 +54,9 @@ body {
 	      text-align: center;
 	    }
 	}
+	@media screen and (max-width: $small) {
+    margin-top: 60px;
+  }
 }
 
 .promo-buttons {
@@ -73,6 +71,9 @@ body {
 		font-size: 14px;
 		font-weight: $light-weight;
 	}
+	@media screen and (max-width: $small) {
+    margin-top: none;
+  }
 }
 
 .video-link {
@@ -89,20 +90,6 @@ body {
 	}
 }
 
-
-// Page Wrap
-
-.page-wrap {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -100px; 
-}
-.page-wrap:after {
-  content: "";
-  display: block;
-}
-
-
 // Sticky Footer
 
 .site-footer, .page-wrap:after {
@@ -110,7 +97,7 @@ body {
 }
 
 .site-footer {
-  	background: transparent;
+  	background: $reg-blue;
 	li {
 	    font-size: 16px;
 	    color: $mid-gray;

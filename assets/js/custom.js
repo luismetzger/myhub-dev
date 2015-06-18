@@ -6,10 +6,9 @@ $(document).ready(function(){
 
     $('.venobox').venobox();
 
-
     // Desktop Menu Dropdown
     
-    var dContainer = $(".dropdown");
+    var dContainer = $(".dropdown-button");
     dContainer.on('mouseenter', function(){
         dContainer.removeClass('open');
         $(this).addClass('open');
