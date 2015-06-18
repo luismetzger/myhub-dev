@@ -2,6 +2,7 @@
 function mapInit(){
     if($(".map_canvas").length){
 
+
         var options = {
             map: ".map_canvas",
             location: "Denver, CO, United States",
@@ -18,7 +19,10 @@ function mapInit(){
             }
         };
 
-        var $geoComplete = $("#geocomplete");
+        var $geoComplete = null,
+            $mapWrap = $(".cr_map_wrap");
+
+        $geoComplete = $("#geocomplete");
 
         $geoComplete.geocomplete(options);
 

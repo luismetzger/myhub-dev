@@ -1,5 +1,9 @@
 ;$(document).ready(function(){
 
+    $.ajaxSetup ({
+        // Disable caching of AJAX responses
+        cache: false
+    });
     var $body = $('body');
 
     /*CHeck email*/
@@ -564,33 +568,95 @@ var $modal_wrap = $(".fmodal_wrap"),
     }
     /*Create modal end*/
 
+
+
+    $(window).load(function(){
+        $('.cr_map_wrap').removeClass("only_hide").addClass("hide");
+    });
+    var $page_number = 0,
+        $nextPrev = "";
     /*Create page transition start*/
     $body.on('click', '.create_slide_btn', function(e){
         e.preventDefault();
-        $body.children('.cr_footer').hide(0);
+        //$body.children('.cr_footer').hide(0);
         $(".modal").modal('hide');
         var $url = $(this).attr("href"),
         //var $url = $(this).attr("href"),
         $contantWrap = $("#createContAjaxWrap");
-        loadAjaxCont($url,  " .create_cont_wrap", $contantWrap);
+        $nextPrev = $(this).attr("data-pagen");
+        $page_number = 1 * $(this).attr("data-pageid");
+
+        updateHeaderFooter();
+
+        loadAjaxCont($url,  " .ccaw_inner", $contantWrap, $nextPrev);
 
     });
 
-    function loadAjaxCont($url, $context, $container){
-        $container.velocity("transition.slideLeftBigOut", {
-            stagger: 250,
+    function updateHeaderFooter(){
+        $('.cr_footer').eq($page_number).removeClass("hide")
+            .siblings().addClass("hide");
+        $(".cr_header").eq($page_number).removeClass('hide')
+            .siblings(".cr_header").addClass('hide');
+    }
+
+    function loadAjaxCont($url, $context, $container, $nextPrev){
+        $body.addClass('overflow-hidden');
+        var $leftx = "100%",
+            $rightx = "-100%";
+        if($nextPrev == "next"){
+            $leftx = "-100%";
+            $rightx = "100%";
+        }
+
+        if($page_number == 1 || $page_number == 3){
+            $(".cr_map_wrap").velocity(
+                {
+                    translateX : $leftx
+                }, {
+                    easing: "easeOut",
+                    duration: 600,
+                    complete : function(){
+                        $container.removeClass('hide');
+                        $(".cr_map_wrap").addClass('hide');
+                    }
+                });
+        }
+
+        $container.velocity(
+            {
+                translateX : $leftx
+            }, {
+            easing: "easeOut",
+            duration: 600,
             complete : function(){
                 $container.load($url + $context, function( response, status, xhr ) {
                     if(status == "success"){
                         funcToRunOnAjax($url);
-                        $container.velocity("transition.slideLeftBigIn", {
-                            stagger: 250,
-                            complete: function(){
-                                $container.css('transform', 'none');
-                                $body.children('.cr_footer').remove();
-                                $container.find('.cr_footer').appendTo("body");
-                            }
-                        });
+                        $container.css('opacity', '0');
+                        $container.velocity(
+                            {
+                                translateX : $rightx
+                            }, {
+                                duration: 0,
+                                complete : function(){
+                                    $container.css('opacity', '1');
+                                    $container.velocity(
+                                        {
+                                            translateX : "0"
+                                        }, {
+                                            easing: "easeIn",
+                                            duration: 700,
+                                            complete: function(){
+                                                //$container.css('transform', 'none');
+                                                //$body.children('.cr_footer').remove();
+                                                //$container.find('.cr_footer').appendTo("body");
+
+                                                $body.removeClass('overflow-hidden');
+                                            }
+                                        });
+                                }
+                            });
+
                         window.history.pushState("/", "", $url);
                     }
                 });
@@ -598,9 +664,51 @@ var $modal_wrap = $(".fmodal_wrap"),
         });
     }
 
+    function loadMapOnAjax($pageName){
+        if(($('.cr_map_wrap').length) && ($page_number == 2)){
+            //mapInit();
+
+            $body.addClass('overflow-hidden');
+            $('.cr_map_wrap').addClass('hide');
+            $("#createContAjaxWrap").addClass('hide');
+            var $mapToShow = $(".create_cont_wrap").find('.cr_map_wrap').removeClass('hide').css('opacity', '0');
+            setMapHeight($mapToShow);
+
+            var $leftx = "100%",
+                $rightx = "-100%";
+            if($nextPrev == "next"){
+                $leftx = "-100%";
+                $rightx = "100%";
+            }
+
+            $mapToShow.velocity(
+                {
+                    translateX : $rightx
+                }, {
+                    duration: 0,
+                    complete : function(){
+                        $mapToShow.css('opacity', '1');
+                        $mapToShow.velocity(
+                            {
+                                translateX : "0"
+                            }, {
+                                easing: "easeIn",
+                                duration: 700,
+                                complete: function(){
+                                    $body.removeClass('overflow-hidden');
+                                    $(".cre_map_modal").modal('show');
+                                }
+                            });
+                    }
+                });
+
+        }
+    }
 
     function funcToRunOnAjax($url){
         var $urln = $url.substr($url.lastIndexOf("/") + 1);
+
+        setAjaxHeight();
 
         if($('.timePicker').length){
             $('.timePicker').datetimepicker({
@@ -624,17 +732,40 @@ var $modal_wrap = $(".fmodal_wrap"),
         if($('[data-toggle="tooltip"]').length){
             $('[data-toggle="tooltip"]').tooltip();
         }
+
+
+        if($(".chosen-select").length){
+            $(".chosen-select").chosen({no_results_text: "Oops, nothing found!"});
+        }
+
+
+
         $(".cr_nostyle_input").each(function(){
             showCrossIcon($(this), $(this).siblings('.ciw_ric'));
         });
 
-        if (typeof mapInit !== 'undefined' && $.isFunction(mapInit)) {
+        /**
+         * todo this will be removed
+         */
+        if (typeof mapInit !== 'undefined' && $.isFunction(mapInit) && false) {
             if($('.cr_map_wrap').length){
-                mapInit();
+                //mapInit();
                 setMapHeight($('.cr_map_wrap'));
                 $(".cre_map_modal").modal('show');
+                setTimeout(function(){
+                    $("#geocomplete").trigger("geocode");
+                    $(window).resize();
+                    //window.resizeTo ($(window).width(), $(window).height());
+                    if(typeof Event == "function"){
+                        window.dispatchEvent(new Event('resize'));
+                    }
+                }, 1000);
+
             }
         }
+
+        loadMapOnAjax($urln);
+
         if($urln == "Create_Advanced_Preview.html" || $urln == "Create_Share.html"){
             addEventToModal();
             $(".cre_confirmation_modal").modal('show');
@@ -642,7 +773,7 @@ var $modal_wrap = $(".fmodal_wrap"),
     }
 
     function setAjaxHeight(){
-        $("#createContAjaxWrap").css('minHeight', $(window).height() - 55 + 'px');
+        $("#createContAjaxWrap").css('minHeight', $(window).height() - 200 + 'px');
     }
     setAjaxHeight();
 
@@ -669,13 +800,38 @@ var $modal_wrap = $(".fmodal_wrap"),
     });
 
     function tabShow($item, $wrap){
-        $wrap.velocity("transition.slideLeftOut", { stagger: 250,
+        $body.addClass('overflow-hidden');
+        $wrap.velocity(
+            {
+                translateX : "-100%"
+            }, {
+            easing: "easeOut",
+            duration: 400,
             complete : function(){
-                $wrap.children().addClass('hide');
-                $item.removeClass('hide');
+                $wrap.css('opacity', '0')
+                    .velocity(
+                    {
+                        translateX : "100%"
+                    }, {
+                        duration: 0,
+                        complete : function(){
+                            $item.removeClass('hide')
+                                .siblings().addClass('hide');
+                            $wrap.css('opacity', '1')
+                                .velocity(
+                                {
+                                    translateX : "0"
+                                }, {
+                                    easing: "easeOut",
+                                    duration: 400,
+                                    complete : function(){
+                                        $body.removeClass('overflow-hidden');
+                                    }
+                                });
+                        }
+                    });
             }
         });
-        $wrap.velocity("transition.slideLeftIn", { stagger: 250 });
 
         $(".cr_nostyle_input").each(function(){
             showCrossIcon($(this), $(this).siblings('.ciw_ric'));
@@ -686,8 +842,9 @@ var $modal_wrap = $(".fmodal_wrap"),
 
     /*end the create section*/
 
-    $(".chosen-select").chosen({no_results_text: "Oops, nothing found!"});
-
+    if($(".chosen-select").length){
+        $(".chosen-select").chosen({no_results_text: "Oops, nothing found!"});
+    }
 
 
 

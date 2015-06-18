@@ -147,7 +147,7 @@ a[data-toggle="tooltip"] {
   }
 }
 .cr_footer {
-  padding: 10px;
+  padding: 10px 10px 8px;
   background: $off-white;
   position: fixed;
   left: 0;
@@ -580,7 +580,10 @@ a[data-toggle="tooltip"] {
     margin: 0;
     label {
       width: 82px;
+      height: 55px;
       padding: 10px 0;
+      background: url("../images/cover_photo_img.jpg") center center no-repeat;
+      background-size: cover;
     }
   }
   .auth_links {
@@ -811,4 +814,22 @@ a[data-toggle="tooltip"] {
 }
 #createContAjaxWrap {
 //  position: relative;
+}
+#cr_header_ajax {
+  position: relative;
+  height: 70px;
+  width: 100%;
+  .cr_header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+.overflow-hidden {
+  overflow: hidden !important;
+}
+.only_hide {
+  opacity: 0;
+  visibility: hidden;
 }
