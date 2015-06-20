@@ -50,61 +50,57 @@
 
 <body>
 
-
-<!-- Pushy Menu -->
-<nav class="pushy pushy-left">
-    <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="how-it-works.html">How it Works</a></li>
-        <li><a href="jobs.html">Jobs</a></li>
-        <li class=""><a href="http://myhubapp.tumblr.com/">Blog</a></li>
-        <li><a href="https://myhubapp.zendesk.com/hc/en-us">FAQ</a></li>
-        <li><a href="contact-us.html">Contact us</a></li>
-
-    </ul>
-    <div class="ln-cr">
+    <!-- Mobile Nav-->
+    <nav class="pushy pushy-left">
         <ul>
-            <li class="col-xs-6 logins"><a href="#">Login</a></li>
-            <li class="col-xs-6 logins"><a href="#">Sign Up</a></li>
-            <li class="clearfix"></li>
-            <li><a href="https://itunes.apple.com/us/app/myhub/id598502707?mt=8"><span><i id="apple-icon" class="fa fa-apple fa-lg"></i> Download the App </span> </a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="how-it-works.html">How it Works</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li class=""><a href="http://myhubapp.tumblr.com/">Blog</a></li>
+            <li><a href="https://myhubapp.zendesk.com/hc/en-us">FAQ</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>        
         </ul>
-    </div>
-</nav>
-
-<div class="site-overlay"></div>
-
-<!-- class="container-push"-->
-<div id="pushy_wrapper">
-    <div class="top-header">
-        <!--add this class nav menu-->
-
-        <div class="top-sub-head clearfix">
-            <div class="nav-pullleft pull-left">
-                <a href="#" class="menu-btn"><i class="fa fa-bars"></i></a>
-            </div>
-            <div class="sub-logo">
-                <a id="ln-logo" href="index.html"><img id="header-logo" class="img-responsive" src="assets/images/myhub-logo.png">
-                </a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a id="btn_plus" class="btn btn-default hidden-xs" href="#" role="button"><i class="fa fa-plus"></i></a></li>
-                <li><a id="login-button" href="#">Login or</a></li>
-                <li><a id="signup-button" class="btn btn-default" href="#" role="button">Sign Up</a></li>
-                <li id="dropdown-button" class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="dropdown-icon icon-ellipses"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="how-it-works.html">How it Works</a></li>
-                        <li><a href="http://myhubapp.tumblr.com/">Blog</a></li>
-                        <li><a href="jobs.html">Jobs</a></li>
-                        <li><a href="https://myhubapp.zendesk.com/hc/en-us">FAQ</a></li>
-                        <li><a href="contact-us.html">Contact Us</a></li>
-                    </ul>
-                </li>
+        <div class="sub-menu">
+            <ul>
+                <li class="col-xs-6 logins"><a href="/login_modal.html">Login</a></li>
+                <li class="col-xs-6 logins"><a href="#">Sign Up</a></li>
+                <li class="clearfix"></li>
+                 <li><a href="https://itunes.apple.com/us/app/myhub/id598502707?mt=8"><span><i id="apple-icon" class="fa fa-apple fa-lg"></i> Download the App </span> </a></li>
             </ul>
         </div>
-    </div>
+    </nav>
+    
+    <div class="site-overlay"></div>
+
+    <!-- Desktop Nav -->
+    <nav class="navbar navbar-nav navbar-fixed-top push">
+        <div class="top-header">
+            <div class="promo-sub-head clearfix">
+                <div class="pull-left">
+                    <a href="#" class="menu-btn"><i class="fa fa-bars"></i></a>
+                </div>
+                <div class="sub-logo">
+                    <a id="ln-logo" href="index.html"><img id="header-logo" class="img-responsive" src="assets/images/myhub-logo.png">
+                    </a>
+                </div>
+                <ul class="navbar-nav navbar-right">
+                    <li><a id="create_btn" class="btn btn-default" href="#"><span class="fa fa-plus fa-lg"></span></a></li>
+                    <li><a id="login_btn" class="btn btn-default" href="#" role="button">Log in</a></li>
+                    <li><a id="signup_btn" class="btn btn-default" href="#" role="button">Sign Up</a></li>
+                    <li><a id="dropdown_button" class="btn btn-default" data-toggle="dropdown" href="#" role="button" aria-expanded="false"><span class="fa fa-ellipsis-h fa-2x"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="how-it-works.html">How it Works</a></li>
+                            <li><a href="http://myhubapp.tumblr.com/">Blog</a></li>
+                            <li><a href="jobs.html">Jobs</a></li>
+                            <li><a href="https://myhubapp.zendesk.com/hc/en-us">FAQ</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                         </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Header Image -->
     <div id="jobs_head" class="headerwrap">
@@ -122,7 +118,7 @@
     </div>
    
     <!-- Main Content -->
-    <div class="jobs-container">
+    <div class="jobs-container white-bg">
         <div class="container">
             <div class="row">
                 <div id="sidebar" class="col-md-3">

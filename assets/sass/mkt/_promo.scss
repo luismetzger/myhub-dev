@@ -1,41 +1,16 @@
 // Promo Page Styles
 
-html,
-body {
-  height: 100%;
-  background-color: $reg-blue;
-}
-
-
 #wrapper {
-	position: relative;
+	position: fixed;
 	background-color: $reg-blue;
-	min-height: 100%;
-  	height: auto !important;
   	height: 100%;
-  	margin: 0 auto -80px;
-  	padding-bottom: -80px;
+  	width: 100%;
 }
-
-/*
-#wrapper {
-    position:fixed;
-    padding:0;
-    margin:0;
-
-    top:0;
-    left:0;
-
-    width: 100%;
-    height: 100%;
-    background-color: $reg-blue;
-}
-*/
 
 .hero {
- 	margin-top: 5%;
+ 	margin-top: 10%;
  	@media screen and (max-width: $medium) {
-    margin-top: 50px;
+    margin-top: 20%;
 	}
 }
 
@@ -69,8 +44,9 @@ body {
   }
 }
 
-.promo-buttons {
-	margin-top: 60px;
+.btn-group-lg {
+	margin-top: 45px;
+	margin-bottom: 45px;
 }
 
 .disclaimer {
@@ -112,7 +88,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 80px;
   background-color: transparent;
 	li {
 	    font-size: 16px;
