@@ -9,24 +9,6 @@
     <title>Myhub | Social Planning</title>
     <meta name="description" content="The fastest, easiest way to plan group activities and collect money from your friends for anything."> 
 
-    <!-- Twitter Summary Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@myhubapp">
-    <meta name="twitter:creator" content="@myhubapp">
-    <meta name="twitter:title" content="Myhub | Social Planning">
-    <meta name="twitter:description" content="The fastest, easiest way to plan group activities and collect money from your friends for anything. Join us and discover social planning absolutely free.">
-    <meta name="twitter:image" src="assets/images/Myhub_Homepage.png">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Myhub | Social Planning" />
-    <meta property="og:description" content="The fastest, easiest way to plan group activities and collect money from your friends for anything. Join us and discover social planning absolutely free." />
-    <meta property="og:url" content="http://www.myhubapp.com" />
-    <meta property="og:image" content="assets/images/Myhub_Homepage.png" />
-    <meta property="article:publisher" content="https://www.facebook.com/myhubapp" />
-
-    <!-- Apple iTunes -->
-    <meta name="apple-itunes-app" content="app-id=598502707">
-    
     <!-- Styles -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -35,25 +17,13 @@
     <!-- Assets -->
     <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/c2c138df-bec8-4ae7-abb7-59de83a2ce0b.css"/>
     <script type="text/javascript" src="assets/js/modernizr.custom.70954.js"></script>
-    
-    <!-- SumoMe -->
-    <script src="//load.sumome.com/" data-sumo-site-id="3feb3359e291ae9611e3187dffdfbdc1f0bd71f9659a3a2b06674bee0636256e" async="async"></script>
 
-    <!-- Google Analytics -->
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-44022742-2', 'auto');
-  ga('send', 'pageview');
-    </script>
 </head>
 
 
-<body id="home_body" class="fp-viewing-firstPage">
+<body>
 
-<!-- Mobile Menu -->
+    <!-- Top Nav-->
     <nav class="pushy pushy-left">
         <ul>
             <li><a href="about.html">About</a></li>
@@ -63,441 +33,142 @@
             <li><a href="https://myhubapp.zendesk.com/hc/en-us">FAQ</a></li>
             <li><a href="contact-us.html">Contact us</a></li>        
         </ul>
-        <div class="ln-cr">
+        <div class="sub-menu">
             <ul>
-            	<li class="col-xs-6 logins"><a href="/login_modal.html">Login</a></li>
-            	<li class="col-xs-6 logins"><a href="#">Sign Up</a></li>
+                <li class="col-xs-6 logins"><a href="/login_modal.html">Login</a></li>
+                <li class="col-xs-6 logins"><a href="#">Sign Up</a></li>
                 <li class="clearfix"></li>
-    	         <li><a href="https://itunes.apple.com/us/app/myhub/id598502707?mt=8"><span><i id="apple-icon" class="fa fa-apple fa-lg"></i> Download the App </span> </a></li>
+                 <li><a href="https://itunes.apple.com/us/app/myhub/id598502707?mt=8"><span><i id="apple-icon" class="fa fa-apple fa-lg"></i> Download the App </span> </a></li>
             </ul>
         </div>
     </nav>
+
     <div class="site-overlay"></div>
 
-<!-- class="container-push"-->
-<div id="fullpage" class="">
-    <div id="pushy_wrapper" class="section section1">
-        
-        <!-- Nav Menu -->
+    <!-- Desktop Nav -->
+    <nav class="navbar navbar-nav navbar-fixed-top push">
         <div class="top-header">
-            <div class="top-sub-head clearfix">
-                <div class="nav-pullleft pull-left">
+            <div class="promo-sub-head clearfix">
+                <div class="pull-left">
                     <a href="#" class="menu-btn"><i class="fa fa-bars"></i></a>
                 </div>
                 <div class="sub-logo">
                     <a id="ln-logo" href="index.html"><img id="header-logo" class="img-responsive" src="assets/images/myhub-logo.png">
                     </a>
                 </div>
-               <ul class="nav navbar-nav navbar-right">
-		        <li><a id="btn_plus" class="btn btn-default hidden-xs" href="#" role="button"><i class="fa fa-plus"></i></a></li>
-		        <li><a id="login-button" href="/Login_Modal.html">Login or</a></li>
-		        <li><a id="signup-button" class="btn btn-default" href="#" role="button">Sign Up</a></li>
-		        <li id="dropdown-button" class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="dropdown-icon icon-ellipses"></span></a>
-			          <ul class="dropdown-menu" role="menu">
-			            <li><a href="about.html">About</a></li>
-			            <li><a href="how-it-works.html">How it Works</a></li>
-			            <li><a href="http://myhubapp.tumblr.com/">Blog</a></li>
-			            <li><a href="jobs.html">Jobs</a></li>
-			            <li><a href="https://myhubapp.zendesk.com/hc/en-us">FAQ</a></li>
-			            <li><a href="contact-us.html">Contact Us</a></li>
-			          </ul>
-		        </li>
-		      </ul>
+                <ul class="navbar-nav navbar-right">
+                    <li><a id="create_btn" class="btn btn-default" href="#"><span class="fa fa-plus fa-lg"></span></a></li>
+                    <li><a id="login_btn" class="btn btn-default" href="#" role="button">Log in</a></li>
+                    <li><a id="signup_btn" class="btn btn-default" href="#" role="button">Sign Up</a></li>
+                    <li><a id="dropdown_button" class="btn btn-default" data-toggle="dropdown" href="#" role="button" aria-expanded="false"><span class="fa fa-ellipsis-h fa-2x"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="how-it-works.html">How it Works</a></li>
+                            <li><a href="http://myhubapp.tumblr.com/">Blog</a></li>
+                            <li><a href="jobs.html">Jobs</a></li>
+                            <li><a href="https://myhubapp.zendesk.com/hc/en-us">FAQ</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                         </ul>
+                    </li>
+                </ul>
             </div>
         </div>
-        
-        <!-- Welcome -->
-        <div id="hs1Content" class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="ln-cont-text">
-                        <h2>Your New Social Calendar</h2>
-                        <p>The fastest, easiest way to plan group activities and pool money with your friends.</p>
-                        <div class="ln-vid-link hidden-xs">
-                            <a href="http://vimeo.com/122056478?autoplay=1" data-type="vimeo" class="venobox youtubepp2 vbox-item">
-                                <i class="fa fa-play-circle"></i>watch the video</a>
-                        </div>
-                        <div id="twilow_smsb" class="twilow_sms hidden-xs">
-                            <label for="modalSmsInputb">Download the App</label>
-                            <input type="tel" class="form-control" placeholder="Enter Your Phone Number" id="modalSmsInputb">
-                            <button id="twillow_submitb">Send SMS</button>
-                        </div>
-                        <div class="visible-xs app-store-img">
-                            <a href="https://itunes.apple.com/us/app/myhub/id598502707?mt=8"><img width="200" src="assets/images/icons/app_store_badge.svg" alt="App Store Logo"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-sm-push-2 ln-mblImg">
-                    <img alt="" src="assets/images/Event_Detail_Paid.png">
-                </div>
-            </div>
-        </div>
-        <div class="hbtmBtns bounce animated">
-            <a href="#" date-mvto="2">What's Myhub <br/><i class="fa fa-angle-down"></i></a>
-        </div>
+    </nav>
 
-    </div>
-    
-    <!-- What is Myhub -->
-    <div class="section section2" style="background-color: #F4F5F7;">
+    <!-- Footer -->
+    <footer id="page_footer_cont">
         <div class="container">
-        <div class="row">
-
-            <div class="col-sm-6 hw_txt visible-xs">
-                <h2>What's Myhub?</h2>
-                <p>Myhub is a fun, easy way to get friends together and pool money for just about anything. No more missed texts and late payments. Myhub makes things simple.</p>
-                <div class="hwt_lm">
-                    <a href="#" class="btn btn-lg btn-learnMore">Learn More</a>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="thumb-img thumb-img1">
-                    <img src="assets/images/event-card-i.png" alt="Event Card">
-                </div>
-                <div class="thumb-img thumb-img2">
-                    <img src="assets/images/event-card-ii.png" alt="Event Card">
-                </div>
-                <div class="thumb-img thumb-img3 hidden-xs">
-                    <img src="assets/images/event-card-iii.png" alt="Event Card">
-                </div>
-            </div>
-            
-            <!-- Desktop Texts -->    
-            <div class="col-sm-5 col-sm-push-1 hw_txt hidden-xs">
-                <h2>What's Myhub?</h2>
-                <p>Myhub is a fun, easy way to get friends together and pool money for just about anything. No more missed texts and late payments. Myhub makes things simple.</p>
-                <div class="hwt_lm">
-                    <a href="#" class="btn btn-lg btn-learnMore">Learn More</a>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="hbtmBtns">
-            <a href="#" date-mvto="3">Why Myhub <br/><i class="fa fa-angle-down"></i></a>
-        </div>
-    </div>
-    
-
-    <!-- Why Myhub -->
-    <div class="section section3" style="background-color: #fff;">
-        <div role="tabpanel" id="hTab_container" class="container">
-            
-            <!-- Tabs -->
-            <ul class="htab-links clearfix hidden-xs" role="tablist">
-                <li role="presentation" class="active"><a href="#without_myhub" aria-controls="home" role="tab" data-toggle="tab">without</a></li>
-                <li role="presentation"><a href="#with_myhub" aria-controls="profile" role="tab" data-toggle="tab">with</a></li>
-            </ul>
-
-            <!-- Without Myhub -->
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active fade in row" id="without_myhub">
-                    <div class="col-sm-5 hwhy-txt text-right">
-                        <h2>Forget the Run Around.</h2>
-                        <p>Group activities can be complicated. Especially when everyone's coordinating across multiple tools. Myhub solves that wth a simple, intuitive platform designed for groups.
-                        </p>
-
-                        <div class="hwt_lm hwt_lm_sml_pad">
-                            <a href="#" class="btn btn-lg btn-learnMore">Learn More</a>
-                        </div>
+            <div class="row hidden-xs">
+                <div class="col-sm-4">
+                    <div class="footer-logo">
+                        <a href="index.html"><img alt="Myhub" src="assets/images/icons/footer_logo.png"></a>
+                        <p>The fastest, easiest way to plan group activities and pool cash with your friends.</p>
                     </div>
-
-                    <div class="col-sm-5 col-sm-push-1">
-                        <div class="slide-3-img">
-                            <embed name="E" class="E hidden-xs" id="E1" src="assets/images/slide-2-icons.svg" width="479" height="316"></embed>
-                            <img id="after-group" class="img-responsive visible-xs" src="assets/images/after-group.png" alt="Slide 3"/>
-                        </div>
+                    <div class="footer-social">
+                        <ul>
+                            <li><a href="http://myhubapp.tumblr.com/"><i class="fa fa-fw fa-md fa-tumblr"></i></a></li>
+                            <li><a href="https://www.facebook.com/Myhubapp"><i class="fa fa-fw fa-md fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/myhubapp"><i class="fa fa-fw fa-md fa-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/user/MyHubApp"><i class="fa fa-fw fa-md fa-youtube"></i></a></li>
+                            <li><a href="http://instagram.com/myhubapp"><i class="fa fa-fw fa-md fa-instagram"></i></a></li>
+                            <li><a href="http://bit.ly/myhubapp"><i class="fa fa-fw fa-md fa-apple"></i></a></li>
+                        </ul>
+                    </div>
+                    <div id="footer_legal">
+                        <p>© 2015 Myhub, LLC • <a href="http://www.entrepreneurialbynature.com/">Made in beautiful Colorado</a></p>
                     </div>
                 </div>
-                
-                <!-- With Myhub -->
-                <div role="tabpanel" class="tab-pane" id="with_myhub">
-                    <div class="col-sm-5 hwhy-txt text-right">
-                        <h2>Forget the Run Around.</h2>
-                        <p>Group activities are complicated. Especially when everyone ends up jumping across multiple tools just to make something happen. Myhub solves that wth a social and fun platform designed for groups.
-                        </p>
-
-                        <div class="hwt_lm hwt_lm_sml_pad">
-                            <a href="#" class="btn btn-lg btn-learnMore">Learn More</a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-5 col-sm-push-1">
-                        <div class="slide-3-img">
-                            <embed name="E" class="E" id="E2" src="assets/images/host.svg" width="479" height="316">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hbtmBtns">
-            <a href="#" date-mvto="4">How it Works <br/><i class="fa fa-angle-down"></i></a>
-        </div>
-    </div>
-    
-
-    <!-- How it Works -->
-    <div class="section section4" style="background-color: #F4F5F7;">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 col-sm-push-1 hw_txt visible-xs">
-                    <h2>How it Works</h2>
-                    <p>Simply enter the basic details of your activity, choose from our advanced options, then send invites out to friends. Everyone can quickly RSVP, pitch in cash, and collaborate with the rest of the group.
-                    </p>
-                    <div class="hwt_lm">
-                        <a href="#" class="btn btn-lg btn-learnMore">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-sm-5">
-                    <div class="slide-3-img">
-                        <embed name="H" class="H" id="H" src="assets/images/slide-4-icons.svg" width="385" height="385">
-                    </div>
-                </div>
-                
-                <!-- Desktop Text -->
-                <div class="col-sm-5 col-sm-push-1 hw_txt hidden-xs">
-                    <h2>How it Works</h2>
-                    <p>Simply enter the basic details of your activity, choose from our advanced options, then send invites out to friends. Everyone can quickly RSVP, pitch in cash, and collaborate with the rest of the group.
-                    <p>
-                    <div class="hwt_lm">
-                        <a href="#" class="btn btn-lg btn-learnMore">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hbtmBtns">
-            <a href="#" date-mvto="5">The Difference <br/><i class="fa fa-angle-down"></i></a>
-        </div>
-    </div>
-    
-
-    <!-- Designed for You -->
-    <div class="section section5" style="background-color: #fff;">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="hw_txt">
-                        <h2>Designed for You.</h2>
-                        <p>No matter what you’re planning, Myhub scales from group activities with friends up to business or non-profit fundraisers that demand flexible, onsite payments. Give it a try free and see for yourself.</p>
-                        <div class="hwt_lm">
-                            <a href="#" class="btn btn-lg btn-learnMore">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row design-icons-cont">
-
-                <div class="col-sm-3 col-xs-6">
-                    <div class="design-icon">
-                        <embed name="D" class="D" id="D1" src="assets/images/Suitcase.svg" width="127" height="127">
-                    </div>
-                    <p>Vacations</p>
-                </div>
-
-                <div class="col-sm-3 col-xs-6">
-                    <div class="design-icon">
-                        <embed name="D" class="D" id="D2" src="assets/images/XMas_Party.svg" width="127" height="127">
-                    </div>
-                    <p>Holidays</p>
-                </div>
-                <div class="clearfix visible-xs"></div>
-
-                <div class="col-sm-3 col-xs-6">
-                    <div class="design-icon">
-                        <embed name="D" class="D" id="D3" src="assets/images/Ticket_II.svg" width="127" height="127">
-                    </div>
-                    <p>Concerts</p>
-                </div>
-
-                <div class="col-sm-3 col-xs-6">
-                    <div class="design-icon">
-                        <embed name="D" class="D" id="D4" src="assets/images/Recreation.svg" width="127" height="127">
-                    </div>
-                    <p>Recreation</p>
-                </div>
-                <div class="clearfix"></div>
-
-                <div class="col-sm-3 col-xs-6">
-                    <div class="design-icon">
-                        <embed name="D" class="D" id="D5" src="assets/images/turntable.svg" width="127" height="127">
-                    </div>
-                    <p>House Parties</p>
-                </div>
-
-                <div class="col-sm-3 col-xs-6">
-                    <div class="design-icon">
-                        <embed name="D" class="D" id="D6" src="assets/images/Store_Opening.svg" width="127" height="127">
-                    </div>
-                    <p>Store Events</p>
-                </div>
-                <div class="clearfix visible-xs"></div>
-
-                <div class="col-sm-3 col-xs-6 hidden-xs">
-                    <div class="design-icon">
-                        <embed name="D" class="D" id="D7" src="assets/images/Megaphone_II.svg" width="127" height="127">
-                    </div>
-                    <p>Non Profits</p>
-                </div>
-
-                <div class="col-sm-3 col-xs-6 hidden-xs">
-                    <div class="design-icon">
-                        <embed name="D" class="D" id="D8" src="assets/images/Beach_Trip.svg" width="127" height="127">
-                    </div>
-                    <p>Beach Days</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="hbtmBtns">
-            <a href="#" date-mvto="6"> Get Started <br/><i class="fa fa-angle-down"></i></a>
-        </div>
-    </div>
-    
-
-    <!-- Get Started -->
-    <div class="section section6 soft-gray-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="hw_txt text-center">
-                        <h2>Ready to get started?</h2>
-                        <p>Don't take our word for it. Download Myhub and try it yourself absolutely free. The only fee’s occur when your friends pitch in money.</p>
-                        <div class="hwt_lm hwt_lm_2">
-                            <a href="#" class="btn btn-lg btn-ios"><i class="fa fa-apple"></i> Download </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="fMobileImg">
-                        <img src="assets/images/screens/create-what.png" height="600">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Footer Desktop -->
-        <div id="footer_container">
-            <div class="container">
-                    <div class="row hidden-xs">
-                        <div class="col-sm-4 flogoCont">
-                            <div class="flogo">
-                                <a href="#"><img alt="Myhub" src="assets/images/icons/footer_logo.png"></a>
-                            </div>
-                            <p>The fastest, easiest way to plan group activites and collect money from friends.</p>
-                            <div class="footer_socials">
-                                <ul>
-                                    <li><a href="http://myhubapp.tumblr.com/"><i class="fa fa-fw fa-md fa-tumblr"></i></a></li>
-                                    <li><a href="https://www.facebook.com/Myhubapp"><i class="fa fa-fw fa-md fa-facebook"></i></a></li>
-                                    <li><a href="https://twitter.com/myhubapp"><i class="fa fa-fw fa-md fa-twitter"></i></a></li>
-                                    <li><a href="https://www.youtube.com/user/MyHubApp"><i class="fa fa-fw fa-md fa-youtube"></i></a></li>
-                                    <li><a href="http://instagram.com/myhubapp"><i class="fa fa-fw fa-md fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-7  fNav">
-                            <div class="row">
-                                <div class="col-sm-4 col-xs-6">
-                                    <h5>COMPANY</h5>
-                                    <ul>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="how-it-works.html">How it Works</a></li>
-                                        <li><a href="jobs.html">Jobs</a></li>
-                                        <li><a href="http://myhubapp.tumblr.com/">Blog</a></li>
-                                    </ul>
-                                </div>
-                                <div class="clearfix visible-xs"></div>
-                                <div class="col-sm-4 col-xs-6">
-                                    <h5>Bowtie Blog</h5>
-                                    <ul style="font-family:'Gill Sans W10 Medium';">
-                                        <li><a href="http://blog.myhubapp.com/tagged/news">#NEWS</a></li>
-                                        <li><a href="http://blog.myhubapp.com/tagged/releases">#RELEASES</a></li>
-                                        <li><a href="http://blog.myhubapp.com/tagged/howto">#HOWTO</a></li>
-                                        <li><a href="http://blog.myhubapp.com/tagged/ideas">#IDEAS</a></li>
-                                        <li><a href="http://blog.myhubapp.com/tagged/fun">#FUN</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-4 col-xs-6">
-                                    <h5>Help</h5>
-                                    <ul style="font-family:'Gill Sans W10 Medium';">
-                                        <li><a href="http://myhubapp.zendesk.com">FAQ</a></li>
-                                        <li><a href="contact-us.html">CONTACT</a></li>
-                                        <li><a href="terms-of-service.html">TERMS</a></li>
-                                        <li><a href="privacy-policy.html">PRIVACY</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Footer Mobile -->
-                    <div id="mobile-footer-nav" class="row visible-xs text-center">
-                        <div class="col-xs-12">
-                            <a href="terms-of-service.html">About</a>  •  <a href="privacy-policy.html">How it Works</a>  •  <a href="terms-of-service.html">Jobs</a>  •  <a href="terms-of-service.html">Blog</a>  •  <a href="terms-of-service.html">FAQ</a>  •  <a href="terms-of-service.html">Contact</a>
-                        </div>
-                        <br>
-                        <div class="footer_socials col-xs-12">
+                <div class="col-md-8 footer-links">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h5>Company</h5>
                             <ul>
-                                <li><a href="http://myhubapp.tumblr.com/"><i class="fa fa-fw fa-lg fa-tumblr"></i></a></li>
-                                <li><a href="https://www.facebook.com/Myhubapp"><i class="fa fa-fw fa-lg fa-facebook"></i></a></li>
-                                <li><a href="https://twitter.com/myhubapp"><i class="fa fa-fw fa-lg fa-twitter"></i></a></li>
-                                <li><a href="https://www.youtube.com/user/MyHubApp"><i class="fa fa-fw fa-lg fa-youtube"></i></a></li>
-                                <li><a href="http://instagram.com/myhubapp"><i class="fa fa-fw fa-lg fa-instagram"></i></a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="how-it-works.html">How it Works</a></li>
+                                <li><a href="jobs.html">Careers</a></li>
+                                <li><a href="https://brandfolder.com/myhub">Press</a></li>
+                                <li><a href="http://myhubapp.tumblr.com/">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix visible-xs"></div>
+                        <div class="col-sm-4">
+                            <h5>Bowtie Blog</h5>
+                            <ul>
+                                <li><a href="#">#News</a></li>
+                                <li><a href="#">#Releases</a></li>
+                                <li><a href="#">#Howto</a></li>
+                                <li><a href="#">#Ideas</a></li>
+                                <li><a href="#">#Fun</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h5>Help</h5>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="contact-us.html">Contact us</a></li>
+                                <li><a href="terms-of-service.html">Terms</a></li>
+                                <li><a href="privacy-policy.html">Privacy</a></li>
+                                <li><a href="promo.html">Promo</a></li>
                             </ul>
                         </div>
                     </div>
-                <div id="co-image" class="text-center">
-                    <embed  src="assets/images/CO_Company_Color.svg" width="70" height="70">
                 </div>
-                <div id="fwLpr2" class="row">
-                    <div class="col-xs-12 copy_text text-center">2015 Myhub • <a href="privacy-policy.html">Privacy</a> • <a href="terms-of-service.html">Terms</a></div>
+            </div>
+            
+            <div class="row visible-xs text-center mobile-footer-nav">
+                <div id="mobile_links" class="col-xs-12">
+                    <a href="#">About</a> • <a href="#">How it Works</a> • <a href="#">Blog</a> • <a href="#">FAQ</a> • <a href="#">Contact us</a>
+                </div>
+                
+                <div class="col-xs-12 footer-social">
+                    <ul>
+                        <li><a href="http://myhubapp.tumblr.com/"><i class="fa fa-fw fa-lg fa-tumblr"></i></a></li>
+                        <li><a href="https://www.facebook.com/Myhubapp"><i class="fa fa-fw fa-lg fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/myhubapp"><i class="fa fa-fw fa-lg fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/user/MyHubApp"><i class="fa fa-fw fa-lg fa-youtube"></i></a></li>
+                        <li><a href="http://instagram.com/myhubapp"><i class="fa fa-fw fa-lg fa-instagram"></i></a></li>
+                        <li><a href="http://bit.ly/myhubapp"><i class="fa fa-fw fa-lg fa-apple"></i></a></li>
+                    </ul>
+                </div>
+                <div id="mobile_legal" class="col-xs-12">
+                        <p>© 2015 Myhub, LLC • <a href="#">Terms</a> • <a href="#">Privacy</a></p>
                 </div>
             </div>
         </div>
-
-<!-- End of Page -->
-    </div>
-</div>
+    </footer>
 
 
-<!-- Modals -->
-<div class="modal middlemodal fade in" id="downloadAppModal" tabindex="-1" role="dialog" arial-labelledby="downloadAppModalTitle" aria-hidden="false" style="display: none;">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <button type="button" class="btn close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
-            <div class="modal-body">
-                <p class="modal-message" style="margin:0 0 1em 0;">Please enter your phone number and we'll text you a download link.<br>
-                <form class="download-app-form" role="form">
-                    <div class="row">
-                        <div class="col-xs-12 twilow_sms">
-                            <label class="sr-only" for="modalSmsInput">Download The App</label>
-                            <input type="tel" id="modalSmsInput" placeholder="Enter Your Phone Number" class="form-control">
-                            <button id="twillow_submit">Send SMS</button>
-                        </div>
-                        <div class="hide col-xs-12" id="pp_status"></div>
 
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.easings.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.slimscroll.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.fullPage.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
-<script type="text/javascript" src="assets/js/pushy.min.js"></script>
-<script type="text/javascript" src="assets/js/venobox.min.js"></script>
-<script type="text/javascript" src="assets/js/custom.js"></script>
-<script type="text/javascript" src="assets/js/scripts.js"></script>
+
+
+
+
+
+
+
+
 
 
 

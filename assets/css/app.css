@@ -20115,11 +20115,9 @@ label {
   margin-right: 15px; }
 
 @-moz-document url-prefix() {}
-.wow {
-  visibility: hidden; }
-
 #footer_container {
   position: absolute;
+  bottom: 0;
   z-index: 1;
   width: 100%;
   height: 260px;
@@ -20136,9 +20134,10 @@ label {
       margin-top: 0; } }
 
 #page_footer_cont {
-  top: auto;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   padding: 20px;
-  position: relative;
   z-index: 2;
   background-color: #1D2735;
   overflow: hidden; }
